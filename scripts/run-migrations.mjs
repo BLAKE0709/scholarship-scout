@@ -7,12 +7,15 @@ import postgres from "postgres";
 
 config({ path: ".env.local" });
 
-const FILES = [
+// Pass explicit file paths as CLI args to apply just those; with no args,
+// runs the original full-restore set (0000 stays excluded as a duplicate).
+const DEFAULT_FILES = [
   "supabase/migrations/0001_initial_schema.sql",
   "supabase/migrations/0002_auth_trigger.sql",
   "supabase/migrations/0003_family_and_counselor_linking.sql",
   "supabase/migrations/0004_notifications.sql",
 ];
+const FILES = process.argv.length > 2 ? process.argv.slice(2) : DEFAULT_FILES;
 
 const sql = postgres(process.env.DATABASE_URL, { max: 1, onnotice: () => {} });
 
