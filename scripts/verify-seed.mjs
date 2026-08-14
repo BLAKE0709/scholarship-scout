@@ -69,7 +69,13 @@ for (const f of files) {
       `${s.name}`.toLowerCase().trim() +
       "::" +
       `${s.provider_name}`.toLowerCase().trim();
-    if (seen.has(key)) problems.push(`duplicate of entry in ${seen.get(key)}`);
+    if (seen.has(key)) {
+      // Cross-category duplicate: first occurrence wins by design — drop, don't fail.
+      console.log(
+        `  dupe-drop [${f}] ${s.name} (kept copy from ${seen.get(key)})`,
+      );
+      continue;
+    }
 
     if (problems.length) {
       rejects.push({

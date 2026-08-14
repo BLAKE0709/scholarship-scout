@@ -1,0 +1,1767 @@
+[
+  {
+    "name": "Enid Hall Griswold Memorial Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "A one-time $5,000 award given to two college juniors or seniors enrolled full time at an accredited U.S. college or university and majoring in political science, history, government, or economics. No DAR membership or lineage is required to apply. Applications are submitted through the DAR Academic Works portal, which opens each November 1.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "grade_levels": [
+        "college_junior",
+        "college_senior"
+      ],
+      "majors": [
+        "political science",
+        "history",
+        "government",
+        "economics"
+      ],
+      "enrollment": "full-time at an accredited U.S. college or university",
+      "affiliation_required": false
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-law",
+      "government",
+      "humanities",
+      "history",
+      "current-undergrad",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1247",
+    "source": "https://dar.academicworks.com/opportunities/1247"
+  },
+  {
+    "name": "Arthur Lockwood Beneventi Law Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "A $2,000 award for students enrolled in or accepted to an accredited law school who maintain a minimum 3.25 GPA. The award is not automatically renewable, but recipients may reapply for consideration each year. Undergraduates should apply in the cycle during which they hold a law school acceptance.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "grade_levels": [
+        "college_senior",
+        "professional"
+      ],
+      "min_gpa": 3.25,
+      "enrollment": "enrolled in or accepted to an accredited law school"
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-law",
+      "government",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1206",
+    "source": "https://dar.academicworks.com/opportunities/1206"
+  },
+  {
+    "name": "Dr. Aura-Lee A. and James Hobbs Pittenger American History Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "Awards $2,000 per year for up to four years to one graduating high school senior who will pursue an undergraduate degree with a concentrated study of at least 24 credit hours in American history and American government. Renewal each year depends on an annual transcript review and maintaining a GPA of 3.25 or higher.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "min_gpa": 3.25,
+      "majors": [
+        "American history",
+        "American government"
+      ],
+      "other_requirements": [
+        "minimum 24 credit hours of American history and American government coursework"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "history",
+      "government",
+      "humanities",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1234",
+    "source": "https://dar.academicworks.com/opportunities/1234"
+  },
+  {
+    "name": "The Lucinda Beneventi Findley History Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "A $2,000 scholarship awarded to two graduating high school seniors who have demonstrated advanced interest in history and plan to major in or pursue the study of history full time at an accredited U.S. college or university. Applicants must hold a GPA of 3.25 on a 4.0 scale or the equivalent.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "min_gpa": 3.25,
+      "majors": [
+        "history"
+      ],
+      "enrollment": "full-time at an accredited U.S. college or university"
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "history",
+      "humanities",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1233",
+    "source": "https://dar.academicworks.com/opportunities/1233"
+  },
+  {
+    "name": "The Leo W. and Alberta V. Thomas English Utz Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "Provides $4,000 each year for four consecutive years to a student majoring in English who maintains a minimum 3.25 GPA on a 4.0 scale. Continued funding requires submitting an official transcript to the DAR Office of the Reporter General by July 10 each year.",
+    "amount_min": 4000,
+    "amount_max": 4000,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "min_gpa": 3.25,
+      "majors": [
+        "English"
+      ],
+      "grade_levels": [
+        "high_school_senior",
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true,
+      "annual_transcript_for_renewal": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "humanities",
+      "writing",
+      "current-undergrad",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1205",
+    "source": "https://dar.academicworks.com/opportunities/1205"
+  },
+  {
+    "name": "Voice of Democracy Audio-Essay Scholarship",
+    "provider_name": "Veterans of Foreign Wars (VFW)",
+    "description": "A national audio-essay competition for students in grades 9 through 12, in which entrants record a three-to-five-minute broadcast-style essay on an annual patriotic theme. The 2026-27 theme is 'What a Veteran Taught Me About America.' The national first-place award is a $35,000 scholarship paid directly to the recipient's American college, university, or vocational/technical school; additional national, state, district, and post-level awards are also given. Entries are submitted to a participating local VFW Post.",
+    "amount_min": 35000,
+    "amount_max": 35000,
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_freshman",
+        "high_school_sophomore",
+        "high_school_junior",
+        "high_school_senior"
+      ],
+      "enrollment": "public, private, or parochial high school or home study program in the U.S. and its territories"
+    },
+    "requirements": {
+      "audio_essay": "3 to 5 minute recorded essay",
+      "typed_essay_copy": true,
+      "entry_form": true,
+      "submit_to_local_vfw_post": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "essay-contest",
+      "government",
+      "history",
+      "humanities",
+      "writing"
+    ],
+    "status": "active",
+    "application_url": "https://www.vfw.org/community/youth-and-education/youth-scholarships",
+    "source": "https://www.vfw.org/community/youth-and-education/youth-scholarships"
+  },
+  {
+    "name": "Patriot's Pen Youth Essay Contest",
+    "provider_name": "Veterans of Foreign Wars (VFW)",
+    "description": "A national youth essay competition for students in grades 6 through 8 writing on an annual patriotic theme; the 2026-27 theme is 'What a Veteran Taught Me About America.' The national first-place winner receives $5,000, with additional awards at the national, state, district, and post levels. Entries are submitted through a participating local VFW Post.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "grade_levels": [
+        "middle_school_6",
+        "middle_school_7",
+        "middle_school_8"
+      ],
+      "enrollment": "public, private, or parochial school or home study program in the U.S. and its territories"
+    },
+    "requirements": {
+      "essay": true,
+      "entry_form": true,
+      "submit_to_local_vfw_post": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "essay-contest",
+      "government",
+      "history",
+      "writing"
+    ],
+    "status": "active",
+    "application_url": "https://www.vfw.org/community/youth-and-education/youth-scholarships",
+    "source": "https://www.vfw.org/community/youth-and-education/youth-scholarships"
+  },
+  {
+    "name": "National High School Oratorical Contest Scholarship",
+    "provider_name": "The American Legion",
+    "description": "A public-speaking competition on the U.S. Constitution that begins at the local American Legion post and advances through district, state, and national rounds. Each state winner certified into the national contest's first round receives a $2,000 scholarship, with another $2,000 for advancing past that round; the national champion receives $25,000, second place $22,500, and third place $20,000. Awards may be used at any accredited U.S. trade school, college, or university within eight years. Local and state contest dates vary, so entrants should contact their nearby American Legion post; contests typically run from late fall through the national finals in spring.",
+    "amount_min": 2000,
+    "amount_max": 25000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_freshman",
+        "high_school_sophomore",
+        "high_school_junior",
+        "high_school_senior"
+      ],
+      "other_requirements": [
+        "must enter through a local American Legion post",
+        "must enroll in an accredited U.S. trade school, college, or university"
+      ]
+    },
+    "requirements": {
+      "prepared_oration": "on the U.S. Constitution",
+      "assigned_topic_discourse": true,
+      "delivered_from_memory": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "debate",
+      "government",
+      "history",
+      "humanities",
+      "pre-law"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.legion.org/get-involved/youth-programs/oratorical-contest/about-the-oratorical-contest",
+    "source": "https://www.legion.org/get-involved/scholarships/national-high-school-oratorical-contest-scholarship"
+  },
+  {
+    "name": "Udall Undergraduate Scholarship",
+    "provider_name": "Udall Foundation",
+    "description": "A federally funded scholarship of $7,500 for college sophomores and juniors committed to careers related to the environment, to Tribal public policy, or to Native American health care. The Foundation anticipates awarding up to 65 scholarships per cycle. Candidates must be nominated by their institution's Udall Faculty Representative rather than applying independently. The online application typically opens October 15 with a deadline in early March; the next cycle's date had not been posted as of August 2026.",
+    "amount_min": 7500,
+    "amount_max": 7500,
+    "eligibility": {
+      "grade_levels": [
+        "college_sophomore",
+        "college_junior"
+      ],
+      "fields": [
+        "environment",
+        "Tribal public policy",
+        "Native American health care"
+      ],
+      "other_requirements": [
+        "must be nominated by the institution's Udall Faculty Representative"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "essay": true,
+      "recommendation_letters": 3,
+      "transcript": true,
+      "faculty_rep_nomination": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "government",
+      "humanities",
+      "pre-health",
+      "current-undergrad",
+      "minority",
+      "merit"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.udall.gov/ourprograms/scholarship/howtoapply.aspx",
+    "source": "https://www.udall.gov/ourprograms/scholarship/scholarship.aspx"
+  },
+  {
+    "name": "Journalist of the Year Scholarship",
+    "provider_name": "Journalism Education Association (JEA)",
+    "description": "Also known as the Sister Rita Jeanne Abicht Scholarships, this contest recognizes the top high school journalists in the country. Competition begins at the state level, and winning state portfolios advance to the national contest. The national winner receives $4,000 and up to five finalists receive $1,200 each, announced at the spring JEA/NSPA National High School Journalism Convention.",
+    "amount_min": 1200,
+    "amount_max": 4000,
+    "deadline": "2027-03-15",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "other_requirements": [
+        "must first win a state Journalist of the Year competition"
+      ]
+    },
+    "requirements": {
+      "digital_portfolio": true,
+      "self_analytical_essay": true,
+      "recommendation_letters": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "journalism",
+      "writing",
+      "humanities",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://jea.org/awards/journalist-of-the-year/",
+    "source": "https://jea.org/awards/journalist-of-the-year/"
+  },
+  {
+    "name": "Scholastic Art & Writing Awards Portfolio Scholarships",
+    "provider_name": "Alliance for Young Artists & Writers",
+    "description": "Graduating high school seniors may submit a portfolio of six works in art or writing along with an artist or writer statement and a personal statement of 500 words or less. Gold Medal Portfolio winners receive $12,500 scholarships and Silver Medal Portfolio winners receive $2,000 scholarships. Named endowed awards include the Dorothea Tanning and Roome Fund Gold Medal Portfolio Awards. Submissions open in the fall, and entry deadlines fall between December and January and vary by region.",
+    "amount_min": 2000,
+    "amount_max": 12500,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "other_requirements": [
+        "must be a graduating senior submitting a six-work portfolio"
+      ]
+    },
+    "requirements": {
+      "portfolio": "six works",
+      "artist_or_writer_statement": true,
+      "personal_statement": "500 words or less"
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "writing",
+      "humanities",
+      "journalism",
+      "merit"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.artandwriting.org/",
+    "source": "https://www.artandwriting.org/scholarships/portfolio-scholarships/"
+  },
+  {
+    "name": "Joseph S. Rumbaugh Historical Oration Contest",
+    "provider_name": "National Society Sons of the American Revolution",
+    "description": "A historical oration contest for students in grades 9 through 12 at public, parochial, private, or home schools. Entrants deliver an original five-to-six-minute oration from memory, without notes or props, on an event, personality, or document of the Revolutionary War tied to the nation's 250th anniversary. The national first-place winner receives $8,000, second $5,000, and third $3,000; three non-placing finalists receive $500 each and all other national contestants receive $200. Contestants enter through a local SAR chapter, and local and state deadlines vary.",
+    "amount_min": 200,
+    "amount_max": 8000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_freshman",
+        "high_school_sophomore",
+        "high_school_junior",
+        "high_school_senior"
+      ],
+      "other_requirements": [
+        "must enter through a local SAR chapter"
+      ]
+    },
+    "requirements": {
+      "original_oration": "5 to 6 minutes",
+      "delivered_from_memory": true,
+      "no_notes_or_props": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "debate",
+      "history",
+      "government",
+      "humanities"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.sar.org/joseph-s-rumbaugh-historical-oration-contest/",
+    "source": "https://www.sar.org/joseph-s-rumbaugh-historical-oration-contest/"
+  },
+  {
+    "name": "Benjamin A. Gilman International Scholarship",
+    "provider_name": "U.S. Department of State, Bureau of Educational and Cultural Affairs",
+    "description": "Open to U.S. citizen undergraduates receiving a Federal Pell Grant at a two-year or four-year institution who want to study or intern abroad. Awards range from $100 to $5,000, averaging about $3,000 for a semester or academic year and about $1,500 for summer or winter terms. Students studying a critical-need language may qualify for a supplemental award. Applicants must also complete an advisor certification step shortly after the student deadline.",
+    "amount_min": 100,
+    "amount_max": 5000,
+    "deadline": "2026-10-01",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "citizenship": "U.S. citizen",
+      "financial_aid": "must be receiving a Federal Pell Grant",
+      "other_requirements": [
+        "must be applying to or accepted into a credit-bearing study abroad or internship program"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "essay": true,
+      "advisor_certification": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "humanities",
+      "government",
+      "current-undergrad",
+      "need-based"
+    ],
+    "status": "active",
+    "application_url": "https://www.gilmanscholarship.org/",
+    "source": "https://www.gilmanscholarship.org/applicants/deadlines-and-timeline/"
+  },
+  {
+    "name": "Boren Scholarship",
+    "provider_name": "Institute of International Education / National Security Education Program",
+    "description": "Funds U.S. undergraduates to study less commonly taught languages in world regions critical to U.S. interests, including Africa, Asia, Central and Eastern Europe, Eurasia, Latin America, and the Middle East. Awards are $25,000 for 25 to 52 weeks (the preferred duration), $12,500 for 12 to 24 weeks, and $8,000 for 8 to 11 weeks for STEM majors only. Recipients take on a one-year federal service requirement after graduation.",
+    "amount_min": 8000,
+    "amount_max": 25000,
+    "deadline": "2027-01-27",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "citizenship": "U.S. citizen",
+      "other_requirements": [
+        "one-year federal service requirement after graduation",
+        "study must focus on a less commonly taught language in an eligible world region"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "essay": true,
+      "language_study_plan": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "government",
+      "humanities",
+      "current-undergrad",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://www.borenawards.org/",
+    "source": "https://www.borenawards.org/"
+  },
+  {
+    "name": "NAHJ Lori Montenegro Scholarship",
+    "provider_name": "National Association of Hispanic Journalists",
+    "description": "A $5,000 scholarship for students pursuing careers in English- or Spanish-language journalism on any platform. Applicants may be college-bound high school seniors, undergraduates, or graduate students attending four-year colleges or community colleges in the United States and Puerto Rico. NAHJ requires a cumulative GPA of at least 2.8, and the scholarship application typically closes in late December.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior",
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ],
+      "min_gpa": 2.8,
+      "enrollment": "four-year college or community college in the U.S. or Puerto Rico"
+    },
+    "requirements": {
+      "online_application": true,
+      "work_samples": true,
+      "essay": true,
+      "resume": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "journalism",
+      "writing",
+      "humanities",
+      "minority",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://nahj.org/scholarships/",
+    "source": "https://nahj.org/scholarships/"
+  },
+  {
+    "name": "NAHJ Ruben Salazar General Scholarship Fund",
+    "provider_name": "National Association of Hispanic Journalists",
+    "description": "NAHJ's general scholarship fund awards $2,000, or alternatively a fully sponsored trip to the NAHJ national conference including registration, flight, hotel, event ticket, and food stipend. Open to college-bound high school seniors, undergraduates, and graduate students at four-year colleges and community colleges in the U.S. and Puerto Rico with a cumulative GPA of at least 2.8. The application cycle typically closes in late December.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior",
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ],
+      "min_gpa": 2.8,
+      "enrollment": "four-year college or community college in the U.S. or Puerto Rico"
+    },
+    "requirements": {
+      "online_application": true,
+      "work_samples": true,
+      "essay": true,
+      "resume": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "journalism",
+      "writing",
+      "humanities",
+      "minority",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://nahj.org/scholarships/",
+    "source": "https://nahj.org/scholarships/"
+  },
+  {
+    "name": "NAHJ White House Correspondents' Association Scholarship",
+    "provider_name": "National Association of Hispanic Journalists",
+    "description": "A $6,000 scholarship offered by NAHJ in partnership with the White House Correspondents' Association for students committed to careers in English- or Spanish-language journalism. Open to college-bound high school seniors, undergraduates, and graduate students at four-year and community colleges in the U.S. and Puerto Rico meeting NAHJ's minimum GPA requirement. Applications typically close in late December.",
+    "amount_min": 6000,
+    "amount_max": 6000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior",
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ],
+      "min_gpa": 2.8,
+      "enrollment": "four-year college or community college in the U.S. or Puerto Rico"
+    },
+    "requirements": {
+      "online_application": true,
+      "work_samples": true,
+      "essay": true,
+      "resume": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "journalism",
+      "writing",
+      "government",
+      "minority",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://nahj.org/scholarships/",
+    "source": "https://nahj.org/scholarships/"
+  },
+  {
+    "name": "Al Young Sports Journalism Scholarship",
+    "provider_name": "Asian American Journalists Association",
+    "description": "A $2,500 scholarship for an undergraduate student of Asian and/or Pacific Islander descent who is pursuing sports journalism as a career. Administered by AAJA, which awards more than $20,000 in scholarships and grants each year. The main AAJA scholarship round typically closes in late January.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "background": "Asian and/or Pacific Islander descent",
+      "career_interest": "sports journalism"
+    },
+    "requirements": {
+      "online_application": true,
+      "work_samples": true,
+      "essay": true,
+      "resume": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "journalism",
+      "writing",
+      "minority",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.aaja.org/news-and-resources/scholarships-internships/al-young-sports-journalism-scholarship/",
+    "source": "https://www.aaja.org/news-and-resources/scholarships-internships/al-young-sports-journalism-scholarship/"
+  },
+  {
+    "name": "AAJA White House Correspondents' Association Scholarship",
+    "provider_name": "Asian American Journalists Association",
+    "description": "A $6,500 scholarship awarded through AAJA in partnership with the White House Correspondents' Association to support a student journalist's education. It is one of the largest single awards in AAJA's annual scholarship round, which typically closes in late January.",
+    "amount_min": 6500,
+    "amount_max": 6500,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ],
+      "career_interest": "journalism"
+    },
+    "requirements": {
+      "online_application": true,
+      "work_samples": true,
+      "essay": true,
+      "resume": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "journalism",
+      "writing",
+      "government",
+      "minority",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.aaja.org/news-and-resources/scholarships-internships/",
+    "source": "https://www.aaja.org/news-and-resources/scholarships-internships/"
+  },
+  {
+    "name": "Vincent Chin Memorial Scholarship",
+    "provider_name": "Asian American Journalists Association",
+    "description": "A $1,500 scholarship for current student journalists who demonstrate interest, ability, and growth in community-centered journalism. Named for Vincent Chin, the award is part of AAJA's main scholarship round, which typically closes in late January.",
+    "amount_min": 1500,
+    "amount_max": 1500,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ],
+      "career_interest": "community-centered journalism"
+    },
+    "requirements": {
+      "online_application": true,
+      "work_samples": true,
+      "essay": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "journalism",
+      "writing",
+      "minority",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.aaja.org/news-and-resources/scholarships-internships/",
+    "source": "https://www.aaja.org/news-and-resources/scholarships-internships/"
+  },
+  {
+    "name": "Stanford Chen Internship Grant",
+    "provider_name": "Asian American Journalists Association",
+    "description": "Two grants of $1,500 each help offset living expenses for college juniors, seniors, and graduate students in journalism who have already secured a summer internship. The grant is intended to make it financially possible to accept an internship at a small or mid-sized news organization. Applications typically close at the end of April.",
+    "amount_min": 1500,
+    "amount_max": 1500,
+    "eligibility": {
+      "grade_levels": [
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ],
+      "other_requirements": [
+        "must have secured a summer journalism internship"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "proof_of_internship": true,
+      "resume": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "journalism",
+      "writing",
+      "minority",
+      "current-undergrad",
+      "need-based"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.aaja.org/news-and-resources/scholarships-internships/",
+    "source": "https://www.aaja.org/news-and-resources/scholarships-internships/"
+  },
+  {
+    "name": "Profile in Courage Essay Contest",
+    "provider_name": "John F. Kennedy Presidential Library and Museum",
+    "description": "High school students write an essay describing and analyzing an act of political courage by a U.S. elected official who served during or after 1917, including the obstacles, risks, and consequences involved. First place receives $10,000, second place $3,000, and three finalists receive $1,000 each, with fifteen honorable mentions. The contest opens for submissions on September 1, 2026.",
+    "amount_min": 1000,
+    "amount_max": 10000,
+    "deadline": "2027-01-11",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_freshman",
+        "high_school_sophomore",
+        "high_school_junior",
+        "high_school_senior"
+      ],
+      "enrollment": "U.S. public, private, parochial, or home schools; U.S. students under 20 in a high school correspondence or GED program; U.S. citizens attending school overseas"
+    },
+    "requirements": {
+      "essay": true,
+      "source_citations": true,
+      "bibliography": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "essay-contest",
+      "government",
+      "history",
+      "humanities",
+      "pre-law",
+      "writing"
+    ],
+    "status": "active",
+    "application_url": "https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest",
+    "source": "https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest"
+  },
+  {
+    "name": "AFSA National High School Essay Contest",
+    "provider_name": "American Foreign Service Association",
+    "description": "A national essay contest on U.S. diplomacy and foreign policy for students in grades 9 through 12. The winner receives $2,500 plus an all-expenses-paid trip to Washington, D.C. for the student and their parents and an educational voyage courtesy of Semester at Sea; honorable mentions are also recognized. Students whose parents are in the Foreign Service are not eligible. The submission window generally opens in the winter and closes in the spring.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_freshman",
+        "high_school_sophomore",
+        "high_school_junior",
+        "high_school_senior"
+      ],
+      "enrollment": "any U.S. state, D.C., or territory; U.S. citizens attending high school overseas; public, private, parochial, and homeschooled students",
+      "other_requirements": [
+        "students whose parents are Foreign Service members are not eligible",
+        "previous first-place winners are not eligible"
+      ]
+    },
+    "requirements": {
+      "essay": "1,000 to 1,500 words",
+      "source_citations": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "essay-contest",
+      "government",
+      "humanities",
+      "writing",
+      "pre-law"
+    ],
+    "status": "upcoming",
+    "application_url": "https://afsa.org/essay-contest",
+    "source": "https://afsa.org/essay-contest"
+  },
+  {
+    "name": "Most Valuable Student Scholarship",
+    "provider_name": "Elks National Foundation",
+    "description": "The Elks National Foundation awards 500 four-year scholarships each year to current high school seniors who are U.S. citizens, judged on scholarship, leadership, and financial need. The top 20 scholars receive $30,000 awards and the 480 runners-up receive $4,000; annual amounts range from $1,000 to $7,500 per year. High school graduates are not eligible to apply, and applicants must plan to pursue a four-year degree full time at a U.S. college or university.",
+    "amount_min": 4000,
+    "amount_max": 30000,
+    "deadline": "2026-11-12",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "citizenship": "U.S. citizen",
+      "enrollment": "full-time four-year degree program at a U.S. college or university",
+      "other_requirements": [
+        "high school graduates are not eligible"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true,
+      "essay": true,
+      "financial_information": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "merit",
+      "need-based",
+      "humanities",
+      "government"
+    ],
+    "status": "active",
+    "application_url": "https://www.elks.org/scholars/scholarships/mvs.cfm",
+    "source": "https://www.elks.org/scholars/scholarships/mvs.cfm"
+  },
+  {
+    "name": "ABA Legal Opportunity Scholarship Fund",
+    "provider_name": "American Bar Association",
+    "description": "Awards $5,000 per year, renewable for two additional years for a total of $15,000, to twenty entering first-year law students at ABA-accredited law schools who have demonstrated a strong commitment to advancing diversity, equity, and inclusion. Applicants must have at least a 2.5 cumulative undergraduate GPA at the time of submission. Following a 2026 legal settlement, the ABA offers the scholarship on a race- and ethnicity-neutral basis. College seniors applying to law school apply during the winter of their final undergraduate year.",
+    "amount_min": 5000,
+    "amount_max": 15000,
+    "deadline": "2027-03-15",
+    "eligibility": {
+      "grade_levels": [
+        "college_senior",
+        "professional"
+      ],
+      "min_gpa": 2.5,
+      "enrollment": "entering first-year law student at an ABA-accredited law school",
+      "other_requirements": [
+        "demonstrated commitment to advancing diversity, equity, and inclusion"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "personal_statement": true,
+      "transcript": true,
+      "recommendation_letters": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-law",
+      "government",
+      "current-undergrad",
+      "need-based"
+    ],
+    "status": "active",
+    "application_url": "https://www.americanbar.org/groups/diversity/diversity_pipeline/projects_initiatives/legal_opportunity_scholarship/",
+    "source": "https://www.americanbar.org/groups/diversity/diversity_pipeline/projects_initiatives/legal_opportunity_scholarship/"
+  },
+  {
+    "name": "Optimist International Essay Contest",
+    "provider_name": "Optimist International",
+    "description": "An essay contest on an annually assigned topic, open to students under the age of 19 as of October 1 of the contest year who have not yet completed secondary school. Contestants enter through a local Optimist Club; club winners advance to the district contest to compete for a $2,500 college scholarship. Club-level contests are generally held by early February, with district submissions due at the end of February.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "max_age": 19,
+      "grade_levels": [
+        "high_school_freshman",
+        "high_school_sophomore",
+        "high_school_junior",
+        "high_school_senior"
+      ],
+      "other_requirements": [
+        "must not have completed secondary school",
+        "must enter through a local Optimist Club"
+      ]
+    },
+    "requirements": {
+      "essay": true,
+      "entry_through_local_club": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "essay-contest",
+      "writing",
+      "humanities"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.optimist.org/member/scholarships3.cfm",
+    "source": "https://www.optimist.org/member/scholarships3.cfm"
+  },
+  {
+    "name": "DAR Caroline E. Holt Nursing Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "A one-time $2,500 award given to three students in financial need who have been accepted into or are currently enrolled in an accredited school of nursing. Applicants must include a letter of acceptance into the nursing program or a transcript confirming enrollment. No DAR affiliation is required.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "enrollment": "accepted into or currently enrolled in an accredited school of nursing",
+      "financial_need": true,
+      "affiliation_required": false,
+      "grade_levels": [
+        "high_school_senior",
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "letter_of_acceptance_or_transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "nursing",
+      "need-based",
+      "current-undergrad"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1232",
+    "source": "https://dar.academicworks.com/opportunities/1232"
+  },
+  {
+    "name": "Madeline Pickett (Halbert) Cogswell Nursing Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "A one-time $2,500 award given to two students accepted into or enrolled in an accredited school of nursing. Unlike most DAR nursing awards, this one requires the applicant to be a DAR member, a descendant of a DAR member, or eligible for DAR membership, and the relevant national membership number must be supplied with the application.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "enrollment": "accepted into or enrolled in an accredited school of nursing",
+      "affiliation_required": true,
+      "affiliation": "DAR member, descendant of a DAR member, or eligible for DAR membership",
+      "grade_levels": [
+        "high_school_senior",
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "letter_of_acceptance_or_transcript": true,
+      "dar_national_membership_number": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "nursing",
+      "current-undergrad"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1242",
+    "source": "https://dar.academicworks.com/opportunities/1242"
+  },
+  {
+    "name": "Mildred Nutting Nursing Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "A one-time $2,000 scholarship for two students in financial need who have been accepted into or are currently enrolled in an accredited school of nursing. Preference is given to applicants with ties to the Lowell, Massachusetts area. A letter of acceptance or a transcript confirming nursing program enrollment must accompany the application.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "enrollment": "accepted into or currently enrolled in an accredited school of nursing",
+      "financial_need": true,
+      "preference": "applicants with ties to the Lowell, Massachusetts area",
+      "grade_levels": [
+        "high_school_senior",
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "letter_of_acceptance_or_transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "nursing",
+      "need-based",
+      "current-undergrad"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1201",
+    "source": "https://dar.academicworks.com/opportunities/1201"
+  },
+  {
+    "name": "DAR Occupational/Physical Therapy Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "A one-time $5,000 scholarship for students in financial need who have been accepted into or are attending an accredited school of occupational or physical therapy, including art or music therapy programs. Applicants must submit a letter of acceptance into the program or a transcript confirming enrollment.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "enrollment": "accepted into or attending an accredited school of occupational or physical therapy, including art or music therapy",
+      "financial_need": true,
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "letter_of_acceptance_or_transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "need-based",
+      "current-undergrad"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1236",
+    "source": "https://dar.academicworks.com/opportunities/1236"
+  },
+  {
+    "name": "Dr. Francis Anthony Beneventi Medical Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "A $5,000 scholarship for one student accepted into or enrolled in an approved, accredited medical school, college, or university, with a minimum 3.25 GPA on a 4.0 scale. Pre-med, physician assistant, nurse practitioner, and veterinary programs are excluded. The award is not automatically renewed, but recipients may reapply for up to four consecutive years.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "min_gpa": 3.25,
+      "enrollment": "accepted into or enrolled in an approved, accredited medical school",
+      "grade_levels": [
+        "professional"
+      ],
+      "excluded_programs": [
+        "pre-med",
+        "physician assistant",
+        "nurse practitioner",
+        "veterinary"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1210",
+    "source": "https://dar.academicworks.com/opportunities/1210"
+  },
+  {
+    "name": "Alice W. Rooke Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "A $5,000 one-time award for students enrolled in or accepted into an accredited medical or osteopathic school, college, or university. Preference is given to female applicants if equally qualified. Pre-med, physician assistant, nurse practitioner, and veterinary students are not eligible. Recipients may reapply for up to four years.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "enrollment": "enrolled in or accepted into an accredited medical or osteopathic school",
+      "preference": "female applicants, if equally qualified",
+      "grade_levels": [
+        "professional"
+      ],
+      "excluded_programs": [
+        "pre-med",
+        "physician assistant",
+        "nurse practitioner",
+        "veterinary"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "women",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1197",
+    "source": "https://dar.academicworks.com/opportunities/1197"
+  },
+  {
+    "name": "Irene and Daisy MacGregor Memorial Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "A $5,000 award given to two students of high scholastic standing and character who are pursuing a medical or osteopathic degree at an accredited school, or who are in a graduate-level psychiatric nursing program. Applicants must maintain a GPA of 3.25 on a 4.0 scale, and preference is given to female applicants if equally qualified. Pre-med, physician assistant, nurse practitioner, and veterinary students are not eligible.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "min_gpa": 3.25,
+      "enrollment": "accredited medical or osteopathic program, or a graduate-level psychiatric nursing program",
+      "preference": "female applicants, if equally qualified",
+      "grade_levels": [
+        "professional",
+        "graduate"
+      ],
+      "excluded_programs": [
+        "pre-med",
+        "physician assistant",
+        "nurse practitioner",
+        "veterinary"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "nursing",
+      "women",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1213",
+    "source": "https://dar.academicworks.com/opportunities/1213"
+  },
+  {
+    "name": "Leslie Andree Hanna Medical Scholarship",
+    "provider_name": "National Society Daughters of the American Revolution",
+    "description": "A $5,000 scholarship for a female student attending medical or osteopathic school, selected on academic merit with a minimum 3.25 GPA on a 4.0 scale or the equivalent. Recipients may reapply in later years but continued funding is not guaranteed.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2027-01-31",
+    "eligibility": {
+      "min_gpa": 3.25,
+      "gender": "female",
+      "enrollment": "attending medical or osteopathic school",
+      "grade_levels": [
+        "professional"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "women",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://dar.academicworks.com/opportunities/1198",
+    "source": "https://dar.academicworks.com/opportunities/1198"
+  },
+  {
+    "name": "NBNA Scholarship Program",
+    "provider_name": "National Black Nurses Association",
+    "description": "NBNA awards scholarships starting at $1,000 to nursing students at every level, from LPN/LVN and ADN through RN-BSN, generic BSN, master's, and doctoral programs; individual award amounts vary each year based on sponsorships and available funding. Applicants must be a member of NBNA and of a local chapter, be currently enrolled in a nursing program, and have at least one full year of school remaining. The application generally closes in mid-March.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "membership_required": "NBNA national and local chapter membership",
+      "enrollment": "currently enrolled in a nursing program (LPN/LVN, ADN, RN-BSN, generic BSN, master's, or doctorate)",
+      "other_requirements": [
+        "at least one full year of school remaining"
+      ],
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true,
+      "essay": true,
+      "recommendation_letters": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "nursing",
+      "minority",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://nbna.org/programs-committees/programs/scholarships/",
+    "source": "https://nbna.org/programs-committees/programs/scholarships/"
+  },
+  {
+    "name": "NAHN Scholarship Program",
+    "provider_name": "National Association of Hispanic Nurses",
+    "description": "NAHN awards scholarships to members in good standing who are enrolled in accredited LVN/LPN, associate, diploma, baccalaureate, and graduate nursing programs. Partner-funded awards include the Abbott Scholarship Fund, which grants $10,000 each to eight qualified applicants, and Arizona College of Nursing tuition scholarships of $10,000 per eligible campus; the Aguilar-Cuellar-Toben Research Grant awards $1,000. Applications for the 2026 cycle have closed and the next cycle typically opens in the winter or spring.",
+    "amount_min": 1000,
+    "amount_max": 10000,
+    "eligibility": {
+      "membership_required": "NAHN membership in good standing before the application deadline",
+      "enrollment": "accredited LVN/LPN, associate, diploma, baccalaureate, or graduate nursing program",
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true,
+      "essay": true,
+      "recommendation_letters": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "nursing",
+      "minority",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.nahnnet.org/Scholarships",
+    "source": "https://www.nahnnet.org/Scholarships"
+  },
+  {
+    "name": "Nurse Corps Scholarship Program",
+    "provider_name": "Health Resources and Services Administration (HRSA), Bureau of Health Workforce",
+    "description": "A federal scholarship for registered nursing students, including advanced practice students, who commit to working at a facility with a critical shortage of nurses. It pays tuition and required fees in full, provides an annual payment for books, clinical supplies, and uniforms, and adds a monthly stipend of $1,642 for full-time students, which is roughly $19,704 across a year. Recipients owe a minimum two-year service commitment at an eligible Critical Shortage Facility after graduation. The application typically opens in early March and closes in April.",
+    "amount_min": 19704,
+    "amount_max": 19704,
+    "eligibility": {
+      "citizenship": "U.S. citizen (born or naturalized), national, or lawful permanent resident",
+      "enrollment": "accepted or enrolled in a nursing degree program at a U.S. accredited school of nursing",
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ],
+      "service_obligation": "minimum two years at a Critical Shortage Facility"
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true,
+      "essay": true,
+      "proof_of_enrollment": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "nursing",
+      "current-undergrad",
+      "need-based"
+    ],
+    "status": "upcoming",
+    "application_url": "https://bhw.hrsa.gov/programs/nurse-corps/scholarship",
+    "source": "https://bhw.hrsa.gov/programs/nurse-corps/scholarship"
+  },
+  {
+    "name": "IHS Preparatory Scholarship",
+    "provider_name": "Indian Health Service",
+    "description": "Provides financial aid to American Indian and Alaska Native undergraduates who are members or descendants of federally recognized, state-recognized, or terminated Tribes and who are taking preparatory or prerequisite coursework leading into an eligible health professions degree program. Recipients receive a stipend of no less than $1,500 per month across a 10-month period, roughly $15,000 for the year. The application opens December 15, 2026.",
+    "amount_min": 15000,
+    "amount_max": 15000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "background": "American Indian or Alaska Native; member or descendant of a federally recognized, state-recognized, or terminated Tribe",
+      "enrollment": "preparatory or prerequisite coursework leading to an eligible health professions degree program"
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true,
+      "proof_of_tribal_membership_or_descent": true,
+      "recommendation_letters": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "nursing",
+      "minority",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.ihs.gov/scholarship/apply/",
+    "source": "https://www.ihs.gov/scholarship/scholarships/"
+  },
+  {
+    "name": "IHS Pre-Graduate Scholarship",
+    "provider_name": "Indian Health Service",
+    "description": "Supports American Indian and Alaska Native undergraduates who are members or descendants of federally recognized, state-recognized, or terminated Tribes and who are completing coursework toward a bachelor's degree in pre-medicine, pre-dentistry, pre-nursing, and related pre-health subjects. Recipients receive a monthly stipend of no less than $1,500 to help cover living expenses. The application opens December 15, 2026.",
+    "amount_min": 15000,
+    "amount_max": 15000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "background": "American Indian or Alaska Native; member or descendant of a federally recognized, state-recognized, or terminated Tribe",
+      "majors": [
+        "pre-medicine",
+        "pre-dentistry",
+        "pre-nursing",
+        "related pre-health fields"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true,
+      "proof_of_tribal_membership_or_descent": true,
+      "recommendation_letters": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "minority",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.ihs.gov/scholarship/apply/",
+    "source": "https://www.ihs.gov/scholarship/scholarships/"
+  },
+  {
+    "name": "AFPE Gateway to Research Scholarship",
+    "provider_name": "American Foundation for Pharmaceutical Education",
+    "description": "A $5,000 stipend, distributed in June of the award year, that lets pharmacy students participate in a faculty-mentored research project. Applicants must be U.S. citizens or permanent residents, either enrolled in a Pharm.D. program having completed at least two years of college and the first year of the professional curriculum, or in a baccalaureate degree program having completed at least one year. The application opens in November.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "citizenship": "U.S. citizen or permanent resident",
+      "grade_levels": [
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "professional"
+      ],
+      "enrollment": "Pharm.D. program with two years of college and one year of professional curriculum completed, or a baccalaureate program with one year completed"
+    },
+    "requirements": {
+      "online_application": true,
+      "faculty_mentor": true,
+      "research_proposal": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "current-undergrad",
+      "merit"
+    ],
+    "status": "upcoming",
+    "application_url": "https://afpepharm.org/index.php/gateway-to-research-awards/",
+    "source": "https://afpepharm.org/index.php/gateway-to-research-awards/"
+  },
+  {
+    "name": "Physicians of Tomorrow Scholarship",
+    "provider_name": "AMA Foundation",
+    "description": "Awards $10,000 tuition assistance scholarships to medical students entering their final year of training, across more than 15 scholarship categories including awards for students underrepresented in medicine and those pursuing specialty areas or leadership. Applicants must be permanent residents or citizens of the U.S. or have DACA status. The application cycle typically closes in February.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "professional"
+      ],
+      "enrollment": "entering the final year of medical school",
+      "citizenship": "U.S. citizen, permanent resident, or DACA status"
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true,
+      "personal_statement": true,
+      "recommendation_letters": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "merit"
+    ],
+    "status": "upcoming",
+    "application_url": "https://amafoundation.org/physicians-of-tomorrow",
+    "source": "https://amafoundation.org/physicians-of-tomorrow"
+  },
+  {
+    "name": "AMWA Premedical Education Scholarship",
+    "provider_name": "American Medical Women's Association",
+    "description": "Two $250 scholarships for women currently enrolled in undergraduate or post-baccalaureate pre-medical coursework who intend to pursue medical school. Awardees are chosen based on how well they embody AMWA's goals; financial need is considered but is not a requirement. Applications open July 1 and decisions are announced November 15.",
+    "amount_min": 250,
+    "amount_max": 250,
+    "deadline": "2026-10-15",
+    "eligibility": {
+      "gender": "women",
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "post_baccalaureate"
+      ],
+      "enrollment": "undergraduate or post-baccalaureate pre-medical coursework",
+      "other_requirements": [
+        "intent to pursue medical school"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "essay": true,
+      "amwa_membership": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "women",
+      "current-undergrad"
+    ],
+    "status": "active",
+    "application_url": "https://amwa-doc.org/members/premedical-students/premedical-awards-scholarships/",
+    "source": "https://amwa-doc.org/members/premedical-students/premedical-awards-scholarships/"
+  },
+  {
+    "name": "AMWA MCAT Scholarship",
+    "provider_name": "American Medical Women's Association",
+    "description": "Two $355 scholarships, sized to cover the MCAT registration fee, for women enrolled in undergraduate or post-baccalaureate pre-medical coursework who intend to pursue medical school and have not yet taken the MCAT. Applications open July 1, close October 15, and decisions are announced November 15.",
+    "amount_min": 355,
+    "amount_max": 355,
+    "deadline": "2026-10-15",
+    "eligibility": {
+      "gender": "women",
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "post_baccalaureate"
+      ],
+      "enrollment": "undergraduate or post-baccalaureate pre-medical coursework",
+      "other_requirements": [
+        "must not have taken the MCAT yet",
+        "intent to pursue medical school"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "essay": true,
+      "amwa_membership": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "women",
+      "current-undergrad"
+    ],
+    "status": "active",
+    "application_url": "https://amwa-doc.org/members/premedical-students/premedical-awards-scholarships/",
+    "source": "https://amwa-doc.org/members/premedical-students/premedical-awards-scholarships/"
+  },
+  {
+    "name": "AMWA Medical School Application Scholarship",
+    "provider_name": "American Medical Women's Association",
+    "description": "A single $200 scholarship to help offset the cost of applying to medical school, offered to AMWA premedical members. Applications open July 1 and close October 15, with decisions announced November 15.",
+    "amount_min": 200,
+    "amount_max": 200,
+    "deadline": "2026-10-15",
+    "eligibility": {
+      "grade_levels": [
+        "college_junior",
+        "college_senior",
+        "post_baccalaureate"
+      ],
+      "other_requirements": [
+        "applying to medical school",
+        "AMWA premedical membership"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "essay": true,
+      "amwa_membership": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "current-undergrad",
+      "need-based"
+    ],
+    "status": "active",
+    "application_url": "https://amwa-doc.org/members/premedical-students/premedical-awards-scholarships/",
+    "source": "https://amwa-doc.org/members/premedical-students/premedical-awards-scholarships/"
+  },
+  {
+    "name": "QGenda/AACN Nursing Scholarship",
+    "provider_name": "American Association of Colleges of Nursing",
+    "description": "A $5,000 scholarship for undergraduate and graduate nursing students enrolled at AACN member schools. AACN administers a family of student scholarships funded by corporate partners, each with its own application on the AACN student scholarships page.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2026-10-01",
+    "eligibility": {
+      "enrollment": "undergraduate or graduate nursing program at an AACN member school",
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true,
+      "essay": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "nursing",
+      "current-undergrad",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://www.aacnnursing.org/students/scholarships-financial-aid",
+    "source": "https://www.aacnnursing.org/students/scholarships-financial-aid"
+  },
+  {
+    "name": "Drs. Ludlow and Ruth Creary Family Foundation Scholarship",
+    "provider_name": "National Medical Fellowships",
+    "description": "A $2,500 scholarship for an African American or Black undergraduate student, awarded through National Medical Fellowships. NMF runs three application cycles per year through its SurveyMonkey Apply portal; applicants complete a single eligibility form and every open opportunity they qualify for populates automatically on their dashboard. This award has historically appeared in the spring cycle.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "background": "African American or Black",
+      "enrollment": "undergraduate"
+    },
+    "requirements": {
+      "online_application": true,
+      "eligibility_form": true,
+      "transcript": true,
+      "personal_statement": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "minority",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://nmf.smapply.io",
+    "source": "https://www.nmfonline.org/our-programs/scholarships-and-awards/"
+  },
+  {
+    "name": "NBME/NMF Scholarship Fund",
+    "provider_name": "National Medical Fellowships",
+    "description": "Provides $10,000 scholarships per year, renewable for up to three years, to twenty second-year medical students. Administered by National Medical Fellowships through its SurveyMonkey Apply portal and historically offered in NMF's spring application cycle.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "professional"
+      ],
+      "enrollment": "second-year medical student"
+    },
+    "requirements": {
+      "online_application": true,
+      "eligibility_form": true,
+      "transcript": true,
+      "personal_statement": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "pre-med",
+      "merit"
+    ],
+    "status": "upcoming",
+    "application_url": "https://nmf.smapply.io",
+    "source": "https://www.nmfonline.org/our-programs/scholarships-and-awards/"
+  },
+  {
+    "name": "Health Care Scholars United Program",
+    "provider_name": "National Medical Fellowships",
+    "description": "Awards $10,000 to 40 future clinicians across multiple health care professions, making it one of the broadest NMF programs for students outside of allopathic medicine. Administered through NMF's SurveyMonkey Apply portal and historically offered in the summer application cycle.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "college_senior",
+        "graduate",
+        "professional"
+      ],
+      "fields": [
+        "multiple health care professions"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "eligibility_form": true,
+      "transcript": true,
+      "personal_statement": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "nursing",
+      "pre-med",
+      "minority"
+    ],
+    "status": "upcoming",
+    "application_url": "https://nmf.smapply.io",
+    "source": "https://www.nmfonline.org/our-programs/scholarships-and-awards/"
+  },
+  {
+    "name": "ASRT Foundation Academic Scholarships",
+    "provider_name": "ASRT Foundation",
+    "description": "The ASRT Foundation offers more than 80 scholarships for radiologic science students of every specialty, with awards ranging from $500 to $5,000. Applicants complete a single application and are auto-matched to every opportunity they qualify for. Recipients are selected on evidence of commitment, leadership, achievement, and financial need; the Foundation awarded $429,700 to 104 recipients for the 2026-27 academic year.",
+    "amount_min": 500,
+    "amount_max": 5000,
+    "eligibility": {
+      "enrollment": "radiologic science program",
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior",
+        "graduate"
+      ]
+    },
+    "requirements": {
+      "online_application": true,
+      "transcript": true,
+      "essay": true,
+      "recommendation_letters": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "pre-health",
+      "current-undergrad",
+      "need-based",
+      "merit"
+    ],
+    "status": "upcoming",
+    "application_url": "https://foundation.asrt.org/what-we-do/scholarships/current-scholarships",
+    "source": "https://foundation.asrt.org/what-we-do/scholarships/current-scholarships"
+  }
+]

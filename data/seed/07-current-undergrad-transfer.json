@@ -1,0 +1,1665 @@
+[
+  {
+    "name": "Udall Undergraduate Scholarship",
+    "provider_name": "Udall Foundation",
+    "description": "A federal scholarship for college sophomores and juniors committed to careers in the environment, Tribal public policy, or Native health care. The Foundation anticipates awarding up to 65 scholarships of $7,500 each. Students cannot apply directly: each campus runs an internal competition and nominates candidates through its Udall faculty representative, so start with your school's national scholarships office. The 2026 deadline was March 4, 2026; the 2027 cycle deadline has not yet been posted but historically falls in early March.",
+    "amount_min": 7500,
+    "amount_max": 7500,
+    "eligibility": {
+      "grade_levels": [
+        "college_sophomore",
+        "college_junior"
+      ],
+      "citizenship": [
+        "us_citizen",
+        "us_national",
+        "permanent_resident"
+      ],
+      "fields_of_interest": [
+        "environment",
+        "tribal_public_policy",
+        "native_health_care"
+      ],
+      "enrollment_status": "full_time",
+      "institution_nomination_required": true
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 3,
+      "transcript": true,
+      "campus_nomination": true,
+      "notes": "Nomination by your institution's Udall faculty representative is mandatory."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "merit",
+      "national",
+      "environment"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.udall.gov/ourprograms/scholarship/apply.aspx",
+    "source": "https://www.udall.gov/ourprograms/scholarship/scholarship.aspx"
+  },
+  {
+    "name": "Harry S. Truman Scholarship",
+    "provider_name": "Harry S. Truman Scholarship Foundation",
+    "description": "The premier national award for college juniors headed into public service careers, providing up to $30,000 toward a public service-related graduate or professional degree. Scholars also receive leadership development programming, federal internship access, and priority admission consideration at partner graduate programs. Candidates must be nominated by their institution's Truman Faculty Representative, so contact your campus fellowships office in the fall.",
+    "amount_min": 30000,
+    "amount_max": 30000,
+    "deadline": "2027-02-02",
+    "eligibility": {
+      "grade_levels": [
+        "college_junior"
+      ],
+      "citizenship": [
+        "us_citizen",
+        "us_national"
+      ],
+      "enrollment_status": "full_time",
+      "class_rank": "upper quarter of class",
+      "institution_nomination_required": true,
+      "notes": "Must be a full-time junior-level student at a four-year institution during 2026-2027. Permanent residents (green card holders) are not eligible."
+    },
+    "requirements": {
+      "essay": true,
+      "policy_proposal": true,
+      "recommendations": 3,
+      "transcript": true,
+      "campus_nomination": true,
+      "interview": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "merit",
+      "national",
+      "public-service"
+    ],
+    "status": "active",
+    "application_url": "https://www.truman.gov/apply",
+    "source": "https://www.truman.gov/apply/applying/bulletin-information"
+  },
+  {
+    "name": "Beinecke Scholarship",
+    "provider_name": "Sperry Fund / Beinecke Scholarship Program",
+    "description": "Awards $35,000 total, disbursed over up to five years, to college juniors planning research or creative-focused master's or doctoral study in the arts, humanities, or social sciences. Applicants must have a documented history of eligibility for need-based financial aid as undergraduates. Only students at the roughly 120 participating institutions may be nominated, and each campus submits through a designated liaison; the 2026 nomination deadline was March 27, 2026, and the cycle typically closes in late March.",
+    "amount_min": 35000,
+    "amount_max": 35000,
+    "eligibility": {
+      "grade_levels": [
+        "college_junior"
+      ],
+      "citizenship": [
+        "us_citizen",
+        "us_national"
+      ],
+      "fields_of_interest": [
+        "arts",
+        "humanities",
+        "social_sciences"
+      ],
+      "financial_need": true,
+      "institution_nomination_required": true,
+      "notes": "Must attend a participating institution and plan to enter a research or creative-focused graduate program."
+    },
+    "requirements": {
+      "essay": true,
+      "personal_statement": true,
+      "recommendations": true,
+      "transcript": true,
+      "campus_nomination": true,
+      "financial_aid_documentation": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "merit",
+      "need-based",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://beineckescholarship.org/beinecke-scholarship/",
+    "source": "https://beineckescholarship.org/beinecke-scholarship/eligibility-requirements/"
+  },
+  {
+    "name": "Benjamin A. Gilman International Scholarship",
+    "provider_name": "U.S. Department of State / Institute of International Education",
+    "description": "The largest federally funded study abroad scholarship for undergraduates with high financial need, awarding up to $5,000 toward a credit-bearing study abroad or international internship program. Nearly 3,000 scholarships are awarded each academic year. Applicants must be receiving a Federal Pell Grant, or able to prove they will receive one during the study abroad period, and must be studying in a country under Travel Advisory Level 1 or 2.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2026-10-01",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "citizenship": [
+        "us_citizen",
+        "us_national"
+      ],
+      "financial_need": true,
+      "pell_grant_required": true,
+      "enrollment_status": "undergraduate in good standing at an accredited U.S. institution",
+      "notes": "Community college students are eligible. Program must be credit-bearing at the home institution."
+    },
+    "requirements": {
+      "essay": true,
+      "statement_of_purpose": true,
+      "follow_on_service_project": true,
+      "advisor_certification": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "need-based",
+      "community-college",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.gilmanscholarship.org/",
+    "source": "https://www.gilmanscholarship.org/program/program-overview/"
+  },
+  {
+    "name": "Gilman Critical Need Language Award",
+    "provider_name": "U.S. Department of State / Institute of International Education",
+    "description": "A supplemental award of up to $3,000 layered on top of the base Gilman Scholarship for students who study a language designated as critical to U.S. national security while abroad. It is requested inside the standard Gilman application, so there is no separate form or deadline. Recipients commit to continuing language study and to a follow-on service project.",
+    "amount_min": 3000,
+    "amount_max": 3000,
+    "deadline": "2026-10-01",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "citizenship": [
+        "us_citizen",
+        "us_national"
+      ],
+      "pell_grant_required": true,
+      "financial_need": true,
+      "notes": "Must be a Gilman applicant studying a designated critical need language abroad."
+    },
+    "requirements": {
+      "essay": true,
+      "critical_language_study": true,
+      "advisor_certification": true,
+      "notes": "Applied for within the standard Gilman Scholarship application."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "need-based",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.gilmanscholarship.org/",
+    "source": "https://www.gilmanscholarship.org/program/critical-need-languages/"
+  },
+  {
+    "name": "Boren Scholarship",
+    "provider_name": "National Security Education Program (NSEP)",
+    "description": "Funds U.S. undergraduates to study less commonly taught languages in world regions critical to U.S. interests, including Africa, Asia, Eurasia, Latin America, and the Middle East. Awards are tied to duration abroad: $25,000 for 25 to 52 weeks (the preferred length), $12,500 for 12 to 24 weeks, and $8,000 for 8 to 11 weeks for STEM majors only. Recipients take on a one-year federal service requirement in a national security-related position after graduation.",
+    "amount_min": 8000,
+    "amount_max": 25000,
+    "deadline": "2027-01-27",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "citizenship": [
+        "us_citizen"
+      ],
+      "enrollment_status": "undergraduate at a U.S. institution",
+      "notes": "Study must be outside Western Europe, Canada, Australia, and New Zealand. Award size depends on program duration."
+    },
+    "requirements": {
+      "essay": true,
+      "language_study_plan": true,
+      "federal_service_commitment": "one year",
+      "transcript": true,
+      "recommendations": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "merit",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://borenawards.org/",
+    "source": "https://borenawards.org/"
+  },
+  {
+    "name": "Freeman-ASIA Award",
+    "provider_name": "Institute of International Education / Freeman Foundation",
+    "description": "Need-based study abroad funding for U.S. undergraduates studying in East or Southeast Asia, worth up to $3,000 for summer, $5,000 for a semester or quarter, and $7,000 for an academic or calendar year. Students at both two-year and four-year institutions are eligible. Applications require certification from both the study abroad adviser and the financial aid adviser; the 2026-2027 cycle closed April 7, 2026, and the next cycle is expected to open in February 2027.",
+    "amount_min": 3000,
+    "amount_max": 7000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "citizenship": [
+        "us_citizen",
+        "permanent_resident"
+      ],
+      "financial_need": true,
+      "enrollment_status": "undergraduate at a two-year or four-year U.S. institution",
+      "destination": "East or Southeast Asia"
+    },
+    "requirements": {
+      "essay": true,
+      "study_abroad_advisor_certification": true,
+      "financial_aid_advisor_certification": true,
+      "host_country_report": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "need-based",
+      "community-college",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.iie.org/programs/freeman-asia/apply/",
+    "source": "https://www.iie.org/programs/freeman-asia/about/award-details/"
+  },
+  {
+    "name": "Fund for Education Abroad Scholarships",
+    "provider_name": "Fund for Education Abroad (FEA)",
+    "description": "A portfolio of study abroad scholarships for U.S. undergraduates with financial need, with individual awards running from $1,000 to $10,000 depending on the named fund and program length. FEA awarded $360,750 across 108 undergraduates for its most recent Summer/Fall 2026 and Academic Year 2026-27 cohort. Applicants must not have previously studied abroad since high school; the Summer/Fall application typically opens November to early February and the Winter/Spring application late July to mid-September.",
+    "amount_min": 1000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "citizenship": [
+        "us_citizen",
+        "permanent_resident",
+        "daca"
+      ],
+      "min_age": 18,
+      "financial_need": true,
+      "enrollment_status": "undergraduate at a U.S. institution",
+      "notes": "Must not have previously studied abroad after high school graduation. Program must be at least 14 days and credit-bearing. Graduate students are not eligible."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "fafsa": true,
+      "recommendations": true,
+      "notes": "Financial need shown via Student Aid Index below 20,000, Pell eligibility, or current student loan debt."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "need-based",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://fundforeducationabroad.org/apply/",
+    "source": "https://fundforeducationabroad.org/scholarships/"
+  },
+  {
+    "name": "Phi Kappa Phi Study Abroad Grant",
+    "provider_name": "The Honor Society of Phi Kappa Phi",
+    "description": "Fifty grants of $1,000 each go to undergraduates studying abroad, and Phi Kappa Phi membership is not required as long as your institution has an active chapter. Applicants need a cumulative GPA of 3.75 or higher with no rounding, and the study abroad program must begin between May 1, 2027 and June 30, 2028. Each student may receive the grant only once.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2027-03-15",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "gpa_min": 3.75,
+      "enrollment_status": "undergraduate at an institution with an active Phi Kappa Phi chapter",
+      "honor_society_membership_required": false,
+      "notes": "Program must begin between May 1, 2027 and June 30, 2028. One-time award."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": true,
+      "proof_of_program_acceptance": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "honor-society",
+      "merit",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.phikappaphi.org/grants-awards/study-abroad",
+    "source": "https://www.phikappaphi.org/grants-awards/study-abroad"
+  },
+  {
+    "name": "Phi Kappa Phi Fellowship",
+    "provider_name": "The Honor Society of Phi Kappa Phi",
+    "description": "For graduating seniors and recent Phi Kappa Phi members entering their first year of graduate or professional school: 40 fellowships of $8,500, six of $15,000, and two of $35,000. Applicants must be active members with dues paid through the deadline and must begin graduate study between May 1, 2027 and February 1, 2028, having completed no more than nine graduate credits. Chapters set internal deadlines roughly two weeks before the national date.",
+    "amount_min": 8500,
+    "amount_max": 35000,
+    "deadline": "2027-04-15",
+    "eligibility": {
+      "grade_levels": [
+        "college_senior"
+      ],
+      "honor_society_membership_required": true,
+      "notes": "Must be an active Phi Kappa Phi member with dues paid through April 15, 2027, entering full-time graduate or professional study between May 1, 2027 and February 1, 2028, with no more than 9 graduate credits completed."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": true,
+      "chapter_endorsement": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "honor-society",
+      "merit",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.phikappaphi.org/grants-awards/fellowship",
+    "source": "https://www.phikappaphi.org/grants-awards/fellowship"
+  },
+  {
+    "name": "Jack Kent Cooke Foundation Undergraduate Transfer Scholarship",
+    "provider_name": "Jack Kent Cooke Foundation",
+    "description": "The largest private scholarship in the country for community college transfer students, providing last-dollar funding of as much as $55,000 per year for two to three years to finish a bachelor's degree. Roughly 65 awards are made annually from thousands of applications. Applicants must be sophomores at a U.S. community or two-year college by January 1, 2027 (or graduates since spring 2022), carry a 3.5 or higher cumulative GPA, plan full-time bachelor's enrollment in fall 2027, and generally must not have previously attended a four-year institution.",
+    "amount_min": 55000,
+    "amount_max": 55000,
+    "deadline": "2026-12-09",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore"
+      ],
+      "gpa_min": 3.5,
+      "financial_need": true,
+      "max_adjusted_gross_income": 95000,
+      "enrollment_status": "full_time",
+      "notes": "Must be enrolled at a U.S. community college or two-year institution with sophomore status by January 1, 2027, or a graduate since spring 2022. Cannot have previously attended a four-year college, with limited exceptions for dual enrollment."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": true,
+      "financial_documentation": true,
+      "tax_returns": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "transfer",
+      "community-college",
+      "need-based",
+      "merit",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.jkcf.org/our-scholarships/undergraduate-transfer-scholarship/how-to-apply/",
+    "source": "https://www.jkcf.org/our-scholarships/undergraduate-transfer-scholarship/how-to-apply/"
+  },
+  {
+    "name": "Hites Transfer Scholarship",
+    "provider_name": "Phi Theta Kappa Honor Society",
+    "description": "Awards up to $7,500 to Phi Theta Kappa members transferring from a two-year college to a four-year institution, recognizing academic rigor, campus and community engagement, and leadership. Applicants must be enrolled in six or more semester credits of associate-level coursework through December, have completed at least 45 semester credits by December, and hold a 3.5 or higher GPA on coursework from the last five years.",
+    "amount_min": 7500,
+    "amount_max": 7500,
+    "deadline": "2026-12-01",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore"
+      ],
+      "gpa_min": 3.5,
+      "honor_society_membership_required": true,
+      "credits_completed_min": 45,
+      "notes": "Must be a PTK member in good standing planning full-time transfer to an accredited four-year institution, with an academic record free from suspension or probation."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "ptk_membership": true,
+      "notes": "Submitted through the single PTK common scholarship application."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "transfer",
+      "community-college",
+      "honor-society",
+      "merit",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.ptk.org/scholarships/apply-now/",
+    "source": "https://www.ptk.org/scholarships/hites-transfer-scholarship/"
+  },
+  {
+    "name": "Guistwhite Scholarship",
+    "provider_name": "Phi Theta Kappa Honor Society",
+    "description": "Awards up to $5,000 to Phi Theta Kappa members transferring to a four-year institution, weighted toward chapter participation and society programs alongside leadership and academics. Requirements mirror the Hites award: six or more current semester credits, 45 or more completed by December, a 3.5 minimum GPA on the last five years of coursework, and plans to enroll full time at a regionally accredited four-year college.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2026-12-01",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore"
+      ],
+      "gpa_min": 3.5,
+      "honor_society_membership_required": true,
+      "credits_completed_min": 45,
+      "notes": "Emphasizes engagement in PTK chapter activities and societal programs."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "ptk_membership": true,
+      "chapter_involvement": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "transfer",
+      "community-college",
+      "honor-society",
+      "merit",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.ptk.org/scholarships/apply-now/",
+    "source": "https://www.ptk.org/scholarships/guistwhite-scholarship/"
+  },
+  {
+    "name": "Coca-Cola Leaders of Promise Scholarship",
+    "provider_name": "Phi Theta Kappa Honor Society / Coca-Cola Scholars Foundation",
+    "description": "Awards up to $1,000 to Phi Theta Kappa members early in their community college careers, helping them complete an associate degree and stay engaged in chapter leadership. Applicants must be enrolled in six or more semester credits and have completed between 12 and 36 semester credits by January 31 of the application year, with a 3.5 or higher GPA and no prior associate or bachelor's degree.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2027-05-17",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore"
+      ],
+      "gpa_min": 3.5,
+      "honor_society_membership_required": true,
+      "credits_completed_min": 12,
+      "credits_completed_max": 36,
+      "notes": "Must continue in a two-year associate degree program the following fall and hold residency status eligible for federal financial aid."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "ptk_membership": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "community-college",
+      "honor-society",
+      "merit",
+      "current-undergrad",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.ptk.org/scholarships/apply-now/",
+    "source": "https://www.ptk.org/scholarships/coca-cola-leaders-of-promise-scholarship/"
+  },
+  {
+    "name": "Coca-Cola Military Leaders of Promise Scholarship",
+    "provider_name": "Phi Theta Kappa Honor Society / Coca-Cola Scholars Foundation",
+    "description": "Awards up to $1,000 to Phi Theta Kappa members who are military members, veterans, or their spouses or dependents. Eligibility otherwise tracks the standard Leaders of Promise award: six or more current semester credits, 12 to 36 credits completed by the deadline, a 3.5 or higher GPA, and no associate or bachelor's degree already earned.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2027-05-17",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore"
+      ],
+      "gpa_min": 3.5,
+      "honor_society_membership_required": true,
+      "credits_completed_min": 12,
+      "credits_completed_max": 36,
+      "military_affiliation_required": true,
+      "notes": "Open to military members, veterans, and their spouses or dependents."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "ptk_membership": true,
+      "proof_of_military_affiliation": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "community-college",
+      "honor-society",
+      "adult-learner",
+      "current-undergrad",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.ptk.org/scholarships/apply-now/",
+    "source": "https://www.ptk.org/scholarships/coca-cola-military-leaders-of-promise-scholarship/"
+  },
+  {
+    "name": "All-USA Academic Team Scholarship",
+    "provider_name": "Phi Theta Kappa Honor Society / American Association of Community Colleges",
+    "description": "Twenty community college students are named to the All-USA Academic Team each year and receive a $5,000 scholarship, selected for intellectual rigor, academic achievement, leadership, and civic growth from a pool of more than 2,000 nominees. Students must be nominated by their college, be enrolled in six or more semester credits through December, have completed 36 or more credits by December, and hold a 3.5 or higher GPA on coursework from the last five years.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2026-12-01",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore"
+      ],
+      "gpa_min": 3.5,
+      "credits_completed_min": 36,
+      "institution_nomination_required": true,
+      "notes": "Must be nominated by your community college. No prior All-USA or Coca-Cola Academic Team nomination."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "college_nomination": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "community-college",
+      "merit",
+      "current-undergrad",
+      "honor-society",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.ptk.org/scholarships/apply-now/",
+    "source": "https://www.ptk.org/scholarships/all-usa-academic-team/"
+  },
+  {
+    "name": "New Century Transfer Pathway Scholarship",
+    "provider_name": "Phi Theta Kappa Honor Society / Coca-Cola Foundation / AACC",
+    "description": "Awards up to $2,750 to one high-achieving transfer-bound community college student per state, sponsored by The Coca-Cola Foundation, the Coca-Cola Scholars Foundation, the American Association of Community Colleges, and Phi Theta Kappa. Applicants must be nominated by their college for the All-USA Academic Team, be enrolled in six or more semester credits through December, have completed 36 or more credits by December, and hold a 3.5 or higher GPA.",
+    "amount_min": 2750,
+    "amount_max": 2750,
+    "deadline": "2026-12-01",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore"
+      ],
+      "gpa_min": 3.5,
+      "credits_completed_min": 36,
+      "institution_nomination_required": true,
+      "notes": "Must plan to enroll at a four-year college the following fall and be nominated for the All-USA Academic Team."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "college_nomination": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "transfer",
+      "community-college",
+      "merit",
+      "honor-society",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.ptk.org/scholarships/apply-now/",
+    "source": "https://www.ptk.org/scholarships/new-century-transfer-pathway-scholarship/"
+  },
+  {
+    "name": "New Century Workforce Pathway Scholarship",
+    "provider_name": "Phi Theta Kappa Honor Society / Coca-Cola Foundation / AACC",
+    "description": "Awards up to $1,500 to community college students who plan to enter the workforce directly after finishing a two-year credential rather than transferring. Applicants must be nominated by their college for the All-USA Academic Team, be enrolled in at least six semester credits through December, have completed 12 or more credits by December, and hold a 3.5 or higher GPA on coursework from the last five years.",
+    "amount_min": 1500,
+    "amount_max": 1500,
+    "deadline": "2026-12-01",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore"
+      ],
+      "gpa_min": 3.5,
+      "credits_completed_min": 12,
+      "institution_nomination_required": true,
+      "notes": "For students planning to enter the workforce after completing a two-year college credential."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "college_nomination": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "community-college",
+      "merit",
+      "current-undergrad",
+      "honor-society",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.ptk.org/scholarships/apply-now/",
+    "source": "https://www.ptk.org/scholarships/new-century-workforce-pathway-scholarship/"
+  },
+  {
+    "name": "American Medical Student Association Scholarship (Phi Theta Kappa)",
+    "provider_name": "Phi Theta Kappa Honor Society / American Medical Student Association",
+    "description": "Awards up to $5,000 to Phi Theta Kappa members in pre-med or related programs at two-year institutions who plan to transfer to a four-year college and ultimately attend medical school. Applicants need at least six current semester credits, 45 or more credits completed by December 31, and a 3.5 or higher GPA on coursework from the last five years.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2026-12-01",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore"
+      ],
+      "gpa_min": 3.5,
+      "credits_completed_min": 45,
+      "honor_society_membership_required": true,
+      "fields_of_interest": [
+        "pre_medicine"
+      ],
+      "notes": "Must plan full-time transfer to a four-year regionally accredited college and intend to pursue medical school."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "ptk_membership": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "transfer",
+      "community-college",
+      "honor-society",
+      "merit",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.ptk.org/scholarships/apply-now/",
+    "source": "https://www.ptk.org/scholarships/american-medical-student-association-scholarship/"
+  },
+  {
+    "name": "Christopher Calhoun Transfer Scholarship",
+    "provider_name": "Phi Theta Kappa Honor Society",
+    "description": "Awards up to $1,000 to a Phi Theta Kappa member enrolled at a South Carolina two-year institution who plans to transfer to a four-year accredited college the following fall. Applicants must be U.S. citizens nominated by their college for the All-USA Academic Team and must meet the associated All-USA criteria.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2026-12-01",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore"
+      ],
+      "citizenship": [
+        "us_citizen"
+      ],
+      "honor_society_membership_required": true,
+      "institution_nomination_required": true,
+      "notes": "Must be enrolled at a South Carolina two-year institution."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "ptk_membership": true,
+      "college_nomination": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": [
+      "SC"
+    ],
+    "tags": [
+      "transfer",
+      "community-college",
+      "honor-society",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://www.ptk.org/scholarships/apply-now/",
+    "source": "https://www.ptk.org/scholarships/christopher-calhoun-transfer-scholarship/"
+  },
+  {
+    "name": "Jo Anne J. Trow Undergraduate Scholarship",
+    "provider_name": "Alpha Lambda Delta National Honor Society",
+    "description": "Alpha Lambda Delta distributes 50 undergraduate scholarships ranging from $2,000 to $6,000, totaling about $140,000 each year, to members continuing their studies. Applicants must have been inducted at least in the spring or fall of the year prior to the deadline, have at least one year remaining before graduation, and carry a cumulative GPA of 3.3 or higher. The selection committee begins review in mid-February with decisions announced in June, and a student may receive the award only once.",
+    "amount_min": 2000,
+    "amount_max": 6000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior"
+      ],
+      "gpa_min": 3.3,
+      "honor_society_membership_required": true,
+      "notes": "Must be enrolled at an institution with an active Alpha Lambda Delta chapter and have at least one year remaining before graduation."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": true,
+      "ald_membership": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "honor-society",
+      "merit",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.nationalald.org/trowapp",
+    "source": "https://www.nationalald.org/trowinfo"
+  },
+  {
+    "name": "Golden Key Undergraduate Achievement Award",
+    "provider_name": "Golden Key International Honour Society",
+    "description": "A $1,000 award open exclusively to undergraduate Golden Key members worldwide, recognizing accomplishment across the undergraduate career. Golden Key invites students in the top 15 percent of their class, so membership comes first. The most recent listed deadline in the society's scholarship portal was June 15, 2026, and the cycle historically closes in mid-June.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "honor_society_membership_required": true,
+      "notes": "Members only, undergraduates only. Golden Key membership is by invitation to students in the top 15 percent of their class."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "golden_key_membership": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "honor-society",
+      "merit",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://scholarships.goldenkey.org/",
+    "source": "https://scholarships.goldenkey.org/"
+  },
+  {
+    "name": "Golden Key Outstanding Member Award",
+    "provider_name": "Golden Key International Honour Society",
+    "description": "A $500 award for Golden Key members who have made a notable contribution to their chapter and society, open to undergraduates and available worldwide. It is administered through the same scholarship portal as the society's other awards, which most recently listed a June 15, 2026 deadline.",
+    "amount_min": 500,
+    "amount_max": 500,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "honor_society_membership_required": true,
+      "notes": "Open to Golden Key members; not restricted to undergraduates but undergraduates are eligible."
+    },
+    "requirements": {
+      "essay": true,
+      "golden_key_membership": true,
+      "chapter_involvement": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "honor-society",
+      "merit",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://scholarships.goldenkey.org/",
+    "source": "https://scholarships.goldenkey.org/"
+  },
+  {
+    "name": "Tau Sigma National Scholarship",
+    "provider_name": "Tau Sigma National Honor Society",
+    "description": "Tau Sigma is the national honor society specifically for transfer students, and its national chapter awards scholarships annually to members. The most recent cycle distributed $100,000 with individual awards from $500 to $5,000. Applications are submitted through your chapter advisor, who receives the announcement each fall; awards are announced in December and paid in late January, with applications generally due in mid-November.",
+    "amount_min": 500,
+    "amount_max": 5000,
+    "eligibility": {
+      "grade_levels": [
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "honor_society_membership_required": true,
+      "notes": "Must be an active member of Tau Sigma, the national honor society for transfer students, at a campus with a chapter."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "tau_sigma_membership": true,
+      "notes": "Applications are distributed by and returned through your chapter advisor."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "transfer",
+      "honor-society",
+      "merit",
+      "current-undergrad",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://tausigmanhs.org/scholarships/",
+    "source": "https://tausigmanhs.org/scholarships/"
+  },
+  {
+    "name": "BHE Foundation Emerging Leaders Scholarship",
+    "provider_name": "National Society of Collegiate Scholars (NSCS)",
+    "description": "Twenty NSCS members receive $10,000 each through this STEM-focused award, the society's largest scholarship program at $200,000 annually. Applicants must be NSCS members in good standing with a minimum 3.0 GPA, and selection weighs academics, leadership, and service. Applications run through the NSCS scholarship portal, which is updated throughout the year.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "gpa_min": 3.0,
+      "honor_society_membership_required": true,
+      "fields_of_interest": [
+        "stem"
+      ]
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "nscs_membership": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "honor-society",
+      "merit",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://nscs.awardspring.com/",
+    "source": "https://nscs.org/scholarships"
+  },
+  {
+    "name": "GEICO Changemaker Award",
+    "provider_name": "National Society of Collegiate Scholars (NSCS)",
+    "description": "Six NSCS members receive $10,000 each across six categories in this Student of the Year program, recognizing members who have created measurable change on campus or in their communities. Membership in NSCS and a minimum 3.0 GPA are required, and selection is based on academics, leadership, and service.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "gpa_min": 3.0,
+      "honor_society_membership_required": true
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "nscs_membership": true,
+      "impact_narrative": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "honor-society",
+      "merit",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://nscs.awardspring.com/",
+    "source": "https://nscs.org/scholarships"
+  },
+  {
+    "name": "NSCS College Impact Award",
+    "provider_name": "National Society of Collegiate Scholars (NSCS)",
+    "description": "A $1,000 award for NSCS members who have had a meaningful impact on their college community; two were granted in 2025. NSCS distributes over $750,000 in scholarships annually and requires a minimum 3.0 GPA of undergraduate members. Applications are submitted through the NSCS scholarship portal.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "gpa_min": 3.0,
+      "honor_society_membership_required": true
+    },
+    "requirements": {
+      "essay": true,
+      "nscs_membership": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "honor-society",
+      "merit",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://nscs.awardspring.com/",
+    "source": "https://nscs.org/scholarships"
+  },
+  {
+    "name": "NSCS Scholar at Sea Award",
+    "provider_name": "National Society of Collegiate Scholars (NSCS) / Semester at Sea",
+    "description": "A partner scholarship of $5,000 to $10,000 for NSCS members sailing with Semester at Sea, layered on top of Semester at Sea's own merit and need-based grants. Twelve were awarded in 2025. Applicants must be NSCS members in good standing and admitted to a Semester at Sea voyage.",
+    "amount_min": 5000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "gpa_min": 3.0,
+      "honor_society_membership_required": true,
+      "notes": "Must be admitted to a Semester at Sea voyage."
+    },
+    "requirements": {
+      "essay": true,
+      "nscs_membership": true,
+      "semester_at_sea_admission": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "honor-society",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.semesteratsea.org/financial-aid/scholarships/",
+    "source": "https://www.semesteratsea.org/financial-aid/scholarships/"
+  },
+  {
+    "name": "Semester at Sea Need-Based Grant",
+    "provider_name": "Institute for Shipboard Education (Semester at Sea)",
+    "description": "Need-based grants from $250 to $10,000 toward a Semester at Sea voyage, open to all admitted students. Applications are reviewed on a rolling basis until roughly two weeks before the voyage departs or until funds are exhausted, so applying early materially improves your odds. Pell Grant recipients can additionally receive a Pell Grant Match.",
+    "amount_min": 250,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "financial_need": true,
+      "notes": "Open to all admitted Semester at Sea students. Rolling review until about two weeks before the voyage or until funds run out."
+    },
+    "requirements": {
+      "fafsa": true,
+      "financial_documentation": true,
+      "voyage_admission": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "need-based",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.semesteratsea.org/financial-aid/scholarships/",
+    "source": "https://www.semesteratsea.org/financial-aid/scholarships/"
+  },
+  {
+    "name": "Semester at Sea Merit Grant",
+    "provider_name": "Institute for Shipboard Education (Semester at Sea)",
+    "description": "Merit grants from $250 to $2,500 toward a Semester at Sea voyage for admitted students with a GPA above 3.0. Like the need-based grants, these are reviewed on a rolling basis until about two weeks before departure or until funds are depleted.",
+    "amount_min": 250,
+    "amount_max": 2500,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "gpa_min": 3.0,
+      "notes": "Rolling review until about two weeks before the voyage or until funds run out."
+    },
+    "requirements": {
+      "transcript": true,
+      "voyage_admission": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "merit",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.semesteratsea.org/financial-aid/scholarships/",
+    "source": "https://www.semesteratsea.org/financial-aid/scholarships/"
+  },
+  {
+    "name": "Semester at Sea Alumni Funded Scholarship",
+    "provider_name": "Institute for Shipboard Education (Semester at Sea)",
+    "description": "Alumni-funded scholarships of $500 to $10,000 for students sailing with Semester at Sea. The Spring 2027 voyage application opened July 7, 2026 and closes September 5, 2026; the Fall 2027 voyage application opens February 8, 2027 and closes April 23, 2027.",
+    "amount_min": 500,
+    "amount_max": 10000,
+    "deadline": "2026-09-05",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "notes": "Must be admitted to a Semester at Sea voyage. Deadline shown is for the Spring 2027 voyage; the Fall 2027 deadline is April 23, 2027."
+    },
+    "requirements": {
+      "essay": true,
+      "voyage_admission": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.semesteratsea.org/financial-aid/scholarships/",
+    "source": "https://www.semesteratsea.org/financial-aid/scholarships/"
+  },
+  {
+    "name": "Semester at Sea Student Assistant Grant",
+    "provider_name": "Institute for Shipboard Education (Semester at Sea)",
+    "description": "A $4,000 grant for students who serve as shipboard assistants during a Semester at Sea voyage, combining a work role with study abroad funding. The Spring 2027 voyage application closes September 5, 2026, and the Fall 2027 application closes April 23, 2027.",
+    "amount_min": 4000,
+    "amount_max": 4000,
+    "deadline": "2026-09-05",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "notes": "Must be admitted to a Semester at Sea voyage and selected for a student assistant role."
+    },
+    "requirements": {
+      "essay": true,
+      "voyage_admission": true,
+      "interview": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.semesteratsea.org/financial-aid/scholarships/",
+    "source": "https://www.semesteratsea.org/financial-aid/scholarships/"
+  },
+  {
+    "name": "Semester at Sea Inclusive Engagement Scholarship",
+    "provider_name": "Institute for Shipboard Education (Semester at Sea)",
+    "description": "A $5,000 scholarship plus covered flights for students sailing with Semester at Sea, awarded through the voyage scholarship application. The Spring 2027 voyage application opened July 7, 2026 and closes September 5, 2026; the Fall 2027 cycle closes April 23, 2027.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2026-09-05",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "notes": "Must be admitted to a Semester at Sea voyage. Award includes flights in addition to the $5,000."
+    },
+    "requirements": {
+      "essay": true,
+      "voyage_admission": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "study-abroad",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.semesteratsea.org/financial-aid/scholarships/",
+    "source": "https://www.semesteratsea.org/financial-aid/scholarships/"
+  },
+  {
+    "name": "Scholarship America Dream Award",
+    "provider_name": "Scholarship America",
+    "description": "One of the few large national awards built specifically for students already in college: renewable awards of up to $10,000 per year for undergraduates who have completed at least one year of full-time study. Awards renew for up to three additional years or until a first bachelor's degree is earned. Applicants must be at least 17, hold a 3.0 or higher cumulative GPA, be pursuing a first associate or bachelor's degree, and demonstrate financial need. The 2027 cycle has not opened; semi-finalists are typically notified in January.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "gpa_min": 3.0,
+      "min_age": 17,
+      "citizenship": [
+        "us_citizen",
+        "permanent_resident",
+        "daca"
+      ],
+      "financial_need": true,
+      "enrollment_status": "full_time",
+      "notes": "Must have completed at least one year of full-time undergraduate study. High school seniors are excluded."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 1,
+      "tax_returns": true,
+      "proof_of_citizenship": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "need-based",
+      "merit",
+      "transfer",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://scholarshipamerica.org/scholarship/dreamaward/",
+    "source": "https://scholarshipamerica.org/scholarship/dreamaward/"
+  },
+  {
+    "name": "Jeannette Rankin National Scholar Grant",
+    "provider_name": "Rankin Foundation",
+    "description": "Unrestricted, non-tuition grants of up to $2,500 per year for women and nonbinary students aged 35 and older pursuing technical or vocational training, an associate degree, or a first bachelor's degree. Because the funds are unrestricted, they can cover childcare, transportation, and living costs that standard aid will not touch. Grants renew for up to five years, and the most recent cycle ran November 3, 2025 through February 13, 2026.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "min_age": 35,
+      "gender": [
+        "woman",
+        "nonbinary"
+      ],
+      "financial_need": true,
+      "notes": "Must be pursuing technical or vocational education, an associate degree, or a first bachelor's degree at an accredited U.S. institution."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": true,
+      "financial_documentation": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "adult-learner",
+      "need-based",
+      "current-undergrad",
+      "community-college",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://rankinfoundation.org/national-scholar-grant/",
+    "source": "https://rankinfoundation.org/national-scholar-grant/"
+  },
+  {
+    "name": "Patsy Takemoto Mink Education Support Award",
+    "provider_name": "Patsy Takemoto Mink Education Foundation",
+    "description": "Five awards of up to $5,000 each for low-income mothers pursuing post-secondary education, disbursed in two installments across the academic year and usable for direct school expenses or living expenses. Applicants must be women at least 17 years old with minor children, enrolled full time in a degree program more advanced than any they have already completed, at an accredited non-profit U.S. institution. The 2026-27 cycle closed August 1, 2026; details for 2027-28 are posted in May 2027.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "min_age": 17,
+      "gender": [
+        "woman"
+      ],
+      "has_dependent_children": true,
+      "financial_need": true,
+      "enrollment_status": "full_time",
+      "notes": "Family income limits range from about $21,640 to $33,000 depending on family size. Must be pursuing a degree level more advanced than any previously completed."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": true,
+      "financial_documentation": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "student-parent",
+      "adult-learner",
+      "need-based",
+      "current-undergrad",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.patsyminkfoundation.org/education-support-application",
+    "source": "https://www.patsyminkfoundation.org/education-support-application"
+  },
+  {
+    "name": "Soroptimist Live Your Dream Award",
+    "provider_name": "Soroptimist International of the Americas",
+    "description": "Cash awards for women who are the primary financial provider for themselves and their dependents while pursuing vocational training or an undergraduate degree. Awards are made in tiers: about $1,000 at the club level, $3,000 to $5,000 at the region level, and $10,000 at the international level, so a single recipient can accumulate up to $16,000 as she advances. Funds may go toward tuition, books, transportation, and childcare. Applications are accepted August 1 through November 15.",
+    "amount_min": 1000,
+    "amount_max": 16000,
+    "deadline": "2026-11-15",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "gender": [
+        "woman"
+      ],
+      "primary_wage_earner": true,
+      "has_dependents": true,
+      "financial_need": true,
+      "notes": "Must reside in a Soroptimist International of the Americas member country, be enrolled in or accepted to vocational training or an undergraduate program, and not hold or be pursuing a graduate degree. Prior Women's Opportunity or Live Your Dream recipients are ineligible."
+    },
+    "requirements": {
+      "essay": true,
+      "financial_documentation": true,
+      "recommendations": true,
+      "notes": "Written sections must be in the applicant's own words; AI may assist only with grammar and organization."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "student-parent",
+      "adult-learner",
+      "need-based",
+      "current-undergrad",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.soroptimist.org/our-work/live-your-dream-awards/apply-for-the-live-your-dream-awards.html",
+    "source": "https://www.soroptimist.org/our-work/live-your-dream-awards/apply-for-the-live-your-dream-awards.html"
+  },
+  {
+    "name": "P.E.O. Program for Continuing Education (PCE) Grant",
+    "provider_name": "P.E.O. International",
+    "description": "A one-time need-based grant of up to $4,000 for women whose education was interrupted and who are returning to finish a degree or certification that will improve their employment prospects. Applicants must have spent at least 24 consecutive months out of formal education during adulthood and be within roughly 18 months of completing their program. There is no fixed annual deadline: a local P.E.O. chapter must first sponsor you, after which you receive an online application with a 30-day window.",
+    "amount_min": 4000,
+    "amount_max": 4000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "gender": [
+        "woman"
+      ],
+      "citizenship": [
+        "us_citizen",
+        "canadian_citizen",
+        "permanent_resident"
+      ],
+      "financial_need": true,
+      "education_gap_months_min": 24,
+      "notes": "Must be within 18 consecutive months of completing the program and must not already hold a master's degree or higher. Requires sponsorship by a local P.E.O. chapter."
+    },
+    "requirements": {
+      "chapter_sponsorship": true,
+      "financial_documentation": true,
+      "transcript": true,
+      "notes": "Cannot fund living expenses, loan repayment, or prerequisite courses."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "adult-learner",
+      "need-based",
+      "current-undergrad",
+      "part-time",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.peointernational.org/educational-support/program-for-continuing-education/eligibility-and-application-process/",
+    "source": "https://www.peointernational.org/educational-support/program-for-continuing-education/eligibility-and-application-process/"
+  },
+  {
+    "name": "Osher Reentry Scholarship",
+    "provider_name": "Bernard Osher Foundation (administered by participating universities)",
+    "description": "A national program for adults returning to finish a first bachelor's degree after a cumulative break of five or more years, typically aged 25 to 50. The Osher Foundation funds participating colleges and universities, and each campus sets its own amounts and deadlines: UC Berkeley, for example, awards up to $5,000 for the academic year. Students apply through their own institution, not the Foundation, so check the Foundation's list of participating schools and then contact your campus financial aid office.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "education_gap_years_min": 5,
+      "typical_age_range": "25-50",
+      "financial_need": true,
+      "notes": "Must be pursuing a first baccalaureate degree at a participating institution. Graduate students, students seeking additional degrees, online-only students, and international students planning to return home are excluded. Amounts and deadlines vary by campus; the range shown reflects UC Berkeley's published maximum."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 2,
+      "fafsa": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "adult-learner",
+      "need-based",
+      "current-undergrad",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.osherfoundation.org/scholars.html",
+    "source": "https://reentry.berkeley.edu/services/scholarship/osher"
+  },
+  {
+    "name": "Davis-Putter Scholarship Fund",
+    "provider_name": "Davis-Putter Scholarship Fund",
+    "description": "Need-based grants of up to $15,000 per year for students who are active organizers in progressive movements for liberation, self-determination, and social and economic justice. The average grant for 2025-26 was $7,700. Open to students in degree, certificate, and trade or technical programs, with preference for those without access to family wealth and applicants from under-resourced and rural areas. Applications close at midnight EST on April 1, with decisions in July.",
+    "amount_min": 15000,
+    "amount_max": 15000,
+    "deadline": "2027-04-01",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "financial_need": true,
+      "activism_required": true,
+      "enrollment_status": "enrolled in a post-secondary degree, certificate, or trade/technical program"
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": true,
+      "financial_documentation": true,
+      "description_of_organizing_work": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "need-based",
+      "community-college",
+      "adult-learner",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.davisputter.org/apply",
+    "source": "https://www.davisputter.org/apply"
+  },
+  {
+    "name": "Charles B. Rangel International Affairs Summer Enrichment Program",
+    "provider_name": "Charles B. Rangel International Affairs Program / U.S. Department of State",
+    "description": "A fully funded six-week summer program in Washington, D.C. for undergraduates considering careers in international affairs and the Foreign Service. Participants receive a $3,300 stipend, and the program covers tuition, travel, housing, and two meals a day. Applicants must be full-time undergraduates with at least sophomore standing, U.S. citizenship, and a cumulative GPA of 3.2 or higher; applications close in early February with notifications in mid to late March.",
+    "amount_min": 3300,
+    "amount_max": 3300,
+    "eligibility": {
+      "grade_levels": [
+        "college_sophomore",
+        "college_junior"
+      ],
+      "gpa_min": 3.2,
+      "citizenship": [
+        "us_citizen"
+      ],
+      "enrollment_status": "full_time",
+      "notes": "Must have at least sophomore standing at the time of application."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": true,
+      "resume": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "merit",
+      "public-service",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://apply.rangelprogram.org/",
+    "source": "https://rangelprogram.org/summer-enrichment-program/"
+  },
+  {
+    "name": "Obama-Chesky Voyager Scholarship for Public Service",
+    "provider_name": "The Obama Foundation",
+    "description": "Selects students in their second year of undergraduate study who will start their third year in the fall, providing up to $25,000 per year in last-dollar financial aid for junior and senior years. Scholars also receive a $10,000 stipend plus free Airbnb housing for a summer work-travel experience between junior and senior year, and a $2,000 Airbnb travel credit annually for ten years after graduation. Applications for the current cohort are closed; watch the Foundation site for the next cycle.",
+    "amount_min": 25000,
+    "amount_max": 50000,
+    "eligibility": {
+      "grade_levels": [
+        "college_sophomore"
+      ],
+      "financial_need": true,
+      "notes": "Identifies students in their second year of undergraduate study who will be starting their third year in the fall. Aid is last-dollar, so amounts depend on remaining need."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": true,
+      "public_service_commitment": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "current-undergrad",
+      "need-based",
+      "public-service",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.obama.org/programs/voyager-scholarship/",
+    "source": "https://www.obama.org/programs/voyager-scholarship/"
+  },
+  {
+    "name": "Tillman Scholars Program",
+    "provider_name": "Pat Tillman Foundation",
+    "description": "Supports active duty service members, veterans, and military spouses (including surviving spouses) pursuing bachelor's, master's, and professional degrees, with an average scholarship of $10,000 per academic year and amounts scaled to individual need and cost of attendance. About 60 scholars are selected annually from a highly competitive pool. Full-time enrollment at an accredited U.S. institution is required; there is no minimum GPA to apply, but scholars must maintain a 3.0 to renew. Applications typically open December 1.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "military_affiliation_required": true,
+      "enrollment_status": "full_time",
+      "notes": "Open to active duty service members across all branches, pre- and post-9/11 veterans, and military spouses or surviving spouses. Amount shown is the average award; individual amounts vary with need."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": true,
+      "proof_of_military_service": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "adult-learner",
+      "current-undergrad",
+      "need-based",
+      "merit",
+      "national"
+    ],
+    "status": "upcoming",
+    "application_url": "https://pattillmanfoundation.org/apply/",
+    "source": "https://pattillmanfoundation.org/apply/"
+  },
+  {
+    "name": "VFW Sport Clips Help A Hero Scholarship",
+    "provider_name": "Veterans of Foreign Wars (VFW) / Sport Clips",
+    "description": "Scholarships of up to $5,000 per semester for enlisted service members and veterans at rank E-5 or below who demonstrate financial need. Funds are restricted to tuition and fees and are paid directly to the school, and one award is allowed per family per semester. Fall applications run January 1 to April 30; spring applications run August 1 to November 15, with awards distributed in August and January respectively.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2026-11-15",
+    "eligibility": {
+      "grade_levels": [
+        "college_freshman",
+        "college_sophomore",
+        "college_junior",
+        "college_senior"
+      ],
+      "citizenship": [
+        "us_citizen"
+      ],
+      "military_affiliation_required": true,
+      "financial_need": true,
+      "notes": "Must be retired, honorably discharged, active duty, National Guard, or Reserve, at rank E-5 or below, having completed basic and advanced individual training, and enrolled in or accepted to a VA-approved program at an accredited institution."
+    },
+    "requirements": {
+      "essay": true,
+      "financial_documentation": true,
+      "proof_of_military_service": true,
+      "enrollment_verification": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "adult-learner",
+      "current-undergrad",
+      "need-based",
+      "community-college",
+      "national"
+    ],
+    "status": "active",
+    "application_url": "https://www.vfw.org/assistance/student-veterans-support",
+    "source": "https://www.vfw.org/assistance/student-veterans-support"
+  }
+]

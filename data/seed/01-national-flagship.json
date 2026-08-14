@@ -1,0 +1,969 @@
+[
+  {
+    "name": "Coca-Cola Scholars Program",
+    "provider_name": "The Coca-Cola Scholars Foundation",
+    "description": "An achievement-based scholarship awarding $20,000 to 150 high school seniors each year, judged on leadership, service, and academic excellence rather than financial need. Selection runs through multiple rounds, ending with a semifinalist interview weekend in Atlanta. One of the largest and most competitive corporate-funded scholarships in the United States.",
+    "amount_min": 20000,
+    "amount_max": 20000,
+    "deadline": "2026-09-30",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "graduation_years": [
+        "2026",
+        "2027"
+      ],
+      "gpa_min": 3.0,
+      "citizenship": "U.S. citizen, U.S. national, permanent resident, refugee, asylee, Cuban-Haitian entrant, or humanitarian parolee",
+      "location": "Must attend school in the 50 U.S. states, DC, Puerto Rico, or select Department of Defense schools",
+      "excluded": "Children and grandchildren of Coca-Cola system employees; international students; students who have already graduated high school",
+      "awards_available": 150
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "leadership",
+      "service",
+      "merit",
+      "academic"
+    ],
+    "status": "active",
+    "application_url": "https://www.coca-colascholarsfoundation.org/apply/",
+    "source": "https://www.coca-colascholarsfoundation.org/apply/"
+  },
+  {
+    "name": "The Gates Scholarship",
+    "provider_name": "Bill & Melinda Gates Foundation",
+    "description": "A last-dollar scholarship covering the full cost of attendance not already met by other financial aid, including tuition, fees, books, housing, food, and personal expenses. Successor to the Gates Millennium Scholars Program, it targets Pell-eligible high school seniors in roughly the top 10 percent of their class. No fixed dollar figure is published because the award scales to each recipient's unmet need.",
+    "deadline": "2026-09-15",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "gpa_min": 3.3,
+      "gpa_note": "Minimum 3.3 cumulative weighted GPA on a 4.0 scale or equivalent",
+      "citizenship": "U.S. citizen or permanent resident",
+      "need_based": true,
+      "pell_eligible_required": true,
+      "enrollment": "Full-time in a four-year degree program at an accredited, not-for-profit U.S. college or university"
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "need-based",
+      "academic",
+      "leadership",
+      "renewable"
+    ],
+    "status": "active",
+    "application_url": "https://www.thegatesscholarship.org/scholarship",
+    "source": "https://www.thegatesscholarship.org/scholarship",
+    "amount_min": 0
+  },
+  {
+    "name": "Cooke College Scholarship Program",
+    "provider_name": "Jack Kent Cooke Foundation",
+    "description": "A last-dollar undergraduate award worth as much as $55,000 per year for high-achieving high school seniors with financial need who plan to attend a top four-year college. The actual amount varies by tuition cost and other aid received. Recipients also get advising, a laptop, and access to internship and study-abroad funding.",
+    "amount_min": 55000,
+    "amount_max": 55000,
+    "deadline": "2026-11-11",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "gpa_min": 3.75,
+      "gpa_note": "Minimum cumulative unweighted GPA of 3.75",
+      "family_income_max": 95000,
+      "income_note": "Family adjusted gross income up to $95,000",
+      "graduation_year": "Spring 2027",
+      "enrollment": "Intend to enroll at an accredited four-year college beginning fall 2027",
+      "schooling": "Must complete four years of high school in the U.S., a U.S. territory, or on a U.S. military base"
+    },
+    "requirements": {
+      "test_scores": "SAT, ACT, AP, or IB results required; no minimum score"
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "academic",
+      "need-based",
+      "merit",
+      "renewable"
+    ],
+    "status": "active",
+    "application_url": "https://www.jkcf.org/our-scholarships/college-scholarship-program/how-to-apply/",
+    "source": "https://www.jkcf.org/our-scholarships/college-scholarship-program/how-to-apply/"
+  },
+  {
+    "name": "Cooke Undergraduate Transfer Scholarship",
+    "provider_name": "Jack Kent Cooke Foundation",
+    "description": "A last-dollar award of as much as $55,000 per year for two to three years, for top community college students transferring to a four-year college or university to finish a bachelor's degree. Amounts vary by individual circumstances and other aid received. The application for the next cycle opens August 19, 2026; the closing date has not yet been published.",
+    "amount_min": 55000,
+    "amount_max": 55000,
+    "eligibility": {
+      "grade_levels": [
+        "community_college",
+        "transfer"
+      ],
+      "enrollment": "Current community college students seeking to complete a bachelor's degree at a four-year college or university"
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "transfer",
+      "community-college",
+      "academic",
+      "need-based",
+      "renewable"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.jkcf.org/our-scholarships/undergraduate-transfer-scholarship/",
+    "source": "https://www.jkcf.org/our-scholarships/undergraduate-transfer-scholarship/"
+  },
+  {
+    "name": "Elks Most Valuable Student Scholarship",
+    "provider_name": "Elks National Foundation",
+    "description": "Five hundred four-year scholarships awarded annually to graduating high school seniors, judged on scholarship, leadership, and financial need. The top 20 recipients receive $30,000 total (up to $7,500 per year) and the remaining 480 receive $4,000 total. Applicants do not need any connection to an Elks member.",
+    "amount_min": 4000,
+    "amount_max": 30000,
+    "deadline": "2026-11-12",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "citizenship": "U.S. citizen",
+      "need_based": true,
+      "enrollment": "Four-year undergraduate degree program at an accredited U.S. college",
+      "excluded": "High school graduates are not eligible",
+      "elks_membership_required": false,
+      "awards_available": 500
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "leadership",
+      "need-based",
+      "academic",
+      "renewable"
+    ],
+    "status": "active",
+    "application_url": "https://www.elks.org/scholars/scholarships/mvs.cfm",
+    "source": "https://www.elks.org/scholars/scholarships/mvs.cfm"
+  },
+  {
+    "name": "Elks Legacy Award",
+    "provider_name": "Elks National Foundation",
+    "description": "A $6,000 scholarship paid as $1,500 per year for four years, awarded to 251 high school seniors who are children, grandchildren, step-children, step-grandchildren, or legal wards of a living Elks member. Awards are allocated by state and area, plus 149 at-large awards to the highest-scoring applicants nationwide.",
+    "amount_min": 6000,
+    "amount_max": 6000,
+    "deadline": "2027-02-01",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "elks_membership_required": true,
+      "relationship": "Child, grandchild, step-child, step-grandchild, or legal ward of a living Elk who joined on or before April 1, 2024",
+      "sponsor_note": "Sponsoring Elk must remain a dues-paying member through March 31, 2027",
+      "awards_available": 251
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "academic",
+      "leadership",
+      "renewable"
+    ],
+    "status": "active",
+    "application_url": "https://www.elks.org/scholars/scholarships/legacy.cfm",
+    "source": "https://www.elks.org/scholars/scholarships/legacy.cfm"
+  },
+  {
+    "name": "Regeneron Science Talent Search",
+    "provider_name": "Society for Science",
+    "description": "The oldest and most prestigious science and math competition for U.S. high school seniors, distributing about $3.1 million annually. The top 300 scholars each receive $2,000 (plus $2,000 for their school), 40 finalists travel to Washington DC, and the first-place winner receives $250,000. Entries must be original, independent research with completed data and results.",
+    "amount_min": 2000,
+    "amount_max": 250000,
+    "deadline": "2026-11-05",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "citizenship": "Any student in their last year of secondary school in the U.S. or its territories regardless of citizenship; U.S. citizens studying abroad also qualify",
+      "project_type": "Independent individual research only; collaborative projects, ideas without data, and literature reviews are not eligible"
+    },
+    "requirements": {
+      "research_project": true,
+      "application_window": "June 1 - November 5, 2026"
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "stem",
+      "academic",
+      "merit"
+    ],
+    "status": "active",
+    "application_url": "https://www.societyforscience.org/regeneron-sts/",
+    "source": "https://www.societyforscience.org/regeneron-sts/"
+  },
+  {
+    "name": "QuestBridge National College Match",
+    "provider_name": "QuestBridge",
+    "description": "Matches high-achieving, low-income high school seniors with full four-year scholarships to 55 partner colleges, a package the program values at over $360,000. Matched students are admitted early and graduate debt-free, with tuition, room, board, and fees covered and no loans in the package.",
+    "amount_min": 360000,
+    "amount_max": 360000,
+    "deadline": "2026-10-01",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "household_income_max": 65000,
+      "income_note": "Typically less than $65,000 annually for a household of four, with minimal assets",
+      "need_based": true,
+      "academic_profile": "Primarily A's in the most challenging courses available, strong writing, and intellectual curiosity"
+    },
+    "requirements": {
+      "partner_colleges": 55
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "need-based",
+      "academic",
+      "first-gen"
+    ],
+    "status": "active",
+    "application_url": "https://www.questbridge.org/high-school-students/national-college-match",
+    "source": "https://www.questbridge.org/high-school-students/national-college-match"
+  },
+  {
+    "name": "APIA Scholarship",
+    "provider_name": "Asian & Pacific Islander American Scholars (APIA Scholars)",
+    "description": "The largest scholarship program for Asian American and Pacific Islander students, offering one-year awards of $2,500 up to multi-year awards of $20,000. Priority goes to students with significant financial need, those living at or below the poverty line, and first-generation college students. The 2027-2028 application opens November 15, 2026.",
+    "amount_min": 2500,
+    "amount_max": 20000,
+    "deadline": "2027-01-15",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior",
+        "current_undergrad"
+      ],
+      "citizenship": "U.S. citizen, national, or legal permanent resident; citizens of the Marshall Islands, Federated States of Micronesia, and Palau also eligible",
+      "enrollment": "Enrolling or continuing as a degree-seeking undergraduate at an accredited U.S. college or university",
+      "excluded": "Students who already hold a bachelor's degree or higher",
+      "need_based": true,
+      "priority": "First-generation students and those at or below the poverty line"
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "minority",
+      "need-based",
+      "first-gen"
+    ],
+    "status": "upcoming",
+    "application_url": "https://apiascholars.org/scholarship/apia-scholarship/",
+    "source": "https://apiascholars.org/scholarship/apia-scholarship/"
+  },
+  {
+    "name": "Dell Scholars Program",
+    "provider_name": "Michael & Susan Dell Foundation",
+    "description": "A $20,000 flexible scholarship for 500 students a year that covers tuition and housing and adds a laptop, textbook credits, and emergency funds, plus ongoing advising and career coaching. Notably it weights grit and determination over grades, requiring only a 2.4 GPA. Applications typically open in the fall and close in mid-February; the next cycle's exact deadline has not been posted.",
+    "amount_min": 20000,
+    "amount_max": 20000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "gpa_min": 2.4,
+      "pell_eligible_required": true,
+      "need_based": true,
+      "college_readiness_program": "Must be participating in an approved college readiness program",
+      "enrollment": "Full-time at an accredited four-year college or university immediately after high school"
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "need-based",
+      "first-gen"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.dellscholars.org/scholarship/",
+    "source": "https://www.dellscholars.org/scholarship/"
+  },
+  {
+    "name": "GE-Reagan Foundation Scholarship Program",
+    "provider_name": "The Ronald Reagan Presidential Foundation and Institute",
+    "description": "A $10,000 scholarship renewable for up to three additional years, worth up to $40,000 per recipient, awarded on demonstrated leadership, drive, integrity, and citizenship. The 2026 application has closed; the program typically opens in the fall with an early-January deadline, and students can sign up to be notified when the 2027 cycle opens.",
+    "amount_min": 10000,
+    "amount_max": 40000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "gpa_min": 3.0,
+      "citizenship": "U.S. citizen",
+      "enrollment": "Full-time at an accredited four-year U.S. college or university"
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "leadership",
+      "service",
+      "merit",
+      "renewable"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.reaganfoundation.org/education/scholarship-programs/ge-reagan-foundation-scholarship-program/",
+    "source": "https://www.reaganfoundation.org/education/scholarship-programs/ge-reagan-foundation-scholarship-program/"
+  },
+  {
+    "name": "Davidson Fellows Scholarship",
+    "provider_name": "Davidson Institute",
+    "description": "Awards of $25,000, $50,000, and $100,000 to students 18 and under who have completed a significant piece of work in science, technology, engineering, mathematics, literature, music, philosophy, or an Outside the Box category. Judged on the work itself rather than grades or test scores. The 2027 application opens in fall 2026.",
+    "amount_min": 25000,
+    "amount_max": 100000,
+    "eligibility": {
+      "age_max": 18,
+      "age_note": "Must be 18 or younger as of the application deadline",
+      "citizenship": "U.S. citizen, permanent resident residing in the U.S., or stationed overseas on active U.S. military duty",
+      "categories": [
+        "Science",
+        "Technology",
+        "Engineering",
+        "Mathematics",
+        "Literature",
+        "Music",
+        "Philosophy",
+        "Outside the Box"
+      ],
+      "teams": "Two-person teams permitted"
+    },
+    "requirements": {
+      "significant_work_submission": true,
+      "awards_ceremony_attendance": "Must attend an in-person or virtual ceremony with at least one parent or guardian"
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "stem",
+      "arts",
+      "academic",
+      "merit"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/",
+    "source": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/"
+  },
+  {
+    "name": "Coolidge Scholarship",
+    "provider_name": "Calvin Coolidge Presidential Foundation",
+    "description": "A full-ride presidential scholarship covering tuition, room, board, and required fees for four years of undergraduate study, plus an annual stipend for books and supplies, usable at any accredited U.S. college. Open to high school juniors and judged on academic excellence, interest in public policy, humility, and service. The foundation also names 100 Coolidge Senators from among top applicants. No fixed dollar value is published; the 2026-27 application opens in late summer or early fall 2026 with the deadline still to be announced.",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_junior"
+      ],
+      "citizenship": "U.S. citizen or legal permanent resident by the 2026-27 scholarship deadline",
+      "enrollment": "Must intend to enroll full-time as a first-time undergraduate at an accredited U.S. college or university in fall 2028",
+      "excluded": "Immediate family of employees, trustees, or donors giving more than $25,000 lifetime to the Coolidge Foundation"
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "academic",
+      "merit",
+      "renewable"
+    ],
+    "status": "upcoming",
+    "application_url": "https://coolidgescholars.org/apply/",
+    "source": "https://coolidgescholars.org/selection-timeline/",
+    "amount_min": 0
+  },
+  {
+    "name": "Amazon Future Engineer Scholarship",
+    "provider_name": "Amazon",
+    "description": "Covers unmet financial need up to $10,000 annually for up to three years, or until a bachelor's degree is earned, for students pursuing computer science and related fields. Deliberately low academic bar at a 2.3 GPA, with selection weighted toward substantial financial need. The 2025-2026 cycle is closed and the next opening has not been announced.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "gpa_min": 2.3,
+      "majors": [
+        "Computer science",
+        "Software engineering",
+        "Computer engineering",
+        "Electrical engineering",
+        "Mathematics",
+        "Data science",
+        "Informatics",
+        "Related fields"
+      ],
+      "citizenship": "Must be authorized to work in the U.S. (citizen, permanent resident, or EAD holder)",
+      "need_based": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "stem",
+      "need-based",
+      "renewable"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.amazonfutureengineer.com/scholarships",
+    "source": "https://www.amazonfutureengineer.com/scholarships"
+  },
+  {
+    "name": "HSF Scholar Program",
+    "provider_name": "Hispanic Scholarship Fund",
+    "description": "Selects 10,000 HSF Scholars a year and awards over $30 million total, with individual awards from $500 to $5,000 based on relative need. Scholars also receive career services, mentoring, and leadership programming. Open to students of all races who identify as being of Hispanic heritage. The 2026 cycle closed February 15, 2026; the next cycle typically opens in December.",
+    "amount_min": 500,
+    "amount_max": 5000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior",
+        "current_undergrad",
+        "graduate"
+      ],
+      "heritage": "Students of all races who identify as being of Hispanic heritage",
+      "gpa_min": 3.0,
+      "gpa_note": "Minimum 3.0 for high school students; minimum 2.5 for college and graduate students",
+      "citizenship": "U.S. citizen, permanent legal resident, or DACA recipient",
+      "enrollment": "Full-time at an accredited four-year university or graduate school"
+    },
+    "requirements": {
+      "fafsa": true
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "minority",
+      "need-based",
+      "academic"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.hsf.net/scholarship",
+    "source": "https://www.hsf.net/scholarship"
+  },
+  {
+    "name": "Jackie Robinson Foundation Scholarship",
+    "provider_name": "Jackie Robinson Foundation",
+    "description": "Provides up to $35,000 over four years plus a comprehensive support program including a mentoring conference, career guidance, internship placement, and leadership development. Merit-based and open to all eligible students regardless of race or ethnicity. The most recent deadline was January 7, 2026; the next cycle's date has not been published.",
+    "amount_min": 35000,
+    "amount_max": 35000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "citizenship": "U.S. citizen",
+      "need_based": true,
+      "need_note": "Must present evidence of financial need, evaluated case by case",
+      "enrollment": "Accredited, JRF-approved four-year U.S. college or university",
+      "credits": "Must not have completed more than 25 percent of college credits"
+    },
+    "requirements": {
+      "recommendation_letters": 1,
+      "css_profile": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "leadership",
+      "service",
+      "need-based",
+      "academic",
+      "renewable"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.jackierobinson.org/apply/",
+    "source": "https://www.jackierobinson.org/apply/"
+  },
+  {
+    "name": "Ron Brown Scholar Program",
+    "provider_name": "Ron Brown Scholar Fund",
+    "description": "Awards $40,000 scholarships, paid as $10,000 a year for four years, to African American high school seniors who show academic excellence, leadership potential, and commitment to community service. The program is as much a lifelong network as a scholarship, with an active alumni community. Exact deadlines for the next cycle are not currently posted.",
+    "amount_min": 40000,
+    "amount_max": 40000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "ethnicity": "African American / Black",
+      "criteria": "Academic excellence, leadership potential, and commitment to community service"
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "minority",
+      "leadership",
+      "service",
+      "academic",
+      "renewable"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.ronbrown.org/",
+    "source": "https://www.ronbrown.org/"
+  },
+  {
+    "name": "Posse Scholarship",
+    "provider_name": "The Posse Foundation",
+    "description": "A full-tuition leadership scholarship to one of Posse's partner colleges, awarded to students who are nominated by their high school or a community organization and selected through a group Dynamic Assessment Process. Scholars attend college in a supportive cohort of ten students from their city. Explicitly neither a minority nor a need-based scholarship. Nominations run spring through summer before senior year and deadlines vary by city, so no single dollar value or national date applies.",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_junior",
+        "high_school_senior"
+      ],
+      "nomination_required": true,
+      "nomination_note": "Must be nominated by a registered high school or community-based organization in one of Posse's 20+ recruitment cities",
+      "timing": "Must be in the first term of senior year",
+      "need_based": false,
+      "minority_restricted": false
+    },
+    "renewable": true,
+    "national": false,
+    "states": [],
+    "tags": [
+      "flagship",
+      "leadership",
+      "merit",
+      "local",
+      "renewable"
+    ],
+    "status": "active",
+    "application_url": "https://www.possefoundation.org/recruiting-students/the-nomination-process",
+    "source": "https://www.possefoundation.org/recruiting-students/the-nomination-process",
+    "amount_min": 0
+  },
+  {
+    "name": "Hagan Scholarship",
+    "provider_name": "Hagan Scholarship Foundation",
+    "description": "One of the largest need-based awards available to students from small high schools, providing $2,000 for essential college startup items plus up to $7,500 each semester for up to eight consecutive semesters. Scholars also get funded study-abroad and internship support. Exact application open and close dates for the current cycle are not posted on the main page.",
+    "amount_min": 7500,
+    "amount_max": 60000,
+    "eligibility": {
+      "family_income_max": 125000,
+      "income_note": "Parents' adjusted household income must not exceed $125,000",
+      "need_based": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "need-based",
+      "academic",
+      "renewable"
+    ],
+    "status": "upcoming",
+    "application_url": "https://haganscholarships.org/",
+    "source": "https://haganscholarships.org/"
+  },
+  {
+    "name": "Chick-fil-A Remarkable Futures Scholarship",
+    "provider_name": "Chick-fil-A Foundation",
+    "description": "Awards of $1,000, $2,500, and $25,000 to Chick-fil-A team members at franchised, company-owned, and affiliated restaurants, with $29 million distributed in 2026. Available to both full-time and part-time students and usable at any accredited school. Employment at a Chick-fil-A restaurant is required, so this is not open to the general public.",
+    "amount_min": 1000,
+    "amount_max": 25000,
+    "eligibility": {
+      "employment_required": "Must work at a franchised, company-owned, or affiliated Chick-fil-A restaurant",
+      "enrollment": "Full-time or part-time students both eligible"
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "leadership",
+      "service",
+      "merit"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.chick-fil-a.com/remarkable-futures-scholarships",
+    "source": "https://www.chick-fil-a.com/remarkable-futures-scholarships"
+  },
+  {
+    "name": "Folds of Honor Higher Education Scholarship",
+    "provider_name": "Folds of Honor Foundation",
+    "description": "Need-based scholarships for spouses and dependents of fallen or disabled U.S. service members, and of first responders who have fallen or been catastrophically injured. Awards are based on unmet need with a cap of $2,500 per term ($1,250 part-time). The application window runs February 1 through March 31 each year, closing at 6:00 PM EST.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "deadline": "2027-03-31",
+    "eligibility": {
+      "relationship": "Spouse or dependent of a fallen or disabled U.S. service member, or of a fallen or catastrophically injured first responder (firefighter, law enforcement, paramedic, EMT)",
+      "gpa_min": 2.0,
+      "gpa_note": "Must maintain a 2.0 or higher term GPA for the two most recent academic terms",
+      "grade_levels": [
+        "high_school_senior",
+        "current_undergrad",
+        "graduate"
+      ],
+      "need_based": true,
+      "schools": "College, technical, trade, and post-graduate programs"
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "military-family",
+      "need-based"
+    ],
+    "status": "upcoming",
+    "application_url": "https://foldsofhonor.org/scholarships/",
+    "source": "https://foldsofhonor.org/scholarships/"
+  },
+  {
+    "name": "Marine Corps Scholarship Foundation Scholarship",
+    "provider_name": "Marine Corps Scholarship Foundation",
+    "description": "The nation's oldest and largest provider of need-based scholarships to military children, with awards ranging from $7,500 to $40,000 over four years. Children of the Fallen receive $30,000 over four years and Children of the Wounded up to $40,000. The undergraduate application window runs January 1 through March 1 annually; career and technical education applications are accepted year-round.",
+    "amount_min": 7500,
+    "amount_max": 40000,
+    "deadline": "2027-03-01",
+    "eligibility": {
+      "relationship": "Child of an active duty, reserve, or veteran U.S. Marine; a Marine killed in service; or Navy Corpsmen, Chaplains, and Religious Program Specialists attached to Marine units",
+      "family_income_max": 129000,
+      "gpa_min": 2.0,
+      "grade_levels": [
+        "high_school_senior",
+        "current_undergrad"
+      ],
+      "need_based": true,
+      "enrollment": "Accredited, federally eligible school"
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "military-family",
+      "need-based",
+      "renewable"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.mcsf.org/apply/",
+    "source": "https://www.mcsf.org/apply/eligibility/"
+  },
+  {
+    "name": "Voice of Democracy Audio Essay Competition",
+    "provider_name": "Veterans of Foreign Wars (VFW)",
+    "description": "A recorded audio essay competition for high school students, with a national first-place award of $35,000 paid directly to the winner's college, university, or vocational school. State winners receive a minimum of $1,000. The 2026-27 theme is \"What a Veteran Taught Me About America\" and entries are submitted through a local VFW Post.",
+    "amount_min": 1000,
+    "amount_max": 35000,
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "grade_levels": [
+        "high_school_freshman",
+        "high_school_sophomore",
+        "high_school_junior",
+        "high_school_senior"
+      ],
+      "grades": "9th through 12th grade"
+    },
+    "requirements": {
+      "essay": true,
+      "format": "Recorded audio essay submitted with a completed entry form to a local VFW Post",
+      "theme": "What a Veteran Taught Me About America"
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "essay-contest",
+      "service"
+    ],
+    "status": "active",
+    "application_url": "https://www.vfw.org/community/youth-and-education/youth-scholarships",
+    "source": "https://www.vfw.org/community/youth-and-education/youth-scholarships"
+  },
+  {
+    "name": "Patriot's Pen Youth Essay Contest",
+    "provider_name": "Veterans of Foreign Wars (VFW)",
+    "description": "A written essay contest for middle school students in grades 6 through 8, with a $5,000 national first-place award and state winners receiving a minimum of $500. Essays run 300 to 400 words on the annual patriotic theme, which for 2026-27 is \"What a Veteran Taught Me About America.\" Entries go through a local VFW Post.",
+    "amount_min": 500,
+    "amount_max": 5000,
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "grade_levels": [
+        "middle_school"
+      ],
+      "grades": "6th through 8th grade"
+    },
+    "requirements": {
+      "essay": true,
+      "essay_length": "300-400 words",
+      "theme": "What a Veteran Taught Me About America"
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "essay-contest",
+      "service"
+    ],
+    "status": "active",
+    "application_url": "https://www.vfw.org/community/youth-and-education/youth-scholarships",
+    "source": "https://www.vfw.org/community/youth-and-education/youth-scholarships"
+  },
+  {
+    "name": "Taco Bell Live Mas Scholarship",
+    "provider_name": "Taco Bell Foundation",
+    "description": "A passion-based scholarship judged on a short video rather than grades, test scores, or essays, with up to $14.5 million in total funding available and individual awards reported at $25,000 for top recipients. Open to anyone 16 to 26, whether or not they work at Taco Bell. The 2026 cycle ran October 14, 2025 to January 6, 2026 and is now closed.",
+    "amount_min": 25000,
+    "amount_max": 25000,
+    "eligibility": {
+      "age_min": 16,
+      "age_max": 26,
+      "residency": "Legal resident of the 50 U.S. states, DC, or a dependent child of active-duty military",
+      "gpa_note": "No GPA or test score requirement",
+      "enrollment": "On track to apply for, or currently enrolled in, an accredited post-secondary program"
+    },
+    "requirements": {
+      "essay": false,
+      "video_submission": true
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "merit",
+      "no-essay"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.tacobellfoundation.org/live-mas-scholarship/",
+    "source": "https://www.tacobellfoundation.org/live-mas-scholarship/eligibilityfaq/"
+  },
+  {
+    "name": "Ayn Rand Institute Essay Contests",
+    "provider_name": "Ayn Rand Institute",
+    "description": "Three annual essay contests based on the novels Anthem, The Fountainhead, and Atlas Shrugged, with prizes up to $25,000 and multiple awards available across the contests. Open worldwide to students age 13 and up, with Atlas Shrugged also open to college and graduate students. Deadlines for the current cycle are listed as to be determined.",
+    "amount_min": 25000,
+    "amount_max": 25000,
+    "eligibility": {
+      "age_min": 13,
+      "grade_levels": [
+        "middle_school",
+        "high_school",
+        "current_undergrad",
+        "graduate"
+      ],
+      "grade_note": "Anthem and The Fountainhead are open to middle and high school students; Atlas Shrugged is open to high school, college, and graduate students",
+      "international": "Open to students worldwide",
+      "enrollment": "Must be enrolled in school during the contest period"
+    },
+    "requirements": {
+      "essay": true
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "essay-contest",
+      "academic"
+    ],
+    "status": "upcoming",
+    "application_url": "https://aynrand.org/students/essay-contests/",
+    "source": "https://aynrand.org/students/essay-contests/"
+  },
+  {
+    "name": "Harry S. Truman Scholarship",
+    "provider_name": "Harry S. Truman Scholarship Foundation",
+    "description": "The federal memorial to President Truman, providing up to $30,000 for graduate school to college juniors committed to careers in public service, plus priority graduate admission at partner programs, mentoring, and preferential federal hiring consideration. Candidates must be nominated by their institution rather than applying directly. The exact deadline for the next cycle is not posted.",
+    "amount_min": 30000,
+    "amount_max": 30000,
+    "eligibility": {
+      "grade_levels": [
+        "current_undergrad"
+      ],
+      "year_note": "Penultimate year of school for students graduating in four years or more, or final year for students graduating in three years or fewer",
+      "citizenship": "U.S. citizen, U.S. national resident of American Samoa, or expecting citizenship by the award date",
+      "public_service_commitment": "Must plan to pursue graduate education leading to a public service career in government, uniformed services, public interest organizations, non-governmental research or educational organizations, public and private schools, or public-service nonprofits"
+    },
+    "requirements": {
+      "institutional_nomination": true
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "leadership",
+      "service",
+      "current-undergrad",
+      "academic"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.truman.gov/apply/",
+    "source": "https://www.truman.gov/apply/applying/eligibility/"
+  },
+  {
+    "name": "Udall Undergraduate Scholarship",
+    "provider_name": "Udall Foundation",
+    "description": "Up to 65 scholarships of $7,500 each for college sophomores and juniors who are future leaders in environmental fields, Tribal public policy, or Native American health care. Highly competitive and administered through a campus faculty representative. Exact deadline dates for the next cycle are published separately from the main program page.",
+    "amount_min": 7500,
+    "amount_max": 7500,
+    "eligibility": {
+      "grade_levels": [
+        "current_undergrad"
+      ],
+      "fields": [
+        "Environment",
+        "Tribal public policy",
+        "Native American health care"
+      ],
+      "awards_available": 65
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "leadership",
+      "service",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.udall.gov/OurPrograms/Scholarship/Scholarship.aspx",
+    "source": "https://www.udall.gov/OurPrograms/Scholarship/Scholarship.aspx"
+  },
+  {
+    "name": "Boren Scholarship",
+    "provider_name": "Institute of International Education / National Security Education Program",
+    "description": "Funds U.S. undergraduates to study critical languages in world regions underrepresented in study abroad, with awards of $8,000 for 8-11 weeks (STEM majors only), $12,500 for 12-24 weeks, and $25,000 for the preferred 25-52 weeks. Languages include Arabic, Mandarin Chinese, Portuguese, Russian, and Swahili, and students of all proficiency levels are welcome. Comes with a one-year federal service requirement.",
+    "amount_min": 8000,
+    "amount_max": 25000,
+    "deadline": "2027-01-27",
+    "eligibility": {
+      "grade_levels": [
+        "current_undergrad"
+      ],
+      "citizenship": "U.S. undergraduate students",
+      "language_study": "Must study a critical language such as Arabic, Mandarin Chinese, Portuguese, Russian, or Swahili; all proficiency levels welcome",
+      "service_requirement": "One-year federal service requirement in a position supporting U.S. national security"
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "current-undergrad",
+      "academic"
+    ],
+    "status": "active",
+    "application_url": "https://www.borenawards.org/",
+    "source": "https://www.borenawards.org/"
+  },
+  {
+    "name": "Benjamin A. Gilman International Scholarship",
+    "provider_name": "U.S. Department of State / Institute of International Education",
+    "description": "A federally funded award enabling Pell Grant recipients to study or intern abroad for academic credit, with an added supplement available for study of critical need languages. Recipients can receive the scholarship only once. The fall 2026 application opens in mid-August 2026 and closes October 1, 2026. The dollar amount is not stated on the program pages reviewed.",
+    "deadline": "2026-10-01",
+    "eligibility": {
+      "grade_levels": [
+        "current_undergrad",
+        "community_college"
+      ],
+      "citizenship": "U.S. citizen or national",
+      "pell_eligible_required": true,
+      "pell_note": "Must be receiving a Federal Pell Grant at time of application, or prove they will receive one during the study abroad term",
+      "enrollment": "Undergraduate in good standing at an accredited U.S. institution, enrolled in or accepted to a credit-bearing study abroad or internship program",
+      "destination": "Program must be in a country with Travel Advisory Level 1 or 2",
+      "one_time_only": true
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "need-based",
+      "current-undergrad"
+    ],
+    "status": "active",
+    "application_url": "https://www.gilmanscholarship.org/",
+    "source": "https://www.gilmanscholarship.org/applicants/eligibility/",
+    "amount_min": 0,
+    "amount_max": 5000
+  },
+  {
+    "name": "Burger King Scholars Program",
+    "provider_name": "BURGER KING Foundation",
+    "description": "Scholarships ranging from $1,000 to $60,000 for high school seniors as well as Burger King employees and their families, usable at college or post-secondary vocational and technical schools. The top tier is the James W. McLamore WHOPPER Scholarship Award of $60,000, granted to three students a year. Selection weighs GPA, work experience, extracurriculars, community service, and financial need; the program typically opens in mid-October and closes in December or once the application cap is reached.",
+    "amount_min": 1000,
+    "amount_max": 60000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "also_eligible": "Burger King employees and their family members",
+      "need_based": true,
+      "criteria": "GPA, work experience, extracurricular activities, community service, and financial need",
+      "schools": "College or post-secondary vocational/technical school"
+    },
+    "national": true,
+    "states": [],
+    "tags": [
+      "flagship",
+      "need-based",
+      "leadership",
+      "service"
+    ],
+    "status": "upcoming",
+    "application_url": "https://burgerking.scholarsapply.org/",
+    "source": "https://burgerking.scholarsapply.org/"
+  },
+  {
+    "name": "Milken Scholars Program",
+    "provider_name": "Milken Family Foundation",
+    "description": "A $10,000 award paired with lifelong professional support, mentoring, graduate school counseling, and access to an alumni network, given to graduating seniors who combine academic achievement, community service, and resilience. Recruitment is limited to the Los Angeles, New York, and Washington DC areas, and candidates are nominated before applying. The class of 2026 application closed December 1, 2025; the next cycle's dates have not been posted.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_levels": [
+        "high_school_senior"
+      ],
+      "regions": [
+        "Los Angeles",
+        "New York",
+        "Washington DC"
+      ],
+      "nomination_required": true
+    },
+    "national": false,
+    "states": [
+      "CA",
+      "NY",
+      "DC"
+    ],
+    "tags": [
+      "flagship",
+      "academic",
+      "leadership",
+      "service",
+      "local"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.milkenscholars.org/",
+    "source": "https://www.milkenscholars.org/"
+  }
+]

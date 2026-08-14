@@ -1,0 +1,1353 @@
+[
+  {
+    "name": "Texas Interscholastic League Foundation (TILF) Scholarship",
+    "provider_name": "Texas Interscholastic League Foundation",
+    "description": "Awards for Texas high school seniors who competed at a UIL Academic State Meet, Congressional Debate State Meet, One-Act Play State Meet, or Theatrical Design State Meet. Participation only in athletic or music contests does not qualify. Recipients must attend an accredited Texas college or university, enroll full-time, and maintain a 2.5 college GPA. The application window historically opens in the spring and closed May 22 for the prior cycle; the next cycle's date has not been posted.",
+    "amount_min": 500,
+    "amount_max": 20000,
+    "eligibility": {
+      "states": ["TX"],
+      "grade_levels": ["12"],
+      "residency": "Graduating from a Texas high school during the current academic year",
+      "college_location": "Accredited college or university in Texas",
+      "enrollment": "Full-time",
+      "college_gpa_min": 2.5,
+      "activity_requirement": "Competed at a UIL Academic, Congressional Debate, One-Act Play, or Theatrical Design State Meet"
+    },
+    "requirements": {
+      "transcript": true,
+      "test_scores": "SAT or ACT scores on transcript",
+      "recommendation_letters": 1,
+      "recommendation_source": "School administrator",
+      "tax_documents": "Pages 1 and 2 of parent/guardian most recent IRS Form 1040"
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["texas", "merit", "need-based", "academic-competition"],
+    "status": "upcoming",
+    "application_url": "https://www.tilfoundation.org/scholarships/apply/",
+    "source": "https://www.tilfoundation.org/scholarships/list/"
+  },
+  {
+    "name": "Texas PTA High School Senior Scholarship",
+    "provider_name": "Texas PTA",
+    "description": "A $1,000 scholarship for graduating Texas high school seniors who are current PTA/PTSA members at a campus with a Local PTA/PTSA in Active Status. The application opens September 15 and closes November 15; PTA membership must be in place by December 1. Recipients are announced by April 1.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2026-11-15",
+    "eligibility": {
+      "states": ["TX"],
+      "grade_levels": ["12"],
+      "residency": "Enrolled in a Texas high school",
+      "membership": "Current PTA/PTSA member at enrolled campus by December 1; campus PTA must reach Active Status by December 1",
+      "enrollment": "Full-time at an accredited college, university, or technical institute following graduation"
+    },
+    "requirements": {
+      "application": "Electronic application via Texas PTA",
+      "pta_membership": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["texas", "merit", "community-service"],
+    "status": "active",
+    "application_url": "https://www.txpta.org/scholarships",
+    "source": "https://www.txpta.org/scholarships"
+  },
+  {
+    "name": "Texas Garden Clubs Scholarship",
+    "provider_name": "Texas Garden Clubs, Inc.",
+    "description": "Annual scholarships for Texas resident students at the college junior level or above who are majoring in a horticulture-related field. Qualifying majors include floriculture, landscape design, horticulture, botany, biology, plant pathology, forestry, agronomy, environmental studies, and land management. The 2025 recipients received $4,000 and $3,000; the application deadline is October 1 for an award in the following spring/winter semester.",
+    "amount_min": 3000,
+    "amount_max": 4000,
+    "deadline": "2026-10-01",
+    "eligibility": {
+      "states": ["TX"],
+      "residency": "Texas resident",
+      "grade_levels": ["college-junior", "college-senior", "graduate"],
+      "gpa_min": 3.25,
+      "majors": [
+        "Horticulture",
+        "Floriculture",
+        "Landscape Design",
+        "Botany",
+        "Biology",
+        "Plant Pathology",
+        "Forestry",
+        "Agronomy",
+        "Environmental Studies",
+        "Land Management"
+      ]
+    },
+    "requirements": {
+      "application": "Mailed application to the Texas Garden Clubs VP of Scholarships",
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["texas", "merit", "agriculture", "stem"],
+    "status": "active",
+    "application_url": "https://texasgardenclubs.org/scholarships/",
+    "source": "https://texasgardenclubs.org/scholarships/"
+  },
+  {
+    "name": "Texas Mutual Scholarship Program",
+    "provider_name": "Texas Mutual Insurance Company",
+    "description": "Provides up to $6,600 for tuition, fees, books, and supplies to injured Texas workers and their dependents. Eligible applicants are workers with injuries qualifying for lifetime benefits under the Texas Workers' Compensation Act, plus unmarried children ages 16 to 25 and unmarried surviving spouses of workers killed or permanently injured while working for a Texas Mutual policyholder. Applications are due June 30 for the fall semester and October 31 for the spring semester.",
+    "amount_min": 6600,
+    "amount_max": 6600,
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "states": ["TX"],
+      "gpa_min": 2.5,
+      "enrollment": "Full-time",
+      "age_range": "16-25 for dependent children",
+      "special_circumstances": "Injured worker qualifying for lifetime benefits under Texas Workers' Compensation Act Section 408.161, or an unmarried child or surviving spouse of such a worker employed by a Texas Mutual policyholder"
+    },
+    "requirements": {
+      "proof_of_eligibility": "Workers' compensation benefit eligibility",
+      "transcript": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["texas", "need-based", "special-circumstances"],
+    "status": "active",
+    "application_url": "https://www.texasmutual.com/employers/scholarships",
+    "source": "https://www.texasmutual.com/employers/scholarships"
+  },
+  {
+    "name": "Texas Farm Bureau Memorial/Honorary and District Scholarship",
+    "provider_name": "Texas Farm Bureau",
+    "description": "In each of Texas Farm Bureau's 13 districts, one graduating high school senior receives a $5,000 scholarship and three additional students receive $3,000 each. Applicants must be from a Texas Farm Bureau member family. The prior cycle closed March 2; the next cycle's deadline has not yet been posted but has historically fallen in early March.",
+    "amount_min": 3000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "grade_levels": ["12"],
+      "membership": "Texas Farm Bureau member family",
+      "districts": "All 13 Texas Farm Bureau districts"
+    },
+    "requirements": {
+      "application": "Online application through Texas Farm Bureau",
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["texas", "merit", "agriculture", "rural"],
+    "status": "upcoming",
+    "application_url": "https://texasfarmbureau.org/youth/scholarship-apps/",
+    "source": "https://texasfarmbureau.org/texas-farm-bureau-2026-scholarship-applications-are-open/"
+  },
+  {
+    "name": "Texas Farm Bureau Young Farmer & Rancher Scholarship for High School Students",
+    "provider_name": "Texas Farm Bureau",
+    "description": "Each of Texas Farm Bureau's 13 districts awards one $1,500 scholarship to a graduating high school senior pursuing a degree in agriculture. Applicants must come from a Texas Farm Bureau member family. The prior cycle closed March 2; the next cycle's deadline has not yet been posted but has historically fallen in early March.",
+    "amount_min": 1500,
+    "amount_max": 1500,
+    "eligibility": {
+      "states": ["TX"],
+      "grade_levels": ["12"],
+      "membership": "Texas Farm Bureau member family",
+      "majors": ["Agriculture"]
+    },
+    "requirements": {
+      "application": "Online application through Texas Farm Bureau",
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["texas", "agriculture", "merit", "rural"],
+    "status": "upcoming",
+    "application_url": "https://texasfarmbureau.org/youth/scholarship-apps/",
+    "source": "https://texasfarmbureau.org/texas-farm-bureau-2026-scholarship-applications-are-open/"
+  },
+  {
+    "name": "Texas Farm Bureau Dick Mitchell Memorial Scholarship",
+    "provider_name": "Texas Farm Bureau",
+    "description": "A $1,000 scholarship awarded to one Texas high school senior who completed the Thrive Event through Texas Farm Bureau's Student Success Series. Only students who participated in the qualifying Thrive Event are eligible. The prior cycle closed March 2; the next cycle's deadline has not yet been posted.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "states": ["TX"],
+      "grade_levels": ["12"],
+      "activity_requirement": "Completed the Thrive Event through Texas Farm Bureau's Student Success Series"
+    },
+    "requirements": {
+      "application": "Online application through Texas Farm Bureau",
+      "program_participation": "Thrive Event completion"
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["texas", "agriculture", "merit"],
+    "status": "upcoming",
+    "application_url": "https://texasfarmbureau.org/youth/scholarship-apps/",
+    "source": "https://texasfarmbureau.org/texas-farm-bureau-2026-scholarship-applications-are-open/"
+  },
+  {
+    "name": "Texas Elks State Association Four-Year Scholarship",
+    "provider_name": "Texas Elks State Association",
+    "description": "A renewable award of up to $1,250 for Texas high school seniors who are not in the top 5 percent of their class and plan to pursue a bachelor's degree at an accredited Texas college or university. Students may begin at a junior college and transfer. Selection weighs scholarship, financial need, leadership and extracurricular activities, and character; males and females compete separately. The deadline has historically fallen in late February.",
+    "amount_min": 1250,
+    "amount_max": 1250,
+    "eligibility": {
+      "states": ["TX"],
+      "grade_levels": ["12"],
+      "residency": "Texas resident attending a Texas high school",
+      "citizenship": "U.S. citizen",
+      "class_rank": "Not in the top 5 percent of class",
+      "college_location": "Accredited college or university in Texas",
+      "enrollment": "Full-time toward a bachelor's degree"
+    },
+    "requirements": {
+      "application": "Separate TESA application submitted through Texas Elks State Association",
+      "financial_need_documentation": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["texas", "need-based", "merit", "community-service"],
+    "status": "upcoming",
+    "application_url": "https://texaselks.org/tesa-scholarships",
+    "source": "https://www.collegexpress.com/scholarships/texas-elks-state-association-scholarship-program/5000822/"
+  },
+  {
+    "name": "Texas DPS Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Awards of up to $5,000 for current or retired employees of the Texas Department of Public Safety and their immediate family members. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed May 15; the next cycle's date has not been posted, but CFT deadlines typically fall between March and May.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "affiliation": "Current or retired Texas Department of Public Safety employee, or immediate family member"
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["texas", "need-based", "first-responder"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "LIFE Association Trade Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Awards of up to $5,000 for graduating Texas high school seniors and past graduates pursuing a trade or vocational degree. One of the few Texas awards specifically targeted at skilled trades rather than four-year degrees. The prior cycle closed May 1; the next cycle's date has not been posted, but CFT deadlines typically fall between March and May.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "grade_levels": ["12", "past-graduate"],
+      "program_type": "Trade or vocational degree program"
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["texas", "trade", "vocational", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Tri-County Electric Cooperative Scholarship",
+    "provider_name": "Tri-County Electric Cooperative (TCEC)",
+    "description": "Forty $5,000 scholarships for high school seniors graduating in 2027 who live with a parent or legal guardian who is an active member of Tri-County Electric Cooperative, which serves 16 counties in north Texas from its Azle headquarters. Funds may be used at an accredited university, college, junior college, or technical school. Applications are accepted September 14, 2026 through January 15, 2027, with winners announced in April 2027.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2027-01-15",
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant", "Parker", "Wise", "Johnson"],
+      "region": "16-county north Texas TCEC service territory",
+      "grade_levels": ["12"],
+      "graduation_year": 2027,
+      "membership": "Resides with a parent or legal guardian who is an active TCEC member",
+      "exclusions": "Immediate family members of Tri-County Electric's Leadership Team are ineligible"
+    },
+    "requirements": {
+      "recommendation_letters": 1,
+      "recommendation_delivery": "Emailed directly by the recommender to communications@tcectexas.com",
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "utility", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.tcectexas.com/2026-scholarships",
+    "source": "https://www.tcectexas.com/2026-scholarships"
+  },
+  {
+    "name": "United Cooperative Services Scholarship",
+    "provider_name": "United Cooperative Services",
+    "description": "Fifteen scholarships awarded annually to members and dependents of members of United Cooperative Services, an electric cooperative with offices in Cleburne, Burleson, Granbury, Mansfield, Meridian, Possum Kingdom, and Stephenville. The top three winners receive $10,000, $5,000, and $4,000; the remaining twelve receive $2,000 each. Electronic applications are accepted from May 1 through June 1, and finalists must attend an in-person interview and banquet in July.",
+    "amount_min": 2000,
+    "amount_max": 10000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": [
+        "Johnson",
+        "Tarrant",
+        "Hood",
+        "Bosque",
+        "Erath",
+        "Palo Pinto"
+      ],
+      "region": "United Cooperative Services service territory",
+      "membership": "Active United member, or dependent of parents/legal guardians who are active United members at their principal residence",
+      "high_school_gpa_min": 2.5,
+      "college_gpa_min": 2.0,
+      "enrollment": "Full-time for current college students"
+    },
+    "requirements": {
+      "interview": "In-person finalist interview and banquet required",
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "utility", "need-based", "merit"],
+    "status": "upcoming",
+    "application_url": "https://ucs.net/scholarships",
+    "source": "https://ucs.net/scholarships"
+  },
+  {
+    "name": "EECU Scholarship",
+    "provider_name": "EECU (Educational Employees Credit Union)",
+    "description": "EECU, a Fort Worth-based credit union serving more than 292,000 members across North Texas, awards thirteen $5,000 scholarships totaling $65,000 to graduating high school seniors. Applicants must be EECU members or the children of members. Selection is based on academic achievement, extracurricular involvement, leadership experience, and a personal essay. The prior cycle closed January 31; the next cycle's date has not yet been posted.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "region": "North Texas",
+      "counties": [
+        "Tarrant",
+        "Dallas",
+        "Denton",
+        "Collin",
+        "Johnson",
+        "Parker"
+      ],
+      "grade_levels": ["12"],
+      "membership": "EECU member, or parent/guardian is an EECU member"
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "activities_list": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "credit-union", "merit"],
+    "status": "upcoming",
+    "application_url": "https://eecu.org/scholarship",
+    "source": "https://www.prnewswire.com/news-releases/eecu-offering-65-000-in-scholarships-to-high-school-seniors-302635839.html"
+  },
+  {
+    "name": "Greater Arlington Chamber of Commerce Scholarship",
+    "provider_name": "Greater Arlington Chamber of Commerce",
+    "description": "The Greater Arlington Chamber of Commerce awards $20,000 in scholarships each year as eight $2,500 awards to graduating seniors within Arlington ISD. The application requires an essay and is submitted online. Applications are closed until the fall cycle reopens; a specific deadline date has not been posted.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant"],
+      "cities": ["Arlington"],
+      "school_districts": ["Arlington ISD"],
+      "grade_levels": ["12"]
+    },
+    "requirements": {
+      "essay": true,
+      "application": "Online application"
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.arlingtontx.com/scholarships/",
+    "source": "https://www.arlingtontx.com/scholarships/"
+  },
+  {
+    "name": "Innovation Scholarship, Sponsored by the Pettinger Foundation",
+    "provider_name": "Greater Arlington Chamber of Commerce",
+    "description": "Four $5,000 scholarships for engineering students at the University of Texas at Arlington. Undergraduates must have completed at least 12 credit hours and be enrolled in 12 or more hours in the fall; graduate students must hold a bachelor's degree and be enrolled in 9 or more hours. All applicants need a minimum 3.0 GPA. Applications are closed until the fall cycle reopens.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant"],
+      "cities": ["Arlington"],
+      "colleges": ["University of Texas at Arlington"],
+      "grade_levels": ["undergraduate", "graduate"],
+      "gpa_min": 3.0,
+      "majors": ["Engineering"],
+      "credit_hours": "12+ completed and 12+ enrolled for undergraduates; 9+ enrolled for graduate students"
+    },
+    "requirements": {
+      "transcript": true,
+      "application": "Online application"
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "stem", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.arlingtontx.com/scholarships/",
+    "source": "https://www.arlingtontx.com/scholarships/"
+  },
+  {
+    "name": "Dr. Judith J. Carrier Scholarship",
+    "provider_name": "Greater Arlington Chamber of Commerce Women's Alliance",
+    "description": "The Women's Alliance awards $19,000 in scholarships to female students at the University of Texas at Arlington, split across two $1,500 undergraduate awards, two $5,000 graduate awards, and two $3,000 nursing awards. Nursing applicants must demonstrate a personal commitment to healthcare service. Applications are closed until the fall cycle reopens.",
+    "amount_min": 1500,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant"],
+      "cities": ["Arlington"],
+      "colleges": ["University of Texas at Arlington"],
+      "gender": "Female",
+      "grade_levels": ["undergraduate", "graduate"],
+      "majors": ["Any", "Nursing"]
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "women", "healthcare", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.arlingtontx.com/scholarships/",
+    "source": "https://www.arlingtontx.com/scholarships/"
+  },
+  {
+    "name": "Leading with Excellence Scholarship",
+    "provider_name": "Arlington Foundation for Excellence in Education (AFEE)",
+    "description": "A $1,000 award for a high school senior graduating from a school in Tarrant County, Grand Prairie, or the surrounding DFW Metroplex who demonstrates leadership academically and in the community. Fall scholarships open August 1. A specific closing deadline is not posted on the foundation's scholarship listing.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant", "Dallas"],
+      "cities": ["Grand Prairie"],
+      "region": "Tarrant County, Grand Prairie, and surrounding DFW Metroplex",
+      "grade_levels": ["12"],
+      "selection_focus": "Academic and community leadership"
+    },
+    "requirements": {
+      "application": "Online application",
+      "essay": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": [
+      "local",
+      "texas",
+      "dfw",
+      "merit",
+      "community-service",
+      "leadership"
+    ],
+    "status": "active",
+    "application_url": "https://www.arlingtoneducation.org/scholarships",
+    "source": "https://www.arlingtoneducation.org/scholarships"
+  },
+  {
+    "name": "HBCU for Life Scholarship",
+    "provider_name": "Arlington Foundation for Excellence in Education (AFEE)",
+    "description": "A $1,000 award for a high school senior that may be used at any four-year Historically Black College or University. Offered by the Arlington, Texas-based foundation as part of its fall scholarship cycle, which opens August 1. A specific closing deadline is not posted on the foundation's scholarship listing.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant"],
+      "grade_levels": ["12"],
+      "college_type": "Four-year Historically Black College or University (HBCU)"
+    },
+    "requirements": {
+      "application": "Online application",
+      "essay": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "hbcu", "merit"],
+    "status": "active",
+    "application_url": "https://www.arlingtoneducation.org/scholarships",
+    "source": "https://www.arlingtoneducation.org/scholarships"
+  },
+  {
+    "name": "Standing in Excellence STEM Scholarship",
+    "provider_name": "Arlington Foundation for Excellence in Education (AFEE)",
+    "description": "A $1,000 award for a high school senior graduating from a school in Tarrant County, Grand Prairie, or the surrounding DFW Metroplex who plans to major in a STEM field. Fall scholarships open August 1. A specific closing deadline is not posted on the foundation's scholarship listing.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant", "Dallas"],
+      "cities": ["Grand Prairie"],
+      "region": "Tarrant County, Grand Prairie, and surrounding DFW Metroplex",
+      "grade_levels": ["12"],
+      "majors": ["Science", "Technology", "Engineering", "Mathematics"]
+    },
+    "requirements": {
+      "application": "Online application",
+      "essay": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "stem", "merit"],
+    "status": "active",
+    "application_url": "https://www.arlingtoneducation.org/scholarships",
+    "source": "https://www.arlingtoneducation.org/scholarships"
+  },
+  {
+    "name": "Colleyville Woman's Club Volunteer Scholarship",
+    "provider_name": "Colleyville Woman's Club",
+    "description": "Merit awards with a minimum of $250 for graduating seniors who have a four-year record of high school volunteer service; individual amounts vary. Funds are sent directly to the recipient's chosen U.S. college or post-secondary institution rather than paid as cash. Applications are returned to the school counselor by the third Friday in February, and recipients are notified no later than April 15.",
+    "amount_min": 250,
+    "amount_max": 250,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant"],
+      "cities": ["Colleyville", "Grapevine", "Southlake", "Hurst"],
+      "school_districts": [
+        "Grapevine-Colleyville ISD",
+        "Carroll ISD",
+        "Hurst-Euless-Bedford ISD"
+      ],
+      "grade_levels": ["12"],
+      "activity_requirement": "Four-year high school volunteer service record"
+    },
+    "requirements": {
+      "volunteer_record": "Documented four-year volunteer service history",
+      "counselor_submission": "Application returned to school counselor"
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "community-service", "merit"],
+    "status": "upcoming",
+    "application_url": "https://c-w-c.org/community/youth-recognition/",
+    "source": "https://c-w-c.org/community/youth-recognition/"
+  },
+  {
+    "name": "Keller ISD Education Foundation Scholarship",
+    "provider_name": "Keller ISD Education Foundation",
+    "description": "The Keller ISD Education Foundation awards one $1,000 scholarship at each Keller ISD high school to a graduating senior continuing their education. Applications are submitted through the Foundation's scholarship and grant portal. The application window has historically opened in December and closed in late February; the next cycle's date has not been posted.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant"],
+      "cities": ["Keller", "Fort Worth", "Roanoke", "Watauga", "Colleyville"],
+      "school_districts": ["Keller ISD"],
+      "grade_levels": ["12"]
+    },
+    "requirements": {
+      "application": "Keller ISD Education Foundation scholarship portal",
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.kisdfoundation.net/how-we-help/students/scholarship-portal",
+    "source": "https://communityimpact.com/dallas-fort-worth/keller-roanoke-northeast-fort-worth/education/2024/01/16/keller-isd-seniors-invited-to-apply-for-various-scholarships/"
+  },
+  {
+    "name": "Rotary Club of Keller Scholarship",
+    "provider_name": "Rotary Club of Keller",
+    "description": "A $2,500 scholarship awarded at both Keller High School and Central High School to graduating seniors who are members of their school's Interact club. Applications are submitted through the Keller ISD Education Foundation scholarship portal. The application has historically closed in late February; the next cycle's date has not been posted.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant"],
+      "cities": ["Keller", "Fort Worth"],
+      "school_districts": ["Keller ISD"],
+      "high_schools": ["Keller High School", "Central High School"],
+      "grade_levels": ["12"],
+      "membership": "Interact club member"
+    },
+    "requirements": {
+      "application": "Keller ISD Education Foundation scholarship portal",
+      "club_membership": "Interact club"
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "community-service", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.kisdfoundation.net/how-we-help/students/scholarship-portal",
+    "source": "https://communityimpact.com/dallas-fort-worth/keller-roanoke-northeast-fort-worth/education/2024/01/16/keller-isd-seniors-invited-to-apply-for-various-scholarships/"
+  },
+  {
+    "name": "KHS Circle of Friends Scholarship",
+    "provider_name": "Keller ISD Education Foundation",
+    "description": "A $1,000 scholarship for a graduating senior who is a member of the Circle of Friends club at Keller High School. Applications are submitted through the Keller ISD Education Foundation scholarship portal. The application has historically closed in late February; the next cycle's date has not been posted.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant"],
+      "cities": ["Keller"],
+      "school_districts": ["Keller ISD"],
+      "high_schools": ["Keller High School"],
+      "grade_levels": ["12"],
+      "membership": "Circle of Friends club member"
+    },
+    "requirements": {
+      "application": "Keller ISD Education Foundation scholarship portal",
+      "club_membership": "Circle of Friends"
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "community-service"],
+    "status": "upcoming",
+    "application_url": "https://www.kisdfoundation.net/how-we-help/students/scholarship-portal",
+    "source": "https://communityimpact.com/dallas-fort-worth/keller-roanoke-northeast-fort-worth/education/2024/01/16/keller-isd-seniors-invited-to-apply-for-various-scholarships/"
+  },
+  {
+    "name": "Joseph & Ashley Fiddelke Scholarship",
+    "provider_name": "Keller ISD Education Foundation",
+    "description": "A $2,000 scholarship for one graduating Keller ISD senior, administered through the Keller ISD Education Foundation scholarship portal. The application has historically opened in December and closed in late February; the next cycle's date has not been posted.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Tarrant"],
+      "cities": ["Keller", "Fort Worth", "Roanoke"],
+      "school_districts": ["Keller ISD"],
+      "grade_levels": ["12"]
+    },
+    "requirements": {
+      "application": "Keller ISD Education Foundation scholarship portal",
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.kisdfoundation.net/how-we-help/students/scholarship-portal",
+    "source": "https://communityimpact.com/dallas-fort-worth/keller-roanoke-northeast-fort-worth/education/2024/01/16/keller-isd-seniors-invited-to-apply-for-various-scholarships/"
+  },
+  {
+    "name": "AAF Dallas Foundation Scholarship Fund",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $2,000 total per student for college sophomores, juniors, or master's degree students pursuing careers in advertising and marketing at a collegiate institution in specified North Texas counties. Selection weighs career ambitions in advertising and marketing, involvement in the collegiate advertising community, financial need, and school and community participation. The prior cycle closed May 1; the next cycle's date has not been posted.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "eligibility": {
+      "states": ["TX"],
+      "region": "North Texas",
+      "counties": ["Dallas", "Tarrant", "Collin", "Denton"],
+      "grade_levels": ["college-sophomore", "college-junior", "graduate"],
+      "gpa_min": 3.0,
+      "citizenship": "U.S. citizen or documented legal resident",
+      "majors": ["Advertising", "Marketing"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "need-based", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/aaf-dallas-foundation-scholarship-fund/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/aaf-dallas-foundation-scholarship-fund/"
+  },
+  {
+    "name": "Bridges College Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Awards of up to $10,000 per student for graduating seniors and past graduates of Bishop Lynch High School in Dallas, Texas. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed April 1; the next cycle's date has not been posted, but CFT deadlines typically fall between March and May.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas"],
+      "cities": ["Dallas"],
+      "high_schools": ["Bishop Lynch High School"],
+      "grade_levels": ["12", "past-graduate"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Common Cents Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to two awards of up to $3,000 each for current juniors and seniors at a Dallas ISD high school who have participated in the qualifying Common Cents program. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed February 13; the next cycle's date has not been posted.",
+    "amount_min": 3000,
+    "amount_max": 3000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas"],
+      "cities": ["Dallas"],
+      "school_districts": ["Dallas ISD"],
+      "grade_levels": ["11", "12"],
+      "program_participation": "Common Cents program"
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "CREW in the Community Education Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Awards of up to $5,000 each year for female students pursuing commercial real estate degrees at institutions in North Texas counties. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed March 1; the next cycle's date has not been posted, but CFT deadlines typically fall between March and May.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "region": "North Texas",
+      "counties": ["Dallas", "Tarrant", "Collin", "Denton"],
+      "gender": "Female",
+      "majors": ["Commercial Real Estate", "Real Estate"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "women", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Dallas Geological Society Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Awards of a minimum of $1,000 each for students majoring in the geological sciences who are U.S. citizens or documented residents with a minimum 3.0 GPA. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed May 15; the next cycle's date has not been posted.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas"],
+      "gpa_min": 3.0,
+      "citizenship": "U.S. citizen or documented resident",
+      "majors": ["Geological Sciences", "Geology"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "stem", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Dr. Anson L. Clark Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Awards of up to $20,000 total for students from Dallas ISD schools with a minimum 3.2 GPA and qualifying SAT or ACT scores. One of the largest DFW-local awards available to public high school students. The prior cycle closed April 1; the next cycle's date has not been posted, but CFT deadlines typically fall between March and May.",
+    "amount_min": 20000,
+    "amount_max": 20000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas"],
+      "cities": ["Dallas"],
+      "school_districts": ["Dallas ISD"],
+      "grade_levels": ["12"],
+      "gpa_min": 3.2,
+      "test_scores_required": true
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true,
+      "test_scores": "SAT or ACT",
+      "transcript": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "merit", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Dr. Frederick Jones Sr. Family Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $5,000 for four years for graduating high school seniors of southwest Dallas pursuing STEM or medical fields. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed May 1; the next cycle's date has not been posted, but CFT deadlines typically fall between March and May.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas"],
+      "region": "Southwest Dallas",
+      "grade_levels": ["12"],
+      "majors": [
+        "Science",
+        "Technology",
+        "Engineering",
+        "Mathematics",
+        "Medicine"
+      ]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "stem", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "ECLAT Foundation Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Multiple $2,000 awards for North Texas students with a 3.0 to 3.5 GPA who plan to attend a Texas college or university. The GPA band is deliberately set for solid-but-not-top students, making it less competitive than typical merit awards. The prior cycle closed April 1; the next cycle's date has not been posted.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "eligibility": {
+      "states": ["TX"],
+      "region": "North Texas",
+      "counties": ["Dallas", "Tarrant", "Collin", "Denton"],
+      "gpa_min": 3.0,
+      "gpa_max": 3.5,
+      "college_location": "Texas college or university"
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "merit", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Elizabeth Abrams Memorial Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "One award of up to $3,000 for a swim team member at Plano East, Plano West, Plano Senior High School, or John Paul II High School. A narrowly targeted award with a very small applicant pool. The prior cycle closed May 1; the next cycle's date has not been posted.",
+    "amount_min": 3000,
+    "amount_max": 3000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Collin", "Denton"],
+      "cities": ["Plano"],
+      "high_schools": [
+        "Plano East Senior High School",
+        "Plano West Senior High School",
+        "Plano Senior High School",
+        "John Paul II High School"
+      ],
+      "grade_levels": ["12"],
+      "activity_requirement": "Swim team member"
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "athletics"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Elizabeth Anne Ala Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "One $2,000 award for a graduating senior of any high school in Garland ISD who has participated in a bilingual or ESL program. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed April 1; the next cycle's date has not been posted.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas"],
+      "cities": ["Garland"],
+      "school_districts": ["Garland ISD"],
+      "grade_levels": ["12"],
+      "program_participation": "Bilingual or ESL program"
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "first-gen", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "General James H. Doolittle Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $5,000 total for college juniors, seniors, or graduate students studying aerospace or aeronautical engineering. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed April 1; the next cycle's date has not been posted.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "grade_levels": ["college-junior", "college-senior", "graduate"],
+      "majors": ["Aerospace Engineering", "Aeronautical Engineering"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "stem", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Giana Foundation Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to four awards of up to $5,000 each for public high school seniors in Dallas, Collin, or Denton counties pursuing visual or performing arts. One of the few DFW-local awards dedicated specifically to arts students. The prior cycle closed April 1; the next cycle's date has not been posted.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas", "Collin", "Denton"],
+      "grade_levels": ["12"],
+      "school_type": "Public high school",
+      "majors": ["Visual Arts", "Performing Arts"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true,
+      "portfolio": "Arts portfolio or audition may be required"
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "arts", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Gigi and Louise Gartner Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Multiple awards of up to $10,000 for high school seniors, current college students, or post-graduates of a Dallas County high school who are pursuing a degree in holistic medicine. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed May 1; the next cycle's date has not been posted.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas"],
+      "grade_levels": ["12", "undergraduate", "past-graduate"],
+      "majors": ["Holistic Medicine"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "healthcare", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Jain Family First Responder Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $10,000 for a child or stepchild of an active, full-time first responder in North Texas. Covers the families of police, fire, and EMS personnel across the DFW region. The prior cycle closed May 1; the next cycle's date has not been posted, but CFT deadlines typically fall between March and May.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "states": ["TX"],
+      "region": "North Texas",
+      "counties": ["Dallas", "Tarrant", "Collin", "Denton"],
+      "parent_occupation": "Active, full-time first responder"
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true,
+      "proof_of_eligibility": "Documentation of parent's first responder employment"
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "first-responder", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Joan H. Hensley Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $5,000 a year for graduating high school seniors or past graduates in Dallas County. A broadly eligible county-wide award with no major restriction. The prior cycle closed May 1; the next cycle's date has not been posted, but CFT deadlines typically fall between March and May.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas"],
+      "grade_levels": ["12", "past-graduate"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "need-based", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Lawrence \"Larry\" Cole Memorial Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $6,000 per student per year for students attending an accredited public college or university in the North Texas region who are pursuing machining or manufacturing. A rare, well-funded award aimed at skilled manufacturing trades. The prior cycle closed May 1; the next cycle's date has not been posted.",
+    "amount_min": 6000,
+    "amount_max": 6000,
+    "eligibility": {
+      "states": ["TX"],
+      "region": "North Texas",
+      "counties": ["Dallas", "Tarrant", "Collin", "Denton"],
+      "college_type": "Accredited public college or university in North Texas",
+      "majors": ["Machining", "Manufacturing"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "trade", "vocational", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Maier Foundation Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $5,000 for Collin or Denton County residents pursuing a degree in science, engineering, or medicine. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed May 1; the next cycle's date has not been posted, but CFT deadlines typically fall between March and May.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Collin", "Denton"],
+      "residency": "Collin or Denton County resident",
+      "majors": ["Science", "Engineering", "Medicine"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "stem", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Mr. & Mrs. W.L. Boyd Schooling Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $8,000 total for graduating seniors at a Collin County, Texas high school with a minimum 3.2 GPA. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed March 1; the next cycle's date has not been posted, but CFT deadlines typically fall between March and May.",
+    "amount_min": 8000,
+    "amount_max": 8000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Collin"],
+      "grade_levels": ["12"],
+      "gpa_min": 3.2
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "merit", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Om & Shanti Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Multiple awards of up to $6,000 per student per year for graduating seniors of a public high school in Dallas or Collin counties. A renewable, broadly eligible award covering two of the largest DFW counties. The prior cycle closed March 1; the next cycle's date has not been posted.",
+    "amount_min": 6000,
+    "amount_max": 6000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas", "Collin"],
+      "grade_levels": ["12"],
+      "school_type": "Public high school"
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "need-based", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Subhasish Bhowmik Memorial Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $10,000 for graduating high school seniors at Emmett J. Conrad High School or Hillcrest High School in Dallas. A high-value award with a very small eligible applicant pool limited to two campuses. The prior cycle closed April 1; the next cycle's date has not been posted.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas"],
+      "cities": ["Dallas"],
+      "school_districts": ["Dallas ISD"],
+      "high_schools": ["Emmett J. Conrad High School", "Hillcrest High School"],
+      "grade_levels": ["12"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Van London Memorial Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $15,000 for people who are blind pursuing a college or trade degree. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed April 1; the next cycle's date has not been posted, but CFT deadlines typically fall between March and May.",
+    "amount_min": 15000,
+    "amount_max": 15000,
+    "eligibility": {
+      "states": ["TX"],
+      "disability": "Blind",
+      "program_type": "College or trade degree"
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true,
+      "documentation": "Documentation of visual disability"
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "disability", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "William A. Turner, Jr. Endowed Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Awards of $5,000 or $6,000 per student for enrolled juniors and seniors at the University of North Texas in the College of Education. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed May 15; the next cycle's date has not been posted.",
+    "amount_min": 5000,
+    "amount_max": 6000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Denton"],
+      "colleges": ["University of North Texas"],
+      "grade_levels": ["college-junior", "college-senior"],
+      "majors": ["Education"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "education", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Henry Jackson Crook Memorial Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $5,000 a year for students who attend Episcopal School of Dallas and maintain a 3.00 GPA or higher. Administered through the Communities Foundation of Texas universal scholarship application. The prior cycle closed May 1; the next cycle's date has not been posted.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Dallas"],
+      "cities": ["Dallas"],
+      "high_schools": ["Episcopal School of Dallas"],
+      "gpa_min": 3.0
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "dfw", "merit", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "C.V.M. Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to $15,000 for graduates of Mildred Independent School District in Navarro County, Texas, with a GPA of 4.0 out of 7.0 on the district's scale. A high-value award restricted to a single small rural district southeast of the DFW metroplex. The prior cycle closed March 1; the next cycle's date has not been posted.",
+    "amount_min": 15000,
+    "amount_max": 15000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Navarro"],
+      "school_districts": ["Mildred ISD"],
+      "grade_levels": ["12"],
+      "gpa_requirement": "4.0 out of 7.0 on district scale"
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "rural", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Palacios Area Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "Up to five awards of $500 to $1,000 each for graduating seniors of Palacios High School in Palacios, Texas. A small-dollar, very low-competition award for a single coastal Texas campus. The prior cycle closed March 1; the next cycle's date has not been posted.",
+    "amount_min": 500,
+    "amount_max": 1000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Matagorda"],
+      "cities": ["Palacios"],
+      "high_schools": ["Palacios High School"],
+      "grade_levels": ["12"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "rural", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  },
+  {
+    "name": "Jack Ford Shelby Scholarship",
+    "provider_name": "Communities Foundation of Texas",
+    "description": "One $5,000 award for a graduating senior at Littlefield High School in Littlefield, Texas. A single-campus award in the Texas Panhandle with a very small applicant pool. The prior cycle closed March 1; the next cycle's date has not been posted.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "states": ["TX"],
+      "counties": ["Lamb"],
+      "cities": ["Littlefield"],
+      "high_schools": ["Littlefield High School"],
+      "grade_levels": ["12"]
+    },
+    "requirements": {
+      "essay": true,
+      "recommendation_letters": 2,
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["local", "texas", "rural", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cftexas.org/scholarships/apply-for-scholarships/",
+    "source": "https://www.cftexas.org/scholarships/apply-for-scholarships/"
+  }
+]

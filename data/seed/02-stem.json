@@ -1,0 +1,1258 @@
+[
+  {
+    "name": "NSBE National Scholarship Program",
+    "provider_name": "National Society of Black Engineers",
+    "description": "NSBE's national scholarship program funds members pursuing engineering, computer science, mathematics and related STEM degrees, with individual named awards including the Mamon & Cynthia Powers Scholarship at $10,000, the Analog Devices, Hatch, Angela Barbee and Tighe & Bond Scholarships at $5,000 each, and the NSBE Jr. Bridge Scholarship at $1,000. Applicants must be registered, paid NSBE members with a minimum cumulative GPA of 2.5 and must have their GPA verified by a school official through the MyNSBE portal. NSBE states that the Fall 2026 scholarship cycle will open soon; the Fall/Winter GPA verification window runs September 1, 2026 through February 26, 2027.",
+    "amount_min": 1000,
+    "amount_max": 10000,
+    "eligibility": {
+      "education_level": ["high-school", "current-undergrad", "graduate"],
+      "gpa_min": 2.5,
+      "majors": ["Engineering", "Computer Science", "Mathematics", "STEM"],
+      "other": "Must be a registered, paid NSBE member. GPA must be self-reported on the MyNSBE profile and confirmed by a registered advisor or university official. Individual awards carry their own GPA minimums ranging from 2.0 to 3.0 and academic-level restrictions."
+    },
+    "requirements": {
+      "transcript": true,
+      "other": "GPA verification by a school official through the MyNSBE portal is mandatory each semester. Applications are submitted through the NSBE Scholarships & Awards portal at nsbe.smapply.io."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "engineering",
+      "computer-science",
+      "math",
+      "minority",
+      "merit",
+      "current-undergrad",
+      "graduate"
+    ],
+    "status": "upcoming",
+    "application_url": "https://nsbe.smapply.io/",
+    "source": "https://nsbe.org/scholarships/"
+  },
+  {
+    "name": "IEEE PES Scholarship Plus Initiative",
+    "provider_name": "IEEE Power & Energy Society",
+    "description": "The IEEE PES Scholarship Plus Initiative supports undergraduate electrical and computer engineering students committed to careers in the power and energy field, paying $3,000 in the first year, $3,000 in the second and $4,000 in the third for up to $10,000 per qualifying scholar. Applicants must be full-time undergraduates at a U.S. ABET-accredited or Canadian CEAB-accredited university with a GPA of 3.0 or higher, and must complete or plan to complete three power-and-energy courses totaling nine credits. The application window opens January 20 annually with a deadline in mid-May; the next cycle's dated deadline has not been posted.",
+    "amount_min": 3000,
+    "amount_max": 10000,
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "gpa_min": 3.0,
+      "citizenship": "Citizen or permanent resident of the USA or Canada",
+      "majors": [
+        "Electrical Engineering",
+        "Computer Engineering",
+        "Engineering",
+        "Computer Science",
+        "Mathematics",
+        "Physical Sciences"
+      ],
+      "other": "Must be a full-time undergraduate at a U.S. ABET-accredited or Canadian CEAB-accredited university. Must have completed or plan to complete 3 courses (9 credits) related to power and energy. IEEE PES Student Membership is not required for the first application but is required for renewal."
+    },
+    "requirements": {
+      "transcript": true,
+      "other": "Online application through the IEEE PES scholarship portal."
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "merit", "renewable", "current-undergrad"],
+    "status": "upcoming",
+    "application_url": "https://ieee-pes.org/about-pes/awards-scholarships/pes-scholar/",
+    "source": "https://ieee-pes.org/about-pes/awards-scholarships/pes-scholar/"
+  },
+  {
+    "name": "Tau Beta Pi Scholarship",
+    "provider_name": "Tau Beta Pi Association",
+    "description": "Tau Beta Pi awards approximately 250 scholarships each year to initiated members entering their senior year of undergraduate engineering study, worth $2,000 for a full year of enrollment or $1,000 for a single semester or partial year. Applicants must be initiated Tau Beta Pi members, or candidates who will be initiated by June 1, and must be full-time senior engineering undergraduates. The application deadline falls on April 1 each year with recommendation letters due April 8; the next cycle's dated deadline has not been posted.",
+    "amount_min": 1000,
+    "amount_max": 2000,
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "majors": ["Engineering"],
+      "other": "Must be an initiated Tau Beta Pi member, or a candidate for membership who will be initiated by June 1. Must be a full-time senior undergraduate engineering student. Students graduating in the fall semester may apply for partial scholarships."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Letters of recommendation are due one week after the application deadline."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "merit", "current-undergrad"],
+    "status": "upcoming",
+    "application_url": "https://www.tbp.org/scholarships.cfm",
+    "source": "https://www.tbp.org/scholarships.cfm"
+  },
+  {
+    "name": "ASCE Undergraduate Scholarships",
+    "provider_name": "American Society of Civil Engineers",
+    "description": "ASCE offers nine named undergraduate scholarships for civil engineering students, including the Burton and Erma Lewis Structural Engineering Scholarship, the Lawrence W. and Francis W. Cox Scholarship, and the Eugene C. Figg, Jr. Civil Engineering Scholarship. ASCE states that its scholarships and fellowships generally offer $2,500 to $5,000 per recipient, though amounts vary year to year with the financial health of each endowment. Applications must be submitted online no later than January 15 of the year of award; the next cycle's dated deadline has not been posted.",
+    "amount_min": 2500,
+    "amount_max": 5000,
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "majors": ["Civil Engineering"],
+      "other": "Undergraduate students with at least one year of study remaining. ASCE student membership is expected. Individual named scholarships carry their own additional criteria."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Online application through the ASCE awards portal."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "merit", "current-undergrad"],
+    "status": "upcoming",
+    "application_url": "https://www.asce.org/career-growth/awards-and-honors/scholarships",
+    "source": "https://www.asce.org/career-growth/awards-and-honors/scholarships"
+  },
+  {
+    "name": "AIAA Foundation Undergraduate Scholarship",
+    "provider_name": "American Institute of Aeronautics and Astronautics Foundation",
+    "description": "AIAA awards a slate of named undergraduate scholarships each year to AIAA Student Members pursuing science or engineering coursework leading into the aerospace field, ranging from $500 up to $10,000 for awards such as the Daedalus 88 Scholarship and the Mary W. Jackson Scholarship. Applicants must be current AIAA Student Members in good standing, enrolled at an accredited U.S. college, university or U.S. Territory institution, and must have completed at least one academic semester of full-time college work. The application opens at noon ET on October 15 each year and closes at 11:59 p.m. ET on January 31; the next cycle's dated deadline has not been posted with a year.",
+    "amount_min": 500,
+    "amount_max": 10000,
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "gpa_min": 3.3,
+      "citizenship": "Must be enrolled at an accredited U.S. college or university or U.S. Territory institution",
+      "majors": ["Aerospace Engineering", "Engineering", "Science"],
+      "other": "Must be a current AIAA Student Member in good standing and have completed at least one academic semester of full-time college work. GPA exceptions: the Mary W. Jackson and Daedalus 88 Scholarships require a minimum 2.50."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "500 to 1,000 word essay on career objectives and academic program; college transcripts; two professional letters of recommendation submitted through the online system roughly two weeks after the application deadline; resume or CV."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "aviation", "merit", "current-undergrad"],
+    "status": "upcoming",
+    "application_url": "https://www.aiaa.org/get-involved/university-students/undergraduate-scholarships-graduate-awards/",
+    "source": "https://www.aiaa.org/get-involved/university-students/undergraduate-scholarships-graduate-awards/"
+  },
+  {
+    "name": "AIAA Foundation Graduate Award",
+    "provider_name": "American Institute of Aeronautics and Astronautics Foundation",
+    "description": "AIAA's graduate awards fund master's and doctoral students conducting aerospace-related research, with the Neil Armstrong Graduate Award and the Orville and Wilbur Wright Graduate Award at $10,000 each and two Dr. Hassan A. Hassan Graduate Awards in Aerospace Engineering at $9,000 each. Applicants must be current AIAA Student Members who have completed at least one academic quarter or semester of full-time graduate work. The application opens October 15 and closes January 31 each year; the next cycle's dated deadline has not been posted with a year.",
+    "amount_min": 9000,
+    "amount_max": 10000,
+    "eligibility": {
+      "education_level": ["graduate"],
+      "gpa_min": 3.3,
+      "citizenship": "Varies by award: the Neil Armstrong Graduate Award requires U.S. citizenship, while the Orville and Wilbur Wright Graduate Award allows enrollment worldwide",
+      "majors": ["Aerospace Engineering", "Engineering", "Science"],
+      "other": "Must be a current AIAA Student Member in good standing and have completed at least one academic quarter or semester of full-time graduate-level work. The Neil Armstrong Award requires a 3.0 GPA minimum."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "500 to 1,000 word career-objectives essay; transcripts including all graduate work through the most recent fall term; two professional letters of recommendation; resume or CV; plus a one to three page double-spaced research description defining hypotheses, approach, objectives and benefits."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "aviation", "merit", "graduate"],
+    "status": "upcoming",
+    "application_url": "https://www.aiaa.org/get-involved/university-students/undergraduate-scholarships-graduate-awards/",
+    "source": "https://www.aiaa.org/get-involved/university-students/undergraduate-scholarships-graduate-awards/"
+  },
+  {
+    "name": "Amazon Future Engineer Scholarship",
+    "provider_name": "Amazon (administered by Scholarship America)",
+    "description": "Amazon Future Engineer awards renewable scholarships to U.S. high school seniors planning to pursue a bachelor's degree in computer science or a related field, covering unmet financial need up to a maximum of $10,000 annually for up to four years. Recipients also receive a paid summer internship at Amazon. Applications for the most recent cycle have closed and Amazon has not yet announced the next cycle's dates; the program has historically opened in the fall with a winter deadline.",
+    "amount_min": 10000,
+    "amount_max": 40000,
+    "eligibility": {
+      "education_level": ["high-school"],
+      "gpa_min": 2.3,
+      "citizenship": "Must be authorized to work in the United States",
+      "majors": [
+        "Computer Science",
+        "Software Engineering",
+        "Computer Engineering",
+        "Electrical Engineering",
+        "Data Science",
+        "Mathematics"
+      ],
+      "other": "Must be a U.S. high school senior who has taken computer science coursework or passed Amazon's assessment, must demonstrate financial need, and must plan to pursue a bachelor's degree in computer science or a related field."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "other": "Demonstration of financial need is required. Applications are submitted through Scholarship America."
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "computer-science",
+      "engineering",
+      "need-based",
+      "renewable"
+    ],
+    "status": "upcoming",
+    "application_url": "https://scholarshipamerica.org/scholarship/amazonfutureengineer/",
+    "source": "https://www.amazonfutureengineer.com/scholarships"
+  },
+  {
+    "name": "Regeneron Science Talent Search 2027",
+    "provider_name": "Society for Science (sponsored by Regeneron)",
+    "description": "The Regeneron Science Talent Search is the nation's oldest and most prestigious science and mathematics competition for high school seniors, distributing $3.1 million in awards annually. Each of the top 300 scholars receives $2,000 with a matching $2,000 to their high school, the top 40 finalists receive an all-expenses-paid trip to Washington, DC, and the grand prize is $250,000. Entrants must submit an original, independent research project with completed data and results, along with a maximum 20-page scientific paper, essays, recommendations and transcripts.",
+    "amount_min": 2000,
+    "amount_max": 250000,
+    "deadline": "2026-11-05",
+    "eligibility": {
+      "education_level": ["high-school"],
+      "citizenship": "Any student may enter regardless of citizenship, provided they are living in and attending their last year of secondary school in the US or its territories",
+      "majors": ["Science", "Mathematics", "Engineering", "STEM"],
+      "other": "Must be in the last year of secondary school in the US or its territories. Research conducted during any year of high school is eligible. Entries must be original, independent, individual research with completed data and results, not project ideas or literature reviews."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 3,
+      "other": "A maximum 20-page original scientific research paper, essay questions, questions about the student and project, recommendations, transcripts and optional test scores. All materials including recommendations must be submitted by 8:00 p.m. ET on the deadline."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "math", "engineering", "merit"],
+    "status": "active",
+    "application_url": "https://sciencetalentsearch.smapply.org/prog/regeneron_science_talent_search_2027/",
+    "source": "https://www.societyforscience.org/regeneron-sts/"
+  },
+  {
+    "name": "Barry Goldwater Scholarship",
+    "provider_name": "Barry Goldwater Scholarship and Excellence in Education Foundation",
+    "description": "The Goldwater Scholarship is the premier undergraduate award in the United States for students intending research careers in the natural sciences, mathematics and engineering, worth up to $7,500 per academic year toward tuition, fees, books, and room and board. Students cannot apply directly; each participating institution may nominate up to four students annually, plus one additional nominee who is a transfer student or veteran. The Foundation's nomination deadline falls on the last Friday in January at 5:00 p.m. CT, and individual campus deadlines are substantially earlier and vary by institution.",
+    "amount_min": 7500,
+    "amount_max": 7500,
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "citizenship": "U.S. citizen or U.S. national",
+      "majors": ["Natural Sciences", "Mathematics", "Engineering"],
+      "other": "Must be a college sophomore or junior with strong academic performance and research experience, intending a research career. Must be nominated by a participating institution through its campus representative; students may not apply directly."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 3,
+      "other": "A research essay is required. Students work with their campus representative to prepare materials and submit through the online portal; the campus representative then formally nominates."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "math", "merit", "current-undergrad"],
+    "status": "upcoming",
+    "application_url": "https://goldwaterscholarship.gov/",
+    "source": "https://goldwaterscholarship.gov/"
+  },
+  {
+    "name": "Astronaut Scholarship",
+    "provider_name": "Astronaut Scholarship Foundation",
+    "description": "The Astronaut Scholarship Foundation awards scholarships of up to $15,000 to exceptional STEM juniors and seniors who intend to conduct research or otherwise advance their field, along with a paid trip to the Innovators Symposium and Gala and lifetime engagement with the Foundation. Students cannot apply directly; faculty at ASF-affiliated universities must nominate candidates they know well enough to identify a special drive or talent foreshadowing a creative career. The nomination deadline for the most recent cycle was March 30, 2026 and the next cycle's date has not been posted.",
+    "amount_min": 15000,
+    "amount_max": 15000,
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "citizenship": "U.S. citizen, native-born or naturalized",
+      "majors": ["Science", "Technology", "Engineering", "Mathematics"],
+      "other": "Must be a sophomore applying for junior year or a junior applying for senior year, enrolled full-time for both semesters at a participating ASF university. Biomedical researchers are eligible; pre-med and clinical medicine students are not. Requires faculty nomination through a campus liaison."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Two recommendation letters, a one-page personal statement, academic transcripts, and a CV or resume, submitted after faculty nomination."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "math", "merit", "current-undergrad"],
+    "status": "upcoming",
+    "application_url": "https://www.astronautscholarship.org/programs/astronaut-scholarship/",
+    "source": "https://www.astronautscholarship.org/programs/astronaut-scholarship/"
+  },
+  {
+    "name": "Hertz Fellowship",
+    "provider_name": "Fannie and John Hertz Foundation",
+    "description": "The Hertz Fellowship is one of the most competitive graduate awards in the applied physical and biological sciences, mathematics and engineering, providing up to five years of funding valued at up to $250,000 plus lifelong access to the Hertz community. The fellowship supports doctoral students and is designed to give recipients freedom from the constraints of traditional research funding. Application dates are published on the Foundation's application pages and the current cycle's dated deadline is not posted on the main fellowship page; the program has historically opened in the summer with an autumn deadline.",
+    "amount_min": 250000,
+    "amount_max": 250000,
+    "eligibility": {
+      "education_level": ["graduate"],
+      "citizenship": "U.S. citizens, permanent residents, and DACA recipients",
+      "majors": [
+        "Applied Sciences",
+        "Engineering",
+        "Mathematics",
+        "Physical Sciences",
+        "Biological Sciences"
+      ],
+      "other": "For students pursuing a PhD in the applied physical and biological sciences, mathematics and engineering. College seniors, first-year graduate students and those in the early stages of doctoral study are the target applicant pool."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 3,
+      "other": "Written application followed by two rounds of technical interviews."
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "math", "merit", "renewable", "graduate"],
+    "status": "upcoming",
+    "application_url": "https://www.hertzfoundation.org/the-fellowship/",
+    "source": "https://www.hertzfoundation.org/the-fellowship/"
+  },
+  {
+    "name": "SMART Scholarship-for-Service Program",
+    "provider_name": "U.S. Department of Defense",
+    "description": "The Science, Mathematics, and Research for Transformation (SMART) Scholarship-for-Service Program pays full tuition at any regionally accredited U.S. college or university plus annual stipends ranging from $30,000 to $46,000, along with summer internships at DoD facilities and guaranteed civilian employment after graduation. Recipients accept a one-for-one post-graduation service commitment as a civilian DoD employee, serving one year for each year of funding. The application period opens annually on August 1 and closes the first Friday in December.",
+    "amount_min": 30000,
+    "amount_max": 46000,
+    "eligibility": {
+      "education_level": ["high-school", "current-undergrad", "graduate"],
+      "gpa_min": 3.0,
+      "citizenship": "Citizen of the United States, Australia, Canada, New Zealand, or the United Kingdom",
+      "majors": [
+        "Engineering",
+        "Computer Science",
+        "Mathematics",
+        "Physics",
+        "STEM"
+      ],
+      "other": "Must be pursuing a bachelor's, master's or doctoral degree in a supported STEM discipline and maintain a cumulative GPA of 3.0 on a 4.0 scale. High school seniors and incoming freshmen are eligible. Must accept a one-for-one service commitment as a civilian DoD employee."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Full tuition plus stipend, book allowance, health insurance allowance and paid summer internships are included in the award."
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "engineering",
+      "computer-science",
+      "math",
+      "merit",
+      "renewable",
+      "current-undergrad",
+      "graduate"
+    ],
+    "status": "active",
+    "application_url": "https://www.smartscholarship.org/smart",
+    "source": "https://scholarshipamerica.org/scholarship/smart-scholarship-program/"
+  },
+  {
+    "name": "CyberCorps: Scholarship for Service (SFS)",
+    "provider_name": "U.S. National Science Foundation and U.S. Office of Personnel Management",
+    "description": "CyberCorps: Scholarship for Service provides up to three years of support for cybersecurity undergraduate and graduate education at participating institutions, with annual stipends of $27,000 for undergraduates and $37,000 for graduate students plus tuition and required fees. Recipients must serve in a qualified government organization for a period at least equal to the length of the scholarship. Students apply through their own participating institution rather than centrally, so deadlines vary by school and most institutional windows fall between April and June.",
+    "amount_min": 27000,
+    "amount_max": 37000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "citizenship": "U.S. citizen or lawful permanent resident",
+      "majors": [
+        "Cybersecurity",
+        "Computer Science",
+        "Information Assurance",
+        "Artificial Intelligence"
+      ],
+      "other": "Must be a full-time student in a coherent formal program at a participating institution, at sophomore standing for an associate's degree, junior or senior standing for a bachelor's, master's enrollment, or research-based doctoral enrollment. Must demonstrate a commitment to a career in AI or cybersecurity."
+    },
+    "requirements": {
+      "other": "Applications are submitted to the SFS program at the student's own participating institution; each institution sets its own required materials and deadline."
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "cybersecurity",
+      "computer-science",
+      "merit",
+      "renewable",
+      "current-undergrad",
+      "graduate"
+    ],
+    "status": "active",
+    "application_url": "https://sfs.opm.gov/",
+    "source": "https://www.nsf.gov/funding/opportunities/cyberai-sfs-cyberaicorps-scholarship-service/nsf26-503/solicitation"
+  },
+  {
+    "name": "ISACA Foundation Scholarship Program",
+    "provider_name": "ISACA Foundation",
+    "description": "The ISACA Foundation runs a global scholarship program for students pursuing degrees related to IT audit, risk, cybersecurity, governance and assurance, with awards ranging from $500 to $7,500. A single application is matched against a large slate of named and chapter-specific scholarships including the Digital Trust Scholarship, the SheLeadsTech Scholarship and the National Cyber League Games Scholarship. The program runs two cycles per year; Cycle 2 for 2026 opens September 8 and closes October 20.",
+    "amount_min": 500,
+    "amount_max": 7500,
+    "deadline": "2026-10-20",
+    "eligibility": {
+      "education_level": ["high-school", "current-undergrad", "graduate"],
+      "citizenship": "Not restricted; several scholarships are open worldwide while others are limited to specific U.S. metro areas or countries",
+      "majors": [
+        "Cybersecurity",
+        "IT Audit",
+        "Risk Management",
+        "Information Systems",
+        "Computer Science",
+        "Governance",
+        "Assurance"
+      ],
+      "other": "Individual scholarships within the program carry their own school-specific or region-specific eligibility, including awards restricted to Greater Philadelphia, Greater St. Louis, Puerto Rico and Madison, Wisconsin."
+    },
+    "requirements": {
+      "essay": true,
+      "other": "Single online application through the ISACA Foundation scholarship platform; applicants are automatically matched to all scholarships they qualify for."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "cybersecurity",
+      "computer-science",
+      "merit",
+      "current-undergrad",
+      "graduate"
+    ],
+    "status": "upcoming",
+    "application_url": "https://isaca.secure-platform.com/a/page/ISACAfoundation/aboutscholarships",
+    "source": "https://isaca.secure-platform.com/a/page/ISACAfoundation/aboutscholarships"
+  },
+  {
+    "name": "Samantha Jennings-Jones Memorial Scholarship",
+    "provider_name": "Center for Cyber Safety and Education (ISC2)",
+    "description": "This $5,000 award is given annually to support a woman seeking to start or advance a career in cybersecurity, granted through the Center for Cyber Safety and Education's academic scholarship program. Recipients may also take the ISC2 Certified in Cybersecurity certification exam at no cost. The 2026 cycle closed March 15, 2026; the Center historically opens academic scholarship applications in the winter with a mid-March deadline, and the next cycle has not been announced.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "citizenship": "Applicants from any country",
+      "majors": ["Cybersecurity"],
+      "other": "Open to students pursuing or planning to pursue a cybersecurity-focused degree, enrolled full-time or part-time, at on-campus or online programs. This award specifically supports a woman in cybersecurity."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "other": "Applied for through the Center's academic scholarship application at iamcybersafe.org."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "cybersecurity",
+      "women",
+      "merit",
+      "current-undergrad",
+      "graduate"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.iamcybersafe.org/s/academic-scholarships",
+    "source": "https://www.isc2.org/Insights/2026/03/Center-2026-scholarships"
+  },
+  {
+    "name": "AFCEA Cyber Security Scholarship",
+    "provider_name": "AFCEA Educational Foundation",
+    "description": "A $5,000 scholarship for full-time undergraduates enrolled in cybersecurity, computer science, digital forensics, information assurance or related cyber fields at a four-year accredited U.S. institution. It is awarded from AFCEA's single STEM Majors application, which also considers applicants for the STEM Major Scholarship and the Student Member Scholarship. The 2026 cycle has closed with supporting documents having been due May 1, 2026; AFCEA typically opens the STEM Majors application in the winter and the next cycle has not been announced.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "gpa_min": 3.0,
+      "citizenship": "U.S. citizen or permanent resident",
+      "majors": [
+        "Cybersecurity",
+        "Computer Science",
+        "Digital Forensics",
+        "Information Assurance"
+      ],
+      "other": "Must be enrolled full-time at a four-year accredited U.S. college or university and be a sophomore or junior at the time of application."
+    },
+    "requirements": {
+      "transcript": true,
+      "recommendations": 1,
+      "other": "At least one letter of recommendation from a professor at the applicant's current institution, submitted by the recommender as a PDF to edfoundation@afcea.org; official transcripts covering all college-level coursework submitted electronically by the school. An additional recommendation letter or resume is optional."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "cybersecurity",
+      "computer-science",
+      "merit",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.afcea.org/stem-majors-scholarships",
+    "source": "https://www.afcea.org/stem-majors-scholarships"
+  },
+  {
+    "name": "AFCEA STEM Major Scholarship",
+    "provider_name": "AFCEA Educational Foundation",
+    "description": "A $2,500 scholarship for full-time undergraduate sophomores and juniors majoring in STEM fields relevant to national security communications and information technology, spanning more than 26 qualifying technical programs including computer science, electrical engineering, mathematics, physics and aerospace engineering. Awards may be applied only toward tuition and required course-related expenses including fees, books, supplies and equipment. The 2026 cycle has closed and the next cycle has not been announced; AFCEA typically opens the STEM Majors application in the winter.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "gpa_min": 3.0,
+      "citizenship": "U.S. citizen or permanent resident",
+      "majors": [
+        "Computer Science",
+        "Cybersecurity",
+        "Electrical Engineering",
+        "Mathematics",
+        "Physics",
+        "Aerospace Engineering"
+      ],
+      "other": "Must be enrolled full-time at a four-year accredited U.S. college or university and be a sophomore or junior at the time of application."
+    },
+    "requirements": {
+      "transcript": true,
+      "recommendations": 1,
+      "other": "At least one letter of recommendation from a professor at the applicant's current institution; official transcripts covering all college-level coursework submitted electronically by the school."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "engineering",
+      "computer-science",
+      "math",
+      "merit",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.afcea.org/stem-majors-scholarships",
+    "source": "https://www.afcea.org/stem-majors-scholarships"
+  },
+  {
+    "name": "Nightwing Scholarship",
+    "provider_name": "AFCEA Educational Foundation (sponsored by Nightwing)",
+    "description": "A $5,000 scholarship applied toward tuition for students pursuing cyber intelligence and cybersecurity-related degrees at an accredited community college or four-year college or university. Eligible majors include cybersecurity, computer science, cybersecurity engineering, information security and assurance, cyber intelligence and security, cybersecurity risk management, intelligence analysis and artificial intelligence. The 2026 cycle has closed and the next cycle has not been announced.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "gpa_min": 3.0,
+      "majors": [
+        "Cybersecurity",
+        "Computer Science",
+        "Cybersecurity Engineering",
+        "Information Security and Assurance",
+        "Cyber Intelligence and Security",
+        "Intelligence Analysis",
+        "Artificial Intelligence"
+      ],
+      "other": "Undergraduates must be in their sophomore, junior or senior year, or pursuing a master's degree. Must demonstrate strong academic performance and aptitude for STEM subjects and be in good standing with a minimum 3.0 unweighted GPA."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 1,
+      "other": "A brief essay of 250 words or less describing financial need; at least one letter of recommendation from a professor at the applicant's current institution; official transcripts covering all college-level coursework."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "cybersecurity",
+      "computer-science",
+      "need-based",
+      "merit",
+      "current-undergrad",
+      "graduate"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.afcea.org/nightwing-scholarship",
+    "source": "https://www.afcea.org/nightwing-scholarship"
+  },
+  {
+    "name": "Howard A. Schmidt Memorial Scholarship",
+    "provider_name": "ISSA Education Foundation",
+    "description": "A $3,500 scholarship for undergraduate students pursuing a career in cybersecurity, awarded by the Information Systems Security Association Education Foundation. Applicants must be enrolled full-time as a sophomore or above and must show security-related work experience or completed security coursework. The ISSAEF scholarship application period runs February 1 to June 15 each year; the 2026 window closed June 15, 2026 and the next cycle's dated deadline has not been posted.",
+    "amount_min": 3500,
+    "amount_max": 3500,
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "gpa_min": 2.5,
+      "majors": ["Cybersecurity", "Information Security"],
+      "other": "Enrolled full-time as a sophomore or above; must have security-related work experience and/or completed security coursework; must be pursuing a cybersecurity career."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 1,
+      "other": "Personal statement describing background and goals; unofficial transcript; at least one letter of recommendation, with two preferred."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "cybersecurity", "merit", "current-undergrad"],
+    "status": "upcoming",
+    "application_url": "https://issaef.org/scholarships/",
+    "source": "https://issaef.org/scholarships/"
+  },
+  {
+    "name": "E. Eugene Schultz, Jr. Memorial Scholarship",
+    "provider_name": "ISSA Education Foundation",
+    "description": "A $3,500 scholarship for graduate students pursuing a career in cybersecurity, awarded by the Information Systems Security Association Education Foundation. Graduate applicants must hold a cumulative GPA of 3.0 or higher and must show security-related work experience or completed security coursework. The ISSAEF scholarship application period runs February 1 to June 15 each year; the 2026 window closed June 15, 2026 and the next cycle's dated deadline has not been posted.",
+    "amount_min": 3500,
+    "amount_max": 3500,
+    "eligibility": {
+      "education_level": ["graduate"],
+      "gpa_min": 3.0,
+      "majors": ["Cybersecurity", "Information Security"],
+      "other": "Enrolled full-time in graduate studies; must have security-related work experience and/or completed security coursework; must be pursuing a cybersecurity career."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 1,
+      "other": "Personal statement describing background and goals; unofficial transcript; at least one letter of recommendation, with two preferred."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "cybersecurity", "merit", "graduate"],
+    "status": "upcoming",
+    "application_url": "https://issaef.org/scholarships/",
+    "source": "https://issaef.org/scholarships/"
+  },
+  {
+    "name": "Shon Harris Women in Security Memorial Scholarship",
+    "provider_name": "ISSA Education Foundation",
+    "description": "A $2,000 scholarship for women pursuing either undergraduate or graduate studies toward a cybersecurity career, awarded by the Information Systems Security Association Education Foundation. Applicants must show security-related work experience or completed security coursework, with undergraduates needing a 2.5 GPA and graduate students a 3.0. The ISSAEF scholarship application period runs February 1 to June 15 each year; the 2026 window closed June 15, 2026 and the next cycle's dated deadline has not been posted.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "gpa_min": 2.5,
+      "majors": ["Cybersecurity", "Information Security"],
+      "other": "Open to women in security. Enrolled full-time as a sophomore or above for undergraduates, or in graduate studies. Graduate applicants require a 3.0 GPA; undergraduates require 2.5."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 1,
+      "other": "Personal statement describing background and goals; unofficial transcript; at least one letter of recommendation, with two preferred."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "cybersecurity",
+      "women",
+      "merit",
+      "current-undergrad",
+      "graduate"
+    ],
+    "status": "upcoming",
+    "application_url": "https://issaef.org/scholarships/",
+    "source": "https://issaef.org/scholarships/"
+  },
+  {
+    "name": "AOPA Foundation Aviation Scholarship Program",
+    "provider_name": "AOPA Foundation (Aircraft Owners and Pilots Association)",
+    "description": "The AOPA Foundation funds flight training toward primary pilot certificates, advanced ratings and aviation maintenance careers, with numerous awards ranging from $250 to $14,000. A single general application automatically matches applicants to every scholarship they qualify for, and funds are disbursed directly to recipients on a prepaid expense card. The Fall 2026 application period runs October 1 through December 31, 2026, with all applicants receiving a decision email by April 15, 2027.",
+    "amount_min": 250,
+    "amount_max": 14000,
+    "deadline": "2026-12-31",
+    "eligibility": {
+      "education_level": [
+        "high-school",
+        "current-undergrad",
+        "career-training"
+      ],
+      "citizenship": "Open to residents of the United States and District of Columbia, Canada, Guam, Puerto Rico, and the U.S. Virgin Islands",
+      "majors": ["Flight Training", "Aviation Maintenance", "Aviation"],
+      "other": "Must be a current AOPA member; complimentary high school membership is available. Applicants need not be enrolled in an aviation program or pursuing an aviation career. You may apply having already started flight training but become ineligible if you pass your checkride before the award. The high school track is for ages 16 to 18."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Completed online application with written responses; a recent transcript including current school year grades and cumulative unweighted GPA on a 4.0 scale; two references submitted on AOPA's provided reference form, where parents, other relatives and same-age friends are disqualifying. Flight training must be completed within 12 months of the award date."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "aviation", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.aopa.org/training-and-safety/students/aopa-flight-training-scholarships",
+    "source": "https://download.aopa.org/youcanfly/2026scholarshipfaq.pdf"
+  },
+  {
+    "name": "Vertical Flight Foundation Scholarship",
+    "provider_name": "Vertical Flight Society",
+    "description": "The Vertical Flight Foundation awards scholarships ranging from $4,000 to $6,000 to engineering students whose studies relate to vertical flight technology, presented at an annual awards ceremony each May. The top-ranked applicant receives the $6,000 Bell scholarship, and the applicant showing the most interest in improving vertical flight affordability is considered for the Jing Yen Cost Awareness scholarship. A student may receive a VFF scholarship only once per academic level, meaning once as an undergraduate, once as a master's student and once as a doctoral student.",
+    "amount_min": 4000,
+    "amount_max": 6000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "majors": [
+        "Aerospace Engineering",
+        "Mechanical Engineering",
+        "Engineering"
+      ],
+      "other": "Must be enrolled full-time in a relevant engineering degree program at an accredited university and have at least one academic term remaining after the May award ceremony. High school students are ineligible. The application deadline has historically fallen on February 1 and the next cycle's dated deadline has not been posted."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 1,
+      "other": "Completed application form; a personal narrative demonstrating passion for vertical flight technology; resume; official transcript sent directly by the registrar's office; and a letter of recommendation from a professor. Cost Awareness applicants must explicitly address affordability in vertical flight."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "engineering",
+      "aviation",
+      "merit",
+      "current-undergrad",
+      "graduate"
+    ],
+    "status": "upcoming",
+    "application_url": "https://vtol.org/vfs-works-for-you/education-and-student-activities/vertical-flight-foundation-scholarships/how-to-apply-for-a-vff-scholarship1",
+    "source": "https://vtol.org/vfs-works-for-you/education-and-student-activities/vertical-flight-foundation-scholarships/how-to-apply-for-a-vff-scholarship1"
+  },
+  {
+    "name": "Choose Aerospace Scholarship",
+    "provider_name": "Choose Aerospace (with the Aviation Technician Education Council)",
+    "description": "Choose Aerospace awards $2,500 cash scholarships to students entering or enrolled in aviation maintenance technical programs, funded by industry donors. Beyond the cash award the program distributes in-kind awards including Sonic Tools aviation tool kits valued at $7,102, Avotek textbook sets and General Familiarization Courses. The next application cycle opens November 1, 2026; the official page announces the opening date but does not publish a closing date.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "education_level": [
+        "high-school",
+        "career-training",
+        "current-undergrad"
+      ],
+      "majors": ["Aviation Maintenance", "Aviation Technology", "Avionics"],
+      "other": "Must be planning to attend or be currently enrolled at an aviation technical program. Priority consideration may be given to students attending ATEC member institutions."
+    },
+    "requirements": {
+      "other": "Application is hosted on chooseaerospace.org; detailed document requirements are published when the application opens."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "aviation", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.chooseaerospace.org/scholarship.html",
+    "source": "https://www.chooseaerospace.org/scholarship.html"
+  },
+  {
+    "name": "Alice T. Schafer Mathematics Prize",
+    "provider_name": "Association for Women in Mathematics",
+    "description": "The Alice T. Schafer Prize recognizes women undergraduates who have demonstrated excellence in mathematics, with winners each receiving a $1,000 prize and an honorary certificate. The nomination period runs August 1 through September 15 each year. Anyone may nominate, self-nominations are permitted, and AWM membership is not required.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2026-09-15",
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "majors": ["Mathematics"],
+      "other": "The nominee must be an undergraduate at the time of nomination. Nominations of women from underrepresented minorities are especially encouraged."
+    },
+    "requirements": {
+      "transcript": true,
+      "recommendations": 1,
+      "other": "Submission is a single compiled PDF via MathPrograms.org containing a nomination letter of at most three pages, student transcripts showing expected graduation date, an optional supporting-materials section, and a contact-information cover sheet. Self-nominators must provide one additional letter of support."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "math", "women", "merit", "current-undergrad"],
+    "status": "active",
+    "application_url": "https://awm-math.org/awards/schafer-prize-for-undergraduates/",
+    "source": "https://awm-math.org/awards/schafer-prize-for-undergraduates/"
+  },
+  {
+    "name": "CAS Trust Scholarship",
+    "provider_name": "Casualty Actuarial Society",
+    "description": "The CAS Trust Scholarship is a merit-based award for full-time college students pursuing a career in property and casualty actuarial science, awarding scholarships of $5,000 and $2,500. Applicants must have already sat for at least one actuarial exam and be members of CAS Student Central, which is free to join. The program historically opens in the fall with a January 31 deadline; the next cycle's dated deadline has not been posted.",
+    "amount_min": 2500,
+    "amount_max": 5000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "majors": ["Actuarial Science", "Mathematics", "Statistics"],
+      "other": "Must be currently attending college or university as a full-time student and continuing as a full-time student in the following academic year; must have sat for at least one actuarial exam; must be a member of CAS Student Central."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Online application with an attached essay; two recommendation letters, preferably from individuals with a direct relationship who can speak to your potential as a future actuary; a current transcript plus prior transcripts if needed. It is the student's responsibility to ensure recommendation letters are submitted by the deadline."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "math", "merit", "current-undergrad"],
+    "status": "upcoming",
+    "application_url": "https://www.casact.org/trustscholarship",
+    "source": "https://www.casact.org/trustscholarship"
+  },
+  {
+    "name": "STEM Stars Actuarial Scholars Program",
+    "provider_name": "The Actuarial Foundation",
+    "description": "STEM Stars is a four-year renewable scholarship for high school students skilled in math who are interested in the actuarial field, providing $5,000 annually for up to four years for a total of $20,000. Recipients also receive mentorship, networking and internship experiences designed to prepare them for an actuarial career. The 2026 application season is closed and The Actuarial Foundation states the application will reopen in fall 2026.",
+    "amount_min": 5000,
+    "amount_max": 20000,
+    "eligibility": {
+      "education_level": ["high-school"],
+      "majors": ["Actuarial Science", "Mathematics", "Statistics"],
+      "other": "Open to high school students who are skilled in math and interested in the actuarial field."
+    },
+    "requirements": {
+      "other": "Applications are submitted through The Actuarial Foundation's Submittable portal. Detailed document requirements are published when the application opens."
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "math", "renewable", "merit"],
+    "status": "upcoming",
+    "application_url": "https://actuarialfoundation.org/scholarships/stem-stars/",
+    "source": "https://actuarialfoundation.org/scholarships/stem-stars/"
+  },
+  {
+    "name": "Actuary of Tomorrow - Stuart A. Robertson Memorial Scholarship",
+    "provider_name": "The Actuarial Foundation (administered by Scholarship America)",
+    "description": "The Robertson Memorial Scholarship supports undergraduates who have already demonstrated commitment to the actuarial profession by passing at least two actuarial exams, with awards ranging from $2,500 to $10,000. Applicants must have at least sophomore standing and maintain a 3.0 GPA. The program runs on a spring cycle and the next cycle's dated deadline has not been posted.",
+    "amount_min": 2500,
+    "amount_max": 10000,
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "gpa_min": 3.0,
+      "citizenship": "Must plan to enroll in full-time undergraduate study at an accredited four-year college or university in the United States",
+      "majors": ["Actuarial Science", "Mathematics", "Statistics"],
+      "other": "Must be a current college undergraduate with a minimum sophomore standing and must have successfully completed at least two actuarial exams."
+    },
+    "requirements": {
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Current complete transcript showing student name, school name, grades and credit hours; copies of results from a minimum of two actuarial exams taken and passed; two letters of reference, one from a current or previous employer and one from a professor or advisor."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "math", "merit", "current-undergrad"],
+    "status": "upcoming",
+    "application_url": "https://scholarshipamerica.org/scholarship/robertson-memorial/",
+    "source": "https://scholarshipamerica.org/scholarship/robertson-memorial/"
+  },
+  {
+    "name": "OLA Cresta Scholarship",
+    "provider_name": "Organization of Latino Actuaries",
+    "description": "The Organization of Latino Actuaries awards scholarships to students attending U.S. colleges and universities who are interested in the actuarial profession, with the top-ranked student receiving the $7,500 OLA Cresta Scholarship. Applications open January 1 and close March 31 each year. No letters of recommendation are required.",
+    "amount_min": 7500,
+    "amount_max": 7500,
+    "deadline": "2027-03-31",
+    "eligibility": {
+      "education_level": ["high-school", "current-undergrad"],
+      "citizenship": "Must be attending a U.S. college or university in the upcoming school year",
+      "majors": ["Actuarial Science", "Mathematics", "Statistics"],
+      "other": "Open to students who will be attending a U.S. college or university in the next school year and are interested in the actuarial profession. High school seniors enrolled in a U.S. college or university program for the upcoming academic year are eligible."
+    },
+    "requirements": {
+      "recommendations": 0,
+      "other": "OLA's FAQ states that letters of recommendation are not required. Additional document requirements are published in the application."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "math", "minority", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.latinoactuaries.org/scholarships/",
+    "source": "https://www.latinoactuaries.org/scholarships/"
+  },
+  {
+    "name": "AANP Student Scholarship",
+    "provider_name": "American Association of Nurse Practitioners",
+    "description": "AANP awards scholarships of $2,500 to $5,000 to student members enrolled in accredited graduate nurse practitioner programs, with payments made directly to the institution and designated for tuition only. In the 2026 cycle AANP awarded a total of $155,000 across four grants and 27 scholarships. The 2026 cycle closed March 18, 2026; AANP typically opens the application in the winter and the next cycle has not been announced.",
+    "amount_min": 2500,
+    "amount_max": 5000,
+    "eligibility": {
+      "education_level": ["graduate"],
+      "majors": ["Nursing", "Nurse Practitioner"],
+      "other": "Must be a licensed registered nurse enrolled in an accredited graduate school and program, have at least one semester of the current program completed, and complete the program with a master's or doctoral degree in nursing or a related field. AANP membership is required. Board members, their relatives, and previous scholarship recipients are ineligible."
+    },
+    "requirements": {
+      "transcript": true,
+      "recommendations": 2,
+      "other": "NP program of study, official transcripts, accreditation verification, two professional references on letterhead, and a current CV or resume."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "merit", "graduate"],
+    "status": "upcoming",
+    "application_url": "https://www.aanp.org/education/professional-funding-support/scholarships",
+    "source": "https://www.aanp.org/education/professional-funding-support/scholarships"
+  },
+  {
+    "name": "Alpha Mu Tau Clinical Laboratory Science Scholarships",
+    "provider_name": "Alpha Mu Tau Fraternity and the ASCLS Education and Research Fund",
+    "description": "A slate of named undergraduate and graduate scholarships worth $2,000 to $3,000 for students in NAACLS-accredited medical laboratory science and medical laboratory technician programs, plus approved master's and doctoral programs. One application covers all undergraduate awards and a separate application covers all graduate awards. The published deadline is March 1 each year, extended to April 1 in 2026; the next cycle's dated deadline has not been posted.",
+    "amount_min": 2000,
+    "amount_max": 3000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "citizenship": "U.S. citizen or permanent U.S. resident",
+      "majors": [
+        "Medical Laboratory Science",
+        "Medical Laboratory Technology",
+        "Clinical Laboratory Science"
+      ],
+      "other": "Must be attending a U.S. institution of higher learning, be a member of ASCLS, and be accepted into a NAACLS-accredited MLS or MLT program. Undergraduate applicants must be in or entering the last year of their program and cannot complete their education before September 30. Graduate applicants cannot complete their education before September 1."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Two letters of recommendation and two performance score sheets, one set from the NAACLS Program Director and one from a non-relative professional or personal reference, submitted directly by evaluators. Official transcripts from each college must be sent directly by the institution. Only type-written applications are evaluated."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "merit", "current-undergrad", "graduate"],
+    "status": "upcoming",
+    "application_url": "https://alphamutau.org/?page_id=3",
+    "source": "https://alphamutau.org/wp-content/uploads/2026/03/Scholarship-Descriptions-New-2026.pdf"
+  },
+  {
+    "name": "AAUW Selected Professions Fellowships",
+    "provider_name": "American Association of University Women",
+    "description": "AAUW Selected Professions Fellowships carry a stipend of $20,000 for women pursuing full-time master's study in science, technology, engineering or mathematics, or professional degrees in medicine, dentistry, optometry, chiropractic or podiatry. The fellowships target fields in which women have historically been underrepresented. The 2027 application window opens January 5, 2027 and closes February 18, 2027 at 5:00 p.m. ET.",
+    "amount_min": 20000,
+    "amount_max": 20000,
+    "deadline": "2027-02-18",
+    "eligibility": {
+      "education_level": ["graduate"],
+      "citizenship": "U.S. citizens, nationals, or permanent residents from the 50 states, D.C., Puerto Rico, Guam, U.S. Virgin Islands, American Samoa, the Northern Mariana Islands, or any other territory",
+      "majors": [
+        "Science",
+        "Technology",
+        "Engineering",
+        "Mathematics",
+        "Medicine",
+        "Dentistry",
+        "Optometry",
+        "Chiropractic",
+        "Podiatry"
+      ],
+      "other": "Applicants must identify as a woman and must be pursuing full-time master's study in a designated STEM field or a professional degree in a designated health profession."
+    },
+    "requirements": {
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Two letters of recommendation; copies of all degrees earned to date; official transcripts confirming conferral of all degrees received; proof of admission or current enrollment documentation if applicable."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "math", "women", "merit", "graduate"],
+    "status": "upcoming",
+    "application_url": "https://www.aauw.org/resources/programs/fellowships-grants/current-opportunities/selected-professions-fellowships/",
+    "source": "https://www.aauw.org/resources/programs/fellowships-grants/current-opportunities/selected-professions-fellowships/"
+  },
+  {
+    "name": "AAUW Career Development Grants",
+    "provider_name": "American Association of University Women",
+    "description": "AAUW Career Development Grants support women who hold at least an associate's degree and are pursuing coursework, professional development or credentials in fields where women are underrepresented, explicitly including STEM, engineering, technology, architecture, mathematics and the natural sciences. The award ceiling is $8,000 and actual award sizes vary. Two windows run each year: the Winter/Spring 2027 window opens August 18, 2026 and closes September 30, 2026, and the Summer/Fall 2027 window runs January 27 to March 18, 2027.",
+    "amount_min": 8000,
+    "amount_max": 8000,
+    "deadline": "2026-09-30",
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "citizenship": "U.S. citizens, nationals, or permanent residents from the 50 states, D.C., Puerto Rico, Guam, U.S. Virgin Islands, American Samoa, the Northern Mariana Islands, or any other territory",
+      "majors": [
+        "STEM",
+        "Engineering",
+        "Technology",
+        "Architecture",
+        "Mathematics",
+        "Natural Sciences"
+      ],
+      "other": "Applicants must identify as a woman and must hold at least an associate's degree or higher. The proposed field must be one in which women comprise less than 50 percent of the workforce or senior leadership."
+    },
+    "requirements": {
+      "transcript": true,
+      "other": "Proof of highest degree by diploma copy or official transcript with conferral date; official transcript confirming degree conferral; documented proof that women are underrepresented in the proposed field, using current data from reputable sources."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "math", "women", "merit"],
+    "status": "upcoming",
+    "application_url": "https://www.aauw.org/resources/programs/fellowships-grants/current-opportunities/career-development-grants/",
+    "source": "https://www.aauw.org/resources/programs/fellowships-grants/current-opportunities/career-development-grants/"
+  },
+  {
+    "name": "A.T. Anderson Memorial Scholarship",
+    "provider_name": "American Indian Science and Engineering Society",
+    "description": "AISES' flagship scholarship supports Indigenous students pursuing a degree in any STEM field, awarding $1,000 to undergraduates and $2,000 to graduate students. Applicants must be current AISES members, which is free for students, and full-time students carrying 12 or more credit hours at an accredited college or university. The AISES scholarship cycle opens December 15 and closes April 30 each year; the next cycle's dated deadline has not been posted.",
+    "amount_min": 1000,
+    "amount_max": 2000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "gpa_min": 3.0,
+      "majors": ["STEM"],
+      "other": "Must be an enrolled citizen or descendant of an enrolled citizen of a federal or state recognized American Indian Tribe or Alaska Native Village, or Native Hawaiian or descendant, or Pacific Islander or descendant, or an Indigenous person of Canada. Must be a current AISES member and a full-time student carrying 12 or more credit hours."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Applications are submitted through the AISES OASIS portal. Tribal enrollment documentation or a CDIB card may be required."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "minority", "merit", "current-undergrad", "graduate"],
+    "status": "upcoming",
+    "application_url": "https://webportalapp.com/sp/access_oasis",
+    "source": "https://www.aises.org/students/scholarships/"
+  },
+  {
+    "name": "AISES ARDC Scholarship",
+    "provider_name": "American Indian Science and Engineering Society",
+    "description": "A $5,000 scholarship funded by Amateur Radio Digital Communications for Indigenous students in electrical engineering, computer engineering, web design and development, audio technology, mechanical engineering, mathematics, information technology, communications or related fields. Applicants must be current AISES members and full-time students. The AISES scholarship cycle opens December 15 and closes April 30 each year; the next cycle's dated deadline has not been posted.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "gpa_min": 3.0,
+      "majors": [
+        "Electrical Engineering",
+        "Computer Engineering",
+        "Web Design and Development",
+        "Audio Technology",
+        "Mechanical Engineering",
+        "Mathematics",
+        "Information Technology",
+        "Communications"
+      ],
+      "other": "Must be an enrolled citizen or descendant of an enrolled citizen of a federal or state recognized American Indian Tribe or Alaska Native Village, or Native Hawaiian or descendant, or Pacific Islander or descendant, or an Indigenous person of Canada. Must be a current AISES member and a full-time student carrying 12 or more credit hours."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Applications are submitted through the AISES OASIS portal. Tribal enrollment documentation or a CDIB card may be required."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "engineering",
+      "computer-science",
+      "math",
+      "minority",
+      "merit"
+    ],
+    "status": "upcoming",
+    "application_url": "https://webportalapp.com/sp/access_oasis",
+    "source": "https://www.aises.org/students/scholarships/"
+  },
+  {
+    "name": "Polaris Academic Scholarship",
+    "provider_name": "American Indian Science and Engineering Society",
+    "description": "A $5,000 scholarship funded by Polaris for Indigenous students in mechanical engineering, digital and information technology, manufacturing and supply chain, or other STEM-related fields. Applicants must be current AISES members and full-time students at an accredited college or university. The AISES scholarship cycle opens December 15 and closes April 30 each year; the next cycle's dated deadline has not been posted.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "gpa_min": 3.0,
+      "majors": [
+        "Mechanical Engineering",
+        "Digital and Information Technology",
+        "Manufacturing and Supply Chain",
+        "STEM"
+      ],
+      "other": "Must be an enrolled citizen or descendant of an enrolled citizen of a federal or state recognized American Indian Tribe or Alaska Native Village, or Native Hawaiian or descendant, or Pacific Islander or descendant, or an Indigenous person of Canada. Must be a current AISES member and a full-time student carrying 12 or more credit hours."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Applications are submitted through the AISES OASIS portal. Tribal enrollment documentation or a CDIB card may be required."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "minority", "merit", "current-undergrad"],
+    "status": "upcoming",
+    "application_url": "https://webportalapp.com/sp/access_oasis",
+    "source": "https://www.aises.org/students/scholarships/"
+  },
+  {
+    "name": "AISES Stellantis MCAP Scholarship",
+    "provider_name": "American Indian Science and Engineering Society",
+    "description": "A Stellantis-funded scholarship awarding $6,500 per year for up to two years plus a $7,000 tool allotment, supporting Indigenous students in automotive technology and related technical fields. Applicants must be current AISES members and must complete tribal citizenship verification. The AISES scholarship cycle opens December 15 each year with a May 30 deadline for this award; the next cycle's dated deadline has not been posted.",
+    "amount_min": 6500,
+    "amount_max": 13000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "career-training"],
+      "gpa_min": 2.5,
+      "majors": ["Automotive Technology", "Engineering", "STEM"],
+      "other": "Must be an enrolled citizen or descendant of an enrolled citizen of a federal or state recognized American Indian Tribe or Alaska Native Village, or Native Hawaiian, Pacific Islander, or Indigenous person of Canada. Must be a current AISES member. Tribal citizenship verification is required."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 2,
+      "other": "Applications are submitted through the AISES OASIS portal. Includes a $7,000 tool allotment in addition to the cash award."
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "engineering",
+      "minority",
+      "merit",
+      "renewable",
+      "current-undergrad"
+    ],
+    "status": "upcoming",
+    "application_url": "https://webportalapp.com/sp/access_oasis",
+    "source": "https://www.aises.org/students/scholarships/"
+  },
+  {
+    "name": "HSF Scholarship",
+    "provider_name": "Hispanic Scholarship Fund",
+    "description": "The Hispanic Scholarship Fund's flagship need-based award is open to students of all races who identify as being of Hispanic heritage, at the high school, undergraduate and graduate levels, with amounts ranging from $500 to $5,000 based on relative need. All majors qualify although HSF places particular emphasis on STEM fields. The 2026-2027 cycle ran January 5 to February 15, 2026; HSF opens its application in early January each year and the next cycle has not been posted.",
+    "amount_min": 500,
+    "amount_max": 5000,
+    "eligibility": {
+      "education_level": ["high-school", "current-undergrad", "graduate"],
+      "gpa_min": 2.5,
+      "citizenship": "U.S. citizen, permanent legal resident, or DACA recipient",
+      "majors": ["STEM", "All majors"],
+      "other": "Must identify as being of Hispanic heritage. Minimum 3.0 GPA for high school applicants and minimum 2.5 GPA for college and graduate students. Must plan to enroll full-time at an accredited public or not-for-profit four-year university or graduate school in the U.S."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "other": "Must complete and submit the Free Application for Federal Student Aid (FAFSA) for the corresponding academic year."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "minority", "need-based", "current-undergrad", "graduate"],
+    "status": "upcoming",
+    "application_url": "https://www.hsf.net/scholarship",
+    "source": "https://www.hsf.net/scholarship"
+  },
+  {
+    "name": "NACME Block Scholarship",
+    "provider_name": "National Action Council for Minorities in Engineering",
+    "description": "NACME provides $5,000 scholarships to high-achieving college students pursuing careers in engineering and computer science, awarded through partner institutions including Texas A&M University, UC San Diego, the University of Delaware and the University of Georgia, plus corporate scholar programs with Bechtel, Boston Scientific, GE Healthcare, GE Vernova and GlobalFoundries. Students submit a single common application for consideration across current and future awards. Deadlines vary by award from September 1 through December 31, 2026, with three of the four block scholarships closing September 11, 2026.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "deadline": "2026-09-11",
+    "eligibility": {
+      "education_level": ["current-undergrad"],
+      "gpa_min": 3.0,
+      "majors": ["Engineering", "Computer Science"],
+      "other": "Bachelor's degree candidates with a minimum 3.0 GPA. Block scholarships are tied to specific partner universities; corporate scholar awards may include a paid internship component."
+    },
+    "requirements": {
+      "essay": true,
+      "other": "Submit the NACME common application for initial consideration across current and future awards."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "engineering",
+      "computer-science",
+      "minority",
+      "merit",
+      "current-undergrad"
+    ],
+    "status": "active",
+    "application_url": "https://www.nacme.org/scholarships",
+    "source": "https://www.nacme.org/scholarships"
+  },
+  {
+    "name": "L'Oreal USA For Women in Science Fellowship",
+    "provider_name": "L'Oreal USA (administered by the American Association for the Advancement of Science)",
+    "description": "Five postdoctoral research grants of $75,000 each are awarded annually to women scientists in STEM fields, administered by AAAS on behalf of L'Oreal USA. Applicants must hold a PhD, DPH or ScD and be a current or incoming postdoctoral associate affiliated with a U.S.-based academic institution. The 2026 application closed February 13, 2026; the application typically opens in the fall and the next cycle has not been posted.",
+    "amount_min": 75000,
+    "amount_max": 75000,
+    "eligibility": {
+      "education_level": ["graduate"],
+      "citizenship": "American citizens, born or naturalized, or permanent residents holding a green card. J1, H1-B and F1 visa holders are not eligible.",
+      "majors": ["Science", "Technology", "Engineering", "Mathematics"],
+      "other": "Must identify as a woman and hold a PhD, DPH or ScD conferred on or before the cycle cutoff; candidates exclusively holding other degrees including MD and DVM are not eligible. Must be a current postdoctoral associate or begin the position by the cycle cutoff, affiliated with a U.S.-based academic institution. Awardees must be available for the For Women in Science Awards Week, typically held in November."
+    },
+    "requirements": {
+      "essay": true,
+      "other": "Application submitted through the AAAS secure platform, including a research proposal and a budget prepared on the provided template."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "math", "women", "merit", "graduate"],
+    "status": "upcoming",
+    "application_url": "https://aaas.secure-platform.com/lorealfwis",
+    "source": "https://www.aaas.org/programs/loreal-usa-women-science"
+  },
+  {
+    "name": "SASE Parker Hannifin Scholarship",
+    "provider_name": "Society of Asian Scientists and Engineers",
+    "description": "A $5,000 scholarship sponsored by Parker Hannifin for SASE Collegiate and Professional members demonstrating excellence in STEM, evaluated on academic achievement, leadership credentials and community contributions. The 2026 cycle opened April 16 and closed May 22, 2026, with disbursements beginning July 27, 2026. The next cycle has not yet been announced; SASE typically opens its scholarship applications in the spring.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "education_level": ["current-undergrad", "graduate"],
+      "majors": ["STEM"],
+      "other": "Must be a SASE Collegiate or Professional member. Evaluated on exceptional academic achievements, leadership credentials and community contributions. Specific GPA minimums are not published."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "other": "Applications are submitted through an external portal linked from the SASE scholarship page; questions go to scholarship@saseconnect.org."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "stem",
+      "engineering",
+      "minority",
+      "merit",
+      "current-undergrad",
+      "graduate"
+    ],
+    "status": "upcoming",
+    "application_url": "https://main.saseconnect.org/scholarship",
+    "source": "https://main.saseconnect.org/scholarship"
+  }
+]

@@ -1,0 +1,1123 @@
+[
+  {
+    "name": "TheDream.US National Scholarship",
+    "provider_name": "TheDream.US",
+    "description": "Covers tuition and fees up to $33,000 toward a bachelor's degree at a Partner College, plus a stipend of up to $6,000 for books, supplies, and transportation. Open to first-generation immigrant students who are undocumented, with or without DACA or TPS, who entered the U.S. before age 16 and before November 1, 2020. The application round typically opens in November and closes at the end of February; the 2026-27 round closed February 28, 2026.",
+    "amount_min": 33000,
+    "amount_max": 33000,
+    "eligibility": {
+      "immigration_status": "Undocumented, with or without DACA or TPS; first-generation immigrant",
+      "arrival": "Entered the U.S. before age 16 and before November 1, 2020",
+      "gpa_min": 2.5,
+      "financial_need": "Significant unmet need; must not be receiving or eligible for the Federal Pell Grant",
+      "enrollment": "Full-time associate or bachelor's program at a TheDream.US Partner College",
+      "education_level": ["high-school-senior", "undergraduate"]
+    },
+    "requirements": {
+      "application": "Online application via TheDream.US portal",
+      "essays": true,
+      "transcript": true,
+      "proof_of_status": "Documentation of immigration status and U.S. entry date",
+      "partner_college": "Must enroll at an approved Partner College"
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["first-gen", "immigrant", "need-based", "renewable", "flagship"],
+    "status": "upcoming",
+    "application_url": "https://www.thedream.us/scholarships/national-scholarship/",
+    "source": "https://www.thedream.us/scholarships/national-scholarship/"
+  },
+  {
+    "name": "TheDream.US Opportunity Scholarship",
+    "provider_name": "TheDream.US",
+    "description": "Provides up to $100,000 toward a bachelor's degree, covering tuition, fees, on-campus housing, and meals for students who live in one of 22 'locked-out' states that bar undocumented students from in-state tuition or state aid. Recipients must relocate and live on campus at an out-of-state Partner College. The round typically opens in November and closes in early February; the 2026-27 round closed February 2, 2026.",
+    "amount_min": 100000,
+    "amount_max": 100000,
+    "eligibility": {
+      "immigration_status": "Undocumented, with or without DACA or TPS; first-generation immigrant",
+      "arrival": "Came to the U.S. before November 1, 2020 and entered before age 16",
+      "gpa_min": 2.5,
+      "financial_need": "Significant unmet need; cannot receive the Federal Pell Grant",
+      "residency": "Must graduate from high school in one of the 22 locked-out states",
+      "enrollment": "Full-time bachelor's program; must relocate and live on campus at a Partner College"
+    },
+    "requirements": {
+      "application": "Online application via TheDream.US portal",
+      "essays": true,
+      "transcript": true,
+      "relocation": "Must move out of state to attend a Partner College"
+    },
+    "renewable": true,
+    "national": false,
+    "states": [
+      "AL",
+      "AK",
+      "AR",
+      "GA",
+      "ID",
+      "IN",
+      "IA",
+      "LA",
+      "ME",
+      "MS",
+      "MO",
+      "MT",
+      "NH",
+      "NC",
+      "ND",
+      "OH",
+      "OK",
+      "SC",
+      "SD",
+      "WV",
+      "WI",
+      "WY"
+    ],
+    "tags": ["first-gen", "immigrant", "need-based", "renewable", "flagship"],
+    "status": "upcoming",
+    "application_url": "https://www.thedream.us/scholarships/opportunity-scholarship/",
+    "source": "https://www.thedream.us/scholarships/opportunity-scholarship/"
+  },
+  {
+    "name": "Paul & Daisy Soros Fellowships for New Americans",
+    "provider_name": "Paul & Daisy Soros Fellowships for New Americans",
+    "description": "Provides up to $90,000 in funding for full-time graduate or professional study in the United States, awarded to immigrants and the children of immigrants. Applicants must be 30 or younger and may apply while applying to graduate school or during the first two years of their program. The program does not consider school, GPA, or test score ranges for eligibility.",
+    "amount_min": 90000,
+    "amount_max": 90000,
+    "eligibility": {
+      "immigration_status": "Immigrant or child of immigrants",
+      "age_max": 30,
+      "education_level": ["graduate", "professional"],
+      "enrollment": "Full-time graduate or professional degree at an accredited U.S. institution",
+      "timing": "Applying to graduate school, or in the first two years of the program"
+    },
+    "requirements": {
+      "application": "Online application",
+      "essays": true,
+      "recommendations": true,
+      "interview": "Finalists are interviewed"
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["immigrant", "first-gen", "flagship", "renewable"],
+    "deadline": "2026-10-29",
+    "status": "active",
+    "application_url": "https://www.pdsoros.org/apply",
+    "source": "https://www.pdsoros.org/apply"
+  },
+  {
+    "name": "HSF Scholar Program",
+    "provider_name": "Hispanic Scholarship Fund",
+    "description": "Awards of $500 to $5,000 based on relative need, plus career services, mentorship, and leadership development for selected Scholars. Open to students of all races who identify as being of Hispanic heritage and who are U.S. citizens, permanent legal residents, or DACA recipients. The application typically opens in early January and closes in mid-February; the 2026-27 cycle closed February 15, 2026.",
+    "amount_min": 500,
+    "amount_max": 5000,
+    "eligibility": {
+      "ethnicity": "Of Hispanic heritage; open to students of all races",
+      "citizenship": "U.S. citizen, permanent legal resident, or DACA recipient",
+      "gpa_min_high_school": 3.0,
+      "gpa_min_college": 2.5,
+      "enrollment": "Full-time at an accredited public or not-for-profit four-year university or graduate school in the U.S.",
+      "fafsa_required": true
+    },
+    "requirements": {
+      "application": "Online HSF application",
+      "fafsa": true,
+      "transcript": true,
+      "essays": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based", "first-gen", "flagship"],
+    "status": "upcoming",
+    "application_url": "https://www.hsf.net/scholarship/",
+    "source": "https://www.hsf.net/scholarship/"
+  },
+  {
+    "name": "McDonald's HACER National Scholarship",
+    "provider_name": "McDonald's / HACER",
+    "description": "Tiered scholarship program for Hispanic and Latino students pursuing postsecondary education, with roughly 30 awards each year ranging from $5,000 up to $100,000 across three tiers. The program was created to help narrow the college affordability gap for Hispanic and Latino college-bound students. Applications typically open in the fall and close in late February.",
+    "amount_min": 5000,
+    "amount_max": 100000,
+    "eligibility": {
+      "ethnicity": "Hispanic or Latino heritage",
+      "education_level": ["high-school-senior"],
+      "enrollment": "Plan to enroll in a postsecondary institution",
+      "financial_need": "Considered in selection"
+    },
+    "requirements": {
+      "application": "Online application",
+      "essays": true,
+      "transcript": true,
+      "recommendations": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://www.scholarships.com/scholarships/mcdonalds-hacer-national-scholarship",
+    "source": "https://www.scholarships.com/scholarships/mcdonalds-hacer-national-scholarship"
+  },
+  {
+    "name": "LULAC National Scholarship Fund",
+    "provider_name": "League of United Latin American Citizens (LULAC) / LNESC",
+    "description": "Awards distributed through participating local LULAC Councils in three categories: National Scholastic Achievement Awards of $2,000, Honors Awards of $500 to $2,000, and General Awards of $250 to $1,000. Applicants must have a participating LULAC Council in their area to be eligible, so students should check the Council list before applying. The application period typically closes March 31 and recipients are notified by councils by June 15.",
+    "amount_min": 250,
+    "amount_max": 2000,
+    "eligibility": {
+      "ethnicity": "Open to all students; program serves the Hispanic community",
+      "council_requirement": "Must have a participating LULAC Council in the applicant's area",
+      "enrollment": "Enrolled or accepted at a college, university, or graduate school",
+      "financial_need": "Considered in selection"
+    },
+    "requirements": {
+      "application": "Application submitted through a participating LULAC Council",
+      "essays": true,
+      "transcript": true,
+      "recommendations": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.lnesc.org/scholarships/lulac/",
+    "source": "https://www.lnesc.org/scholarships/lulac/"
+  },
+  {
+    "name": "TMCF Eastern Area Links Finish Line Scholarship (2026-2027)",
+    "provider_name": "Thurgood Marshall College Fund",
+    "description": "Awards up to $1,500 for the 2026-2027 academic year in a single fall installment to 75 undergraduate seniors at one of 16 designated HBCU member institutions. Applicants submit a two-minute video essay describing how they embody core values for creating positive community change. Applications opened June 1, 2026.",
+    "amount_min": 1500,
+    "amount_max": 1500,
+    "eligibility": {
+      "school_type": "One of 16 designated TMCF HBCU member institutions",
+      "classification": "Full-time enrolled undergraduate senior",
+      "gpa_min": 2.5,
+      "financial_need": "Must demonstrate financial need",
+      "citizenship": "U.S. citizen or legal permanent resident"
+    },
+    "requirements": {
+      "application": "Online TMCF application",
+      "video_essay": "Two-minute video response",
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based"],
+    "deadline": "2026-12-01",
+    "status": "active",
+    "application_url": "https://tmcf.org/open-scholarships/2026-2027-tmcf-eastern-area-links-finish-line-scholarship/",
+    "source": "https://tmcf.org/open-scholarships/2026-2027-tmcf-eastern-area-links-finish-line-scholarship/"
+  },
+  {
+    "name": "TMCF Lowe's Gap Scholarship (2026-2027)",
+    "provider_name": "Thurgood Marshall College Fund",
+    "description": "Awards up to $5,000 for the 2026-2027 academic year to full-time undergraduates at TMCF member institutions who are majoring in business or a STEM field. Applicants must submit a two-minute video addressing how they plan to create positive change in their community and career field. Applications opened June 1, 2026.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "school_type": "TMCF member institution",
+      "classification": "Full-time undergraduate, freshman through senior",
+      "gpa_min": 3.0,
+      "major": "Business or STEM",
+      "financial_need": "Must demonstrate financial need",
+      "citizenship": "U.S. citizen or legal permanent resident"
+    },
+    "requirements": {
+      "application": "Online TMCF application",
+      "video_essay": "Two-minute video response",
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based"],
+    "deadline": "2026-12-01",
+    "status": "active",
+    "application_url": "https://tmcf.org/open-scholarships/2026-2027-tmcf-lowes-gap-scholarship/",
+    "source": "https://tmcf.org/open-scholarships/2026-2027-tmcf-lowes-gap-scholarship/"
+  },
+  {
+    "name": "TMCF Enterprise Access HBCU Scholarship (2027-2028)",
+    "provider_name": "Thurgood Marshall College Fund",
+    "description": "Awards up to $15,000 for the 2027-2028 academic year, distributed in two installments across fall 2027 and spring 2028, to full-time undergraduates at TMCF member HBCUs, HBCCs, PBIs, and medical or law schools. Open to all majors, with a FAFSA on file required at the time of selection. Applications opened August 3, 2026.",
+    "amount_min": 15000,
+    "amount_max": 15000,
+    "eligibility": {
+      "school_type": "TMCF member HBCU, HBCC, PBI, medical or law school",
+      "classification": "Full-time undergraduate",
+      "gpa_min": 2.75,
+      "major": "Open to all majors",
+      "financial_need": "Must demonstrate financial need",
+      "citizenship": "U.S. citizen or legal permanent resident",
+      "fafsa_required": true
+    },
+    "requirements": {
+      "application": "Online TMCF application",
+      "fafsa": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based"],
+    "deadline": "2027-01-08",
+    "status": "active",
+    "application_url": "https://tmcf.org/open-scholarships/2027-2028-tmcf-enterprise-access-hbcu-scholarship/",
+    "source": "https://tmcf.org/open-scholarships/2027-2028-tmcf-enterprise-access-hbcu-scholarship/"
+  },
+  {
+    "name": "TMCF Enterprise Access HBCC Scholarship (2027-2028)",
+    "provider_name": "Thurgood Marshall College Fund",
+    "description": "Awards up to $1,500 for the 2027-2028 academic year to 34 full-time students attending TMCF historically Black community college (HBCC) member schools. Open to all majors, with a two-minute video response about using education to create impact. Applications opened August 3, 2026.",
+    "amount_min": 1500,
+    "amount_max": 1500,
+    "eligibility": {
+      "school_type": "TMCF HBCC member school",
+      "classification": "Full-time enrolled student",
+      "gpa_min": 2.75,
+      "major": "Open to all majors",
+      "financial_need": "Must demonstrate financial need",
+      "citizenship": "U.S. citizen or legal permanent resident",
+      "fafsa_required": true
+    },
+    "requirements": {
+      "application": "Online TMCF application",
+      "video_essay": "Two-minute video response",
+      "fafsa": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based"],
+    "deadline": "2027-01-08",
+    "status": "active",
+    "application_url": "https://tmcf.org/open-scholarships/2027-2028-tmcf-enterprise-access-hbcc-scholarship/",
+    "source": "https://tmcf.org/open-scholarships/2027-2028-tmcf-enterprise-access-hbcc-scholarship/"
+  },
+  {
+    "name": "TMCF McDonald's Black and Positively Golden Scholarship (2027-2028)",
+    "provider_name": "Thurgood Marshall College Fund",
+    "description": "Awards up to $15,000 for the 2027-2028 academic year, distributed in two installments across fall 2027 and spring 2028, to full-time undergraduates at TMCF's 57 publicly supported historically Black colleges and universities. Selection weighs demonstrated leadership ability alongside financial need. Applications opened August 3, 2026.",
+    "amount_min": 15000,
+    "amount_max": 15000,
+    "eligibility": {
+      "school_type": "TMCF member publicly supported HBCU",
+      "classification": "Full-time undergraduate, freshman through senior",
+      "gpa_min": 2.7,
+      "financial_need": "Must demonstrate financial need",
+      "citizenship": "U.S. citizen or legal permanent resident",
+      "leadership": "Must demonstrate leadership abilities"
+    },
+    "requirements": {
+      "application": "Online TMCF application",
+      "essays": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based"],
+    "deadline": "2027-04-23",
+    "status": "active",
+    "application_url": "https://tmcf.org/open-scholarships/2027-2028-tmcf-mcdonalds-black-and-positively-golden-scholarship/",
+    "source": "https://tmcf.org/open-scholarships/2027-2028-tmcf-mcdonalds-black-and-positively-golden-scholarship/"
+  },
+  {
+    "name": "TMCF MolsonCoors Scholarship (2027-2028)",
+    "provider_name": "Thurgood Marshall College Fund",
+    "description": "Awards up to $8,200 for the 2027-2028 academic year in a single payment during the fall 2027 semester to full-time undergraduates at TMCF member institutions. Open to all majors, with a 2027-2028 FAFSA required on file at the time of selection. Applications opened August 3, 2026.",
+    "amount_min": 8200,
+    "amount_max": 8200,
+    "eligibility": {
+      "school_type": "TMCF member institution (HBCU, HBCC, PBI, medical or law school)",
+      "classification": "Full-time undergraduate, freshman through senior",
+      "gpa_min": 3.0,
+      "major": "Open to all majors",
+      "financial_need": "Must demonstrate financial need",
+      "citizenship": "U.S. citizen or legal permanent resident",
+      "fafsa_required": true
+    },
+    "requirements": {
+      "application": "Online TMCF application",
+      "fafsa": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based"],
+    "deadline": "2027-01-08",
+    "status": "active",
+    "application_url": "https://tmcf.org/open-scholarships/2027-2028-tmcf-molsoncoors-scholarship/",
+    "source": "https://tmcf.org/open-scholarships/2027-2028-tmcf-molsoncoors-scholarship/"
+  },
+  {
+    "name": "Ron Brown Scholar Program",
+    "provider_name": "Ron Brown Scholar Program",
+    "description": "Awards 20 four-year scholarships of $40,000 each ($10,000 per year) to Black and African American high school seniors who excel academically and demonstrate financial need. Applicants must be U.S. citizens or permanent residents. The application opens after September 3 of the applicant's senior year with a December 1 deadline.",
+    "amount_min": 40000,
+    "amount_max": 40000,
+    "eligibility": {
+      "ethnicity": "Black or African American",
+      "education_level": ["high-school-senior"],
+      "citizenship": "U.S. citizen or permanent resident visa card holder",
+      "financial_need": "Must demonstrate financial need",
+      "academics": "Must excel academically"
+    },
+    "requirements": {
+      "application": "Online application",
+      "essays": true,
+      "transcript": true,
+      "recommendations": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based", "renewable", "flagship"],
+    "status": "upcoming",
+    "application_url": "https://ronbrown.org/ron-brown-scholarship/",
+    "source": "https://ronbrown.org/ron-brown-scholarship/"
+  },
+  {
+    "name": "APIA Scholars Scholarship",
+    "provider_name": "Asian & Pacific Islander American Scholars",
+    "description": "Awards range from one-time $2,500 scholarships to multi-year $20,000 awards for undergraduates at U.S. accredited colleges and universities, with a focus on students living at or below the poverty level and those who are first in their family to attend college. Applicants must be U.S. citizens, nationals, or legal permanent residents; citizens of the Marshall Islands, Micronesia, and Palau are also eligible. The application typically opens in mid-November and closes in mid-January.",
+    "amount_min": 2500,
+    "amount_max": 20000,
+    "eligibility": {
+      "ethnicity": "Asian and Pacific Islander American focus",
+      "citizenship": "U.S. citizen, national, or legal permanent resident; also citizens of the Marshall Islands, Micronesia, and Palau",
+      "education_level": ["high-school-senior", "undergraduate"],
+      "enrollment": "Enrolling or continuing as an undergraduate at a U.S. accredited college or university",
+      "financial_need": "Strong focus on students at or below the poverty level"
+    },
+    "requirements": {
+      "application": "Online APIA Scholars application",
+      "essays": true,
+      "transcript": true,
+      "recommendations": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based", "first-gen", "renewable", "flagship"],
+    "status": "upcoming",
+    "application_url": "https://apiascholars.org/scholarships/application-support/faq/",
+    "source": "https://apiascholars.org/scholarships/application-support/faq/"
+  },
+  {
+    "name": "Banatao Family Filipino American Education Fund",
+    "provider_name": "Asian Pacific Fund",
+    "description": "Awards $5,000 annually, renewable for up to four years for a total of $20,000, to rising college freshmen of Filipino heritage majoring in a STEM field. Applicants must be California residents with at least a 3.0 GPA and demonstrated financial need. Applications for 2026 are closed and reopen in 2027.",
+    "amount_min": 5000,
+    "amount_max": 20000,
+    "eligibility": {
+      "ethnicity": "At least 50 percent Filipino heritage",
+      "residency": "California resident",
+      "gpa_min": 3.0,
+      "major": "STEM field",
+      "education_level": ["high-school-senior"],
+      "financial_need": "Must demonstrate financial need"
+    },
+    "requirements": {
+      "application": "Online Asian Pacific Fund application",
+      "essays": true,
+      "transcript": true,
+      "financial_documentation": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["CA"],
+    "tags": ["minority", "need-based", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://asianpacificfund.org/what-we-do/scholarships/",
+    "source": "https://asianpacificfund.org/what-we-do/scholarships/"
+  },
+  {
+    "name": "Shui Kuen and Allen Chin Scholarship",
+    "provider_name": "Asian Pacific Fund",
+    "description": "Awards $1,000 to $2,000 to undergraduate students with a connection to an Asian-owned restaurant and involvement in social justice advocacy. Requires a 3.0 GPA and demonstrated financial need, with no citizenship requirement. Applications for 2026 are closed and reopen in 2027.",
+    "amount_min": 1000,
+    "amount_max": 2000,
+    "eligibility": {
+      "connection": "Applicant or family member works or worked in an Asian-owned restaurant",
+      "advocacy": "Involvement in social justice advocacy",
+      "gpa_min": 3.0,
+      "citizenship": "No citizenship requirement",
+      "education_level": ["undergraduate"],
+      "financial_need": "Must demonstrate financial need"
+    },
+    "requirements": {
+      "application": "Online Asian Pacific Fund application",
+      "essays": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based", "immigrant"],
+    "status": "upcoming",
+    "application_url": "https://asianpacificfund.org/what-we-do/scholarships/",
+    "source": "https://asianpacificfund.org/what-we-do/scholarships/"
+  },
+  {
+    "name": "Hsiao Memorial Social Sciences Scholarship",
+    "provider_name": "Asian Pacific Fund",
+    "description": "Awards $1,000 exclusively to graduate students studying social sciences or economics, with preference given to applicants of Asian heritage. Requires a minimum 3.0 GPA and demonstrated financial need. Applications for 2026 are closed and reopen in 2027.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "ethnicity": "Preference for applicants of Asian heritage",
+      "education_level": ["graduate"],
+      "major": "Social sciences or economics",
+      "gpa_min": 3.0,
+      "financial_need": "Must demonstrate financial need"
+    },
+    "requirements": {
+      "application": "Online Asian Pacific Fund application",
+      "essays": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://asianpacificfund.org/what-we-do/scholarships/",
+    "source": "https://asianpacificfund.org/what-we-do/scholarships/"
+  },
+  {
+    "name": "Helen and L.S. Wong Memorial Scholarship",
+    "provider_name": "Asian Pacific Fund",
+    "description": "Awards $1,000 to $3,000 to rising college freshmen from Fairfield or Suisun City, California who are of at least 50 percent Asian heritage. Requires a minimum 2.8 GPA and demonstrated financial need. Applications for 2026 are closed and reopen in 2027.",
+    "amount_min": 1000,
+    "amount_max": 3000,
+    "eligibility": {
+      "ethnicity": "At least 50 percent Asian heritage",
+      "residency": "Fairfield or Suisun City, California",
+      "gpa_min": 2.8,
+      "education_level": ["high-school-senior"],
+      "financial_need": "Must demonstrate financial need"
+    },
+    "requirements": {
+      "application": "Online Asian Pacific Fund application",
+      "essays": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["CA"],
+    "tags": ["minority", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://asianpacificfund.org/what-we-do/scholarships/",
+    "source": "https://asianpacificfund.org/what-we-do/scholarships/"
+  },
+  {
+    "name": "Full Circle Scholarship",
+    "provider_name": "American Indian College Fund",
+    "description": "The American Indian College Fund's primary scholarship program for Native American students, with awards that vary but average between $2,000 and $3,000. Open to any Native American U.S. citizen who is an enrolled member or descendant of an enrolled member of a state or federally recognized tribe, with a minimum 2.0 GPA. Applications open February 1 in anticipation of the fall term, with priority review for submissions by May 31.",
+    "amount_min": 2000,
+    "amount_max": 3000,
+    "eligibility": {
+      "tribal_status": "Enrolled member or descendant of an enrolled member of a state or federally recognized tribe",
+      "citizenship": "U.S. citizen",
+      "gpa_min": 2.0,
+      "enrollment": "Full-time at a nonprofit, accredited college or university",
+      "education_level": ["undergraduate", "graduate"]
+    },
+    "requirements": {
+      "application": "Online application via the American Indian College Fund portal",
+      "tribal_documentation": true,
+      "essays": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based", "first-gen"],
+    "status": "upcoming",
+    "application_url": "https://collegefund.org/students/scholarships/",
+    "source": "https://collegefund.org/students/scholarships/"
+  },
+  {
+    "name": "Cobell Undergraduate Scholarship",
+    "provider_name": "Cobell Scholarship (Indigenous Education, Inc.)",
+    "description": "Awards up to $5,000 for new applicants and up to $8,000 for returning applicants pursuing an associate or bachelor's degree. Open to enrolled members of a U.S. federally recognized American Indian tribe or Alaska Native corporation attending accredited nonprofit institutions. There is no minimum GPA, though a 3.25 or higher is considered competitive; the application opens December 15 and closes March 31, and recipients must reapply each year.",
+    "amount_min": 5000,
+    "amount_max": 8000,
+    "eligibility": {
+      "tribal_status": "Enrolled member of a U.S. federally recognized American Indian tribe or Alaska Native corporation",
+      "enrollment": "Full-time, degree-seeking (part-time considered case-by-case)",
+      "education_level": ["undergraduate"],
+      "institution": "Accredited, nonprofit institution",
+      "gpa_note": "No minimum GPA; 3.25 or higher considered competitive",
+      "restriction": "Second bachelor's degrees are ineligible"
+    },
+    "requirements": {
+      "application": "Online Cobell Scholarship application",
+      "tribal_enrollment_documentation": true,
+      "references": "Reference due approximately one week after the deadline",
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.cobellscholar.org/scholarships/undergraduate",
+    "source": "https://www.cobellscholar.org/scholarships/undergraduate"
+  },
+  {
+    "name": "Point Foundation Access Scholarship",
+    "provider_name": "Point Foundation",
+    "description": "A $1,500 scholarship for LGBTQ+ and ally students who are first-generation college students and/or come from low-income backgrounds. Requires at least half-time enrollment in an associate or bachelor's program with the intention to enroll for the full academic year, a minimum 2.5 cumulative GPA, and demonstrated connection to the LGBTQ+ and ally community. The application opens January 28 and closes March 12.",
+    "amount_min": 1500,
+    "amount_max": 1500,
+    "eligibility": {
+      "identity": "LGBTQ+ or ally with demonstrated community connection",
+      "first_generation": "First-generation and/or low-income background",
+      "gpa_min": 2.5,
+      "enrollment": "At least half-time in an associate or bachelor's program",
+      "education_level": ["high-school-senior", "undergraduate"]
+    },
+    "requirements": {
+      "application": "Online Point Foundation application",
+      "essays": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["lgbtq", "first-gen", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://pointfoundation.org/scholarships/access",
+    "source": "https://pointfoundation.org/scholarships/access"
+  },
+  {
+    "name": "Point Foundation Community College Scholarship",
+    "provider_name": "Point Foundation",
+    "description": "A $4,800 scholarship covering fall 2026 through spring 2027 for LGBTQ+ and ally students enrolled in an associate degree program at an accredited, not-for-profit U.S. institution. Requires a minimum 2.5 GPA, at least half-time enrollment with plans to complete a full academic year, and demonstrated commitment to the LGBTQ+ and ally community. Fully online programs are excluded; the application opens January 28 and closes April 9.",
+    "amount_min": 4800,
+    "amount_max": 4800,
+    "eligibility": {
+      "identity": "LGBTQ+ or ally with demonstrated community connection",
+      "gpa_min": 2.5,
+      "enrollment": "At least half-time in an associate degree program at an accredited not-for-profit U.S. institution",
+      "education_level": ["high-school-senior", "undergraduate"],
+      "exclusions": "Fully online programs are not eligible"
+    },
+    "requirements": {
+      "application": "Online Point Foundation application",
+      "essays": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["lgbtq", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://pointfoundation.org/scholarships/community-college",
+    "source": "https://pointfoundation.org/scholarships/community-college"
+  },
+  {
+    "name": "P.E.O. Program for Continuing Education Grant",
+    "provider_name": "P.E.O. International",
+    "description": "A need-based grant of up to $4,000 for women in the United States and Canada whose education has been interrupted and who need to return to school to complete a degree or certification that improves their marketable skills for employment. Applicants must be recommended by a local P.E.O. chapter. Grants are awarded on a rolling basis through chapters rather than a single national deadline.",
+    "amount_min": 4000,
+    "amount_max": 4000,
+    "eligibility": {
+      "gender": "Women",
+      "residency": "United States or Canada",
+      "circumstance": "Education has been interrupted; returning to school",
+      "purpose": "Degree or certification improving marketable employment skills",
+      "sponsorship": "Must be recommended by a local P.E.O. chapter",
+      "financial_need": "Must demonstrate financial need"
+    },
+    "requirements": {
+      "application": "Application submitted through a local P.E.O. chapter",
+      "chapter_sponsorship": true,
+      "financial_documentation": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["women", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.peointernational.org/about-peo-program-continuing-education-pce/",
+    "source": "https://www.peointernational.org/about-peo-program-continuing-education-pce/"
+  },
+  {
+    "name": "P.E.O. STAR Scholarship",
+    "provider_name": "P.E.O. International",
+    "description": "A one-time $2,500 scholarship for exceptional women in their final year of high school, recommended by a local P.E.O. chapter. Selection recognizes excellence in leadership, academics, extracurricular activities, community service, and potential for future success. Candidates must be recommended by a P.E.O. chapter to qualify.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "gender": "Women",
+      "education_level": ["high-school-senior"],
+      "sponsorship": "Must be recommended by a local P.E.O. chapter",
+      "criteria": "Leadership, academics, extracurricular activities, community service"
+    },
+    "requirements": {
+      "application": "Application submitted through a local P.E.O. chapter",
+      "chapter_sponsorship": true,
+      "transcript": true,
+      "recommendations": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["women"],
+    "status": "upcoming",
+    "application_url": "https://www.peointernational.org/about-peo-star-scholarship-star/",
+    "source": "https://www.peointernational.org/about-peo-star-scholarship-star/"
+  },
+  {
+    "name": "P.E.O. Scholar Awards",
+    "provider_name": "P.E.O. International",
+    "description": "Merit-based awards of up to $25,000 for women in the United States and Canada pursuing a doctoral-level degree at an accredited college or university. Candidates must be recommended by a local P.E.O. chapter. Awards support women at advanced stages of doctoral study.",
+    "amount_min": 25000,
+    "amount_max": 25000,
+    "eligibility": {
+      "gender": "Women",
+      "residency": "United States or Canada",
+      "education_level": ["doctoral"],
+      "institution": "Accredited college or university",
+      "sponsorship": "Must be recommended by a local P.E.O. chapter"
+    },
+    "requirements": {
+      "application": "Application submitted through a local P.E.O. chapter",
+      "chapter_sponsorship": true,
+      "transcript": true,
+      "recommendations": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["women"],
+    "status": "upcoming",
+    "application_url": "https://www.peointernational.org/about-peo-scholar-awards-psa/",
+    "source": "https://www.peointernational.org/about-peo-scholar-awards-psa/"
+  },
+  {
+    "name": "AAHD Frederick J. Krause Scholarship on Health and Disability",
+    "provider_name": "American Association on Health and Disability",
+    "description": "Scholarships generally of $1,000 for students with a disability as defined by the Americans with Disabilities Act, with preference for those studying public health, health promotion, disability studies, disability research, rehabilitation engineering, audiology, disability policy, or special education. Undergraduate applicants must be full-time with at least sophomore standing; graduate applicants may study part- or full-time. The 2025-2026 deadline was March 6, 2026, and the next application period opens by November 2026.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "disability": "Must have a disability as defined by the Americans with Disabilities Act, verified by a specialist",
+      "field_of_study": "Preference for public health, health promotion, disability studies, disability research, rehabilitation engineering, audiology, disability policy, or special education",
+      "classification": "Undergraduates must be full-time with sophomore standing or higher; graduate students may be part- or full-time",
+      "citizenship": "U.S. citizen or legal resident",
+      "exclusions": "High school graduates entering college for the first time are ineligible"
+    },
+    "requirements": {
+      "application": "AAHD scholarship application",
+      "disability_documentation": "Documentation from a specialist",
+      "essays": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["disability", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.aahd.us/initiatives/scholarship-program/",
+    "source": "https://www.aahd.us/initiatives/scholarship-program/"
+  },
+  {
+    "name": "Anne Ford Scholarship",
+    "provider_name": "National Center for Learning Disabilities",
+    "description": "A $10,000 scholarship paid as $2,500 per year over four years for a student with a documented learning disability enrolling in a full-time bachelor's degree program. Students with autism, ADHD, or physical disabilities who also have a learning disability are eligible for consideration. Applications open in October and close in early spring; the most recent cycle was reviewed on a rolling basis until May 10, 2026.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "disability": "Documented learning disability; students with autism, ADHD, or physical disabilities who also have a learning disability are eligible",
+      "education_level": ["high-school-senior"],
+      "enrollment": "Full-time bachelor's degree program",
+      "criteria": "Demonstrated desire to give back and serve others"
+    },
+    "requirements": {
+      "application": "Online NCLD application",
+      "disability_documentation": true,
+      "essays": true,
+      "transcript": true,
+      "recommendations": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["disability", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://ncld.org/anne-ford-scholarship/",
+    "source": "https://ncld.org/anne-ford-scholarship/"
+  },
+  {
+    "name": "National Federation of the Blind Scholarship Program",
+    "provider_name": "National Federation of the Blind",
+    "description": "Awards 30 merit-based scholarships ranging from $3,000 to $12,000 each year to students who are legally blind in both eyes. Applicants must reside in the United States, the District of Columbia, or Puerto Rico and be pursuing full-time postsecondary study in a degree program at a U.S. institution. Applications are due by March 31 of the year in which the scholarship is awarded.",
+    "amount_min": 3000,
+    "amount_max": 12000,
+    "eligibility": {
+      "disability": "Legally blind in both eyes",
+      "residency": "United States, District of Columbia, or Puerto Rico",
+      "enrollment": "Full-time postsecondary degree program at a U.S. institution",
+      "age": "Must be at least 18 by the summer convention",
+      "criteria": "Academic excellence, community service, and financial need"
+    },
+    "requirements": {
+      "application": "Online NFB scholarship application",
+      "essays": true,
+      "transcript": true,
+      "recommendations": true,
+      "interview": "Interview with a state affiliate representative"
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["disability", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://scholarships.nfb.org/",
+    "source": "https://nfb.org/scholarships-1"
+  },
+  {
+    "name": "George H. Nofer Scholarship for Law and Public Policy",
+    "provider_name": "AG Bell Association for the Deaf and Hard of Hearing",
+    "description": "Awards $5,000 each year to up to three full-time graduate students attending an accredited law school or pursuing graduate study in public policy. Applicants must document bilateral hearing loss in the moderately-severe to profound range and use listening and spoken language. The application typically opens in December and closes in early March.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "disability": "Bilateral hearing loss in the moderately-severe to profound range; uses listening and spoken language",
+      "education_level": ["graduate", "professional"],
+      "enrollment": "Full-time at an accredited law school or graduate public policy program"
+    },
+    "requirements": {
+      "application": "Online AG Bell application",
+      "audiogram": "Documentation of hearing loss",
+      "essays": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["disability"],
+    "status": "upcoming",
+    "application_url": "https://www.agbell.org/financial-aid",
+    "source": "https://www.agbell.org/financial-aid"
+  },
+  {
+    "name": "Foster Love Family Fellowship",
+    "provider_name": "Foster Love (Together We Rise)",
+    "description": "Provides up to $12,000 per year for up to five years covering tuition, books, essential school supplies, and housing allowances during the academic year, along with mentorship and a peer network. Open to former foster youth ages 18 to 24 who hold a high school diploma or equivalent and are accepted to an accredited public or nonprofit college pursuing a full-time bachelor's degree. The application historically opens in March and closes in early May; the next round opens in 2027.",
+    "amount_min": 12000,
+    "amount_max": 60000,
+    "eligibility": {
+      "foster_care": "Lived in public or private foster care for at least 12 consecutive months up to and including the 18th birthday; adopted or placed in legal guardianship from foster care after age 13; or orphaned for at least one year at the time of the 18th birthday",
+      "age_min": 18,
+      "age_max": 24,
+      "education_level": ["undergraduate"],
+      "enrollment": "Full-time bachelor's degree at an accredited public or nonprofit college or university",
+      "citizenship": "U.S. citizenship"
+    },
+    "requirements": {
+      "application": "Online Foster Love application",
+      "foster_care_documentation": true,
+      "essays": true,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["foster-youth", "need-based", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://fosterlove.com/family-fellowship-scholarship/",
+    "source": "https://fosterlove.com/family-fellowship-scholarship/"
+  },
+  {
+    "name": "Foster Love American Industries Trade Scholarship",
+    "provider_name": "Foster Love (Together We Rise)",
+    "description": "Provides up to $12,000 in academic funding over two years to help current and former foster youth earn a trade certification or vocational degree. The scholarship targets students entering skilled trades rather than traditional four-year degree paths. The application deadline has historically fallen in early May.",
+    "amount_min": 12000,
+    "amount_max": 12000,
+    "eligibility": {
+      "foster_care": "Current or former foster youth",
+      "education_level": ["vocational", "trade"],
+      "enrollment": "Pursuing a trade certification or vocational degree"
+    },
+    "requirements": {
+      "application": "Online Foster Love application",
+      "foster_care_documentation": true,
+      "essays": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["foster-youth", "need-based", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://fosterlove.com/american-industries-scholarship/",
+    "source": "https://fosterlove.com/american-industries-scholarship/"
+  },
+  {
+    "name": "Foster Love BrandSource Scholarship",
+    "provider_name": "Foster Love (Together We Rise)",
+    "description": "Provides $12,000 in academic funding for current and former foster youth pursuing higher education. Sponsored by BrandSource in partnership with Foster Love, the award supports tuition and related educational costs. The application deadline has historically fallen in late May.",
+    "amount_min": 12000,
+    "amount_max": 12000,
+    "eligibility": {
+      "foster_care": "Current or former foster youth",
+      "education_level": ["undergraduate"],
+      "enrollment": "Enrolled or accepted at an accredited institution"
+    },
+    "requirements": {
+      "application": "Online Foster Love application",
+      "foster_care_documentation": true,
+      "essays": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["foster-youth", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://fosterlove.com/sponsor-scholarships-for-foster-youth/",
+    "source": "https://www.scholarships.com/scholarships/brandsource-scholarship-foster-love-together-we-rise"
+  },
+  {
+    "name": "Folds of Honor Higher Education Scholarship",
+    "provider_name": "Folds of Honor Foundation",
+    "description": "Need-based scholarships for dependents and spouses of fallen or disabled U.S. service members, awarded against unmet need for tuition, fees, on-campus housing, meal plans, and required textbooks. The maximum payment is $2,500 per term for full-time students and $1,250 per term for part-time students. The application window runs February 1 through March 31 each year, with award notifications emailed July 31.",
+    "amount_min": 1250,
+    "amount_max": 2500,
+    "eligibility": {
+      "military_connection": "Dependent or spouse of a fallen or disabled U.S. service member",
+      "financial_need": "Award based on unmet need after other aid",
+      "gpa_min": 2.0,
+      "enrollment": "Full-time or part-time at an eligible institution"
+    },
+    "requirements": {
+      "application": "Online application via the Folds of Honor CommunityForce portal",
+      "military_documentation": true,
+      "financial_documentation": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["military-family", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://foldsofhonor.org/scholarships/",
+    "source": "https://foldsofhonor.org/scholarships/"
+  },
+  {
+    "name": "Marine Corps Scholarship Foundation Undergraduate Scholarship",
+    "provider_name": "Marine Corps Scholarship Foundation",
+    "description": "Need-based scholarships of up to $40,000 over four years for children and stepchildren of active duty, Reserve, or veteran U.S. Marines, and of Navy Corpsmen, Chaplains, or Religious Program Specialists attached to a Marine unit. Children of the Fallen receive $30,000 over four years and Children of the Wounded receive up to $40,000 over four years. Eligibility requires a family adjusted gross income at or below the published cap and a minimum 2.0 GPA; the application is open annually from January 1 until March 1.",
+    "amount_min": 30000,
+    "amount_max": 40000,
+    "eligibility": {
+      "military_connection": "Child or stepchild of an active duty, Reserve, or veteran U.S. Marine, or of a U.S. Navy Corpsman, Chaplain, or Religious Program Specialist attached to a Marine unit",
+      "discharge": "Veterans must have received an honorable discharge",
+      "income_cap": "Family adjusted gross income of $129,000 or less for the 2024 tax year",
+      "gpa_min": 2.0,
+      "institution": "Accredited school eligible for federal funding"
+    },
+    "requirements": {
+      "application": "Online Marine Corps Scholarship Foundation application",
+      "military_documentation": true,
+      "financial_documentation": true,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["military-family", "need-based", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://www.mcsf.org/apply/",
+    "source": "https://www.mcsf.org/apply/eligibility/"
+  },
+  {
+    "name": "AMVETS National Scholarship Program",
+    "provider_name": "AMVETS National Headquarters",
+    "description": "Need-based scholarships of up to $12,000 for veterans, active duty service members including National Guard and Reserves, and their spouses, children, and grandchildren pursuing an undergraduate degree. Applicants must demonstrate financial need and must not be in default on a federal student loan. Graduate applicants are not eligible; the application deadline has historically fallen at the end of April.",
+    "amount_min": 12000,
+    "amount_max": 12000,
+    "eligibility": {
+      "military_connection": "Veteran, active duty service member including National Guard and Reserves, or their spouse, child, or grandchild",
+      "discharge": "Honorably discharged if a veteran",
+      "education_level": ["undergraduate"],
+      "enrollment": "Enrolled or accepted in an undergraduate degree program at an accredited four-year college or university",
+      "financial_need": "Must demonstrate financial need",
+      "exclusions": "Graduate applicants ineligible; must not be in default on a federal student loan"
+    },
+    "requirements": {
+      "application": "Online AMVETS scholarship portal",
+      "military_documentation": true,
+      "financial_documentation": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["military-family", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://amvets.org/scholarships/",
+    "source": "https://scholarshipguidance.com/scholarships/27258/amvets-national-scholarships"
+  },
+  {
+    "name": "ThanksUSA Scholarship Program",
+    "provider_name": "ThanksUSA",
+    "description": "Need-based scholarships of up to $3,000, or the full amount of program costs if lower, for dependent children age 24 or younger of U.S. military service personnel and for military spouses. Recipients must be enrolled or planning to enroll as full-time undergraduate students at a college, university, community college, or vocational-technical school. Applications are administered by Scholarship America and have historically closed in mid-May.",
+    "amount_min": 3000,
+    "amount_max": 3000,
+    "eligibility": {
+      "military_connection": "Dependent child age 24 or younger of U.S. military service personnel, or a military spouse",
+      "enrollment": "Full-time undergraduate at a college, university, community college, or vocational-technical school",
+      "financial_need": "Academic merit and financial need are considered"
+    },
+    "requirements": {
+      "application": "Online application via the Scholarship America ThanksUSA program site",
+      "military_documentation": true,
+      "financial_documentation": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["military-family", "need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.thanksusa.org/scholarships.html",
+    "source": "https://www.military.com/education/money-for-school/thanksusa-military-dependent-scholarships.html"
+  },
+  {
+    "name": "Scholarships for Military Children",
+    "provider_name": "Fisher House Foundation",
+    "description": "Awards a minimum of one $2,000 scholarship at each commissary location worldwide, with more than one awarded at some commissaries. Open to children of active duty, Reserve, and retired military members who meet the program's eligibility criteria. Scholarship grants are normally mailed to recipients in late July.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "eligibility": {
+      "military_connection": "Child of an active duty, Reserve, or retired military member",
+      "commissary": "Awards are tied to a commissary location",
+      "education_level": ["high-school-senior", "undergraduate"]
+    },
+    "requirements": {
+      "application": "Online application via the Scholarships for Military Children program",
+      "military_documentation": true,
+      "essays": true,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["military-family"],
+    "status": "upcoming",
+    "application_url": "https://www.fisherhouse.org/scholarships",
+    "source": "https://www.fisherhouse.org/scholarships"
+  },
+  {
+    "name": "Children of Fallen Patriots Foundation Scholarship",
+    "provider_name": "Children of Fallen Patriots Foundation",
+    "description": "Provides college scholarships and educational counseling to military children who lost a parent in the line of duty, covering tuition and fees, books and supplies, living expenses, and a one-time $1,650 computer stipend. Lifetime funding caps are $75,000 for Chapter 33 (Fry) students and $100,000 for Chapter 35 (DEA) students. Enrollment is open on a rolling basis and applications are reviewed monthly.",
+    "amount_min": 75000,
+    "amount_max": 100000,
+    "eligibility": {
+      "military_connection": "Child of a service member who died in the line of duty in the Air Force, Army, Coast Guard, Marine Corps, National Guard, Navy, or Space Force",
+      "enrollment": "Vocational, two-year, or four-year college or university",
+      "education_level": ["undergraduate", "vocational"]
+    },
+    "requirements": {
+      "application": "Online enrollment form or printable mail-in version",
+      "military_documentation": "Documentation of parent's line-of-duty death",
+      "financial_documentation": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["military-family", "need-based", "renewable"],
+    "status": "active",
+    "application_url": "https://fallenpatriots.org/enroll-a-student/",
+    "source": "https://fallenpatriots.org/scholarships-grants/"
+  },
+  {
+    "name": "Pat Tillman Foundation Tillman Scholars",
+    "provider_name": "Pat Tillman Foundation",
+    "description": "Awards averaging $10,000 per academic year to veterans, active duty service members from all branches, military spouses, and surviving spouses enrolled full-time at accredited U.S. colleges and universities. Individual amounts vary based on financial need and educational costs, and scholars join a national leadership network. The application window varies each year and can range from November to February.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "military_connection": "Veteran or active duty service member from any U.S. Armed Forces branch, military spouse, or surviving spouse",
+      "enrollment": "Full-time at an accredited U.S. college or university",
+      "education_level": ["undergraduate", "graduate", "professional"],
+      "financial_need": "Award amount varies with financial need and educational costs"
+    },
+    "requirements": {
+      "application": "Online Pat Tillman Foundation application",
+      "military_documentation": true,
+      "essays": true,
+      "recommendations": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["military-family", "need-based", "renewable", "flagship"],
+    "status": "upcoming",
+    "application_url": "https://pattillmanfoundation.org/apply-to-be-a-scholar/",
+    "source": "https://pattillmanfoundation.org/apply-to-be-a-scholar/"
+  },
+  {
+    "name": "Imagine America High School Scholarship",
+    "provider_name": "Imagine America Foundation",
+    "description": "A $1,000 tuition award for graduating high school seniors attending participating career colleges, with every U.S. and Puerto Rico high school able to nominate up to five seniors each year. Selection considers likelihood of completing postsecondary education, financial need, and demonstrated voluntary community service during senior year. Applications run from September of the applicant's senior year until December 31 of the year they graduate.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "education_level": ["high-school-senior"],
+      "gpa_min": 2.5,
+      "institution": "Participating career college in the Imagine America High School Scholarships Program",
+      "financial_need": "Must demonstrate financial need",
+      "community_service": "Demonstrated voluntary community service during senior year"
+    },
+    "requirements": {
+      "application": "Online Imagine America application",
+      "high_school_nomination": "Up to five seniors nominated per high school",
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["need-based"],
+    "status": "upcoming",
+    "application_url": "https://imagine-america.org/scholarships/high-school-scholarships",
+    "source": "https://imagine-america.org/scholarships/high-school-scholarships"
+  },
+  {
+    "name": "Bridging the Dream Scholarship for Graduate Students",
+    "provider_name": "The Sallie Mae Fund",
+    "description": "Awards 20 scholarships of up to $10,000 each to students enrolled in or accepted to an accredited graduate or professional degree program who demonstrate financial need and a commitment to making a positive impact in their communities. Fields supported include nursing, healthcare, law, and education. The program is administered by the Thurgood Marshall College Fund and the most recent application period ran through July 17, 2026.",
+    "amount_min": 10000,
+    "amount_max": 10000,
+    "eligibility": {
+      "education_level": ["graduate", "professional"],
+      "enrollment": "Enrolled in or accepted to an accredited graduate or professional degree program",
+      "financial_need": "Must demonstrate financial need",
+      "criteria": "Commitment to making a positive impact in their community"
+    },
+    "requirements": {
+      "application": "Online application administered by the Thurgood Marshall College Fund",
+      "essays": true,
+      "financial_documentation": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["need-based"],
+    "status": "upcoming",
+    "application_url": "https://www.salliemae.com/landing/bridging-the-dream-for-graduates/",
+    "source": "https://www.salliemae.com/landing/bridging-the-dream-for-graduates/"
+  }
+]

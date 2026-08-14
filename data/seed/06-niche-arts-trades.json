@@ -1,0 +1,1216 @@
+[
+  {
+    "name": "YoungArts National Arts Competition",
+    "provider_name": "National YoungArts Foundation",
+    "description": "A national competition for young artists in 10 disciplines: classical music, dance, design, film, jazz, photography, theater, visual arts, voice, and writing. Winners receive cash awards between $250 and $10,000, and top-level winners are invited to National YoungArts Week in Miami. The 2027 competition application closes October 6, 2026 at 8 PM ET.",
+    "amount_min": 250,
+    "amount_max": 10000,
+    "deadline": "2026-10-06",
+    "eligibility": {
+      "age_min": 15,
+      "age_max": 18,
+      "grade_level": ["10", "11", "12"],
+      "citizenship": "U.S. citizen, permanent resident, or otherwise legally able to receive taxable income in the U.S. (must have an SSN)",
+      "field_of_study": [
+        "classical music",
+        "dance",
+        "design",
+        "film",
+        "jazz",
+        "photography",
+        "theater",
+        "visual arts",
+        "voice",
+        "writing"
+      ],
+      "notes": "Must be 15-18 years old and in grades 10-12 as of December 1, 2026. Prior National YoungArts Week attendees are not eligible for the with-distinction award."
+    },
+    "requirements": {
+      "portfolio": true,
+      "audition": true,
+      "essay": false,
+      "transcript": false,
+      "notes": "Discipline-specific artistic submission (recordings, portfolio, or manuscript) reviewed by a blind panel."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts", "music"],
+    "status": "active",
+    "application_url": "https://youngarts.org/apply/",
+    "source": "https://youngarts.org/apply/"
+  },
+  {
+    "name": "Scholastic Art & Writing Awards Portfolio Scholarships",
+    "provider_name": "Alliance for Young Artists & Writers",
+    "description": "The nation's longest-running recognition program for creative teens, with more than 100,000 entrants a year. A scholarship committee awards sixteen $12,500 Gold Medal Portfolio scholarships (eight writing, eight art) plus $2,000 Silver Medal Portfolio scholarships to graduating seniors. The student submission portal for the 2027 program opened September 1, 2026, but entry deadlines fall between December and January and vary by region, so applicants must check their own region's date.",
+    "amount_min": 2000,
+    "amount_max": 12500,
+    "eligibility": {
+      "age_min": 13,
+      "grade_level": ["7", "8", "9", "10", "11", "12"],
+      "citizenship": "Students residing in the United States, U.S. territories, on U.S. military bases, or in Canada",
+      "notes": "Any student in grades 7-12 may enter works; only graduating seniors are eligible for the portfolio scholarships."
+    },
+    "requirements": {
+      "portfolio": true,
+      "essay": true,
+      "entry_fee": "$15 per individual entry, $40 per portfolio entry (fee waiver option available in the entry portal)",
+      "notes": "The portfolio category is open to grade 12 only and requires six works plus a personal statement. Portfolio entries are automatically considered for scholarships. AI-generated final works are ineligible."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts"],
+    "status": "upcoming",
+    "application_url": "https://www.artandwriting.org/awards/how-to-enter/",
+    "source": "https://www.artandwriting.org/frequently-asked-questions/"
+  },
+  {
+    "name": "Doodle for Google",
+    "provider_name": "Google",
+    "description": "A national art contest in which K-12 students redesign the Google logo around an annual theme. The national winner receives a $55,000 college scholarship plus a $50,000 technology package for their school; the 2026 theme was 'My superpower is...' and the winner was announced in June 2026. Dates for the next contest have not been posted yet; entries have historically been accepted in the winter and judged in the spring.",
+    "amount_min": 55000,
+    "amount_max": 55000,
+    "eligibility": {
+      "grade_level": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "citizenship": "U.S. residents",
+      "notes": "Open to K-12 students in the United States. Only the national winner's scholarship amount is confirmed by Google; state and national finalist prizes are announced with each year's rules."
+    },
+    "requirements": {
+      "portfolio": true,
+      "essay": true,
+      "notes": "Original artwork plus a short written statement about the doodle's inspiration; parent or guardian signature required for minors."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts", "novelty"],
+    "status": "upcoming",
+    "application_url": "https://doodles.google.com/d4g/",
+    "source": "https://blog.google/company-news/inside-google/doodles/2026-winner/"
+  },
+  {
+    "name": "Glenn Miller Birthplace Society Music Scholarship Competition",
+    "provider_name": "Glenn Miller Birthplace Society",
+    "description": "An annual vocal and instrumental music competition held during the Glenn Miller Festival in Clarinda, Iowa, honoring the bandleader's legacy. Ten vocal and ten instrumental semi-finalists are invited to compete in person, with first place winning $10,000, second $5,000, and third $3,000 in each category ($36,000 in total awards). The 2026 application closed April 20, 2026; the 2027 competition dates have not been posted yet.",
+    "amount_min": 3000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_level": ["12", "college freshman"],
+      "notes": "Open to high school seniors and college freshmen nationwide who intend to make music their future focus. Two categories: vocal and instrumental."
+    },
+    "requirements": {
+      "audition": true,
+      "essay": false,
+      "notes": "Recorded preliminary submission; semi-finalists must travel to Clarinda, Iowa to perform live during the festival in June."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts", "music"],
+    "status": "upcoming",
+    "application_url": "https://glennmiller.org/scholarship/",
+    "source": "https://glennmiller.org/scholarship/"
+  },
+  {
+    "name": "Dr. Kenny D. Hasija Scholarship",
+    "provider_name": "Educational Theatre Foundation",
+    "description": "A Thespian scholarship honoring Broadway producer Ken Davenport's father, supporting applicants who are traditionally underrepresented in the theatre industry. One award of $1,000 is given each year. Applications are accepted February 1 through April 1 and winners are announced in May.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2027-04-01",
+    "eligibility": {
+      "grade_level": ["12"],
+      "membership": "Inducted International Thespian Society member",
+      "notes": "Graduating high school seniors who are inducted Thespians; supports applicants traditionally underrepresented in theatre."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "notes": "Application through the Educational Theatre Foundation scholarship portal, which opens February 1."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts"],
+    "status": "active",
+    "application_url": "https://foundation.schooltheatre.org/scholarships/",
+    "source": "https://foundation.schooltheatre.org/scholarships/"
+  },
+  {
+    "name": "Mark Drum Scholarship",
+    "provider_name": "Educational Theatre Foundation",
+    "description": "Created with donations from Thespian alumni to support Asian and Pacific Islander Thespians pursuing theatre. One award of $1,250 is given annually. The application window runs February 1 through April 1, with winners announced in May.",
+    "amount_min": 1250,
+    "amount_max": 1250,
+    "deadline": "2027-04-01",
+    "eligibility": {
+      "grade_level": ["12", "undergraduate"],
+      "membership": "Inducted International Thespian Society member",
+      "notes": "Open to high school seniors and undergraduate college students who are Asian or Pacific Islander Thespians."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "notes": "Submitted through the Educational Theatre Foundation scholarship portal."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts"],
+    "status": "active",
+    "application_url": "https://foundation.schooltheatre.org/scholarships/",
+    "source": "https://foundation.schooltheatre.org/scholarships/"
+  },
+  {
+    "name": "Alan D. and Penny Lu Engelsman Scholarship",
+    "provider_name": "Educational Theatre Foundation",
+    "description": "A Thespian scholarship for graduating high school seniors who plan to major in theatre or a related field. One award of $1,000 is given each year. Applications are accepted February 1 through April 1 and winners are announced in May.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2027-04-01",
+    "eligibility": {
+      "grade_level": ["12"],
+      "membership": "Inducted International Thespian Society member",
+      "field_of_study": ["theatre"],
+      "notes": "High school seniors pursuing a theatre or theatre-related major."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "notes": "Submitted through the Educational Theatre Foundation scholarship portal."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts"],
+    "status": "active",
+    "application_url": "https://foundation.schooltheatre.org/scholarships/",
+    "source": "https://foundation.schooltheatre.org/scholarships/"
+  },
+  {
+    "name": "Future Theatre Educator Scholarship",
+    "provider_name": "Educational Theatre Foundation",
+    "description": "Supports Thespians who intend to build a career teaching theatre. One award of $1,500 is given annually to a graduating senior enrolling as a theatre education major. Applications open February 1 and close April 1, with winners announced in May.",
+    "amount_min": 1500,
+    "amount_max": 1500,
+    "deadline": "2027-04-01",
+    "eligibility": {
+      "grade_level": ["12"],
+      "membership": "Inducted International Thespian Society member",
+      "field_of_study": ["theatre education"],
+      "notes": "High school seniors enrolling as theatre education majors."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "notes": "Submitted through the Educational Theatre Foundation scholarship portal."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts"],
+    "status": "active",
+    "application_url": "https://foundation.schooltheatre.org/scholarships/",
+    "source": "https://foundation.schooltheatre.org/scholarships/"
+  },
+  {
+    "name": "Gai Laing Jones Theatre Education Scholarship",
+    "provider_name": "Educational Theatre Foundation",
+    "description": "Awards up to $2,000 each to two college students pursuing a theatre education degree. Unlike most Thespian scholarships, this one is aimed at students already in college rather than graduating seniors. The application window is February 1 through April 1, with winners announced in May.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "deadline": "2027-04-01",
+    "eligibility": {
+      "grade_level": [
+        "undergraduate junior",
+        "undergraduate senior",
+        "graduate"
+      ],
+      "field_of_study": ["theatre education"],
+      "notes": "College juniors, seniors, or graduate students pursuing a theatre education degree. Award is 'up to $2,000'; two are given annually."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "notes": "Submitted through the Educational Theatre Foundation scholarship portal."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts"],
+    "status": "active",
+    "application_url": "https://foundation.schooltheatre.org/scholarships/",
+    "source": "https://foundation.schooltheatre.org/scholarships/"
+  },
+  {
+    "name": "Michael J. Peitz Leadership Scholarship",
+    "provider_name": "Educational Theatre Foundation",
+    "description": "A $1,500 award for a graduating Thespian who has demonstrated strong leadership in their troupe, school, or community. One scholarship is given each year. Applications are accepted February 1 through April 1 with winners announced in May.",
+    "amount_min": 1500,
+    "amount_max": 1500,
+    "deadline": "2027-04-01",
+    "eligibility": {
+      "grade_level": ["12"],
+      "membership": "Inducted International Thespian Society member",
+      "notes": "High school seniors demonstrating leadership ability."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "notes": "Submitted through the Educational Theatre Foundation scholarship portal."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts"],
+    "status": "active",
+    "application_url": "https://foundation.schooltheatre.org/scholarships/",
+    "source": "https://foundation.schooltheatre.org/scholarships/"
+  },
+  {
+    "name": "Christopher L. Hunt Scholarship",
+    "provider_name": "Educational Theatre Foundation",
+    "description": "A $1,000 Thespian scholarship for a graduating senior who plans to study business or marketing, recognizing that the theatre industry needs strong business talent as well as performers. One award is given annually. The application window runs February 1 through April 1.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2027-04-01",
+    "eligibility": {
+      "grade_level": ["12"],
+      "membership": "Inducted International Thespian Society member",
+      "field_of_study": ["business", "marketing"],
+      "notes": "High school seniors pursuing a business or marketing degree."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "notes": "Submitted through the Educational Theatre Foundation scholarship portal."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts"],
+    "status": "active",
+    "application_url": "https://foundation.schooltheatre.org/scholarships/",
+    "source": "https://foundation.schooltheatre.org/scholarships/"
+  },
+  {
+    "name": "mikeroweWORKS Work Ethic Scholarship",
+    "provider_name": "mikeroweWORKS Foundation",
+    "description": "Mike Rowe's foundation funds training for people entering the skilled trades, from welding and HVAC to diesel tech, cosmetology, and culinary arts. In the first of four 2026 rounds the foundation awarded 322 scholarships totaling $3 million, with individual awards ranging from $500 to $34,000 and averaging $9,100. The final deadline of the year is October 31, 2026; earlier rounds closed April 30, June 30, and August 30.",
+    "amount_min": 500,
+    "amount_max": 34000,
+    "deadline": "2026-10-31",
+    "eligibility": {
+      "citizenship": "U.S. citizen",
+      "grade_level": ["12", "high school graduate", "adult learner"],
+      "field_of_study": [
+        "welding",
+        "plumbing",
+        "electrical",
+        "HVAC",
+        "construction",
+        "diesel technology",
+        "automotive technology",
+        "aviation technology",
+        "commercial driving",
+        "machining",
+        "manufacturing",
+        "IT",
+        "nursing (associate or LPN)",
+        "fire science",
+        "EMT",
+        "cosmetology",
+        "culinary arts",
+        "veterinary technology"
+      ],
+      "notes": "Must enroll in an approved accredited program of two years or less. Four-year degree programs do not qualify."
+    },
+    "requirements": {
+      "essay": true,
+      "video": true,
+      "recommendations": 2,
+      "transcript": true,
+      "notes": "Applicants must sign the S.W.E.A.T. Pledge and answer four short questions about it, record a short introduction video, provide two references, and upload a transcript plus an official tuition bill."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["trades", "culinary"],
+    "status": "active",
+    "application_url": "https://mikeroweworks.org/scholarship/",
+    "source": "https://mikerowe.com/2026/07/work-ethic-scholarship-recipients-round-1/"
+  },
+  {
+    "name": "Horatio Alger National Career & Technical Scholarship",
+    "provider_name": "Horatio Alger Association",
+    "description": "Three hundred scholarships of $2,500 each for students entering community college or trade and vocational school in a program that leads directly to employment. Applicants must show household income of $100,000 or less and be under 35, and pre-requisite coursework does not qualify. The 2026 application has closed; the association says 2027 application information is coming.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "citizenship": "U.S. citizen",
+      "age_max": 34,
+      "income_max": 100000,
+      "enrollment": "Associate's degree, certificate, or diploma program at a not-for-profit community college or trade/vocational school, enrolled by September",
+      "notes": "Must have completed high school or equivalency by July 1. Students enrolled only in pre-requisite courses are not eligible."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Applicants first complete an eligibility quiz; those who qualify receive the application link."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["trades"],
+    "status": "upcoming",
+    "application_url": "https://horatioalger.org/career-technical-education-scholarships/",
+    "source": "https://horatioalger.org/career-technical-education-scholarships/"
+  },
+  {
+    "name": "Horatio Alger John Rollins Career & Technical Scholarship",
+    "provider_name": "Horatio Alger Association",
+    "description": "Eight $2,500 scholarships for Delaware residents attending a not-for-profit community college or trade/vocational school in Delaware. Same core criteria as the national CTE award: household income of $100,000 or less, under age 35, U.S. citizen, and enrollment in an employment-focused associate, certificate, or diploma program. The 2026 application has closed and 2027 details are pending.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "citizenship": "U.S. citizen and Delaware resident",
+      "age_max": 34,
+      "income_max": 100000,
+      "enrollment": "Associate's degree, certificate, or diploma program at a Delaware not-for-profit community college or trade/vocational school",
+      "notes": "Must have completed high school or equivalency by July 1 and enroll by September."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Eligibility quiz first, then an application link for qualifying students."
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["DE"],
+    "tags": ["trades"],
+    "status": "upcoming",
+    "application_url": "https://horatioalger.org/career-technical-education-scholarships/",
+    "source": "https://horatioalger.org/career-technical-education-scholarships/"
+  },
+  {
+    "name": "Horatio Alger Valencia College Career & Technical Scholarship",
+    "provider_name": "Horatio Alger Association",
+    "description": "Sixteen $2,500 scholarships reserved for students attending Valencia College in Orlando, Florida in an associate, certificate, or diploma program that leads to employment. Applicants must be U.S. citizens under 35 with household income of $100,000 or less. The 2026 cycle has closed and 2027 information has not been posted.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "citizenship": "U.S. citizen",
+      "age_max": 34,
+      "income_max": 100000,
+      "enrollment": "Valencia College, Orlando FL, in an associate's degree, certificate, or diploma program",
+      "notes": "Must have completed high school or equivalency by July 1 and enroll by September; pre-requisite coursework does not qualify."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Eligibility quiz first, then an application link for qualifying students."
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["FL"],
+    "tags": ["trades"],
+    "status": "upcoming",
+    "application_url": "https://horatioalger.org/career-technical-education-scholarships/",
+    "source": "https://horatioalger.org/career-technical-education-scholarships/"
+  },
+  {
+    "name": "Horatio Alger Warren Webster Technical Scholarship",
+    "provider_name": "Horatio Alger Association",
+    "description": "Four $2,500 scholarships for students attending Apollo Career Center, Edison State Community College, Hobart Institute of Welding, Rhodes State College, or the University of Northwestern Ohio. Eligible fields include construction trades, manufacturing and welding, engineering, graphic design, business administration, and sales or marketing. The 2026 application has closed and 2027 details are pending.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "citizenship": "U.S. citizen",
+      "age_max": 34,
+      "income_max": 100000,
+      "enrollment": "Apollo Career Center, Edison State Community College, Hobart Institute of Welding, Rhodes State College, or University of Northwestern Ohio",
+      "field_of_study": [
+        "construction trades",
+        "manufacturing",
+        "welding",
+        "engineering",
+        "graphic design",
+        "business administration",
+        "sales",
+        "marketing"
+      ],
+      "notes": "Must have completed high school or equivalency by July 1 and enroll by September."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Eligibility quiz first, then an application link for qualifying students."
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["OH"],
+    "tags": ["trades"],
+    "status": "upcoming",
+    "application_url": "https://horatioalger.org/career-technical-education-scholarships/",
+    "source": "https://horatioalger.org/career-technical-education-scholarships/"
+  },
+  {
+    "name": "Horatio Alger John Hardin Hudiburg Career & Technical Scholarship",
+    "provider_name": "Horatio Alger Association",
+    "description": "One $4,000 scholarship for a high school senior in the Grapevine-Colleyville, Hurst-Euless-Bedford, Keller, or Birdville Independent school districts in Texas who plans to attend a community college or trade/vocational school. Household income must be $100,000 or less. The 2026 application has closed; 2027 information is pending.",
+    "amount_min": 4000,
+    "amount_max": 4000,
+    "eligibility": {
+      "citizenship": "U.S. citizen",
+      "age_max": 34,
+      "income_max": 100000,
+      "grade_level": ["12"],
+      "enrollment": "Full-time high school senior in Grapevine-Colleyville, Hurst-Euless-Bedford, Keller, or Birdville ISD planning to attend a not-for-profit community college or trade/vocational school",
+      "notes": "Must enroll in an associate's degree, certificate, or diploma program by September."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Eligibility quiz first, then an application link for qualifying students."
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["trades"],
+    "status": "upcoming",
+    "application_url": "https://horatioalger.org/career-technical-education-scholarships/",
+    "source": "https://horatioalger.org/career-technical-education-scholarships/"
+  },
+  {
+    "name": "AWS Foundation National Scholarships",
+    "provider_name": "American Welding Society Foundation",
+    "description": "More than 130 donor-funded scholarships totaling over $700,000 for students pursuing an associate or bachelor's degree in welding or a related discipline. Individual awards range from $2,500 to more than $10,000 and funds are paid directly to the school for tuition, fees, books, and required equipment. Applications open December 1 and close March 1 for the following fall term; one application matches students to every award they qualify for.",
+    "amount_min": 2500,
+    "amount_max": 10000,
+    "deadline": "2027-03-01",
+    "eligibility": {
+      "enrollment": "Bachelor's or associate degree program in welding or a related discipline",
+      "membership": "Some awards prefer or require AWS student membership",
+      "notes": "Some national scholarships require demonstrated financial need, verified through the FAFSA Submission Summary and cost-of-attendance documentation."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 2,
+      "transcript": true,
+      "fafsa": true,
+      "notes": "Personal statement on background, welding experience, and career goals; official transcript sent directly by the school; headshot photo; FAFSA documentation for need-based awards."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["trades"],
+    "status": "active",
+    "application_url": "https://scholarship.aws.org/applications/default.asp",
+    "source": "https://www.aws.org/career-resources/students/scholarships/national-scholarships/"
+  },
+  {
+    "name": "NTHS Jon H. Poteat Scholarship",
+    "provider_name": "National Technical Honor Society",
+    "description": "The flagship NTHS scholarship, awarding 275 scholarships of $1,000 each to active National Technical Honor Society members in career and technical education programs. Applications are submitted through the NTHS Member Portal. The window runs September 1 through May 1 each year.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2027-05-01",
+    "eligibility": {
+      "membership": "Active National Technical Honor Society member",
+      "notes": "Open to active NTHS members in career and technical education programs; 275 awards given annually."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Applications are submitted through the NTHS Member Portal."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["trades"],
+    "status": "active",
+    "application_url": "https://www.nths.org/students/scholarships/",
+    "source": "https://www.nths.org/students/scholarships/"
+  },
+  {
+    "name": "NTHS Build Your Future Scholarship",
+    "provider_name": "National Technical Honor Society",
+    "description": "Five $2,000 scholarships for high school seniors and post-secondary students studying construction-related disciplines. Applications run October 1 through April 1 through the NTHS Member Portal.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "deadline": "2027-04-01",
+    "eligibility": {
+      "grade_level": ["12", "postsecondary"],
+      "membership": "Active National Technical Honor Society member",
+      "field_of_study": [
+        "construction",
+        "carpentry",
+        "electrical",
+        "plumbing",
+        "HVAC",
+        "masonry"
+      ],
+      "notes": "For students in construction-related disciplines; 5 awards given annually."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Applications are submitted through the NTHS Member Portal."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["trades"],
+    "status": "active",
+    "application_url": "https://www.nths.org/students/scholarships/",
+    "source": "https://www.nths.org/students/scholarships/"
+  },
+  {
+    "name": "NTHS C. Allen Powell Alumni Scholarship",
+    "provider_name": "National Technical Honor Society",
+    "description": "Five $1,000 scholarships reserved for NTHS alumni, who gain lifetime access to this award beginning six months after graduation. This is a useful option for adults returning to school for additional trade credentials. The application window runs September 1 through May 1.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2027-05-01",
+    "eligibility": {
+      "membership": "NTHS alumni",
+      "notes": "Available to NTHS alumni starting six months after graduation, with lifetime eligibility; 5 awards given annually."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Applications are submitted through the NTHS Member Portal."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["trades"],
+    "status": "active",
+    "application_url": "https://www.nths.org/students/scholarships/",
+    "source": "https://www.nths.org/students/scholarships/"
+  },
+  {
+    "name": "NTHS SkillsUSA Partnership Scholarship",
+    "provider_name": "National Technical Honor Society",
+    "description": "Four $1,000 scholarships for students who hold dual membership in both the National Technical Honor Society and SkillsUSA. The application window runs January 6 through April 15 each year.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2027-04-15",
+    "eligibility": {
+      "membership": "Dual membership in NTHS and SkillsUSA required",
+      "notes": "4 awards given annually."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Applications are submitted through the NTHS Member Portal; proof of dual membership required."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["trades"],
+    "status": "active",
+    "application_url": "https://www.nths.org/students/scholarships/",
+    "source": "https://www.nths.org/students/scholarships/"
+  },
+  {
+    "name": "NTHS TechForce Partnership Scholarship",
+    "provider_name": "National Technical Honor Society",
+    "description": "Two $2,500 scholarships for students with dual membership in the National Technical Honor Society and TechForce, aimed at students training as transportation and vehicle technicians. The deadline is May 31.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "deadline": "2027-05-31",
+    "eligibility": {
+      "membership": "Dual membership in NTHS and TechForce required",
+      "field_of_study": [
+        "automotive technology",
+        "diesel technology",
+        "collision repair",
+        "motorcycle technology",
+        "marine technology"
+      ],
+      "notes": "2 awards given annually."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Applications are submitted through the NTHS Member Portal; proof of dual membership required."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["trades"],
+    "status": "active",
+    "application_url": "https://www.nths.org/students/scholarships/",
+    "source": "https://www.nths.org/students/scholarships/"
+  },
+  {
+    "name": "NTHS FFA Partnership Scholarship",
+    "provider_name": "National Technical Honor Society",
+    "description": "Three $1,000 scholarships for students who hold dual membership in the National Technical Honor Society and the National FFA Organization. The application window runs November 1 through January 15.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "deadline": "2027-01-15",
+    "eligibility": {
+      "membership": "Dual membership in NTHS and FFA required",
+      "field_of_study": [
+        "agriculture",
+        "agribusiness",
+        "agricultural mechanics"
+      ],
+      "notes": "3 awards given annually."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Applications are submitted through the NTHS Member Portal; proof of dual membership required."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["trades", "hobby"],
+    "status": "active",
+    "application_url": "https://www.nths.org/students/scholarships/",
+    "source": "https://www.nths.org/students/scholarships/"
+  },
+  {
+    "name": "SME Education Foundation Scholarships",
+    "provider_name": "SME Education Foundation",
+    "description": "More than 60 distinct scholarships for students pursuing associate or bachelor's degrees in manufacturing, engineering, and related technical fields, all reachable through a single application. Awards range from $2,500 to $20,000 and include both one-time and renewing scholarships, merit-based and need-based. Applications are accepted annually from November 1 to February 1.",
+    "amount_min": 2500,
+    "amount_max": 20000,
+    "deadline": "2027-02-01",
+    "eligibility": {
+      "grade_level": ["12", "undergraduate"],
+      "enrollment": "Associate or bachelor's degree program in a technical field that directly supports manufacturing",
+      "notes": "Open to graduating high school seniors and current college students. One application is considered for every scholarship the student qualifies for."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Register and create an account on the SME Education Foundation portal; some awards are need-based and some are merit-based."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["trades"],
+    "status": "active",
+    "application_url": "https://www.smeef.org/scholarships/",
+    "source": "https://www.smeef.org/scholarships/"
+  },
+  {
+    "name": "SkillsUSA Make Your Mark Scholarship",
+    "provider_name": "SkillsUSA and Aerotek",
+    "description": "A partnership scholarship providing SkillsUSA members up to $5,000 toward tuition, books, tools, on-campus housing, and other approved educational expenses. More than 450 scholarships have been awarded since the program launched in 2023. Deadlines are set per academic term and are announced on the SkillsUSA scholarships page rather than on a fixed annual date.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "membership": "SkillsUSA member",
+      "field_of_study": [
+        "construction",
+        "manufacturing",
+        "transportation, distribution and logistics",
+        "telecommunications cabling",
+        "electronics technology",
+        "industrial engineering technology"
+      ],
+      "notes": "Awards are 'up to $5,000'; actual amounts vary by applicant and term of enrollment."
+    },
+    "requirements": {
+      "essay": true,
+      "notes": "Applications are posted on the SkillsUSA scholarships and grants page for each term; contact customercare@skillsusa.org for the current cycle."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["trades"],
+    "status": "upcoming",
+    "application_url": "https://www.skillsusa.org/recognition/scholarships-and-grants/",
+    "source": "https://www.skillsusa.org/news/skillsusa-and-aerotek-to-award-make-your-mark-scholarships/"
+  },
+  {
+    "name": "Chick Evans Caddie Scholarship",
+    "provider_name": "Western Golf Association / Evans Scholars Foundation",
+    "description": "A full tuition and housing scholarship for golf caddies with strong academic records and demonstrated financial need, renewable for four years at a partner university. Applicants must have a strong caddie record, have finished junior year with above a B average in college-prep courses, and show outstanding character and leadership. Applications for the 2027-28 academic year became available August 1, 2026; the application and supporting evaluations should be complete by September 30, with the CSS Profile due October 15. Note: the Western Golf Association does not publish a fixed dollar value for this award, so the amount range shown is an approximate annual value of tuition and housing rather than a stated award amount.",
+    "amount_min": 20000,
+    "amount_max": 30000,
+    "deadline": "2026-09-30",
+    "eligibility": {
+      "grade_level": ["12", "college freshman"],
+      "notes": "Must have a strong caddie record at a sponsoring club, above a B average in college-prep courses through junior year, and demonstrated financial need. Award is full tuition and housing at a partner university; the dollar range shown is an approximate annual value of tuition and housing, not a fixed cash award."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 2,
+      "transcript": true,
+      "notes": "High School Evaluation, Caddie Evaluation, transcript, and test scores due September 30; CSS Profile submitted to College Board by October 15."
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["athletics", "hobby", "renewable"],
+    "status": "active",
+    "application_url": "https://wgaesf.org/a-life-changing-opportunity/applying-evans-scholarship",
+    "source": "https://wgaesf.org/a-life-changing-opportunity/applying-evans-scholarship"
+  },
+  {
+    "name": "USBC Alberta E. Crowe Star of Tomorrow Award",
+    "provider_name": "United States Bowling Congress",
+    "description": "A $6,000 scholarship recognizing star qualities in a female high school junior or senior who competes in bowling, judged on certified bowling performance at local through national levels, academic achievement, and civic involvement. Winners may only receive this award once. The 2027 application window has not been posted; the award is presented each spring at the USBC Annual Meeting.",
+    "amount_min": 6000,
+    "amount_max": 6000,
+    "eligibility": {
+      "grade_level": ["11", "12"],
+      "membership": "USBC member",
+      "age_max": 21,
+      "notes": "Female bowlers age 21 or under who are high school juniors or seniors. One-time award."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "transcript": true,
+      "notes": "Application documents bowling performance at local, regional, state, and national levels along with academics and community involvement."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["athletics", "hobby"],
+    "status": "upcoming",
+    "application_url": "https://bowl.com/youth/scholarships-and-awards/usbc-alberta-e-crowe-star-of-tomorrow",
+    "source": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships"
+  },
+  {
+    "name": "USBC Chuck Hall Star of Tomorrow Award",
+    "provider_name": "United States Bowling Congress",
+    "description": "A $6,000 scholarship for a male high school junior or senior who competes in bowling, scored on distinguished certified bowling performance, academic achievement, and extracurricular and civic involvement. Like its counterpart award, it may be won only once. Application dates for the next cycle have not been posted.",
+    "amount_min": 6000,
+    "amount_max": 6000,
+    "eligibility": {
+      "grade_level": ["11", "12"],
+      "membership": "USBC member",
+      "notes": "Male bowlers who are high school juniors or seniors. One-time award."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "transcript": true,
+      "notes": "Application documents bowling performance at local, regional, state, and national levels along with academics and community involvement."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["athletics", "hobby"],
+    "status": "upcoming",
+    "application_url": "https://bowl.com/youth/scholarships-and-awards/usbc-chuck-hall-star-of-tomorrow",
+    "source": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships"
+  },
+  {
+    "name": "USBC Earl Anthony Memorial Scholarship",
+    "provider_name": "United States Bowling Congress",
+    "description": "Five $5,000 scholarships for high school juniors and seniors with strong community involvement, academic achievement, and demonstrated financial need. Notably, bowling performance is not a judging factor, so this is accessible to any USBC youth member regardless of average. Application dates for the next cycle have not been posted.",
+    "amount_min": 5000,
+    "amount_max": 5000,
+    "eligibility": {
+      "grade_level": ["11", "12"],
+      "membership": "USBC member",
+      "notes": "Bowling performance is not considered. Financial need is required. Five awards; one-time only."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Application covers community involvement, academics, and financial need."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["athletics", "hobby"],
+    "status": "upcoming",
+    "application_url": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships",
+    "source": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships"
+  },
+  {
+    "name": "USBC Annual Zeb Scholarship",
+    "provider_name": "United States Bowling Congress",
+    "description": "A $2,500 scholarship for a high school junior or senior who is a USBC member in good standing, awarded primarily on community service and academic success. It is a one-time award. Application dates for the next cycle have not been posted.",
+    "amount_min": 2500,
+    "amount_max": 2500,
+    "eligibility": {
+      "grade_level": ["11", "12"],
+      "membership": "Current USBC member in good standing",
+      "notes": "Selection is based primarily on community service and academic success."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Application documents community service and academic record."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["athletics", "hobby"],
+    "status": "upcoming",
+    "application_url": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships",
+    "source": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships"
+  },
+  {
+    "name": "USBC Gift for Life Scholarship",
+    "provider_name": "United States Bowling Congress",
+    "description": "Up to twelve $1,000 scholarships each year for USBC high school members with at least a 2.0 GPA who can demonstrate financial need. Two awards are reserved annually for children of fire, rescue, and police personnel. Application dates for the next cycle have not been posted.",
+    "amount_min": 1000,
+    "amount_max": 1000,
+    "eligibility": {
+      "grade_level": ["9", "10", "11", "12"],
+      "membership": "Current USBC high school member",
+      "gpa_min": 2.0,
+      "notes": "Financial need required. Two of the twelve awards are reserved for children of fire, rescue, or police personnel."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Application documents GPA and financial need."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["athletics", "hobby"],
+    "status": "upcoming",
+    "application_url": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships",
+    "source": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships"
+  },
+  {
+    "name": "USBC Youth Ambassador of the Year",
+    "provider_name": "United States Bowling Congress",
+    "description": "One male and one female USBC youth member are each named Youth Ambassador of the Year and receive a $1,500 scholarship for their contributions to bowling, academics, and community involvement. Selected ambassadors may also serve on the Youth Advisory Group for additional funds. Applicants must be at least 18 by August 1; application dates for the next cycle have not been posted.",
+    "amount_min": 1500,
+    "amount_max": 1500,
+    "eligibility": {
+      "grade_level": ["11", "12"],
+      "membership": "Current USBC member",
+      "notes": "High school juniors or seniors who will be at least 18 by August 1. One male and one female selected."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "notes": "Application documents contributions to the sport, academics, and community involvement."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["athletics", "hobby"],
+    "status": "upcoming",
+    "application_url": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships",
+    "source": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships"
+  },
+  {
+    "name": "Dexter High School All-American Team",
+    "provider_name": "United States Bowling Congress and Dexter",
+    "description": "Ten high school bowlers, five male and five female, are named to the Dexter High School All-American Team and receive $1,000 each, with an additional $500 for the team captain. Applicants need a 3.0 GPA, membership on a high school varsity or club team, a coach or athletic director recommendation, and an essay. Applications for the current cycle are closed; dates for the next cycle have not been posted.",
+    "amount_min": 1000,
+    "amount_max": 1500,
+    "eligibility": {
+      "grade_level": ["9", "10", "11", "12"],
+      "gpa_min": 3.0,
+      "notes": "Must be a member of a high school varsity or club bowling team. Ten athletes selected: five male, five female."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "transcript": true,
+      "notes": "Requires a recommendation from a coach or athletic director."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["athletics"],
+    "status": "upcoming",
+    "application_url": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships",
+    "source": "https://bowl.com/youth/scholarships-and-awards/usbc-youth-scholarships"
+  },
+  {
+    "name": "ARRL Foundation Scholarships",
+    "provider_name": "ARRL Foundation",
+    "description": "The ARRL Foundation administers more than 170 donor-established scholarships for licensed amateur radio operators, ranging from $500 to $25,000, all reachable through a single online application. Every applicant must hold an active FCC amateur radio license; some individual awards add requirements such as a letter from an officer of an ARRL-affiliated club. The 2026 cycle ran October 30 to December 30, 2025 and recipients were notified in June, so the next cycle is expected to open in the fall.",
+    "amount_min": 500,
+    "amount_max": 25000,
+    "eligibility": {
+      "membership": "Active FCC-licensed amateur radio operator",
+      "notes": "Some awards have additional geographic, school, or field-of-study restrictions. Active foreign amateur radio operators are eligible for the ADRC scholarships."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "recommendations": 1,
+      "notes": "Transcripts and supporting documents must be uploaded with the application rather than emailed separately. Some scholarships require a recommendation letter from a sitting officer of an ARRL-affiliated club."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["hobby"],
+    "status": "upcoming",
+    "application_url": "http://www.arrl.org/scholarship-program",
+    "source": "http://www.arrl.org/scholarship-program"
+  },
+  {
+    "name": "The Vegetarian Resource Group Scholarship",
+    "provider_name": "The Vegetarian Resource Group",
+    "description": "Awards one $10,000 scholarship and five $5,000 scholarships to graduating U.S. high school seniors who have actively promoted veganism in their schools or communities. Judges look for compassion, courage, and commitment rather than grades alone, and applicants document their advocacy with photos, news coverage, and similar evidence. Early submissions are accepted starting December 1, 2026, and the deadline is February 20, 2027.",
+    "amount_min": 5000,
+    "amount_max": 10000,
+    "deadline": "2027-02-20",
+    "eligibility": {
+      "grade_level": ["12"],
+      "citizenship": "U.S. residents; payment is made only to U.S.-based colleges",
+      "notes": "Must be graduating from high school in spring 2027."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 3,
+      "transcript": true,
+      "notes": "Essay addressing 16 topics on vegan advocacy, transcripts or report cards for the past two years, three or more recommendation letters including at least one from a teacher, plus documentation of advocacy work."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["hobby", "essay-contest"],
+    "status": "active",
+    "application_url": "https://www.vrg.org/student/scholar",
+    "source": "https://www.vrg.org/student/scholar"
+  },
+  {
+    "name": "NESA Lawrence S. and Mabel Cooke Scholarship",
+    "provider_name": "National Eagle Scout Association",
+    "description": "The largest NESA award: one four-year scholarship of $50,000 ($12,500 per year) and four four-year scholarships of $30,000 ($7,500 per year) for Eagle Scouts who are NESA members. Applicants may apply from their senior year of high school through their junior year of an undergraduate program, must enroll full time, and cannot attend a U.S. military academy. For the 2026 cycle the portal opened December 1 and closed January 31; the next cycle is expected on a similar schedule.",
+    "amount_min": 30000,
+    "amount_max": 50000,
+    "eligibility": {
+      "grade_level": ["12", "undergraduate"],
+      "membership": "Eagle Scout rank and NESA membership required",
+      "enrollment": "Full-time undergraduate enrollment, minimum 12 credit hours",
+      "notes": "Eligible from senior year of high school through junior year of an undergraduate program. Not available to graduate students or students attending U.S. military academies. Only one NESA scholarship may be awarded per recipient."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "transcript": true,
+      "notes": "Eagle Board of Review must be completed by the date published for each cycle (on or before January 24 for the 2026 cycle)."
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["hobby", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://nesa.org/scholarships/",
+    "source": "https://nesa.org/scholarships/"
+  },
+  {
+    "name": "NESA One-Year Eagle Scout Scholarships",
+    "provider_name": "National Eagle Scout Association",
+    "description": "A family of one-year awards for Eagle Scouts who are NESA members, including the Cooke one-year scholarship at $10,000, the Hansen & Mary Hall award at $7,000, the NESA Scholarship Endowment and Legacy Society awards at $6,000 each, and the Tappan Scholarship at $5,000. Most are awarded once per Central Service Territory, so 14 of each are given nationally. The 2026 portal ran December 1 to January 31 and awards were announced June 10; the next cycle is expected on a similar schedule.",
+    "amount_min": 5000,
+    "amount_max": 10000,
+    "eligibility": {
+      "grade_level": ["12", "undergraduate"],
+      "membership": "Eagle Scout rank and NESA membership required",
+      "enrollment": "Full-time undergraduate enrollment, minimum 12 credit hours",
+      "notes": "Eligible from senior year of high school through junior year of an undergraduate program, or the halfway point of an associate or trade program. Only one NESA scholarship per recipient."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "transcript": true,
+      "notes": "A single NESA application is considered for the full family of awards."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["hobby", "trades"],
+    "status": "upcoming",
+    "application_url": "https://nesa.org/scholarships/",
+    "source": "https://nesa.org/scholarships/"
+  },
+  {
+    "name": "Chick and Sophie Major Memorial Duck Calling Contest",
+    "provider_name": "Stuttgart Chamber of Commerce",
+    "description": "A duck calling competition for students held on the Main Street stage in Stuttgart, Arkansas alongside the World's Champion Duck Calling Contest during the Wings Over the Prairie Festival, typically the weekend after Thanksgiving. The contest awards $9,000 in scholarships: $5,000 for first place, $2,000 for second, $1,250 for third, and $750 for fourth. Contestants must appear in person and register with photo ID and proof of age; the date and registration deadline for the next contest have not been posted.",
+    "amount_min": 750,
+    "amount_max": 5000,
+    "eligibility": {
+      "age_min": 16,
+      "age_max": 20,
+      "notes": "Open to any current student ages 16-20 furthering their education through traditional school, trade school, or other educational and career pathways. Seniors must perform a Main Street duck calling routine for eligibility."
+    },
+    "requirements": {
+      "audition": true,
+      "essay": false,
+      "notes": "In-person performance in Stuttgart, Arkansas. Photo ID and proof of age required at registration."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["novelty", "hobby"],
+    "status": "upcoming",
+    "application_url": "https://www.stuttgartduckfest.com/scholarship-duck-calling-contest",
+    "source": "https://www.stuttgartduckfest.com/scholarship-duck-calling-contest"
+  },
+  {
+    "name": "Duck Brand Stuck at Prom Scholarship Contest",
+    "provider_name": "Duck Brand (Shurtape Technologies)",
+    "description": "Students design and wear prom attire made from Duck Tape and submit photos for judging plus a public vote. Two first prize winners, one in the dress category and one in the tux category, each receive a $10,000 scholarship, and eight runners-up receive $1,000 each plus a prize pack. The 2026 contest ran March 25 to July 13 with entries due June 3; the 2027 contest has not been announced but has opened in late March in recent years.",
+    "amount_min": 1000,
+    "amount_max": 10000,
+    "eligibility": {
+      "age_min": 14,
+      "citizenship": "Legal residents of the U.S., D.C., Puerto Rico, and U.S. territories (excluding Maryland, Colorado, Nebraska, and North Dakota) or Canada (excluding Quebec)",
+      "enrollment": "Enrolled in a high school or home school association at the high school level",
+      "notes": "Prior contest finalists are not eligible. Attending prom is not required."
+    },
+    "requirements": {
+      "essay": false,
+      "portfolio": true,
+      "notes": "One to five high-resolution color photos of the entrant wearing the attire, plus written or video detail about the outfit. Paid professionals may not assist; friends and family may. Parent or guardian consent required for minors."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["novelty", "arts", "no-essay"],
+    "status": "upcoming",
+    "application_url": "https://www.duckbrand.com/stuck-at-prom",
+    "source": "https://www.duckbrand.com/stuck-at-prom/official-rules"
+  },
+  {
+    "name": "Niche $2,000 No Essay Scholarship",
+    "provider_name": "Niche",
+    "description": "A recurring-drawing scholarship from the college search site Niche: one student receives $2,000 toward tuition, housing, books, or other college costs with no essay required. The winner is chosen by random drawing and contacted by Votigo, Niche's scholarship fulfillment partner, and only one entry per person is allowed per cycle. The current cycle closes August 31, 2026, and Niche opens a new no-essay drawing on a rolling basis.",
+    "amount_min": 2000,
+    "amount_max": 2000,
+    "deadline": "2026-08-31",
+    "eligibility": {
+      "citizenship": "Legal U.S. residents",
+      "notes": "Open to high school students, college students, or anyone planning to enroll in college within the next 12 months. No minimum GPA."
+    },
+    "requirements": {
+      "essay": false,
+      "notes": "Registration form only. This is a recurring-drawing sweepstakes-style award, not a merit competition: the winner is selected at random. One entry per person."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["no-essay"],
+    "status": "active",
+    "application_url": "https://www.niche.com/colleges/scholarships/no-essay-scholarship/",
+    "source": "https://www.niche.com/about/scholarship-rules/no-essay-scholarship/"
+  },
+  {
+    "name": "Taco Bell Live Mas Scholarship",
+    "provider_name": "Taco Bell Foundation",
+    "description": "A scholarship judged on passion and purpose rather than grades or test scores, open to anyone 16 to 26 whether or not they work for Taco Bell. Applicants submit either a 30-second-to-2-minute video or a 250-500 word essay about their passion, their goals for positive change, and how they live the Live Mas spirit; awards have ranged from $5,000 to $25,000, with up to $14.5 million in total funding in the 2026 cycle. The 2026 window ran October 14, 2025 to January 6, 2026, so the next cycle is expected to open in the fall.",
+    "amount_min": 5000,
+    "amount_max": 25000,
+    "eligibility": {
+      "age_min": 16,
+      "age_max": 26,
+      "citizenship": "Legal residents of the 50 states or D.C., or dependent children of active-duty U.S. military",
+      "enrollment": "On track to apply for, or currently enrolled in, an accredited post-secondary program (two-year, four-year, vocational, or trade)",
+      "notes": "No GPA requirement. Previous scholars may reapply for renewal up to three times, and the age limit does not apply to returning scholars."
+    },
+    "requirements": {
+      "essay": true,
+      "video": true,
+      "notes": "Applicants choose one format: a video of 30 seconds to 2 minutes, or an essay of 250-500 words. Original work only."
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["employer", "renewable"],
+    "status": "upcoming",
+    "application_url": "https://tacobellfoundation.org/live-mas-scholarship/",
+    "source": "https://tacobellfoundation.org/live-mas-scholarship/eligibilityfaq/"
+  },
+  {
+    "name": "BURGER KING Scholars Program",
+    "provider_name": "BURGER KING Foundation",
+    "description": "Open to any high school senior in the U.S., Puerto Rico, or Canada, not just Burger King employees, with scholarships ranging from $1,000 to $60,000. Selection weighs GPA, work experience, extracurriculars, community service, and financial need; the program awarded more than $4.4 million to over 4,000 students in 2025. Applications have opened October 15 and closed December 15 in recent cycles, and the window also closes early once 30,000 applications are received.",
+    "amount_min": 1000,
+    "amount_max": 60000,
+    "eligibility": {
+      "grade_level": ["12"],
+      "gpa_min": 2.0,
+      "citizenship": "High school seniors in the United States, Puerto Rico, or Canada",
+      "enrollment": "Plan to enroll full time at an accredited two- or four-year college, university, or vocational-technical school",
+      "notes": "Also open to Burger King employees and their family members. Community involvement through volunteering, sports, clubs, or religious organizations is evaluated."
+    },
+    "requirements": {
+      "essay": true,
+      "transcript": true,
+      "notes": "Applications are administered by Scholarship America. Apply early: the window can close before the posted date if the application cap is reached."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["employer"],
+    "status": "upcoming",
+    "application_url": "https://burgerking.scholarsapply.org/",
+    "source": "https://scholarshipamerica.org/scholarship/burger-king-scholars-program/"
+  },
+  {
+    "name": "NRF Foundation Next Generation Scholarship",
+    "provider_name": "NRF Foundation",
+    "description": "The highest student honor from the National Retail Federation Foundation, with a top award of $25,000 and recognition as an emerging leader in retail. Finalists are named publicly and attend the NRF Foundation Student Program in New York City, held January 7-10, 2027. Application dates for the current cycle have not been posted on the scholarships page.",
+    "amount_min": 25000,
+    "amount_max": 25000,
+    "eligibility": {
+      "grade_level": ["undergraduate"],
+      "notes": "Undergraduate students with an interest in retail careers. The $25,000 figure is the top award; smaller finalist awards are also given."
+    },
+    "requirements": {
+      "essay": true,
+      "recommendations": 1,
+      "notes": "Application includes essays about retail career interest and leadership; finalists are interviewed."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["employer"],
+    "status": "upcoming",
+    "application_url": "https://nrffoundation.org/scholarships/",
+    "source": "https://nrffoundation.org/scholarships/"
+  },
+  {
+    "name": "NRF Foundation University Challenge Scholarship",
+    "provider_name": "NRF Foundation",
+    "description": "A business case competition for teams of three to four undergraduates from any major, in which teams pitch to retail leaders and can earn up to $30,000 in scholarships. The 2026-27 University Challenge is announced as opening soon on the NRF Foundation scholarships page. Registration dates have not yet been posted.",
+    "amount_min": 30000,
+    "amount_max": 30000,
+    "eligibility": {
+      "grade_level": ["undergraduate"],
+      "notes": "Teams of three to four undergraduate students studying any major. The $30,000 figure is the maximum a team can earn, split among members."
+    },
+    "requirements": {
+      "essay": false,
+      "notes": "Team case study submission followed by a live pitch to retail executives."
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["employer"],
+    "status": "upcoming",
+    "application_url": "https://nrffoundation.org/scholarships/",
+    "source": "https://nrffoundation.org/scholarships/"
+  }
+]
