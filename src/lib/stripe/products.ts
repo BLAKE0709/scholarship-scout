@@ -2,102 +2,130 @@ import { stripe } from "./client";
 import { db } from "@/lib/db";
 import { plans } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
+import { PLANS, type PlanSlug } from "@/lib/billing/plans";
 
-interface ProductDefinition {
-  name: string;
-  slug: string;
-  monthlyPriceCents: number | null;
-  yearlyPriceCents: number | null;
+/**
+ * Which audience each plan is sold to, mapped to the plan_user_type enum.
+ * Prices themselves are never restated here — PLANS in lib/billing/plans.ts is
+ * the single source of truth, and the pricing page renders from the same map.
+ */
+const PLAN_USER_TYPE: Record<PlanSlug, "student" | "parent" | "institution"> = {
+  free: "student",
+  pro: "student",
+  family: "parent",
+  district: "institution",
+};
+
+/** Plans that are actually sold through Stripe Checkout. */
+const BILLABLE_SLUGS: PlanSlug[] = ["pro", "family"];
+
+/**
+ * Creates the plan rows the billing code joins against. Checkout, tier
+ * resolution, and the webhook all read `plans`; with the table empty every one
+ * of them silently falls back to "free".
+ */
+export async function seedPlanRows(): Promise<void> {
+  for (const slug of Object.keys(PLANS) as PlanSlug[]) {
+    const plan = PLANS[slug];
+    const row = {
+      name: plan.name,
+      slug: plan.slug,
+      priceMonthly: plan.priceMonthly,
+      priceYearly: plan.priceYearly,
+      userType: PLAN_USER_TYPE[slug],
+      features: plan.features as unknown as Record<string, unknown>,
+      matchLimitMonthly: plan.features.matchLimitMonthly,
+      essayLimitMonthly: plan.features.essayLimitMonthly,
+      active: true,
+      updatedAt: new Date(),
+    };
+
+    const [existing] = await db
+      .select({ id: plans.id })
+      .from(plans)
+      .where(eq(plans.slug, slug))
+      .limit(1);
+
+    if (existing) {
+      await db.update(plans).set(row).where(eq(plans.slug, slug));
+    } else {
+      await db.insert(plans).values(row);
+    }
+  }
 }
 
-const PRODUCTS: ProductDefinition[] = [
-  {
-    name: "Scholarship Scout Pro",
-    slug: "pro",
-    monthlyPriceCents: 999,
-    yearlyPriceCents: 9999,
-  },
-  {
-    name: "Scholarship Scout Family",
-    slug: "family",
-    monthlyPriceCents: 1499,
-    yearlyPriceCents: 14999,
-  },
-  {
-    name: "Scholarship Scout District",
-    slug: "district",
-    monthlyPriceCents: null,
-    yearlyPriceCents: null,
-  },
-];
-
+/**
+ * Idempotently creates the Stripe products and recurring prices for the
+ * billable plans, then records the resulting price IDs on the plan rows.
+ * Safe to re-run: products and prices are matched by metadata before creating.
+ */
 export async function syncProducts(): Promise<void> {
-  for (const product of PRODUCTS) {
-    // Check if product already exists via metadata
+  await seedPlanRows();
+
+  for (const slug of BILLABLE_SLUGS) {
+    const plan = PLANS[slug];
+
     const existing = await stripe.products.search({
-      query: `metadata["slug"]:"${product.slug}"`,
+      query: `metadata["slug"]:"${slug}"`,
     });
 
     let stripeProduct = existing.data[0];
 
     if (!stripeProduct) {
       stripeProduct = await stripe.products.create({
-        name: product.name,
-        metadata: { slug: product.slug },
+        name: `Scholarship Scout ${plan.name}`,
+        description: plan.description,
+        metadata: { slug },
       });
     }
 
-    let monthlyPriceId: string | null = null;
-    let yearlyPriceId: string | null = null;
+    const priceIds: Record<"month" | "year", string | null> = {
+      month: null,
+      year: null,
+    };
 
-    if (product.monthlyPriceCents !== null) {
-      // Search for existing monthly price
-      const existingMonthlyPrices = await stripe.prices.search({
-        query: `product:"${stripeProduct.id}" metadata["interval"]:"month"`,
+    for (const interval of ["month", "year"] as const) {
+      const amount =
+        interval === "month" ? plan.priceMonthly : plan.priceYearly;
+      if (!amount) continue;
+
+      const found = await stripe.prices.search({
+        query: `product:"${stripeProduct.id}" metadata["interval"]:"${interval}"`,
       });
 
-      if (existingMonthlyPrices.data[0]) {
-        monthlyPriceId = existingMonthlyPrices.data[0].id;
-      } else {
-        const monthlyPrice = await stripe.prices.create({
-          product: stripeProduct.id,
-          unit_amount: product.monthlyPriceCents,
-          currency: "usd",
-          recurring: { interval: "month" },
-          metadata: { interval: "month", slug: product.slug },
-        });
-        monthlyPriceId = monthlyPrice.id;
+      // A price's amount is immutable in Stripe. If the config price moved,
+      // archive the stale price and mint a new one rather than silently
+      // charging the old amount forever.
+      const match = found.data.find(
+        (p) => p.unit_amount === amount && p.active,
+      );
+
+      if (match) {
+        priceIds[interval] = match.id;
+        continue;
       }
-    }
 
-    if (product.yearlyPriceCents !== null) {
-      // Search for existing yearly price
-      const existingYearlyPrices = await stripe.prices.search({
-        query: `product:"${stripeProduct.id}" metadata["interval"]:"year"`,
-      });
-
-      if (existingYearlyPrices.data[0]) {
-        yearlyPriceId = existingYearlyPrices.data[0].id;
-      } else {
-        const yearlyPrice = await stripe.prices.create({
-          product: stripeProduct.id,
-          unit_amount: product.yearlyPriceCents,
-          currency: "usd",
-          recurring: { interval: "year" },
-          metadata: { interval: "year", slug: product.slug },
-        });
-        yearlyPriceId = yearlyPrice.id;
+      for (const stale of found.data.filter((p) => p.active)) {
+        await stripe.prices.update(stale.id, { active: false });
       }
+
+      const created = await stripe.prices.create({
+        product: stripeProduct.id,
+        unit_amount: amount,
+        currency: "usd",
+        recurring: { interval },
+        metadata: { interval, slug },
+      });
+      priceIds[interval] = created.id;
     }
 
-    // Update plans table with Stripe price IDs
     await db
       .update(plans)
       .set({
-        stripePriceIdMonthly: monthlyPriceId,
-        stripePriceIdYearly: yearlyPriceId,
+        stripePriceIdMonthly: priceIds.month,
+        stripePriceIdYearly: priceIds.year,
         updatedAt: new Date(),
       })
-      .where(eq(plans.slug, product.slug));
+      .where(eq(plans.slug, slug));
   }
 }
