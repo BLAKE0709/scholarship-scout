@@ -179,42 +179,6 @@
     "source": "https://dar.academicworks.com/opportunities/1205"
   },
   {
-    "name": "Voice of Democracy Audio-Essay Scholarship",
-    "provider_name": "Veterans of Foreign Wars (VFW)",
-    "description": "A national audio-essay competition for students in grades 9 through 12, in which entrants record a three-to-five-minute broadcast-style essay on an annual patriotic theme. The 2026-27 theme is 'What a Veteran Taught Me About America.' The national first-place award is a $35,000 scholarship paid directly to the recipient's American college, university, or vocational/technical school; additional national, state, district, and post-level awards are also given. Entries are submitted to a participating local VFW Post.",
-    "amount_min": 35000,
-    "amount_max": 35000,
-    "deadline": "2026-10-31",
-    "eligibility": {
-      "grade_levels": [
-        "high_school_freshman",
-        "high_school_sophomore",
-        "high_school_junior",
-        "high_school_senior"
-      ],
-      "enrollment": "public, private, or parochial high school or home study program in the U.S. and its territories"
-    },
-    "requirements": {
-      "audio_essay": "3 to 5 minute recorded essay",
-      "typed_essay_copy": true,
-      "entry_form": true,
-      "submit_to_local_vfw_post": true
-    },
-    "renewable": false,
-    "national": true,
-    "states": [],
-    "tags": [
-      "essay-contest",
-      "government",
-      "history",
-      "humanities",
-      "writing"
-    ],
-    "status": "active",
-    "application_url": "https://www.vfw.org/community/youth-and-education/youth-scholarships",
-    "source": "https://www.vfw.org/community/youth-and-education/youth-scholarships"
-  },
-  {
     "name": "Patriot's Pen Youth Essay Contest",
     "provider_name": "Veterans of Foreign Wars (VFW)",
     "description": "A national youth essay competition for students in grades 6 through 8 writing on an annual patriotic theme; the 2026-27 theme is 'What a Veteran Taught Me About America.' The national first-place winner receives $5,000, with additional awards at the national, state, district, and post levels. Entries are submitted through a participating local VFW Post.",

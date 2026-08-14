@@ -11,7 +11,10 @@
       "gpa_min": 2.5,
       "financial_need": "Significant unmet need; must not be receiving or eligible for the Federal Pell Grant",
       "enrollment": "Full-time associate or bachelor's program at a TheDream.US Partner College",
-      "education_level": ["high-school-senior", "undergraduate"]
+      "education_level": [
+        "high-school-senior",
+        "undergraduate"
+      ]
     },
     "requirements": {
       "application": "Online application via TheDream.US portal",
@@ -23,7 +26,13 @@
     "renewable": true,
     "national": true,
     "states": [],
-    "tags": ["first-gen", "immigrant", "need-based", "renewable", "flagship"],
+    "tags": [
+      "first-gen",
+      "immigrant",
+      "need-based",
+      "renewable",
+      "flagship"
+    ],
     "status": "upcoming",
     "application_url": "https://www.thedream.us/scholarships/national-scholarship/",
     "source": "https://www.thedream.us/scholarships/national-scholarship/"
@@ -74,7 +83,13 @@
       "WI",
       "WY"
     ],
-    "tags": ["first-gen", "immigrant", "need-based", "renewable", "flagship"],
+    "tags": [
+      "first-gen",
+      "immigrant",
+      "need-based",
+      "renewable",
+      "flagship"
+    ],
     "status": "upcoming",
     "application_url": "https://www.thedream.us/scholarships/opportunity-scholarship/",
     "source": "https://www.thedream.us/scholarships/opportunity-scholarship/"
@@ -88,9 +103,16 @@
     "eligibility": {
       "immigration_status": "Immigrant or child of immigrants",
       "age_max": 30,
-      "education_level": ["graduate", "professional"],
+      "education_level": [
+        "graduate",
+        "professional"
+      ],
       "enrollment": "Full-time graduate or professional degree at an accredited U.S. institution",
-      "timing": "Applying to graduate school, or in the first two years of the program"
+      "timing": "Applying to graduate school, or in the first two years of the program",
+      "grade_levels": [
+        "college_senior",
+        "graduate"
+      ]
     },
     "requirements": {
       "application": "Online application",
@@ -101,7 +123,12 @@
     "renewable": true,
     "national": true,
     "states": [],
-    "tags": ["immigrant", "first-gen", "flagship", "renewable"],
+    "tags": [
+      "immigrant",
+      "first-gen",
+      "flagship",
+      "renewable"
+    ],
     "deadline": "2026-10-29",
     "status": "active",
     "application_url": "https://www.pdsoros.org/apply",
@@ -130,7 +157,12 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based", "first-gen", "flagship"],
+    "tags": [
+      "minority",
+      "need-based",
+      "first-gen",
+      "flagship"
+    ],
     "status": "upcoming",
     "application_url": "https://www.hsf.net/scholarship/",
     "source": "https://www.hsf.net/scholarship/"
@@ -143,7 +175,9 @@
     "amount_max": 100000,
     "eligibility": {
       "ethnicity": "Hispanic or Latino heritage",
-      "education_level": ["high-school-senior"],
+      "education_level": [
+        "high-school-senior"
+      ],
       "enrollment": "Plan to enroll in a postsecondary institution",
       "financial_need": "Considered in selection"
     },
@@ -156,7 +190,11 @@
     "renewable": true,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based", "renewable"],
+    "tags": [
+      "minority",
+      "need-based",
+      "renewable"
+    ],
     "status": "upcoming",
     "application_url": "https://www.scholarships.com/scholarships/mcdonalds-hacer-national-scholarship",
     "source": "https://www.scholarships.com/scholarships/mcdonalds-hacer-national-scholarship"
@@ -182,7 +220,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based"],
+    "tags": [
+      "minority",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://www.lnesc.org/scholarships/lulac/",
     "source": "https://www.lnesc.org/scholarships/lulac/"
@@ -208,7 +249,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based"],
+    "tags": [
+      "minority",
+      "need-based"
+    ],
     "deadline": "2026-12-01",
     "status": "active",
     "application_url": "https://tmcf.org/open-scholarships/2026-2027-tmcf-eastern-area-links-finish-line-scholarship/",
@@ -236,7 +280,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based"],
+    "tags": [
+      "minority",
+      "need-based"
+    ],
     "deadline": "2026-12-01",
     "status": "active",
     "application_url": "https://tmcf.org/open-scholarships/2026-2027-tmcf-lowes-gap-scholarship/",
@@ -265,7 +312,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based"],
+    "tags": [
+      "minority",
+      "need-based"
+    ],
     "deadline": "2027-01-08",
     "status": "active",
     "application_url": "https://tmcf.org/open-scholarships/2027-2028-tmcf-enterprise-access-hbcu-scholarship/",
@@ -294,7 +344,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based"],
+    "tags": [
+      "minority",
+      "need-based"
+    ],
     "deadline": "2027-01-08",
     "status": "active",
     "application_url": "https://tmcf.org/open-scholarships/2027-2028-tmcf-enterprise-access-hbcc-scholarship/",
@@ -322,7 +375,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based"],
+    "tags": [
+      "minority",
+      "need-based"
+    ],
     "deadline": "2027-04-23",
     "status": "active",
     "application_url": "https://tmcf.org/open-scholarships/2027-2028-tmcf-mcdonalds-black-and-positively-golden-scholarship/",
@@ -351,7 +407,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based"],
+    "tags": [
+      "minority",
+      "need-based"
+    ],
     "deadline": "2027-01-08",
     "status": "active",
     "application_url": "https://tmcf.org/open-scholarships/2027-2028-tmcf-molsoncoors-scholarship/",
@@ -365,7 +424,9 @@
     "amount_max": 40000,
     "eligibility": {
       "ethnicity": "Black or African American",
-      "education_level": ["high-school-senior"],
+      "education_level": [
+        "high-school-senior"
+      ],
       "citizenship": "U.S. citizen or permanent resident visa card holder",
       "financial_need": "Must demonstrate financial need",
       "academics": "Must excel academically"
@@ -379,7 +440,12 @@
     "renewable": true,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based", "renewable", "flagship"],
+    "tags": [
+      "minority",
+      "need-based",
+      "renewable",
+      "flagship"
+    ],
     "status": "upcoming",
     "application_url": "https://ronbrown.org/ron-brown-scholarship/",
     "source": "https://ronbrown.org/ron-brown-scholarship/"
@@ -393,7 +459,10 @@
     "eligibility": {
       "ethnicity": "Asian and Pacific Islander American focus",
       "citizenship": "U.S. citizen, national, or legal permanent resident; also citizens of the Marshall Islands, Micronesia, and Palau",
-      "education_level": ["high-school-senior", "undergraduate"],
+      "education_level": [
+        "high-school-senior",
+        "undergraduate"
+      ],
       "enrollment": "Enrolling or continuing as an undergraduate at a U.S. accredited college or university",
       "financial_need": "Strong focus on students at or below the poverty level"
     },
@@ -406,7 +475,13 @@
     "renewable": true,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based", "first-gen", "renewable", "flagship"],
+    "tags": [
+      "minority",
+      "need-based",
+      "first-gen",
+      "renewable",
+      "flagship"
+    ],
     "status": "upcoming",
     "application_url": "https://apiascholars.org/scholarships/application-support/faq/",
     "source": "https://apiascholars.org/scholarships/application-support/faq/"
@@ -422,7 +497,9 @@
       "residency": "California resident",
       "gpa_min": 3.0,
       "major": "STEM field",
-      "education_level": ["high-school-senior"],
+      "education_level": [
+        "high-school-senior"
+      ],
       "financial_need": "Must demonstrate financial need"
     },
     "requirements": {
@@ -433,8 +510,14 @@
     },
     "renewable": true,
     "national": false,
-    "states": ["CA"],
-    "tags": ["minority", "need-based", "renewable"],
+    "states": [
+      "CA"
+    ],
+    "tags": [
+      "minority",
+      "need-based",
+      "renewable"
+    ],
     "status": "upcoming",
     "application_url": "https://asianpacificfund.org/what-we-do/scholarships/",
     "source": "https://asianpacificfund.org/what-we-do/scholarships/"
@@ -450,7 +533,9 @@
       "advocacy": "Involvement in social justice advocacy",
       "gpa_min": 3.0,
       "citizenship": "No citizenship requirement",
-      "education_level": ["undergraduate"],
+      "education_level": [
+        "undergraduate"
+      ],
       "financial_need": "Must demonstrate financial need"
     },
     "requirements": {
@@ -461,7 +546,11 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based", "immigrant"],
+    "tags": [
+      "minority",
+      "need-based",
+      "immigrant"
+    ],
     "status": "upcoming",
     "application_url": "https://asianpacificfund.org/what-we-do/scholarships/",
     "source": "https://asianpacificfund.org/what-we-do/scholarships/"
@@ -474,7 +563,9 @@
     "amount_max": 1000,
     "eligibility": {
       "ethnicity": "Preference for applicants of Asian heritage",
-      "education_level": ["graduate"],
+      "education_level": [
+        "graduate"
+      ],
       "major": "Social sciences or economics",
       "gpa_min": 3.0,
       "financial_need": "Must demonstrate financial need"
@@ -487,7 +578,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based"],
+    "tags": [
+      "minority",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://asianpacificfund.org/what-we-do/scholarships/",
     "source": "https://asianpacificfund.org/what-we-do/scholarships/"
@@ -502,7 +596,9 @@
       "ethnicity": "At least 50 percent Asian heritage",
       "residency": "Fairfield or Suisun City, California",
       "gpa_min": 2.8,
-      "education_level": ["high-school-senior"],
+      "education_level": [
+        "high-school-senior"
+      ],
       "financial_need": "Must demonstrate financial need"
     },
     "requirements": {
@@ -512,8 +608,13 @@
     },
     "renewable": false,
     "national": false,
-    "states": ["CA"],
-    "tags": ["minority", "need-based"],
+    "states": [
+      "CA"
+    ],
+    "tags": [
+      "minority",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://asianpacificfund.org/what-we-do/scholarships/",
     "source": "https://asianpacificfund.org/what-we-do/scholarships/"
@@ -529,7 +630,10 @@
       "citizenship": "U.S. citizen",
       "gpa_min": 2.0,
       "enrollment": "Full-time at a nonprofit, accredited college or university",
-      "education_level": ["undergraduate", "graduate"]
+      "education_level": [
+        "undergraduate",
+        "graduate"
+      ]
     },
     "requirements": {
       "application": "Online application via the American Indian College Fund portal",
@@ -540,7 +644,11 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based", "first-gen"],
+    "tags": [
+      "minority",
+      "need-based",
+      "first-gen"
+    ],
     "status": "upcoming",
     "application_url": "https://collegefund.org/students/scholarships/",
     "source": "https://collegefund.org/students/scholarships/"
@@ -554,7 +662,9 @@
     "eligibility": {
       "tribal_status": "Enrolled member of a U.S. federally recognized American Indian tribe or Alaska Native corporation",
       "enrollment": "Full-time, degree-seeking (part-time considered case-by-case)",
-      "education_level": ["undergraduate"],
+      "education_level": [
+        "undergraduate"
+      ],
       "institution": "Accredited, nonprofit institution",
       "gpa_note": "No minimum GPA; 3.25 or higher considered competitive",
       "restriction": "Second bachelor's degrees are ineligible"
@@ -568,7 +678,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["minority", "need-based"],
+    "tags": [
+      "minority",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://www.cobellscholar.org/scholarships/undergraduate",
     "source": "https://www.cobellscholar.org/scholarships/undergraduate"
@@ -584,7 +697,10 @@
       "first_generation": "First-generation and/or low-income background",
       "gpa_min": 2.5,
       "enrollment": "At least half-time in an associate or bachelor's program",
-      "education_level": ["high-school-senior", "undergraduate"]
+      "education_level": [
+        "high-school-senior",
+        "undergraduate"
+      ]
     },
     "requirements": {
       "application": "Online Point Foundation application",
@@ -594,7 +710,11 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["lgbtq", "first-gen", "need-based"],
+    "tags": [
+      "lgbtq",
+      "first-gen",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://pointfoundation.org/scholarships/access",
     "source": "https://pointfoundation.org/scholarships/access"
@@ -609,7 +729,10 @@
       "identity": "LGBTQ+ or ally with demonstrated community connection",
       "gpa_min": 2.5,
       "enrollment": "At least half-time in an associate degree program at an accredited not-for-profit U.S. institution",
-      "education_level": ["high-school-senior", "undergraduate"],
+      "education_level": [
+        "high-school-senior",
+        "undergraduate"
+      ],
       "exclusions": "Fully online programs are not eligible"
     },
     "requirements": {
@@ -620,7 +743,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["lgbtq", "need-based"],
+    "tags": [
+      "lgbtq",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://pointfoundation.org/scholarships/community-college",
     "source": "https://pointfoundation.org/scholarships/community-college"
@@ -647,7 +773,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["women", "need-based"],
+    "tags": [
+      "women",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://www.peointernational.org/about-peo-program-continuing-education-pce/",
     "source": "https://www.peointernational.org/about-peo-program-continuing-education-pce/"
@@ -660,7 +789,9 @@
     "amount_max": 2500,
     "eligibility": {
       "gender": "Women",
-      "education_level": ["high-school-senior"],
+      "education_level": [
+        "high-school-senior"
+      ],
       "sponsorship": "Must be recommended by a local P.E.O. chapter",
       "criteria": "Leadership, academics, extracurricular activities, community service"
     },
@@ -673,7 +804,9 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["women"],
+    "tags": [
+      "women"
+    ],
     "status": "upcoming",
     "application_url": "https://www.peointernational.org/about-peo-star-scholarship-star/",
     "source": "https://www.peointernational.org/about-peo-star-scholarship-star/"
@@ -687,7 +820,9 @@
     "eligibility": {
       "gender": "Women",
       "residency": "United States or Canada",
-      "education_level": ["doctoral"],
+      "education_level": [
+        "doctoral"
+      ],
       "institution": "Accredited college or university",
       "sponsorship": "Must be recommended by a local P.E.O. chapter"
     },
@@ -700,7 +835,9 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["women"],
+    "tags": [
+      "women"
+    ],
     "status": "upcoming",
     "application_url": "https://www.peointernational.org/about-peo-scholar-awards-psa/",
     "source": "https://www.peointernational.org/about-peo-scholar-awards-psa/"
@@ -727,7 +864,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["disability", "need-based"],
+    "tags": [
+      "disability",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://www.aahd.us/initiatives/scholarship-program/",
     "source": "https://www.aahd.us/initiatives/scholarship-program/"
@@ -740,7 +880,9 @@
     "amount_max": 10000,
     "eligibility": {
       "disability": "Documented learning disability; students with autism, ADHD, or physical disabilities who also have a learning disability are eligible",
-      "education_level": ["high-school-senior"],
+      "education_level": [
+        "high-school-senior"
+      ],
       "enrollment": "Full-time bachelor's degree program",
       "criteria": "Demonstrated desire to give back and serve others"
     },
@@ -754,7 +896,10 @@
     "renewable": true,
     "national": true,
     "states": [],
-    "tags": ["disability", "renewable"],
+    "tags": [
+      "disability",
+      "renewable"
+    ],
     "status": "upcoming",
     "application_url": "https://ncld.org/anne-ford-scholarship/",
     "source": "https://ncld.org/anne-ford-scholarship/"
@@ -782,7 +927,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["disability", "need-based"],
+    "tags": [
+      "disability",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://scholarships.nfb.org/",
     "source": "https://nfb.org/scholarships-1"
@@ -795,7 +943,10 @@
     "amount_max": 5000,
     "eligibility": {
       "disability": "Bilateral hearing loss in the moderately-severe to profound range; uses listening and spoken language",
-      "education_level": ["graduate", "professional"],
+      "education_level": [
+        "graduate",
+        "professional"
+      ],
       "enrollment": "Full-time at an accredited law school or graduate public policy program"
     },
     "requirements": {
@@ -807,7 +958,9 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["disability"],
+    "tags": [
+      "disability"
+    ],
     "status": "upcoming",
     "application_url": "https://www.agbell.org/financial-aid",
     "source": "https://www.agbell.org/financial-aid"
@@ -822,7 +975,9 @@
       "foster_care": "Lived in public or private foster care for at least 12 consecutive months up to and including the 18th birthday; adopted or placed in legal guardianship from foster care after age 13; or orphaned for at least one year at the time of the 18th birthday",
       "age_min": 18,
       "age_max": 24,
-      "education_level": ["undergraduate"],
+      "education_level": [
+        "undergraduate"
+      ],
       "enrollment": "Full-time bachelor's degree at an accredited public or nonprofit college or university",
       "citizenship": "U.S. citizenship"
     },
@@ -835,7 +990,11 @@
     "renewable": true,
     "national": true,
     "states": [],
-    "tags": ["foster-youth", "need-based", "renewable"],
+    "tags": [
+      "foster-youth",
+      "need-based",
+      "renewable"
+    ],
     "status": "upcoming",
     "application_url": "https://fosterlove.com/family-fellowship-scholarship/",
     "source": "https://fosterlove.com/family-fellowship-scholarship/"
@@ -848,7 +1007,10 @@
     "amount_max": 12000,
     "eligibility": {
       "foster_care": "Current or former foster youth",
-      "education_level": ["vocational", "trade"],
+      "education_level": [
+        "vocational",
+        "trade"
+      ],
       "enrollment": "Pursuing a trade certification or vocational degree"
     },
     "requirements": {
@@ -859,7 +1021,11 @@
     "renewable": true,
     "national": true,
     "states": [],
-    "tags": ["foster-youth", "need-based", "renewable"],
+    "tags": [
+      "foster-youth",
+      "need-based",
+      "renewable"
+    ],
     "status": "upcoming",
     "application_url": "https://fosterlove.com/american-industries-scholarship/",
     "source": "https://fosterlove.com/american-industries-scholarship/"
@@ -872,7 +1038,9 @@
     "amount_max": 12000,
     "eligibility": {
       "foster_care": "Current or former foster youth",
-      "education_level": ["undergraduate"],
+      "education_level": [
+        "undergraduate"
+      ],
       "enrollment": "Enrolled or accepted at an accredited institution"
     },
     "requirements": {
@@ -883,7 +1051,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["foster-youth", "need-based"],
+    "tags": [
+      "foster-youth",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://fosterlove.com/sponsor-scholarships-for-foster-youth/",
     "source": "https://www.scholarships.com/scholarships/brandsource-scholarship-foster-love-together-we-rise"
@@ -909,7 +1080,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["military-family", "need-based"],
+    "tags": [
+      "military-family",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://foldsofhonor.org/scholarships/",
     "source": "https://foldsofhonor.org/scholarships/"
@@ -936,7 +1110,11 @@
     "renewable": true,
     "national": true,
     "states": [],
-    "tags": ["military-family", "need-based", "renewable"],
+    "tags": [
+      "military-family",
+      "need-based",
+      "renewable"
+    ],
     "status": "upcoming",
     "application_url": "https://www.mcsf.org/apply/",
     "source": "https://www.mcsf.org/apply/eligibility/"
@@ -950,7 +1128,9 @@
     "eligibility": {
       "military_connection": "Veteran, active duty service member including National Guard and Reserves, or their spouse, child, or grandchild",
       "discharge": "Honorably discharged if a veteran",
-      "education_level": ["undergraduate"],
+      "education_level": [
+        "undergraduate"
+      ],
       "enrollment": "Enrolled or accepted in an undergraduate degree program at an accredited four-year college or university",
       "financial_need": "Must demonstrate financial need",
       "exclusions": "Graduate applicants ineligible; must not be in default on a federal student loan"
@@ -964,7 +1144,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["military-family", "need-based"],
+    "tags": [
+      "military-family",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://amvets.org/scholarships/",
     "source": "https://scholarshipguidance.com/scholarships/27258/amvets-national-scholarships"
@@ -989,7 +1172,10 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["military-family", "need-based"],
+    "tags": [
+      "military-family",
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://www.thanksusa.org/scholarships.html",
     "source": "https://www.military.com/education/money-for-school/thanksusa-military-dependent-scholarships.html"
@@ -1003,7 +1189,10 @@
     "eligibility": {
       "military_connection": "Child of an active duty, Reserve, or retired military member",
       "commissary": "Awards are tied to a commissary location",
-      "education_level": ["high-school-senior", "undergraduate"]
+      "education_level": [
+        "high-school-senior",
+        "undergraduate"
+      ]
     },
     "requirements": {
       "application": "Online application via the Scholarships for Military Children program",
@@ -1014,7 +1203,9 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["military-family"],
+    "tags": [
+      "military-family"
+    ],
     "status": "upcoming",
     "application_url": "https://www.fisherhouse.org/scholarships",
     "source": "https://www.fisherhouse.org/scholarships"
@@ -1028,7 +1219,10 @@
     "eligibility": {
       "military_connection": "Child of a service member who died in the line of duty in the Air Force, Army, Coast Guard, Marine Corps, National Guard, Navy, or Space Force",
       "enrollment": "Vocational, two-year, or four-year college or university",
-      "education_level": ["undergraduate", "vocational"]
+      "education_level": [
+        "undergraduate",
+        "vocational"
+      ]
     },
     "requirements": {
       "application": "Online enrollment form or printable mail-in version",
@@ -1038,7 +1232,11 @@
     "renewable": true,
     "national": true,
     "states": [],
-    "tags": ["military-family", "need-based", "renewable"],
+    "tags": [
+      "military-family",
+      "need-based",
+      "renewable"
+    ],
     "status": "active",
     "application_url": "https://fallenpatriots.org/enroll-a-student/",
     "source": "https://fallenpatriots.org/scholarships-grants/"
@@ -1052,7 +1250,11 @@
     "eligibility": {
       "military_connection": "Veteran or active duty service member from any U.S. Armed Forces branch, military spouse, or surviving spouse",
       "enrollment": "Full-time at an accredited U.S. college or university",
-      "education_level": ["undergraduate", "graduate", "professional"],
+      "education_level": [
+        "undergraduate",
+        "graduate",
+        "professional"
+      ],
       "financial_need": "Award amount varies with financial need and educational costs"
     },
     "requirements": {
@@ -1064,7 +1266,12 @@
     "renewable": true,
     "national": true,
     "states": [],
-    "tags": ["military-family", "need-based", "renewable", "flagship"],
+    "tags": [
+      "military-family",
+      "need-based",
+      "renewable",
+      "flagship"
+    ],
     "status": "upcoming",
     "application_url": "https://pattillmanfoundation.org/apply-to-be-a-scholar/",
     "source": "https://pattillmanfoundation.org/apply-to-be-a-scholar/"
@@ -1076,7 +1283,9 @@
     "amount_min": 1000,
     "amount_max": 1000,
     "eligibility": {
-      "education_level": ["high-school-senior"],
+      "education_level": [
+        "high-school-senior"
+      ],
       "gpa_min": 2.5,
       "institution": "Participating career college in the Imagine America High School Scholarships Program",
       "financial_need": "Must demonstrate financial need",
@@ -1090,7 +1299,9 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["need-based"],
+    "tags": [
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://imagine-america.org/scholarships/high-school-scholarships",
     "source": "https://imagine-america.org/scholarships/high-school-scholarships"
@@ -1102,7 +1313,10 @@
     "amount_min": 10000,
     "amount_max": 10000,
     "eligibility": {
-      "education_level": ["graduate", "professional"],
+      "education_level": [
+        "graduate",
+        "professional"
+      ],
       "enrollment": "Enrolled in or accepted to an accredited graduate or professional degree program",
       "financial_need": "Must demonstrate financial need",
       "criteria": "Commitment to making a positive impact in their community"
@@ -1115,7 +1329,9 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["need-based"],
+    "tags": [
+      "need-based"
+    ],
     "status": "upcoming",
     "application_url": "https://www.salliemae.com/landing/bridging-the-dream-for-graduates/",
     "source": "https://www.salliemae.com/landing/bridging-the-dream-for-graduates/"

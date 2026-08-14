@@ -1,6 +1,6 @@
 import { db } from "@/lib/db";
 import { studentProfiles, scholarships, matches } from "@/lib/db/schema";
-import { eq, and } from "drizzle-orm";
+import { eq, and, notInArray } from "drizzle-orm";
 import { filterEligible, scoreAffinity, rankMatches } from "./matching-engine";
 
 export async function generateMatchesForStudent(
@@ -144,8 +144,26 @@ export async function generateMatchesForStudent(
       }
     }
 
+    // Prune stale matches: rows whose scholarship no longer passes eligibility
+    // (data corrections, profile changes, expired deadlines). Only untouched
+    // 'new' rows are removed — anything the student saved, applied to, or
+    // dismissed reflects their judgment and stays.
+    const keepIds = ranked.map((m) => m.scholarshipId);
+    const stale = await db
+      .delete(matches)
+      .where(
+        keepIds.length > 0
+          ? and(
+              eq(matches.studentId, studentId),
+              eq(matches.status, "new"),
+              notInArray(matches.scholarshipId, keepIds),
+            )
+          : and(eq(matches.studentId, studentId), eq(matches.status, "new")),
+      )
+      .returning({ id: matches.id });
+
     console.log(
-      `[MatchScheduler] Generated ${ranked.length} matches for student ${studentId}`,
+      `[MatchScheduler] Generated ${ranked.length} matches for student ${studentId} (${stale.length} stale pruned)`,
     );
 
     return { matchCount: ranked.length };

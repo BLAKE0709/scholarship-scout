@@ -4876,42 +4876,6 @@
     "source": "https://dar.academicworks.com/opportunities/1205"
   },
   {
-    "name": "Voice of Democracy Audio-Essay Scholarship",
-    "provider_name": "Veterans of Foreign Wars (VFW)",
-    "description": "A national audio-essay competition for students in grades 9 through 12, in which entrants record a three-to-five-minute broadcast-style essay on an annual patriotic theme. The 2026-27 theme is 'What a Veteran Taught Me About America.' The national first-place award is a $35,000 scholarship paid directly to the recipient's American college, university, or vocational/technical school; additional national, state, district, and post-level awards are also given. Entries are submitted to a participating local VFW Post.",
-    "amount_min": 35000,
-    "amount_max": 35000,
-    "deadline": "2026-10-31",
-    "eligibility": {
-      "grade_levels": [
-        "high_school_freshman",
-        "high_school_sophomore",
-        "high_school_junior",
-        "high_school_senior"
-      ],
-      "enrollment": "public, private, or parochial high school or home study program in the U.S. and its territories"
-    },
-    "requirements": {
-      "audio_essay": "3 to 5 minute recorded essay",
-      "typed_essay_copy": true,
-      "entry_form": true,
-      "submit_to_local_vfw_post": true
-    },
-    "renewable": false,
-    "national": true,
-    "states": [],
-    "tags": [
-      "essay-contest",
-      "government",
-      "history",
-      "humanities",
-      "writing"
-    ],
-    "status": "active",
-    "application_url": "https://www.vfw.org/community/youth-and-education/youth-scholarships",
-    "source": "https://www.vfw.org/community/youth-and-education/youth-scholarships"
-  },
-  {
     "name": "National High School Oratorical Contest Scholarship",
     "provider_name": "The American Legion",
     "description": "A public-speaking competition on the U.S. Constitution that begins at the local American Legion post and advances through district, state, and national rounds. Each state winner certified into the national contest's first round receives a $2,000 scholarship, with another $2,000 for advancing past that round; the national champion receives $25,000, second place $22,500, and third place $20,000. Awards may be used at any accredited U.S. trade school, college, or university within eight years. Local and state contest dates vary, so entrants should contact their nearby American Legion post; contests typically run from late fall through the national finals in spring.",
@@ -6456,7 +6420,11 @@
         "professional"
       ],
       "enrollment": "Full-time graduate or professional degree at an accredited U.S. institution",
-      "timing": "Applying to graduate school, or in the first two years of the program"
+      "timing": "Applying to graduate school, or in the first two years of the program",
+      "grade_levels": [
+        "college_senior",
+        "graduate"
+      ]
     },
     "requirements": {
       "application": "Online application",
