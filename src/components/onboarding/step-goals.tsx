@@ -12,9 +12,9 @@ const GOALS = [
   },
   {
     id: "essay_help",
-    label: "Get help writing essays",
+    label: "Strengthen my essays",
     description:
-      "AI-powered writing assistance that keeps your authentic voice",
+      "Get feedback that improves the draft without replacing my voice",
     icon: PenTool,
   },
   {
@@ -25,14 +25,14 @@ const GOALS = [
   },
   {
     id: "ai_skills",
-    label: "Improve my AI collaboration skills",
-    description: "Build your AI Partnership Score and stand out to reviewers",
+    label: "Keep my writing authentic",
+    description: "See how well each revision still sounds like me",
     icon: Brain,
   },
   {
     id: "build_profile",
-    label: "Build my academic profile",
-    description: "Create a comprehensive vault of your achievements",
+    label: "Keep my materials ready",
+    description: "Organize achievements, essays, and documents in one place",
     icon: Archive,
   },
 ];

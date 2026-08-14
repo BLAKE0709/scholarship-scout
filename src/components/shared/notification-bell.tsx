@@ -212,9 +212,13 @@ export function NotificationBell() {
           <div className="max-h-[400px] overflow-y-auto">
             {notifications.length === 0 ? (
               <div className="flex flex-col items-center justify-center py-8">
-                <Bell className="mb-2 h-8 w-8 text-text-secondary/30" />
-                <p className="text-sm text-text-secondary">
-                  No notifications yet
+                <Bell className="mb-2 h-8 w-8 text-[#526461]/30" />
+                <p className="text-sm font-semibold text-[#14312e]">
+                  Updates will land here
+                </p>
+                <p className="mt-1 max-w-[250px] text-center text-xs leading-relaxed text-[#526461]">
+                  Save a scholarship to start receiving deadline and
+                  application reminders.
                 </p>
               </div>
             ) : (

@@ -58,12 +58,12 @@ export default async function EssaysPage() {
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--accent-teal)]/10">
             <PenLine className="h-7 w-7 text-[var(--accent-teal)]" />
           </div>
-          <h3 className="mt-4 font-semibold text-[var(--text-primary)]">
-            Write Your First Essay
+          <h3 className="mt-4 text-lg font-semibold text-[#14312e]">
+            Start with a prompt worth answering
           </h3>
-          <p className="mt-1 max-w-sm text-sm text-[var(--text-secondary)]">
-            Start crafting your scholarship essays with AI-powered assistance.
-            Scout will help you brainstorm, refine, and perfect your writing.
+          <p className="mt-1 max-w-sm text-sm leading-relaxed text-[#526461]">
+            Draft in your own words, then ask the essay coach for questions and
+            feedback that keep your voice intact.
           </p>
           <div className="mt-4">
             <NewEssayDialog />

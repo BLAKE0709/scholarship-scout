@@ -667,11 +667,11 @@ export default function VaultPage() {
             <Card className="rounded-xl">
               <CardContent className="flex flex-col items-center py-12">
                 <PenTool className="mb-3 h-10 w-10 text-text-secondary/30" />
-                <p className="text-lg font-medium text-text-primary">
-                  No essays yet
+                <p className="text-lg font-semibold text-[#14312e]">
+                  Keep reusable essays close
                 </p>
-                <p className="mt-1 text-sm text-text-secondary">
-                  Start writing to build your essay portfolio
+                <p className="mt-1 text-sm text-[#526461]">
+                  Your drafts will appear here once you start writing.
                 </p>
                 <Button
                   variant="outline"
@@ -754,11 +754,12 @@ export default function VaultPage() {
             <Card className="rounded-xl">
               <CardContent className="flex flex-col items-center py-12">
                 <Trophy className="mb-3 h-10 w-10 text-text-secondary/30" />
-                <p className="text-lg font-medium text-text-primary">
-                  No achievements yet
+                <p className="text-lg font-semibold text-[#14312e]">
+                  Add an achievement scholarships can recognize
                 </p>
-                <p className="mt-1 text-sm text-text-secondary">
-                  Add your accomplishments to strengthen your applications
+                <p className="mt-1 max-w-sm text-center text-sm leading-relaxed text-[#526461]">
+                  Include awards, leadership, service, work, or activities you
+                  may want to reuse in an application.
                 </p>
                 <Button
                   variant="outline"
@@ -896,11 +897,12 @@ export default function VaultPage() {
             <Card className="rounded-xl">
               <CardContent className="flex flex-col items-center py-12">
                 <FileText className="mb-3 h-10 w-10 text-text-secondary/30" />
-                <p className="text-lg font-medium text-text-primary">
-                  No documents uploaded
+                <p className="text-lg font-semibold text-[#14312e]">
+                  Put your first application document within reach
                 </p>
-                <p className="mt-1 text-sm text-text-secondary">
-                  Upload transcripts, recommendation letters, and certificates
+                <p className="mt-1 max-w-sm text-center text-sm leading-relaxed text-[#526461]">
+                  Start with a transcript, recommendation letter, or
+                  certificate.
                 </p>
                 <Button
                   variant="outline"

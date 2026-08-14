@@ -76,7 +76,11 @@ const GRADE_LEVELS = [
   { value: "college_senior", label: "College Senior" },
 ];
 
-const GRAD_YEARS = Array.from({ length: 8 }, (_, i) => 2025 + i);
+// Hardcoded start years go stale; derive from the current date instead.
+const GRAD_YEARS = Array.from(
+  { length: 8 },
+  (_, i) => new Date().getFullYear() + i,
+);
 
 interface StepBasicsProps {
   data: Partial<BasicsInput>;

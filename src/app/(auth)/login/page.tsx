@@ -158,7 +158,7 @@ export default function LoginPage() {
           </div>
           <Button
             type="submit"
-            className="w-full bg-primary-navy hover:bg-primary-navy/90"
+            className="w-full rounded-full bg-[#1a9988] text-white hover:bg-[#0e4f47]"
             disabled={isLoading}
           >
             {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
@@ -177,12 +177,15 @@ export default function LoginPage() {
 
   return (
     <div className="space-y-6">
-      <div className="space-y-2 text-center">
-        <h2 className="text-xl font-semibold text-text-primary">
-          Welcome back
+      <div className="space-y-2">
+        <h2
+          className="text-3xl font-semibold tracking-tight text-[#14312e]"
+          style={{ fontFamily: "var(--font-fraunces)" }}
+        >
+          Pick up where you left off.
         </h2>
-        <p className="text-sm text-text-secondary">
-          Sign in to your Scholarship Scout account
+        <p className="text-sm leading-relaxed text-[#526461]">
+          Sign in to review matches, deadlines, essays, and applications.
         </p>
       </div>
 
@@ -246,7 +249,7 @@ export default function LoginPage() {
         </div>
         <Button
           type="submit"
-          className="w-full bg-primary-navy hover:bg-primary-navy/90"
+          className="w-full rounded-full bg-[#1a9988] text-white hover:bg-[#0e4f47]"
           disabled={isLoading}
         >
           {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
@@ -261,10 +264,13 @@ export default function LoginPage() {
         Sign in with magic link instead
       </button>
 
-      <p className="text-center text-sm text-text-secondary">
+      <p className="text-center text-sm text-[#526461]">
         Don&apos;t have an account?{" "}
-        <Link href="/signup" className="text-accent-teal hover:underline">
-          Sign up
+        <Link
+          href="/signup"
+          className="font-medium text-[#0e4f47] underline decoration-[#a97f24] decoration-2 underline-offset-4"
+        >
+          Start free
         </Link>
       </p>
     </div>

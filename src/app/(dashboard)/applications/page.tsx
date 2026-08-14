@@ -245,12 +245,12 @@ export default function ApplicationsPage() {
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent-teal/10">
             <Inbox className="h-7 w-7 text-accent-teal" />
           </div>
-          <h3 className="mt-4 font-semibold text-text-primary">
-            No applications yet
+          <h3 className="mt-4 text-lg font-semibold text-[#14312e]">
+            Turn a match into your first application
           </h3>
-          <p className="mt-1 max-w-sm text-sm text-text-secondary">
-            Start by browsing your scholarship matches and creating your first
-            application.
+          <p className="mt-1 max-w-sm text-sm leading-relaxed text-[#526461]">
+            Choose a scholarship you want to pursue. Scout will keep its
+            deadline and next steps in view.
           </p>
           <Button
             variant="outline"

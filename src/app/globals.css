@@ -65,48 +65,48 @@
   --radius: 0.625rem;
 
   /* Scholarship Scout Design Tokens */
-  --primary-navy: #0f2b46;
+  --primary-navy: #14312e;
   --accent-teal: #1a9988;
-  --highlight-gold: #d4a843;
-  --text-primary: #1a202c;
-  --text-secondary: #4a5568;
-  --bg-page: #f7fafc;
+  --highlight-gold: #a97f24;
+  --text-primary: #14312e;
+  --text-secondary: #526461;
+  --bg-page: #fbfaf6;
   --surface: #ffffff;
-  --border-light: #e2e8f0;
+  --border-light: #dce5e1;
   --error: #e53e3e;
   --warning: #dd6b20;
 
   /* shadcn semantic tokens mapped to our palette */
-  --background: #f7fafc;
-  --foreground: #1a202c;
+  --background: #fbfaf6;
+  --foreground: #14312e;
   --card: #ffffff;
-  --card-foreground: #1a202c;
+  --card-foreground: #14312e;
   --popover: #ffffff;
-  --popover-foreground: #1a202c;
-  --primary: #0f2b46;
+  --popover-foreground: #14312e;
+  --primary: #14312e;
   --primary-foreground: #ffffff;
-  --secondary: #f7fafc;
-  --secondary-foreground: #0f2b46;
-  --muted: #f7fafc;
-  --muted-foreground: #4a5568;
+  --secondary: #fbfaf6;
+  --secondary-foreground: #14312e;
+  --muted: #fbfaf6;
+  --muted-foreground: #526461;
   --accent: #1a9988;
   --accent-foreground: #ffffff;
   --destructive: #e53e3e;
-  --border: #e2e8f0;
-  --input: #e2e8f0;
+  --border: #dce5e1;
+  --input: #dce5e1;
   --ring: #1a9988;
-  --chart-1: #0f2b46;
+  --chart-1: #14312e;
   --chart-2: #1a9988;
-  --chart-3: #d4a843;
-  --chart-4: #4a5568;
+  --chart-3: #a97f24;
+  --chart-4: #526461;
   --chart-5: #e53e3e;
   --sidebar: #ffffff;
-  --sidebar-foreground: #1a202c;
-  --sidebar-primary: #0f2b46;
+  --sidebar-foreground: #14312e;
+  --sidebar-primary: #14312e;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: rgba(26, 153, 136, 0.1);
   --sidebar-accent-foreground: #1a9988;
-  --sidebar-border: #e2e8f0;
+  --sidebar-border: #dce5e1;
   --sidebar-ring: #1a9988;
 }
 

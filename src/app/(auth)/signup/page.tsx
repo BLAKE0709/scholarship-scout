@@ -83,12 +83,16 @@ export default function SignupPage() {
 
   return (
     <div className="space-y-6">
-      <div className="space-y-2 text-center">
-        <h2 className="text-xl font-semibold text-text-primary">
-          Create your account
+      <div className="space-y-2">
+        <h2
+          className="text-3xl font-semibold tracking-tight text-[#14312e]"
+          style={{ fontFamily: "var(--font-fraunces)" }}
+        >
+          Build the profile your matches need.
         </h2>
-        <p className="text-sm text-text-secondary">
-          Start your scholarship journey today
+        <p className="text-sm leading-relaxed text-[#526461]">
+          Start free. No card required. Your answers help Scout remove awards
+          you cannot pursue and rank the ones worth your time.
         </p>
       </div>
 
@@ -191,11 +195,11 @@ export default function SignupPage() {
         </div>
         <Button
           type="submit"
-          className="w-full bg-primary-navy hover:bg-primary-navy/90"
+          className="w-full rounded-full bg-[#1a9988] text-white hover:bg-[#0e4f47]"
           disabled={isLoading || !role || !acceptTerms}
         >
           {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-          Create account
+          Create my free account
         </Button>
       </form>
 

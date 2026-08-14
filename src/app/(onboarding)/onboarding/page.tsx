@@ -62,7 +62,7 @@ export default function OnboardingPage() {
   if (currentStep === 5 || completionData) {
     return (
       <div className="w-full max-w-2xl">
-        <div className="rounded-xl bg-surface p-8 shadow-lg">
+        <div className="rounded-2xl border border-[#dce5e1] bg-white p-6 shadow-none sm:p-8">
           <StepComplete
             vaultScore={completionData?.vaultScore ?? 0}
             matchCount={completionData?.matchCount ?? 0}
@@ -86,7 +86,7 @@ export default function OnboardingPage() {
       </div>
 
       {/* Step Content */}
-      <div className="rounded-xl bg-surface p-8 shadow-lg">
+      <div className="rounded-2xl border border-[#dce5e1] bg-white p-6 shadow-none sm:p-8">
         {currentStep === 1 && (
           <StepBasics
             data={data.basics}
@@ -127,11 +127,11 @@ export default function OnboardingPage() {
           )}
           <Button
             onClick={handleNext}
-            className="bg-primary-navy hover:bg-primary-navy/90 min-w-[120px]"
+            className="min-w-[132px] rounded-full bg-[#1a9988] text-white hover:bg-[#0e4f47]"
             disabled={isSaving}
           >
             {isSaving && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-            {currentStep === 4 ? "Complete" : "Next"}
+            {currentStep === 4 ? "Find my matches" : "Continue"}
           </Button>
         </div>
       </div>

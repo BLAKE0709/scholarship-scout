@@ -264,12 +264,19 @@ export default function NotificationsPage() {
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-accent-teal/10 mb-4">
                 <Inbox className="h-8 w-8 text-accent-teal" />
               </div>
-              <p className="text-lg font-medium text-text-primary">
-                You're all caught up!
+              <p className="text-lg font-semibold text-[#14312e]">
+                Nothing needs your attention
               </p>
-              <p className="mt-1 text-sm text-text-secondary">
-                No new notifications.
+              <p className="mt-1 max-w-sm text-center text-sm leading-relaxed text-[#526461]">
+                Match updates, saved-scholarship deadlines, and application
+                reminders will appear here.
               </p>
+              <a
+                href="/scholarships"
+                className="mt-4 text-sm font-medium text-[#0e4f47] underline decoration-[#a97f24] decoration-2 underline-offset-4"
+              >
+                Review scholarships
+              </a>
             </div>
           ) : (
             <div>

@@ -59,6 +59,46 @@ export interface RankedMatch {
 
 // ── Stage 1: Eligibility Filter ──────────────────────────────────────────────
 
+// Seed data and app profiles use overlapping but non-identical vocabularies
+// (e.g. "high_school_senior" vs "senior", "gpa_min" vs "min_gpa"). Normalize
+// both sides so eligibility actually bites — a filter that silently no-ops is
+// worse than none, because it looks like it's working.
+const HS_GRADES = new Set(["freshman", "sophomore", "junior", "senior"]);
+
+function normalizeGradeToken(raw: string): string {
+  return raw
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "_")
+    .replace(/^high_school_/, "");
+}
+
+function gradeMatches(seedTokens: string[], studentGrade: string): boolean {
+  const student = normalizeGradeToken(studentGrade);
+  const studentIsHS = HS_GRADES.has(student);
+  const studentIsCollege = student.startsWith("college_");
+
+  return seedTokens.some((t) => {
+    const token = normalizeGradeToken(t);
+    if (token === student) return true;
+    // Group tokens used across the seed data
+    if (
+      (token === "high_school" || token === "high_school_student") &&
+      studentIsHS
+    )
+      return true;
+    if (
+      (token === "undergraduate" ||
+        token === "current_undergrad" ||
+        token === "college" ||
+        token === "college_student") &&
+      studentIsCollege
+    )
+      return true;
+    return false;
+  });
+}
+
 export function filterEligible(
   student: StudentProfile,
   allScholarships: Scholarship[],
@@ -66,9 +106,10 @@ export function filterEligible(
   return allScholarships.filter((s) => {
     const elig = s.eligibility as Record<string, unknown>;
 
-    // GPA check
-    if (elig.min_gpa && student.gpa) {
-      if (parseFloat(student.gpa) < (elig.min_gpa as number)) return false;
+    // GPA check — seed data writes gpa_min, older records min_gpa
+    const minGpa = (elig.min_gpa ?? elig.gpa_min) as number | undefined;
+    if (minGpa && student.gpa) {
+      if (parseFloat(student.gpa) < minGpa) return false;
     }
 
     // State check (skip if national or no state restriction)
@@ -76,10 +117,11 @@ export function filterEligible(
       if (!s.states.includes(student.state)) return false;
     }
 
-    // Grade level check
+    // Grade level check — vocabulary-normalized; a grade-restricted award
+    // that names no grade the student occupies is excluded.
     const gradeLevels = elig.grade_levels as string[] | undefined;
     if (gradeLevels && gradeLevels.length > 0 && student.gradeLevel) {
-      if (!gradeLevels.includes(student.gradeLevel)) return false;
+      if (!gradeMatches(gradeLevels, student.gradeLevel)) return false;
     }
 
     // Financial need check
@@ -279,8 +321,7 @@ function calculateFallbackScore(
 
   // Major alignment
   const majors = (scholarship.eligibility as Record<string, unknown>).majors as
-    | string[]
-    | undefined;
+    string[] | undefined;
   if (
     majors?.length &&
     student.intendedMajor &&
