@@ -7,7 +7,6 @@ import {
   PenTool,
   Trophy,
   FileText,
-  BarChart3,
   ClipboardList,
   Download,
   Upload,
@@ -515,18 +514,14 @@ export default function VaultPage() {
             <Trophy className="h-4 w-4" />
             <span className="hidden sm:inline">Achievements</span>
           </TabsTrigger>
-          <TabsTrigger value="documents" className="flex items-center gap-2">
-            <FileText className="h-4 w-4" />
-            <span className="hidden sm:inline">Documents</span>
-          </TabsTrigger>
-          <TabsTrigger value="scores" className="flex items-center gap-2">
-            <BarChart3 className="h-4 w-4" />
-            <span className="hidden sm:inline">Scores</span>
-          </TabsTrigger>
-          <TabsTrigger value="applications" className="flex items-center gap-2">
-            <ClipboardList className="h-4 w-4" />
-            <span className="hidden sm:inline">Applications</span>
-          </TabsTrigger>
+          {/* Documents, Scores, and Applications are hidden for alpha.
+              Documents: no storage bucket exists, so every upload 500s, and
+              the upload path builds a public URL — wrong for a minor's
+              transcript. Needs a private bucket and signed URLs first.
+              Scores: nothing computes fidelity or APS yet, so the tab can only
+              promise numbers that never arrive.
+              Applications: duplicates /applications.
+              The content blocks below are left intact for when each is real. */}
         </TabsList>
 
         {/* ── Profile Tab ──────────────────────────────────────────────────── */}

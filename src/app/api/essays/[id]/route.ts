@@ -147,9 +147,10 @@ export async function DELETE(_request: NextRequest, context: RouteContext) {
       return NextResponse.json({ error: "Not found" }, { status: 404 });
     }
 
-    // Delete revisions first, then essay
-    await db.delete(essayRevisions).where(eq(essayRevisions.essayId, id));
-
+    // Revisions cascade from the essay row (essay_revisions.essay_id is
+    // ON DELETE CASCADE). Deleting them separately ran before the ownership
+    // check below, so any signed-in student could wipe another student's
+    // revision history by essay id — and this connection bypasses RLS.
     const [deleted] = await db
       .delete(essays)
       .where(and(eq(essays.id, id), eq(essays.studentId, student.id)))

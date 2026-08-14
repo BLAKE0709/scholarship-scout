@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { useEssay } from "@/hooks/use-essay";
 import { useAIChat } from "@/hooks/use-ai-chat";
-import { useUser } from "@/hooks/use-user";
 import { EssayEditor } from "@/components/essays/editor";
 import { AISidebar } from "@/components/essays/ai-sidebar";
 import { RevisionTracker } from "@/components/essays/revision-tracker";
@@ -20,6 +19,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import {
+  AlertCircle,
   ArrowLeft,
   Bot,
   Check,
@@ -43,7 +43,6 @@ interface EssayData {
 export default function EssayWorkspacePage() {
   const params = useParams();
   const router = useRouter();
-  const { profile } = useUser();
   const [essay, setEssay] = useState<EssayData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -86,7 +85,10 @@ export default function EssayWorkspacePage() {
     );
   }
 
-  return <EssayWorkspace essay={essay} studentId={profile?.id} />;
+  // ai_interactions.student_id references student_profiles.id, not users.id.
+  // Passing the users row id violated the FK, so every interaction insert was
+  // rejected and swallowed — leaving nothing to ground a fidelity score on.
+  return <EssayWorkspace essay={essay} studentId={essay.studentId} />;
 }
 
 function EssayWorkspace({
@@ -106,6 +108,7 @@ function EssayWorkspace({
     status,
     isSaving,
     lastSaved,
+    saveFailed,
     timeSpent,
     updateStatus,
     updateTitle,
@@ -197,11 +200,21 @@ function EssayWorkspace({
         <div className="flex items-center gap-1 shrink-0">
           {isSaving ? (
             <Loader2 className="h-3 w-3 animate-spin text-[var(--text-secondary)]" />
+          ) : saveFailed ? (
+            <AlertCircle className="h-3 w-3 text-red-600" />
           ) : lastSaved ? (
             <Check className="h-3 w-3 text-green-500" />
           ) : null}
-          <span className="text-[10px] text-[var(--text-secondary)]">
-            {isSaving ? "Saving..." : lastSaved ? "Saved" : ""}
+          <span
+            className={`text-[10px] ${saveFailed && !isSaving ? "text-red-600" : "text-[var(--text-secondary)]"}`}
+          >
+            {isSaving
+              ? "Saving..."
+              : saveFailed
+                ? "Not saved — keep this tab open"
+                : lastSaved
+                  ? "Saved"
+                  : ""}
           </span>
         </div>
 
