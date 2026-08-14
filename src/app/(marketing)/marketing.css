@@ -1,0 +1,79 @@
+/* Marketing surface tokens — scoped to the (marketing) route group wrapper.
+   Deliberately light-committed: this surface has one look. */
+.scout-marketing {
+  --scout-ink: #14312e;
+  --scout-pine: #1a9988;
+  --scout-deep: #0e4f47;
+  --scout-brass: #a97f24;
+  --scout-paper: #fbfaf6;
+  --scout-mist: #eaf2ef;
+  --scout-line: #dce5e1;
+
+  background: var(--scout-paper);
+  color: var(--scout-ink);
+}
+
+/* Hero card deal-in */
+@keyframes scout-deal {
+  from {
+    opacity: 0;
+    transform: translateY(28px) rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(var(--deal-rotate, 0deg));
+  }
+}
+.scout-deal {
+  opacity: 0;
+  animation: scout-deal 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--deal-delay, 0s);
+}
+@media (prefers-reduced-motion: reduce) {
+  .scout-deal {
+    animation: none;
+    opacity: 1;
+    transform: rotate(var(--deal-rotate, 0deg));
+  }
+}
+
+/* FAQ details styling */
+.scout-faq details {
+  border-bottom: 1px solid var(--scout-line);
+}
+.scout-faq summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  font-weight: 600;
+}
+.scout-faq summary::-webkit-details-marker {
+  display: none;
+}
+.scout-faq summary::after {
+  content: "+";
+  font-family: var(--font-jetbrains-mono), monospace;
+  color: var(--scout-brass);
+  font-size: 1.05rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+.scout-faq details[open] summary::after {
+  content: "–";
+}
+.scout-faq details > div {
+  padding: 0 0 1.2rem;
+}
+
+/* Focus visibility on the marketing surface */
+.scout-marketing a:focus-visible,
+.scout-marketing button:focus-visible,
+.scout-marketing summary:focus-visible {
+  outline: 2px solid var(--scout-pine);
+  outline-offset: 3px;
+  border-radius: 2px;
+}

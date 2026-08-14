@@ -35,6 +35,8 @@ export async function updateSession(request: NextRequest) {
 
   const publicPaths = [
     "/",
+    "/privacy",
+    "/terms",
     "/login",
     "/signup",
     "/forgot-password",
