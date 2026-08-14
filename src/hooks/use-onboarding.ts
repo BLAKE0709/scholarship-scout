@@ -142,10 +142,22 @@ export function useOnboarding(initialStep = 1) {
       .update({ onboarding_completed: true })
       .eq("id", user.id);
 
-    setIsSaving(false);
+    // Run the real matching engine against the verified scholarship database.
+    // The completion screen must never show an invented number: if matching
+    // fails here, report 0 and let the dashboard's match runner retry — an
+    // honest zero beats a fabricated eleven.
+    let matchCount = 0;
+    try {
+      const res = await fetch("/api/scholarships/match", { method: "POST" });
+      if (res.ok) {
+        const body = (await res.json()) as { matchCount?: number };
+        matchCount = body.matchCount ?? 0;
+      }
+    } catch {
+      // Non-fatal: matches can be generated from the dashboard afterward.
+    }
 
-    // Rough match count estimate based on profile completeness
-    const matchCount = Math.floor(score / 10) + 3;
+    setIsSaving(false);
 
     return { vaultScore: score, matchCount };
   }, [supabase, data, saveProgress]);
