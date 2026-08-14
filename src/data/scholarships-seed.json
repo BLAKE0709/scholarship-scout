@@ -1,0 +1,1239 @@
+[
+  {
+    "name": "National Future Leaders Scholarship",
+    "provider_name": "American Leadership Foundation",
+    "description": "Awarded to high school students who demonstrate exceptional leadership potential through community involvement, extracurricular activities, and academic achievement.",
+    "amount_min": 5000,
+    "amount_max": 10000,
+    "deadline": "2026-06-15",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["junior", "senior"],
+      "other_requirements": ["Community involvement"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["leadership", "general", "national"],
+    "status": "active"
+  },
+  {
+    "name": "Bright Horizons Academic Award",
+    "provider_name": "Bright Horizons Education Fund",
+    "description": "Supporting students who maintain strong academic records while actively participating in their school and community. Open to all fields of study.",
+    "amount_min": 2500,
+    "amount_max": 5000,
+    "deadline": "2026-04-30",
+    "eligibility": {
+      "min_gpa": 3.2,
+      "grade_levels": ["sophomore", "junior", "senior"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["academic", "general", "national"],
+    "status": "active"
+  },
+  {
+    "name": "Dream Big National Scholarship",
+    "provider_name": "Dream Big Foundation",
+    "description": "For students with ambitious goals and a clear vision for how they plan to make a difference. No minimum GPA required — we believe in potential.",
+    "amount_min": 1000,
+    "amount_max": 3000,
+    "deadline": "2026-09-01",
+    "eligibility": {
+      "grade_levels": ["freshman", "sophomore", "junior", "senior"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 0,
+      "transcript": false
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["general", "national", "no-gpa"],
+    "status": "active"
+  },
+  {
+    "name": "United We Learn Scholarship",
+    "provider_name": "United Education Alliance",
+    "description": "Promoting educational access for all American students regardless of background. Essay should address how education has shaped your worldview.",
+    "amount_min": 2000,
+    "amount_max": 5000,
+    "deadline": "2026-07-31",
+    "eligibility": {
+      "min_gpa": 2.5,
+      "grade_levels": ["junior", "senior", "college_freshman"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["general", "national", "essay-focused"],
+    "status": "active"
+  },
+  {
+    "name": "Merit & Character Award",
+    "provider_name": "National Character Education Foundation",
+    "description": "Recognizes students who exemplify strong moral character alongside academic excellence. Preference for students involved in ethics, debate, or philosophy.",
+    "amount_min": 3000,
+    "amount_max": 7500,
+    "deadline": "2026-05-15",
+    "eligibility": { "min_gpa": 3.5, "grade_levels": ["senior"] },
+    "requirements": {
+      "essays_required": 2,
+      "recommendation_letters": 2,
+      "transcript": true,
+      "other": ["Character reference from non-teacher adult"]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["academic", "character", "national"],
+    "status": "active"
+  },
+  {
+    "name": "American Promise Scholarship",
+    "provider_name": "American Promise Fund",
+    "description": "Open to any high school student planning to attend a 4-year university. We value resilience and determination over test scores.",
+    "amount_min": 1500,
+    "amount_max": 3000,
+    "deadline": "2026-08-15",
+    "eligibility": { "grade_levels": ["junior", "senior"] },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": false
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["general", "national", "resilience"],
+    "status": "active"
+  },
+  {
+    "name": "Gateway to Success Scholarship",
+    "provider_name": "Gateway Education Partners",
+    "description": "For students entering college in 2027. Applicants should describe their career goals and how higher education will help achieve them.",
+    "amount_min": 2000,
+    "amount_max": 4000,
+    "deadline": "2026-06-30",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["senior"],
+      "other_requirements": ["Planning to enroll in 4-year university"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["general", "national", "career-focused"],
+    "status": "active"
+  },
+  {
+    "name": "Knowledge Builders Award",
+    "provider_name": "National Knowledge Foundation",
+    "description": "Supporting curious minds who demonstrate intellectual engagement beyond the classroom through research, independent study, or creative projects.",
+    "amount_min": 3000,
+    "amount_max": 6000,
+    "deadline": "2026-05-01",
+    "eligibility": { "min_gpa": 3.3, "grade_levels": ["junior", "senior"] },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true,
+      "other": ["Portfolio or project description"]
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["academic", "national", "research"],
+    "status": "active"
+  },
+  {
+    "name": "Everyday Heroes Scholarship",
+    "provider_name": "Community Heroes Network",
+    "description": "For students who quietly make their communities better every day through volunteering, mentoring, or community organizing.",
+    "amount_min": 1000,
+    "amount_max": 2500,
+    "deadline": "2026-10-01",
+    "eligibility": { "grade_levels": ["sophomore", "junior", "senior"] },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": false
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["community", "national", "volunteering"],
+    "status": "active"
+  },
+  {
+    "name": "Pathway to College Scholarship",
+    "provider_name": "College Access Network",
+    "description": "Removing financial barriers for students committed to higher education. Must demonstrate financial need and academic readiness.",
+    "amount_min": 5000,
+    "amount_max": 15000,
+    "deadline": "2026-03-31",
+    "eligibility": {
+      "min_gpa": 2.8,
+      "grade_levels": ["senior"],
+      "financial_need": true
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true,
+      "other": ["FAFSA completion"]
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["need-based", "national", "college-access"],
+    "status": "active"
+  },
+  {
+    "name": "Future Engineers Scholarship",
+    "provider_name": "Society of American Engineers",
+    "description": "For students pursuing degrees in any engineering discipline. Must demonstrate strong math and science aptitude with a passion for solving real-world problems.",
+    "amount_min": 5000,
+    "amount_max": 15000,
+    "deadline": "2026-04-15",
+    "eligibility": {
+      "min_gpa": 3.5,
+      "grade_levels": ["junior", "senior"],
+      "majors": [
+        "engineering",
+        "mechanical engineering",
+        "electrical engineering",
+        "civil engineering",
+        "chemical engineering"
+      ]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "engineering", "national"],
+    "status": "active"
+  },
+  {
+    "name": "Women in Technology Leadership Award",
+    "provider_name": "TechWomen Alliance",
+    "description": "Empowering young women to pursue careers in technology. Applicants should describe how they plan to contribute to the tech industry.",
+    "amount_min": 7500,
+    "amount_max": 15000,
+    "deadline": "2026-05-30",
+    "eligibility": {
+      "min_gpa": 3.3,
+      "grade_levels": ["junior", "senior"],
+      "majors": [
+        "computer science",
+        "information technology",
+        "software engineering",
+        "data science"
+      ],
+      "demographics": ["female"]
+    },
+    "requirements": {
+      "essays_required": 2,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "technology", "women"],
+    "status": "active"
+  },
+  {
+    "name": "NextGen Computer Science Scholarship",
+    "provider_name": "Code for Tomorrow Foundation",
+    "description": "For students with demonstrated programming experience planning to major in CS or related fields. Side projects and open-source contributions encouraged.",
+    "amount_min": 5000,
+    "amount_max": 10000,
+    "deadline": "2026-06-01",
+    "eligibility": {
+      "min_gpa": 3.2,
+      "grade_levels": ["senior"],
+      "majors": [
+        "computer science",
+        "software engineering",
+        "data science",
+        "cybersecurity"
+      ]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true,
+      "other": ["Programming portfolio or GitHub profile"]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "computer-science", "programming"],
+    "status": "active"
+  },
+  {
+    "name": "STEM Innovators Grant",
+    "provider_name": "National Science Education Board",
+    "description": "Supporting the next generation of scientific innovators. Preference given to students who have participated in science fairs, research programs, or STEM competitions.",
+    "amount_min": 3000,
+    "amount_max": 8000,
+    "deadline": "2026-04-01",
+    "eligibility": {
+      "min_gpa": 3.4,
+      "grade_levels": ["junior", "senior"],
+      "majors": [
+        "biology",
+        "chemistry",
+        "physics",
+        "mathematics",
+        "engineering"
+      ]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true,
+      "other": ["Description of STEM project or research"]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "science", "research", "innovation"],
+    "status": "active"
+  },
+  {
+    "name": "Mathematics Excellence Scholarship",
+    "provider_name": "American Mathematical Society Foundation",
+    "description": "For students who have demonstrated exceptional mathematical ability through coursework, competitions (AMC, MATHCOUNTS, etc.), or independent study.",
+    "amount_min": 4000,
+    "amount_max": 10000,
+    "deadline": "2026-05-15",
+    "eligibility": {
+      "min_gpa": 3.5,
+      "grade_levels": ["junior", "senior"],
+      "majors": [
+        "mathematics",
+        "statistics",
+        "applied mathematics",
+        "actuarial science"
+      ]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "mathematics", "national"],
+    "status": "active"
+  },
+  {
+    "name": "Biomedical Futures Scholarship",
+    "provider_name": "Health Sciences Foundation",
+    "description": "For students planning careers in biomedical sciences, pre-med, or public health. Must demonstrate commitment to improving human health outcomes.",
+    "amount_min": 5000,
+    "amount_max": 12000,
+    "deadline": "2026-07-01",
+    "eligibility": {
+      "min_gpa": 3.6,
+      "grade_levels": ["senior"],
+      "majors": [
+        "biology",
+        "biochemistry",
+        "pre-medicine",
+        "public health",
+        "biomedical engineering"
+      ]
+    },
+    "requirements": {
+      "essays_required": 2,
+      "recommendation_letters": 2,
+      "transcript": true,
+      "other": ["Healthcare or research experience description"]
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "healthcare", "pre-med", "biology"],
+    "status": "active"
+  },
+  {
+    "name": "Green Energy STEM Award",
+    "provider_name": "Renewable Energy Education Council",
+    "description": "For students passionate about renewable energy and environmental sustainability. Pursuing degrees in environmental science, green engineering, or energy policy.",
+    "amount_min": 3000,
+    "amount_max": 7500,
+    "deadline": "2026-06-15",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["junior", "senior"],
+      "majors": [
+        "environmental science",
+        "environmental engineering",
+        "energy systems",
+        "sustainability"
+      ]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "environment", "sustainability", "energy"],
+    "status": "active"
+  },
+  {
+    "name": "Data Science Rising Stars Scholarship",
+    "provider_name": "Analytics Education Institute",
+    "description": "For students interested in data science, machine learning, or AI. Must demonstrate quantitative reasoning skills and curiosity about data-driven decision making.",
+    "amount_min": 4000,
+    "amount_max": 8000,
+    "deadline": "2026-08-01",
+    "eligibility": {
+      "min_gpa": 3.3,
+      "grade_levels": ["senior"],
+      "majors": [
+        "data science",
+        "statistics",
+        "computer science",
+        "mathematics"
+      ]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true,
+      "other": ["Data project or analysis sample"]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "data-science", "AI", "technology"],
+    "status": "active"
+  },
+  {
+    "name": "Aerospace Horizons Scholarship",
+    "provider_name": "National Aerospace Society",
+    "description": "Supporting future aerospace engineers and astronautical scientists. Open to students pursuing aerospace, aviation, or astrophysics degrees.",
+    "amount_min": 6000,
+    "amount_max": 15000,
+    "deadline": "2026-03-15",
+    "eligibility": {
+      "min_gpa": 3.4,
+      "grade_levels": ["senior"],
+      "majors": [
+        "aerospace engineering",
+        "astrophysics",
+        "physics",
+        "mechanical engineering"
+      ]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "aerospace", "engineering"],
+    "status": "active"
+  },
+  {
+    "name": "Cybersecurity Defenders Scholarship",
+    "provider_name": "National Cybersecurity Alliance",
+    "description": "Preparing the next generation of cybersecurity professionals. Preference for students with CTF competition experience or security certifications.",
+    "amount_min": 5000,
+    "amount_max": 10000,
+    "deadline": "2026-07-15",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["junior", "senior"],
+      "majors": ["cybersecurity", "computer science", "information technology"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["stem", "cybersecurity", "technology"],
+    "status": "active"
+  },
+  {
+    "name": "Creative Voices Scholarship",
+    "provider_name": "Arts & Letters Foundation",
+    "description": "For students pursuing degrees in creative writing, literature, journalism, or communications. Submit a writing sample alongside your essay.",
+    "amount_min": 3000,
+    "amount_max": 7500,
+    "deadline": "2026-05-01",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["junior", "senior"],
+      "majors": ["creative writing", "english", "journalism", "communications"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true,
+      "other": ["Writing sample (fiction, poetry, or journalism)"]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts", "writing", "humanities"],
+    "status": "active"
+  },
+  {
+    "name": "Visual Arts Excellence Award",
+    "provider_name": "National Arts Education Society",
+    "description": "Celebrating talented young visual artists pursuing degrees in fine arts, graphic design, illustration, or art history.",
+    "amount_min": 2500,
+    "amount_max": 6000,
+    "deadline": "2026-06-30",
+    "eligibility": {
+      "min_gpa": 2.8,
+      "grade_levels": ["senior"],
+      "majors": ["fine arts", "graphic design", "illustration", "art history"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true,
+      "other": ["Art portfolio (10-15 pieces)"]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts", "visual-arts", "design"],
+    "status": "active"
+  },
+  {
+    "name": "Performing Arts Rising Star Scholarship",
+    "provider_name": "Stage & Screen Foundation",
+    "description": "For students pursuing theater, music, dance, or film. Must demonstrate commitment through performances, recitals, or productions.",
+    "amount_min": 3000,
+    "amount_max": 8000,
+    "deadline": "2026-04-30",
+    "eligibility": {
+      "min_gpa": 2.5,
+      "grade_levels": ["junior", "senior"],
+      "majors": ["theater", "music", "dance", "film"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true,
+      "other": ["Performance video or recording"]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["arts", "performing-arts", "music", "theater"],
+    "status": "active"
+  },
+  {
+    "name": "Humanities & Social Impact Scholarship",
+    "provider_name": "Civic Minds Foundation",
+    "description": "For students pursuing humanities, social sciences, or public policy who want to create positive social change through their work.",
+    "amount_min": 2000,
+    "amount_max": 5000,
+    "deadline": "2026-07-15",
+    "eligibility": {
+      "min_gpa": 3.2,
+      "grade_levels": ["junior", "senior"],
+      "majors": [
+        "political science",
+        "sociology",
+        "history",
+        "philosophy",
+        "public policy"
+      ]
+    },
+    "requirements": {
+      "essays_required": 2,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["humanities", "social-sciences", "civic"],
+    "status": "active"
+  },
+  {
+    "name": "World Languages & Cultures Scholarship",
+    "provider_name": "Global Understanding Institute",
+    "description": "For students studying foreign languages, international relations, or cultural studies. Bilingual or multilingual applicants preferred.",
+    "amount_min": 2000,
+    "amount_max": 4000,
+    "deadline": "2026-08-01",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["junior", "senior"],
+      "majors": [
+        "international relations",
+        "foreign languages",
+        "linguistics",
+        "cultural studies"
+      ]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["humanities", "languages", "international"],
+    "status": "active"
+  },
+  {
+    "name": "Community Changemaker Scholarship",
+    "provider_name": "Impact Youth Foundation",
+    "description": "For students who have founded or led community service initiatives. Must demonstrate measurable impact through volunteer work.",
+    "amount_min": 5000,
+    "amount_max": 10000,
+    "deadline": "2026-05-15",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["junior", "senior"],
+      "other_requirements": ["Founded or led a community service project"]
+    },
+    "requirements": {
+      "essays_required": 2,
+      "recommendation_letters": 2,
+      "transcript": true,
+      "other": ["Documentation of community impact"]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["community-service", "leadership", "social-impact"],
+    "status": "active"
+  },
+  {
+    "name": "Student Government Leadership Award",
+    "provider_name": "National Student Leadership Council",
+    "description": "Recognizing outstanding student government leaders. Must hold or have held a student body officer position.",
+    "amount_min": 2500,
+    "amount_max": 5000,
+    "deadline": "2026-04-01",
+    "eligibility": {
+      "min_gpa": 3.2,
+      "grade_levels": ["senior"],
+      "other_requirements": ["Current or former student body officer"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["leadership", "student-government"],
+    "status": "active"
+  },
+  {
+    "name": "Volunteer Excellence Scholarship",
+    "provider_name": "VolunteerMatch Foundation",
+    "description": "For students with 200+ hours of documented community service. Demonstrate how volunteering has shaped your values and goals.",
+    "amount_min": 2000,
+    "amount_max": 5000,
+    "deadline": "2026-06-15",
+    "eligibility": {
+      "grade_levels": ["junior", "senior"],
+      "other_requirements": ["200+ documented volunteer hours"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": false,
+      "other": ["Volunteer hours documentation"]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["community-service", "volunteering"],
+    "status": "active"
+  },
+  {
+    "name": "Young Entrepreneurs Scholarship",
+    "provider_name": "Future Business Leaders of America",
+    "description": "For students who have started a business, nonprofit, or social enterprise. Judges evaluate innovation, execution, and impact.",
+    "amount_min": 3000,
+    "amount_max": 7500,
+    "deadline": "2026-09-15",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["junior", "senior"],
+      "other_requirements": ["Founded a business or organization"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true,
+      "other": ["Business plan or organization description"]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["leadership", "entrepreneurship", "business"],
+    "status": "active"
+  },
+  {
+    "name": "Eagle Scout / Gold Award Scholarship",
+    "provider_name": "Scouting Legacy Foundation",
+    "description": "For students who have achieved Eagle Scout or Girl Scout Gold Award. Recognizes dedication, perseverance, and community service.",
+    "amount_min": 2000,
+    "amount_max": 5000,
+    "deadline": "2026-07-01",
+    "eligibility": {
+      "grade_levels": ["junior", "senior"],
+      "other_requirements": ["Eagle Scout or Gold Award recipient"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["leadership", "community-service", "scouting"],
+    "status": "active"
+  },
+  {
+    "name": "First Generation College Bound Scholarship",
+    "provider_name": "First in Family Foundation",
+    "description": "For students who will be the first in their immediate family to attend a 4-year college. We believe in breaking cycles and opening doors.",
+    "amount_min": 5000,
+    "amount_max": 15000,
+    "deadline": "2026-04-15",
+    "eligibility": {
+      "min_gpa": 2.5,
+      "grade_levels": ["senior"],
+      "other_requirements": ["First generation college student"]
+    },
+    "requirements": {
+      "essays_required": 2,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["first-generation", "college-access"],
+    "status": "active"
+  },
+  {
+    "name": "Trailblazer First-Gen Award",
+    "provider_name": "Trailblazers Education Network",
+    "description": "Supporting first-generation college students with both financial aid and mentorship. Award includes scholarship plus year-long mentor pairing.",
+    "amount_min": 3000,
+    "amount_max": 8000,
+    "deadline": "2026-05-30",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["junior", "senior"],
+      "other_requirements": ["First generation college student"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["first-generation", "mentorship"],
+    "status": "active"
+  },
+  {
+    "name": "Breaking Barriers Scholarship",
+    "provider_name": "Opportunity Scholars Fund",
+    "description": "For first-generation students from low-income households who are determined to change their family's trajectory through education.",
+    "amount_min": 7500,
+    "amount_max": 20000,
+    "deadline": "2026-03-31",
+    "eligibility": {
+      "min_gpa": 2.8,
+      "grade_levels": ["senior"],
+      "financial_need": true,
+      "other_requirements": ["First generation college student"]
+    },
+    "requirements": {
+      "essays_required": 2,
+      "recommendation_letters": 2,
+      "transcript": true,
+      "other": ["FAFSA or financial documentation"]
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["first-generation", "need-based", "low-income"],
+    "status": "active"
+  },
+  {
+    "name": "Immigrant Family Achievement Scholarship",
+    "provider_name": "New American Dreams Foundation",
+    "description": "For first-generation American students whose parents immigrated to the US. Celebrates the drive and resilience of immigrant families.",
+    "amount_min": 3000,
+    "amount_max": 7500,
+    "deadline": "2026-06-30",
+    "eligibility": {
+      "min_gpa": 2.5,
+      "grade_levels": ["junior", "senior"],
+      "other_requirements": [
+        "Child of immigrant parents",
+        "First generation college student"
+      ]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["first-generation", "immigrant", "diversity"],
+    "status": "active"
+  },
+  {
+    "name": "Rural First-Gen Scholars Program",
+    "provider_name": "Rural Futures Initiative",
+    "description": "For first-generation students from rural communities. Addresses the unique challenges faced by rural students navigating the college process.",
+    "amount_min": 4000,
+    "amount_max": 10000,
+    "deadline": "2026-08-15",
+    "eligibility": {
+      "min_gpa": 2.7,
+      "grade_levels": ["senior"],
+      "other_requirements": [
+        "First generation college student",
+        "From a rural community"
+      ]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["first-generation", "rural"],
+    "status": "active"
+  },
+  {
+    "name": "Texas Rising Star Award",
+    "provider_name": "Texas Education Foundation",
+    "description": "For outstanding Texas high school students who demonstrate academic excellence and community involvement. Must attend a Texas university.",
+    "amount_min": 5000,
+    "amount_max": 15000,
+    "deadline": "2026-04-15",
+    "eligibility": {
+      "min_gpa": 3.5,
+      "states": ["TX"],
+      "grade_levels": ["senior"],
+      "other_requirements": ["Must attend a Texas university"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["state-specific", "texas", "academic"],
+    "status": "active"
+  },
+  {
+    "name": "Lone Star Leadership Scholarship",
+    "provider_name": "Texas Leaders Network",
+    "description": "Recognizing Texas students who lead through action. Student government, team captains, club presidents, and community organizers encouraged to apply.",
+    "amount_min": 2500,
+    "amount_max": 7500,
+    "deadline": "2026-05-31",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "states": ["TX"],
+      "grade_levels": ["junior", "senior"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["state-specific", "texas", "leadership"],
+    "status": "active"
+  },
+  {
+    "name": "Houston Area STEM Scholarship",
+    "provider_name": "Houston STEM Alliance",
+    "description": "For Houston-area students pursuing STEM degrees. Funded by Houston's energy and technology sectors.",
+    "amount_min": 4000,
+    "amount_max": 10000,
+    "deadline": "2026-06-01",
+    "eligibility": {
+      "min_gpa": 3.2,
+      "states": ["TX"],
+      "grade_levels": ["senior"],
+      "majors": [
+        "engineering",
+        "computer science",
+        "chemistry",
+        "physics",
+        "mathematics"
+      ]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["state-specific", "texas", "stem", "houston"],
+    "status": "active"
+  },
+  {
+    "name": "Texas Agricultural Futures Scholarship",
+    "provider_name": "Texas Farm Bureau Foundation",
+    "description": "For Texas students from agricultural communities pursuing degrees in agriculture, veterinary science, or environmental management.",
+    "amount_min": 3000,
+    "amount_max": 6000,
+    "deadline": "2026-07-31",
+    "eligibility": {
+      "min_gpa": 2.8,
+      "states": ["TX"],
+      "grade_levels": ["senior"],
+      "majors": ["agriculture", "veterinary science", "environmental science"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["state-specific", "texas", "agriculture"],
+    "status": "active"
+  },
+  {
+    "name": "DFW Community Scholars Award",
+    "provider_name": "Dallas-Fort Worth Education Fund",
+    "description": "For students in the Dallas-Fort Worth metropolitan area who have demonstrated community engagement and academic promise.",
+    "amount_min": 2000,
+    "amount_max": 5000,
+    "deadline": "2026-05-15",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "states": ["TX"],
+      "grade_levels": ["senior"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": false,
+    "states": ["TX"],
+    "tags": ["state-specific", "texas", "community", "dallas"],
+    "status": "active"
+  },
+  {
+    "name": "Advancing Minorities in STEM Scholarship",
+    "provider_name": "Diversity in STEM Foundation",
+    "description": "Supporting underrepresented minorities pursuing STEM degrees. Open to Black, Hispanic/Latino, and Native American students.",
+    "amount_min": 5000,
+    "amount_max": 12000,
+    "deadline": "2026-04-30",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["junior", "senior"],
+      "majors": [
+        "engineering",
+        "computer science",
+        "mathematics",
+        "biology",
+        "chemistry",
+        "physics"
+      ],
+      "demographics": ["black", "hispanic", "native_american"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "stem", "diversity", "urm"],
+    "status": "active"
+  },
+  {
+    "name": "UNCF/Thurgood Marshall Scholars",
+    "provider_name": "United Negro College Fund",
+    "description": "For African American students attending HBCUs or predominantly white institutions. Recognizes academic achievement and community leadership.",
+    "amount_min": 5000,
+    "amount_max": 25000,
+    "deadline": "2026-03-15",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["senior"],
+      "demographics": ["black"]
+    },
+    "requirements": {
+      "essays_required": 2,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "african-american", "hbcu"],
+    "status": "active"
+  },
+  {
+    "name": "Hispanic Heritage Scholars Award",
+    "provider_name": "Hispanic Heritage Foundation",
+    "description": "Celebrating Hispanic/Latino students who excel in academics and demonstrate pride in their cultural heritage through community involvement.",
+    "amount_min": 3000,
+    "amount_max": 10000,
+    "deadline": "2026-06-30",
+    "eligibility": {
+      "min_gpa": 3.0,
+      "grade_levels": ["junior", "senior"],
+      "demographics": ["hispanic"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "hispanic", "heritage"],
+    "status": "active"
+  },
+  {
+    "name": "Native American Education Fund Scholarship",
+    "provider_name": "Native Scholars Alliance",
+    "description": "Supporting Native American, Alaska Native, and Native Hawaiian students pursuing higher education. Preserving culture while building futures.",
+    "amount_min": 4000,
+    "amount_max": 15000,
+    "deadline": "2026-05-01",
+    "eligibility": {
+      "min_gpa": 2.5,
+      "grade_levels": ["junior", "senior"],
+      "demographics": ["native_american", "alaska_native", "native_hawaiian"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true,
+      "other": ["Tribal enrollment documentation if applicable"]
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "native-american", "indigenous"],
+    "status": "active"
+  },
+  {
+    "name": "Asian American Leadership Scholarship",
+    "provider_name": "Asian American Education Alliance",
+    "description": "For Asian American and Pacific Islander students who demonstrate leadership in their schools and communities. All fields of study welcome.",
+    "amount_min": 2500,
+    "amount_max": 7500,
+    "deadline": "2026-08-01",
+    "eligibility": {
+      "min_gpa": 3.2,
+      "grade_levels": ["senior"],
+      "demographics": ["asian", "pacific_islander"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 2,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["minority", "asian-american", "leadership"],
+    "status": "active"
+  },
+  {
+    "name": "Federal Pell Scholars Supplement",
+    "provider_name": "National Need-Based Aid Foundation",
+    "description": "Supplemental scholarship for students who qualify for Federal Pell Grants. Designed to close the gap between aid received and total cost of attendance.",
+    "amount_min": 3000,
+    "amount_max": 10000,
+    "deadline": "2026-05-31",
+    "eligibility": {
+      "grade_levels": ["senior"],
+      "financial_need": true,
+      "other_requirements": ["Pell Grant eligible"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true,
+      "other": ["FAFSA SAR showing Pell eligibility"]
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["need-based", "pell-grant", "financial-aid"],
+    "status": "active"
+  },
+  {
+    "name": "Working Families Scholarship",
+    "provider_name": "Working Families Coalition",
+    "description": "For students from working-class families where parents do not have college degrees. Must demonstrate financial need and work ethic.",
+    "amount_min": 2500,
+    "amount_max": 7500,
+    "deadline": "2026-06-15",
+    "eligibility": {
+      "min_gpa": 2.5,
+      "grade_levels": ["junior", "senior"],
+      "financial_need": true
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["need-based", "working-class", "financial-aid"],
+    "status": "active"
+  },
+  {
+    "name": "Foster Care to College Scholarship",
+    "provider_name": "Foster Youth Education Foundation",
+    "description": "Exclusively for current and former foster care youth pursuing higher education. No GPA minimum — we believe in second chances.",
+    "amount_min": 5000,
+    "amount_max": 20000,
+    "deadline": "2026-07-31",
+    "eligibility": {
+      "grade_levels": ["junior", "senior", "college_freshman"],
+      "financial_need": true,
+      "other_requirements": ["Current or former foster care youth"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": false,
+      "other": ["Foster care documentation"]
+    },
+    "renewable": true,
+    "national": true,
+    "states": [],
+    "tags": ["need-based", "foster-care", "resilience"],
+    "status": "active"
+  },
+  {
+    "name": "Single Parent Household Achievement Award",
+    "provider_name": "Strong Families Foundation",
+    "description": "Supporting students raised by single parents who have overcome financial challenges to pursue academic excellence.",
+    "amount_min": 2000,
+    "amount_max": 6000,
+    "deadline": "2026-09-01",
+    "eligibility": {
+      "min_gpa": 2.8,
+      "grade_levels": ["senior"],
+      "financial_need": true,
+      "other_requirements": ["Raised by a single parent"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 1,
+      "transcript": true
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["need-based", "single-parent", "resilience"],
+    "status": "active"
+  },
+  {
+    "name": "Emergency Financial Need Scholarship",
+    "provider_name": "Education Emergency Fund",
+    "description": "Fast-track scholarship for students facing sudden financial hardship (job loss, medical emergency, natural disaster). Rolling deadline.",
+    "amount_min": 1000,
+    "amount_max": 5000,
+    "deadline": "2026-12-31",
+    "eligibility": {
+      "grade_levels": [
+        "sophomore",
+        "junior",
+        "senior",
+        "college_freshman",
+        "college_sophomore"
+      ],
+      "financial_need": true,
+      "other_requirements": ["Documented financial emergency"]
+    },
+    "requirements": {
+      "essays_required": 1,
+      "recommendation_letters": 0,
+      "transcript": false,
+      "other": ["Documentation of financial hardship"]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": ["need-based", "emergency", "financial-aid"],
+    "status": "active"
+  }
+]
