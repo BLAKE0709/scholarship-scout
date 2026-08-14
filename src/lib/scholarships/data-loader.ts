@@ -17,6 +17,8 @@ const ScholarshipSeedSchema = z.object({
   states: z.array(z.string()).optional(),
   tags: z.array(z.string()).optional(),
   status: z.enum(["active", "closed", "upcoming", "archived"]).optional(),
+  application_url: z.string().url().optional(),
+  source: z.string().url().optional(),
 });
 
 export type ScholarshipSeed = z.infer<typeof ScholarshipSeedSchema>;
@@ -86,6 +88,9 @@ export async function loadScholarshipsFromJSON(data: unknown[]): Promise<{
             states: seed.states ?? [],
             tags: seed.tags ?? [],
             status: seed.status ?? "active",
+            applicationUrl: seed.application_url,
+            source: seed.source,
+            lastVerifiedAt: seed.source ? new Date() : undefined,
             updatedAt: new Date(),
           })
           .where(eq(scholarships.id, existing[0].id));
@@ -106,6 +111,9 @@ export async function loadScholarshipsFromJSON(data: unknown[]): Promise<{
           states: seed.states ?? [],
           tags: seed.tags ?? [],
           status: seed.status ?? "active",
+          applicationUrl: seed.application_url,
+          source: seed.source,
+          lastVerifiedAt: seed.source ? new Date() : undefined,
         });
         stats.added++;
       }
