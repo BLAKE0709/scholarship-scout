@@ -1,5 +1,25 @@
 # DECISIONS.md — Scholarship Scout
 
+### 2026-08-13 - Mini-pilot launch posture (Blake ruling)
+
+**Choice:** Launch as a mini-pilot: soft launch to family + Colleyville/OU circles, iterate on real usage, scale only if traction. Caps ratified by Blake: $100/mo infrastructure, one weekend + two evenings/month of time. Family-ventures scope — never touches Atlas systems or hours.
+**Rationale:** Crowded market (Bold.org free, Going Merry school-channel); honest revenue case is modest until a niche proves out. Pilot posture keeps the distraction risk capped while preserving upside.
+
+### 2026-08-13 - v1 pilot scope: student + parent roles; counselor/district deferred
+
+**Choice:** Pilot launches with student and parent experiences only. Counselor dashboard and District plan stay in the codebase but get hidden from nav/signup/pricing until traction justifies them.
+**Rationale:** Counselor/district is a B2B sales motion that contradicts the no-distraction cap. Hiding, not deleting, preserves the Phase 3 work.
+
+### 2026-08-13 - Recreate Supabase fresh rather than restore
+
+**Choice:** The original free-tier Supabase project was deleted after ~6 months idle (DNS non-existent). Create a fresh project and run the 5 checked-in migrations rather than attempting any restore path.
+**Rationale:** No production data ever existed; migrations are the source of truth. Fresh project also resets the pause clock and starts clean for pilot users.
+
+### 2026-08-13 - No dependency upgrades during resurrection
+
+**Choice:** Build passes untouched on the February lockfile (Next 16.1.6, React 19.2). Ship the pilot on these versions; upgrade only for a security advisory or a blocking bug.
+**Rationale:** Root-cause discipline: version churn without a driving defect is risk with no user-visible payoff during launch week.
+
 ### 2026-02-07 - Client-Side Dashboard Data Fetching
 
 **Choice:** Dashboard page remains "use client" with useEffect data fetching rather than converting to Server Component

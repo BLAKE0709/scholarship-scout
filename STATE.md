@@ -1,9 +1,19 @@
 # STATE.md — Scholarship Scout
 
-## Current Phase: Phase 4 COMPLETE
+## Current Phase: Phase 5 — LAUNCH PREP (mini-pilot)
 
-**Date:** February 7, 2026
-**Status:** PHASE4_COMPLETE_BUILD_PASSES
+**Date:** August 13, 2026 (evening)
+**Status:** RESURRECTED — build verified, repo on GitHub, backend needs recreation
+
+### Resurrection pass (2026-08-13, Blake GO with caps: $100/mo infra, weekend + 2 evenings/mo)
+
+- Blake ruling: run as MINI-PILOT — soft launch to family + local circle, improve, scale only on traction. Full autonomy granted on product changes ("make it awesome, it's yours").
+- `npm run build` re-verified PASSING untouched after 6 months (zero errors, all 53 routes) — no dependency upgrades needed or performed.
+- Git initialized (was never version-controlled); baseline commit `b4aea8c`; pushed to github.com/BLAKE0709/scholarship-scout (pre-existing empty private repo).
+- **Supabase project DEAD** — DNS gone (free-tier project deleted after prolonged idle pause). Recreate fresh project + run the 5 migrations + update .env.local. No production data existed; nothing of value lost.
+- Launch to-do tracked in session task list: (2) Supabase recreation, (3) scholarship data pipeline + 300-500 verified seed — THE launch-critical gap, (4) Resend email wiring (trial sequence sends nothing today), (5) landing page + privacy/ToS, (6) Vercel + Stripe live + domain + E2E + soft launch.
+
+## Phase 4 status (as of February 7, 2026): PHASE4_COMPLETE_BUILD_PASSES
 
 ## Phase 4 Deliverables
 
