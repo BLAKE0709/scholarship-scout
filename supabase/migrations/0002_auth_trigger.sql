@@ -36,7 +36,10 @@ BEGIN
 
   RETURN NEW;
 END;
-$$ LANGUAGE plpgsql SECURITY DEFINER;
+$$ LANGUAGE plpgsql SECURITY DEFINER SET search_path = public, pg_temp;
+-- search_path is pinned because the trigger fires as supabase_auth_admin,
+-- whose session search_path does not include public — without the pin, the
+-- bare user_role type reference fails and every signup 500s.
 
 -- Drop existing trigger if it exists, then recreate
 DROP TRIGGER IF EXISTS on_auth_user_created ON auth.users;
