@@ -48,8 +48,14 @@ export async function updateSession(request: NextRequest) {
       request.nextUrl.pathname.startsWith("/callback"),
   );
 
-  // Stripe webhook must bypass auth — Stripe calls it directly
-  if (request.nextUrl.pathname.startsWith("/api/webhooks/stripe")) {
+  // Machine callers carry their own credentials and have no session to check.
+  // Without this the scheduled run is redirected to /login and trials never
+  // expire. Each route still authenticates: Stripe by signature, cron by
+  // CRON_SECRET.
+  if (
+    request.nextUrl.pathname.startsWith("/api/webhooks/stripe") ||
+    request.nextUrl.pathname.startsWith("/api/cron/")
+  ) {
     return supabaseResponse;
   }
 
