@@ -16,14 +16,16 @@ export type AIPurpose = (typeof AI_PURPOSES)[number];
 
 // ── Model Routing ─────────────────────────────────────────────────────────────
 
+// Tiered by purpose: cheap+fast for high-volume scoring, frontier Sonnet for
+// the flagship essay/fidelity work, Opus only where correctness beats cost.
 export const PURPOSE_MODEL_MAP: Record<AIPurpose, string> = {
-  match_scoring: "claude-haiku-4-5-20251001",
-  essay_feedback: "claude-sonnet-4-5-20250929",
-  fidelity_analysis: "claude-sonnet-4-5-20250929",
-  aps_assessment: "claude-sonnet-4-5-20250929",
-  essay_deep_review: "claude-sonnet-4-5-20250929",
-  chat_assistant: "claude-haiku-4-5-20251001",
-  scholarship_analysis: "claude-haiku-4-5-20251001",
+  match_scoring: "claude-haiku-4-5",
+  essay_feedback: "claude-sonnet-5",
+  fidelity_analysis: "claude-sonnet-5",
+  aps_assessment: "claude-sonnet-5",
+  essay_deep_review: "claude-opus-5",
+  chat_assistant: "claude-haiku-4-5",
+  scholarship_analysis: "claude-haiku-4-5",
 };
 
 // ── Request / Response ────────────────────────────────────────────────────────
