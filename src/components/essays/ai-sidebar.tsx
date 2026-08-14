@@ -9,6 +9,8 @@ interface AISidebarProps {
   messages: ChatMessage[];
   isLoading: boolean;
   error: string | null;
+  /** null while availability is still being checked */
+  aiEnabled: boolean | null;
   onSend: (message: string) => void;
 }
 
@@ -23,11 +25,14 @@ export function AISidebar({
   messages,
   isLoading,
   error,
+  aiEnabled,
   onSend,
 }: AISidebarProps) {
   const [input, setInput] = useState("");
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+
+  const coachOff = aiEnabled === false;
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -35,7 +40,7 @@ export function AISidebar({
 
   const handleSend = () => {
     const trimmed = input.trim();
-    if (!trimmed || isLoading) return;
+    if (!trimmed || isLoading || coachOff) return;
     onSend(trimmed);
     setInput("");
   };
@@ -61,7 +66,19 @@ export function AISidebar({
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto p-4 space-y-3">
-        {messages.length === 0 && (
+        {coachOff && (
+          <div className="rounded-lg border border-[var(--border-light)] bg-gray-50 p-4">
+            <p className="text-sm font-medium text-[var(--text-primary)]">
+              The writing coach is not switched on yet.
+            </p>
+            <p className="mt-1.5 text-xs leading-relaxed text-[var(--text-secondary)]">
+              Everything else works. Keep drafting here — your writing saves as
+              you go, and the coach will read this essay once it is connected.
+            </p>
+          </div>
+        )}
+
+        {!coachOff && messages.length === 0 && (
           <div className="space-y-3">
             <p className="text-center text-xs text-[var(--text-secondary)]">
               Ask Scout for help with your essay
@@ -71,7 +88,7 @@ export function AISidebar({
                 <button
                   key={starter}
                   onClick={() => onSend(starter)}
-                  disabled={isLoading}
+                  disabled={isLoading || aiEnabled === null}
                   className="rounded-full border border-[var(--border-light)] bg-white px-3 py-1.5 text-xs text-[var(--text-secondary)] transition-colors hover:border-[var(--accent-teal)] hover:text-[var(--accent-teal)] disabled:opacity-50"
                 >
                   {starter}
@@ -126,14 +143,17 @@ export function AISidebar({
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Ask Scout for help..."
+            placeholder={
+              coachOff ? "Coach unavailable" : "Ask Scout for help..."
+            }
+            disabled={coachOff}
             rows={1}
-            className="flex-1 resize-none rounded-lg border border-[var(--border-light)] px-3 py-2 text-sm focus:border-[var(--accent-teal)] focus:outline-none focus:ring-1 focus:ring-[var(--accent-teal)]/20"
+            className="flex-1 resize-none rounded-lg border border-[var(--border-light)] px-3 py-2 text-sm focus:border-[var(--accent-teal)] focus:outline-none focus:ring-1 focus:ring-[var(--accent-teal)]/20 disabled:bg-gray-50 disabled:text-[var(--text-secondary)]"
           />
           <Button
             size="sm"
             onClick={handleSend}
-            disabled={!input.trim() || isLoading}
+            disabled={!input.trim() || isLoading || coachOff}
             className="shrink-0 bg-[var(--accent-teal)] hover:bg-[var(--accent-teal)]/90 h-9 w-9 p-0"
           >
             <Send className="h-4 w-4" />

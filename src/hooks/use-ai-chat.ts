@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 
 export interface ChatMessage {
   id: string;
@@ -13,6 +13,8 @@ interface UseAIChatReturn {
   messages: ChatMessage[];
   isLoading: boolean;
   error: string | null;
+  /** null while the availability probe is in flight */
+  aiEnabled: boolean | null;
   sendMessage: (message: string) => Promise<void>;
   clearMessages: () => void;
 }
@@ -32,6 +34,22 @@ export function useAIChat(
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [aiEnabled, setAiEnabled] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    let active = true;
+    fetch("/api/ai")
+      .then((r) => (r.ok ? r.json() : { configured: false }))
+      .then((d) => {
+        if (active) setAiEnabled(Boolean(d.configured));
+      })
+      .catch(() => {
+        if (active) setAiEnabled(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const messagesRef = useRef(messages);
   messagesRef.current = messages;
@@ -96,6 +114,12 @@ export function useAIChat(
 
         if (!response.ok) {
           const err = await response.json();
+          if (err.code === "ai_not_configured") {
+            // Not an outage — reflect the real state and drop the dead turn.
+            setAiEnabled(false);
+            setMessages((prev) => prev.filter((m) => m.id !== userMessage.id));
+            return;
+          }
           throw new Error(err.error ?? "Failed to get AI response");
         }
 
@@ -124,5 +148,5 @@ export function useAIChat(
     setError(null);
   }, []);
 
-  return { messages, isLoading, error, sendMessage, clearMessages };
+  return { messages, isLoading, error, aiEnabled, sendMessage, clearMessages };
 }

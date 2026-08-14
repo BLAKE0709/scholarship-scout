@@ -115,6 +115,7 @@ function EssayWorkspace({
     messages,
     isLoading: aiLoading,
     error: aiError,
+    aiEnabled,
     sendMessage,
   } = useAIChat(initialEssay.id, studentId, {
     essayContent: content,
@@ -228,6 +229,7 @@ function EssayWorkspace({
                   messages={messages}
                   isLoading={aiLoading}
                   error={aiError}
+                  aiEnabled={aiEnabled}
                   onSend={sendMessage}
                 />
               </TabsContent>
@@ -276,6 +278,7 @@ function EssayWorkspace({
                 messages={messages}
                 isLoading={aiLoading}
                 error={aiError}
+                aiEnabled={aiEnabled}
                 onSend={sendMessage}
               />
             </TabsContent>

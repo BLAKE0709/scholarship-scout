@@ -3,9 +3,26 @@ import { createClient } from "@/lib/supabase/server";
 import { db } from "@/lib/db";
 import { users, subscriptions, plans } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
-import { aiGateway, AIGatewayError } from "@/lib/ai/gateway";
+import { aiGateway, AIGatewayError, isAIConfigured } from "@/lib/ai/gateway";
 import { AIGatewayRequestSchema } from "@/lib/ai/types";
 import type { UserTier } from "@/lib/ai/types";
+
+/**
+ * Availability probe so the editor can present an honest coach state up front
+ * instead of offering buttons that fail. Reports only a boolean, never the key.
+ */
+export async function GET() {
+  const supabase = await createClient();
+  const {
+    data: { user: authUser },
+  } = await supabase.auth.getUser();
+
+  if (!authUser) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  return NextResponse.json({ configured: isAIConfigured() });
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -46,7 +63,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     if (error instanceof AIGatewayError) {
       return NextResponse.json(
-        { error: error.message },
+        { error: error.message, code: error.code },
         { status: error.statusCode },
       );
     }

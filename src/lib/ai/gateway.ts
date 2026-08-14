@@ -12,6 +12,16 @@ const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
+/**
+ * The coach is only usable when a key is actually present. Without this check
+ * the SDK throws its own auth error, which used to reach students verbatim as
+ * "Could not resolve authentication method..." alongside a false promise to
+ * try again. An unset key never resolves itself, so it is its own state.
+ */
+export function isAIConfigured(): boolean {
+  return (process.env.ANTHROPIC_API_KEY ?? "").trim().length > 0;
+}
+
 function hashText(text: string): string {
   return createHash("sha256").update(text).digest("hex").slice(0, 32);
 }
@@ -23,6 +33,15 @@ export class AIGateway {
   ): Promise<AIGatewayResponse> {
     const { purpose, prompt, context, userId, studentId, essayId } = request;
 
+    // 0. Configuration check — a missing key is a setup state, not an outage
+    if (!isAIConfigured()) {
+      throw new AIGatewayError(
+        "The writing coach is not switched on yet.",
+        503,
+        "ai_not_configured",
+      );
+    }
+
     // 1. Rate limit check
     if (userId) {
       const rateResult = checkRateLimit(userId, userTier);
@@ -30,6 +49,7 @@ export class AIGateway {
         throw new AIGatewayError(
           `Rate limit exceeded. You have ${rateResult.remaining} calls remaining. Resets at ${rateResult.resetAt.toISOString()}.`,
           429,
+          "rate_limited",
         );
       }
     }
@@ -59,11 +79,16 @@ export class AIGateway {
       response = await this.callWithRetry(model, systemPrompt, userMessage);
     } catch (error) {
       if (error instanceof AIGatewayError) throw error;
-      const message =
-        error instanceof Error ? error.message : "Unknown AI error";
+      // Internal detail stays server-side; students never see SDK text.
+      console.error("[AI Gateway] call failed", {
+        purpose,
+        model,
+        error: error instanceof Error ? error.message : error,
+      });
       throw new AIGatewayError(
-        `AI service temporarily unavailable. Please try again in a moment. (${message})`,
+        "The writing coach could not be reached just now. Your draft is saved — try again in a moment.",
         503,
+        "ai_unavailable",
       );
     }
 
@@ -139,13 +164,22 @@ export class AIGateway {
   }
 }
 
+export type AIGatewayErrorCode =
+  "ai_not_configured" | "rate_limited" | "ai_unavailable";
+
 export class AIGatewayError extends Error {
   public statusCode: number;
+  public code: AIGatewayErrorCode;
 
-  constructor(message: string, statusCode: number) {
+  constructor(
+    message: string,
+    statusCode: number,
+    code: AIGatewayErrorCode = "ai_unavailable",
+  ) {
     super(message);
     this.name = "AIGatewayError";
     this.statusCode = statusCode;
+    this.code = code;
   }
 }
 
