@@ -87,6 +87,9 @@ export const essayStatusEnum = pgEnum("essay_status", [
   "final",
 ]);
 
+/** Whether the writing coach is present for an essay at all. */
+export const assistModeEnum = pgEnum("assist_mode", ["solo", "coached"]);
+
 export const achievementTypeEnum = pgEnum("achievement_type", [
   "academic",
   "athletic",
@@ -370,6 +373,7 @@ export const essays = pgTable(
     version: integer("version").default(1),
     fidelityScore: integer("fidelity_score"),
     apsScore: integer("aps_score"),
+    assistMode: assistModeEnum("assist_mode").notNull().default("coached"),
     status: essayStatusEnum("status").default("draft"),
     createdAt: timestamp("created_at").defaultNow(),
     updatedAt: timestamp("updated_at").defaultNow(),
@@ -391,6 +395,9 @@ export const essayRevisions = pgTable("essay_revisions", {
   humanEdits: jsonb("human_edits").default([]),
   wordCount: integer("word_count").default(0),
   timeSpentSeconds: integer("time_spent_seconds").default(0),
+  // Null for revisions written before assist mode existed — an unrecorded
+  // mode is not the same as a solo one.
+  assistMode: assistModeEnum("assist_mode"),
   createdAt: timestamp("created_at").defaultNow(),
 });
 

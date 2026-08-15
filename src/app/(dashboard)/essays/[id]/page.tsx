@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
+import { toast } from "sonner";
 import { useEssay } from "@/hooks/use-essay";
 import { useAIChat } from "@/hooks/use-ai-chat";
 import { EssayEditor } from "@/components/essays/editor";
@@ -26,6 +27,7 @@ import {
   Loader2,
   MessageSquare,
   History,
+  PenLine,
 } from "lucide-react";
 
 interface EssayData {
@@ -38,6 +40,7 @@ interface EssayData {
   fidelityScore: number | null;
   apsScore: number | null;
   studentId: string;
+  assistMode: "solo" | "coached";
 }
 
 export default function EssayWorkspacePage() {
@@ -67,6 +70,7 @@ export default function EssayWorkspacePage() {
           fidelityScore: data.fidelityScore,
           apsScore: data.apsScore,
           studentId: data.studentId,
+          assistMode: data.assistMode === "solo" ? "solo" : "coached",
         });
       } catch {
         router.push("/essays");
@@ -127,6 +131,28 @@ function EssayWorkspace({
   });
 
   const [isEditingTitle, setIsEditingTitle] = useState(false);
+  const [assistMode, setAssistMode] = useState<"solo" | "coached">(
+    initialEssay.assistMode,
+  );
+  const coached = assistMode === "coached";
+
+  const toggleAssistMode = async () => {
+    const next = coached ? "solo" : "coached";
+    const previous = assistMode;
+    setAssistMode(next);
+    try {
+      const res = await fetch(`/api/essays/${initialEssay.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ assistMode: next }),
+      });
+      if (!res.ok) throw new Error("Could not change writing mode");
+    } catch {
+      // Revert rather than show a mode the record does not agree with.
+      setAssistMode(previous);
+      toast.error("Could not change writing mode. Try again.");
+    }
+  };
 
   return (
     <div className="flex h-[calc(100vh-3.5rem)] flex-col -mx-4 sm:-mx-6 -my-6">
@@ -189,6 +215,29 @@ function EssayWorkspace({
           </SelectContent>
         </Select>
 
+        {/* Writing mode — the student's own call, changeable mid-draft */}
+        <button
+          type="button"
+          onClick={toggleAssistMode}
+          title={
+            coached
+              ? "The coach is available on this essay. Click to write on your own."
+              : "You are writing this one on your own. Click to bring the coach in."
+          }
+          className={`hidden md:inline-flex shrink-0 items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] font-medium transition-colors ${
+            coached
+              ? "border-[var(--accent-teal)]/40 bg-[var(--accent-teal)]/10 text-[var(--accent-teal)]"
+              : "border-[var(--border-light)] text-[var(--text-secondary)] hover:border-[var(--accent-teal)]/50"
+          }`}
+        >
+          {coached ? (
+            <Bot className="h-3.5 w-3.5" />
+          ) : (
+            <PenLine className="h-3.5 w-3.5" />
+          )}
+          {coached ? "Coach on" : "On my own"}
+        </button>
+
         {/* Fidelity Badge */}
         {initialEssay.fidelityScore != null && (
           <Badge variant="outline" className="text-xs shrink-0">
@@ -226,26 +275,37 @@ function EssayWorkspace({
             </Button>
           </SheetTrigger>
           <SheetContent side="bottom" className="h-[70vh] p-0">
-            <Tabs defaultValue="chat" className="h-full flex flex-col">
+            <Tabs
+              key={assistMode}
+              defaultValue={coached ? "chat" : "history"}
+              className="h-full flex flex-col"
+            >
               <TabsList className="mx-4 mt-3 shrink-0">
-                <TabsTrigger value="chat">
-                  <MessageSquare className="h-3.5 w-3.5 mr-1" />
-                  Chat
-                </TabsTrigger>
+                {coached && (
+                  <TabsTrigger value="chat">
+                    <MessageSquare className="h-3.5 w-3.5 mr-1" />
+                    Chat
+                  </TabsTrigger>
+                )}
                 <TabsTrigger value="history">
                   <History className="h-3.5 w-3.5 mr-1" />
                   History
                 </TabsTrigger>
               </TabsList>
-              <TabsContent value="chat" className="flex-1 overflow-hidden mt-0">
-                <AISidebar
-                  messages={messages}
-                  isLoading={aiLoading}
-                  error={aiError}
-                  aiEnabled={aiEnabled}
-                  onSend={sendMessage}
-                />
-              </TabsContent>
+              {coached && (
+                <TabsContent
+                  value="chat"
+                  className="flex-1 overflow-hidden mt-0"
+                >
+                  <AISidebar
+                    messages={messages}
+                    isLoading={aiLoading}
+                    error={aiError}
+                    aiEnabled={aiEnabled}
+                    onSend={sendMessage}
+                  />
+                </TabsContent>
+              )}
               <TabsContent
                 value="history"
                 className="flex-1 overflow-y-auto mt-0"
@@ -275,26 +335,34 @@ function EssayWorkspace({
 
         {/* Desktop Sidebar */}
         <div className="hidden sm:flex w-[35%] min-w-[300px] max-w-[420px] flex-col border-l border-[var(--border-light)]">
-          <Tabs defaultValue="chat" className="flex-1 flex flex-col">
+          <Tabs
+            key={assistMode}
+            defaultValue={coached ? "chat" : "history"}
+            className="flex-1 flex flex-col"
+          >
             <TabsList className="mx-3 mt-2 shrink-0">
-              <TabsTrigger value="chat">
-                <MessageSquare className="h-3.5 w-3.5 mr-1" />
-                Chat
-              </TabsTrigger>
+              {coached && (
+                <TabsTrigger value="chat">
+                  <MessageSquare className="h-3.5 w-3.5 mr-1" />
+                  Chat
+                </TabsTrigger>
+              )}
               <TabsTrigger value="history">
                 <History className="h-3.5 w-3.5 mr-1" />
                 History
               </TabsTrigger>
             </TabsList>
-            <TabsContent value="chat" className="flex-1 overflow-hidden mt-0">
-              <AISidebar
-                messages={messages}
-                isLoading={aiLoading}
-                error={aiError}
-                aiEnabled={aiEnabled}
-                onSend={sendMessage}
-              />
-            </TabsContent>
+            {coached && (
+              <TabsContent value="chat" className="flex-1 overflow-hidden mt-0">
+                <AISidebar
+                  messages={messages}
+                  isLoading={aiLoading}
+                  error={aiError}
+                  aiEnabled={aiEnabled}
+                  onSend={sendMessage}
+                />
+              </TabsContent>
+            )}
             <TabsContent
               value="history"
               className="flex-1 overflow-y-auto mt-0"

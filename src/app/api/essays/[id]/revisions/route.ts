@@ -98,7 +98,7 @@ export async function POST(request: NextRequest, context: RouteContext) {
     }
 
     const [essay] = await db
-      .select({ id: essays.id })
+      .select({ id: essays.id, assistMode: essays.assistMode })
       .from(essays)
       .where(and(eq(essays.id, id), eq(essays.studentId, student.id)))
       .limit(1);
@@ -125,6 +125,9 @@ export async function POST(request: NextRequest, context: RouteContext) {
         revisionNumber: nextRevision,
         wordCount: parsed.data.wordCount ?? 0,
         timeSpentSeconds: parsed.data.timeSpentSeconds ?? 0,
+        // Taken from the stored essay, never the request body — the client
+        // must not be able to label a coached revision as written solo.
+        assistMode: essay.assistMode,
       })
       .returning();
 

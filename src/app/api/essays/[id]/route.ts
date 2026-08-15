@@ -103,6 +103,8 @@ export async function PATCH(request: NextRequest, context: RouteContext) {
       updateData.status = parsed.data.status;
     if (parsed.data.wordCount !== undefined)
       updateData.wordCount = parsed.data.wordCount;
+    if (parsed.data.assistMode !== undefined)
+      updateData.assistMode = parsed.data.assistMode;
 
     const [updated] = await db
       .update(essays)

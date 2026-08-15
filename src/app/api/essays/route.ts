@@ -86,6 +86,7 @@ export async function POST(request: NextRequest) {
         applicationId: parsed.data.applicationId ?? null,
         content: "",
         wordCount: 0,
+        assistMode: parsed.data.assistMode ?? "coached",
         status: "draft",
       })
       .returning();

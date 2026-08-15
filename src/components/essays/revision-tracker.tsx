@@ -7,11 +7,12 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Clock, FileText } from "lucide-react";
+import { Bot, Clock, FileText, PenLine } from "lucide-react";
 
 interface Revision {
   id: string;
   revisionNumber: number;
+  assistMode: "solo" | "coached" | null;
   wordCount: number | null;
   timeSpentSeconds: number | null;
   createdAt: string;
@@ -111,8 +112,22 @@ export function RevisionTracker({
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-medium text-[var(--text-primary)]">
+                    <span className="flex items-center gap-1.5 text-xs font-medium text-[var(--text-primary)]">
                       Revision {rev.revisionNumber}
+                      {/* Only render a mode that was actually recorded —
+                          revisions predating assist mode have none. */}
+                      {rev.assistMode === "solo" && (
+                        <span className="inline-flex items-center gap-1 rounded-full border border-[var(--border-light)] px-1.5 py-0.5 text-[9px] font-normal text-[var(--text-secondary)]">
+                          <PenLine className="h-2.5 w-2.5" />
+                          On my own
+                        </span>
+                      )}
+                      {rev.assistMode === "coached" && (
+                        <span className="inline-flex items-center gap-1 rounded-full border border-[var(--accent-teal)]/40 bg-[var(--accent-teal)]/10 px-1.5 py-0.5 text-[9px] font-normal text-[var(--accent-teal)]">
+                          <Bot className="h-2.5 w-2.5" />
+                          Coach on
+                        </span>
+                      )}
                     </span>
                     <span
                       className={`text-xs font-mono ${delta > 0 ? "text-green-600" : delta < 0 ? "text-red-500" : "text-gray-400"}`}
