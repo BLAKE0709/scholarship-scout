@@ -158,6 +158,9 @@ export function useEssay(essay: EssayData): UseEssayReturn {
       setContentState(newContent);
       if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
       saveTimerRef.current = setTimeout(() => {
+        // Clear before saving: a fired timer is no longer pending, and a stale
+        // id here would make the unload guard warn about work already saved.
+        saveTimerRef.current = null;
         saveContent();
       }, 3000);
     },
