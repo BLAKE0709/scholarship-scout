@@ -1,16 +1,20 @@
 import { aiGateway } from "@/lib/ai/gateway";
+import { assessEligibility, normalizeEligibility, token, type EligibilityAssessment } from "./eligibility";
+import { parseEducationProfile } from "../profiles/education";
+import { formatFunding } from "./funding";
 import { MatchScoringResponseSchema } from "@/lib/ai/types";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
-interface StudentProfile {
+export interface StudentProfile {
+  educationProfile?: unknown;
   id: string;
   userId: string;
   gpa: string | null;
   gpaScale: string | null;
   satScore: number | null;
   actScore: number | null;
-  graduationYear: number;
+  graduationYear: number | null;
   state: string;
   city: string | null;
   gradeLevel: string | null;
@@ -23,7 +27,11 @@ interface StudentProfile {
   financialNeed: string | null;
 }
 
-interface Scholarship {
+export interface Scholarship {
+  funding?: unknown;
+  status?: string | null;
+  source?: string | null;
+  lastVerifiedAt?: Date | string | null;
   id: string;
   name: string;
   description: string | null;
@@ -39,6 +47,7 @@ interface Scholarship {
 }
 
 export interface AffinityResult {
+  assessment: EligibilityAssessment;
   scholarship: Scholarship;
   affinityScore: number;
   reasons: string[];
@@ -46,6 +55,7 @@ export interface AffinityResult {
 }
 
 export interface RankedMatch {
+  assessment: EligibilityAssessment;
   scholarshipId: string;
   scholarship: Scholarship;
   finalScore: number;
@@ -59,115 +69,29 @@ export interface RankedMatch {
 
 // ── Stage 1: Eligibility Filter ──────────────────────────────────────────────
 
-// Seed data and app profiles use overlapping but non-identical vocabularies
-// (e.g. "high_school_senior" vs "senior", "gpa_min" vs "min_gpa"). Normalize
-// both sides so eligibility actually bites — a filter that silently no-ops is
-// worse than none, because it looks like it's working.
-const HS_GRADES = new Set(["freshman", "sophomore", "junior", "senior"]);
-
-function normalizeGradeToken(raw: string): string {
-  return raw
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, "_")
-    .replace(/^high_school_/, "");
+/** Unknowns stay discoverable; only known disqualifications are filtered out. */
+export function filterEligible(student: StudentProfile, allScholarships: Scholarship[]): Scholarship[] {
+  return allScholarships.filter((award) => assessEligibility(student, award).status !== "ineligible");
 }
-
-function gradeMatches(seedTokens: string[], studentGrade: string): boolean {
-  const student = normalizeGradeToken(studentGrade);
-  const studentIsHS = HS_GRADES.has(student);
-  const studentIsCollege = student.startsWith("college_");
-
-  return seedTokens.some((t) => {
-    const token = normalizeGradeToken(t);
-    if (token === student) return true;
-    // Group tokens used across the seed data
-    if (
-      (token === "high_school" || token === "high_school_student") &&
-      studentIsHS
-    )
-      return true;
-    if (
-      (token === "undergraduate" ||
-        token === "current_undergrad" ||
-        token === "college" ||
-        token === "college_student") &&
-      studentIsCollege
-    )
-      return true;
-    return false;
-  });
-}
-
-export function filterEligible(
-  student: StudentProfile,
-  allScholarships: Scholarship[],
-): Scholarship[] {
-  return allScholarships.filter((s) => {
-    const elig = s.eligibility as Record<string, unknown>;
-
-    // GPA check — seed data writes gpa_min, older records min_gpa
-    const minGpa = (elig.min_gpa ?? elig.gpa_min) as number | undefined;
-    if (minGpa && student.gpa) {
-      if (parseFloat(student.gpa) < minGpa) return false;
-    }
-
-    // State check (skip if national or no state restriction)
-    if (!s.national && s.states && s.states.length > 0) {
-      if (!s.states.includes(student.state)) return false;
-    }
-
-    // Grade level check — vocabulary-normalized; a grade-restricted award
-    // that names no grade the student occupies is excluded.
-    const gradeLevels = elig.grade_levels as string[] | undefined;
-    if (gradeLevels && gradeLevels.length > 0 && student.gradeLevel) {
-      if (!gradeMatches(gradeLevels, student.gradeLevel)) return false;
-    }
-
-    // Financial need check
-    if (elig.financial_need === true) {
-      if (!student.financialNeed || student.financialNeed === "low")
-        return false;
-    }
-
-    // Demographics check (match if any demographic applies)
-    const demographics = elig.demographics as string[] | undefined;
-    if (demographics && demographics.length > 0) {
-      const studentDemo = [
-        student.ethnicity?.toLowerCase(),
-        student.gender?.toLowerCase(),
-      ].filter(Boolean);
-      const hasMatch = demographics.some((d) =>
-        studentDemo.some(
-          (sd) =>
-            sd &&
-            (sd.includes(d.toLowerCase()) || d.toLowerCase().includes(sd)),
-        ),
-      );
-      if (!hasMatch) return false;
-    }
-
-    // Deadline check — skip expired scholarships
-    if (s.deadline && new Date(s.deadline) < new Date()) return false;
-
-    return true;
-  });
-}
-
-// ── Stage 2: Affinity Scoring ────────────────────────────────────────────────
 
 export async function scoreAffinity(
   student: StudentProfile,
   scholarship: Scholarship,
   studentId?: string,
 ): Promise<AffinityResult> {
+  const assessment = assessEligibility(student, scholarship);
+  // Profiles using the new education model are ranked locally. No new adult
+  // facts or eligibility predicates are forwarded to an external AI provider.
+  if (parseEducationProfile(student.educationProfile)) {
+    return { scholarship, assessment, affinityScore: calculateFallbackScore(student, scholarship), reasons: ["Estimated fit based on your profile and the listed award criteria"], concerns: [] };
+  }
   const studentSummary = buildStudentSummary(student);
   const scholarshipSummary = buildScholarshipSummary(scholarship);
 
   try {
     const response = await aiGateway.call({
       purpose: "match_scoring",
-      prompt: `Evaluate how well this student matches this scholarship.\n\nSTUDENT PROFILE:\n${studentSummary}\n\nSCHOLARSHIP:\n${scholarshipSummary}`,
+      prompt: `Rank affinity only. Do not assert or override eligibility. Evaluate how well this student matches this scholarship.\n\nSTUDENT PROFILE:\n${studentSummary}\n\nSCHOLARSHIP:\n${scholarshipSummary}`,
       studentId,
     });
 
@@ -177,6 +101,7 @@ export async function scoreAffinity(
     if (parsed.success) {
       return {
         scholarship,
+        assessment,
         affinityScore: parsed.data.affinity_score,
         reasons: parsed.data.reasons,
         concerns: parsed.data.concerns,
@@ -192,8 +117,9 @@ export async function scoreAffinity(
   // Fallback: deterministic scoring if AI fails
   return {
     scholarship,
+    assessment,
     affinityScore: calculateFallbackScore(student, scholarship),
-    reasons: ["Meets basic eligibility requirements"],
+    reasons: ["Estimated fit based on the available profile"],
     concerns: ["AI scoring unavailable — using estimated score"],
   };
 }
@@ -205,7 +131,7 @@ export function rankMatches(affinityResults: AffinityResult[]): RankedMatch[] {
 
   return affinityResults
     .map((ar) => {
-      const { scholarship, affinityScore, reasons, concerns } = ar;
+      const { scholarship, affinityScore, reasons, concerns, assessment } = ar;
 
       // Deadline urgency (25%): exponential decay, closer = higher
       let urgencyScore = 50;
@@ -229,7 +155,7 @@ export function rankMatches(affinityResults: AffinityResult[]): RankedMatch[] {
       const reqs = scholarship.requirements as Record<string, unknown>;
       const essayCount = (reqs.essays_required as number) ?? 0;
       const recLetters = (reqs.recommendation_letters as number) ?? 0;
-      const otherReqs = (reqs.other as string[])?.length ?? 0;
+      const otherReqs = Array.isArray(reqs.other) ? reqs.other.length : reqs.other ? 1 : 0;
       const totalReqs = essayCount + recLetters + otherReqs;
       const simplicityScore = Math.max(0, 100 - totalReqs * 20);
 
@@ -242,6 +168,7 @@ export function rankMatches(affinityResults: AffinityResult[]): RankedMatch[] {
       );
 
       return {
+        assessment,
         scholarshipId: scholarship.id,
         scholarship,
         finalScore,
@@ -253,7 +180,7 @@ export function rankMatches(affinityResults: AffinityResult[]): RankedMatch[] {
         concerns,
       };
     })
-    .sort((a, b) => b.finalScore - a.finalScore);
+    .sort((a, b) => Number(b.assessment.status === "eligible") - Number(a.assessment.status === "eligible") || b.finalScore - a.finalScore);
 }
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
@@ -279,7 +206,9 @@ function buildStudentSummary(s: StudentProfile): string {
 function buildScholarshipSummary(s: Scholarship): string {
   const lines: string[] = [
     `Name: ${s.name}`,
-    `Amount: $${s.amountMin.toLocaleString()}${s.amountMax ? ` - $${s.amountMax.toLocaleString()}` : ""}`,
+    `Amount: ${formatFunding(s.amountMin, s.amountMax, s.funding)}`,
+    `Funding terms: ${JSON.stringify(s.funding ?? {})}`,
+    `Eligibility rules: ${JSON.stringify(normalizeEligibility(s.eligibility))}`,
   ];
   if (s.description) lines.push(`Description: ${s.description}`);
   if (s.deadline)
@@ -320,13 +249,12 @@ function calculateFallbackScore(
   }
 
   // Major alignment
-  const majors = (scholarship.eligibility as Record<string, unknown>).majors as
-    string[] | undefined;
+  const majors = normalizeEligibility(scholarship.eligibility).majors;
   if (
     majors?.length &&
     student.intendedMajor &&
     majors.some((m) =>
-      m.toLowerCase().includes(student.intendedMajor!.toLowerCase()),
+      m === token(student.intendedMajor!),
     )
   ) {
     score += 15;

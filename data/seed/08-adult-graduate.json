@@ -1,0 +1,473 @@
+[
+  {
+    "name": "ACU Alumni Tuition Discount",
+    "provider_name": "Abilene Christian University",
+    "description": "ACU bachelor's and master's alumni may receive 20% off eligible online graduate tuition. For an online social work master's, applicants without a BSW should review the standard MSSW path. Fees and field-placement costs are separate. This is a tuition reduction, not cash.",
+    "amount_min": 0,
+    "amount_max": null,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "alumni_schools": [
+        "Abilene Christian University"
+      ],
+      "schools": [
+        "Abilene Christian University"
+      ],
+      "study_modes": [
+        "online"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "excluded_degrees": [
+        "none",
+        "high_school",
+        "certificate",
+        "associate"
+      ]
+    },
+    "funding": {
+      "kind": "tuition_discount",
+      "amountType": "percentage",
+      "percentage": 20,
+      "amountDescription": "20% off eligible graduate tuition; fees excluded.",
+      "deadlineType": "rolling",
+      "applicationCycle": "Request alumni eligibility confirmation for the intended term.",
+      "fundingTiming": "Applied to eligible tuition charges.",
+      "stackingPolicy": "Cannot combine with other ACU institutional scholarships or tuition discounts. Confirm external-award treatment with ACU. Terms: https://acu.edu/admissions-aid/online/financial-aid/online-scholarships/",
+      "eligibleExpenses": [
+        "eligible tuition"
+      ],
+      "nextStep": "Request a written tuition estimate for the standard online social-work master's, with the alumni discount applied. Confirm fees, field-placement costs, and how outside awards affect the total."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "adult-learner",
+      "graduate",
+      "online",
+      "alumni",
+      "social-work"
+    ],
+    "status": "active",
+    "application_url": "https://acu.edu/admissions-aid/alumni-tuition-discount/",
+    "source": "https://acu.edu/admissions-aid/alumni-tuition-discount/",
+    "last_verified_at": "2026-10-08T00:00:00Z"
+  },
+  {
+    "name": "P.E.O. Program for Continuing Education Grant",
+    "provider_name": "P.E.O. International",
+    "description": "One-time need-based grant of up to $4,000 for women returning to education after at least 24 consecutive months away. Applicants must already be in an eligible program, be within 18 months of completion, and receive a local chapter recommendation. An existing master's or doctorate excludes eligibility; a first master's may qualify. The program must improve employment prospects.",
+    "amount_min": 0,
+    "amount_max": 4000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "undergraduate",
+        "graduate",
+        "certificate"
+      ],
+      "genders": [
+        "woman"
+      ],
+      "excluded_degrees": [
+        "master",
+        "doctorate"
+      ],
+      "enrollment_statuses": [
+        "enrolled"
+      ],
+      "citizenship_statuses": [
+        "us_citizen",
+        "canadian_citizen",
+        "us_permanent_resident",
+        "canadian_permanent_resident"
+      ],
+      "financial_need": true,
+      "education_gap_months_min": 24,
+      "completion_months_max": 18,
+      "sponsorships": [
+        "P.E.O. chapter recommendation"
+      ],
+      "other_requirements": [
+        "Living and studying in the United States or Canada.",
+        "Accredited program must improve marketable employment skills; prerequisites and doctoral study are excluded.",
+        "No immediate continuation of education beyond the program for which the grant is requested."
+      ]
+    },
+    "funding": {
+      "kind": "grant",
+      "amountType": "range",
+      "amountDescription": "One-time award of up to $4,000; amount depends on documented need.",
+      "deadlineType": "rolling",
+      "applicationCycle": "Chapter recommendation and invitation precede an application; check timing with the chapter.",
+      "fundingTiming": "For a current program within 18 months of completion.",
+      "stackingPolicy": "Report other aid; award is based on remaining eligible educational need.",
+      "eligibleExpenses": [
+        "eligible tuition",
+        "books",
+        "required supplies",
+        "qualifying educational expenses"
+      ],
+      "nextStep": "Check your education gap and expected completion date. Once enrolled and within 18 months of finishing, use the provider's potential-sponsorship form to request a local chapter review."
+    },
+    "requirements": {
+      "other": [
+        "P.E.O. chapter recommendation",
+        "Financial documentation"
+      ]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "adult-learner",
+      "graduate",
+      "women",
+      "education-gap",
+      "need-based"
+    ],
+    "status": "active",
+    "application_url": "https://www.peointernational.org/educational-support/program-for-continuing-education/eligibility-and-application-process/",
+    "source": "https://www.peointernational.org/educational-support/program-for-continuing-education/eligibility-and-application-process/",
+    "last_verified_at": "2026-10-08T00:00:00Z"
+  },
+  {
+    "name": "Consuelo W. Gosnell Memorial Scholarship",
+    "provider_name": "NASW Foundation",
+    "description": "MSW scholarship recognizing commitment to American Indian/Alaska Native and Hispanic/Latino communities or work with public/voluntary nonprofit agencies and grassroots groups. The published ceiling is up to $5,000; next-cycle details need confirmation.",
+    "amount_min": 0,
+    "amount_max": 5000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "gpa_min": 3,
+      "memberships": [
+        "NASW"
+      ],
+      "enrollment_statuses": [
+        "applied",
+        "accepted",
+        "enrolled"
+      ],
+      "other_requirements": [
+        "Applied to or accepted into a CSWE-accredited MSW program.",
+        "Demonstrated commitment to the named communities, public/voluntary nonprofit agencies, or grassroots groups."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "deadlineType": "unannounced",
+      "opensOn": null,
+      "applicationCycle": "2027-2028 cycle expected to open in January 2027; exact opening/closing dates and amounts require confirmation. 2026-2027 awards have been allocated.",
+      "fundingTiming": "Academic-year award after selection.",
+      "stackingPolicy": "Confirm other-aid and school packaging rules with the provider.",
+      "amountDescription": "Published award ceiling up to $5,000; next-cycle amount unconfirmed.",
+      "nextStep": "Track the next application cycle on the NASW Foundation page. Confirm NASW membership, program accreditation, GPA, and evidence of your work with the named communities or agencies."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "online-considered"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Consuelo-W-Gosnell-Memorial-Scholarship",
+    "source": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Consuelo-W-Gosnell-Memorial-Scholarship",
+    "last_verified_at": "2026-10-08T00:00:00Z"
+  },
+  {
+    "name": "Verne LaMarr Lyons Memorial Scholarship",
+    "provider_name": "NASW Foundation",
+    "description": "MSW funding for students with demonstrated interest in or experience with health and mental-health practice, with a commitment to work in African American communities. The prior published award was $4,000; availability and next-cycle amount require confirmation.",
+    "amount_min": 0,
+    "amount_max": 4000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "gpa_min": 3,
+      "memberships": [
+        "NASW"
+      ],
+      "enrollment_statuses": [
+        "applied",
+        "accepted",
+        "enrolled"
+      ],
+      "other_requirements": [
+        "CSWE-accredited MSW program.",
+        "Interest or experience in health/mental-health practice and commitment to African American communities."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "deadlineType": "unannounced",
+      "opensOn": null,
+      "applicationCycle": "2027-2028 cycle expected to open in January 2027; exact opening/closing dates and amounts require confirmation. 2026-2027 awards have been allocated.",
+      "fundingTiming": "Academic-year award after selection.",
+      "stackingPolicy": "Confirm other-aid and school packaging rules with the provider.",
+      "amountDescription": "Prior published award: $4,000; next-cycle amount unconfirmed.",
+      "nextStep": "Track the next NASW cycle and gather evidence of your health or mental-health experience and service goals. Confirm membership, program accreditation, and GPA requirements."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "mental-health"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Verne-LaMarr-Lyons-Memorial-Scholarship",
+    "source": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Verne-LaMarr-Lyons-Memorial-Scholarship",
+    "last_verified_at": "2026-10-08T00:00:00Z"
+  },
+  {
+    "name": "Lawanna Renee Barron Scholarship",
+    "provider_name": "NASW Foundation",
+    "description": "BSW/MSW scholarship for students with an interest in serving rural communities and/or addressing mental-health needs in African American communities. The prior published award was $2,000; next-cycle amount requires confirmation.",
+    "amount_min": 0,
+    "amount_max": 2000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "undergraduate",
+        "graduate"
+      ],
+      "target_degrees": [
+        "bachelor",
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "gpa_min": 3,
+      "memberships": [
+        "NASW"
+      ],
+      "enrollment_statuses": [
+        "applied",
+        "accepted",
+        "enrolled"
+      ],
+      "other_requirements": [
+        "CSWE-accredited BSW or MSW program.",
+        "Interest in rural communities and/or mental-health needs in African American communities."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "deadlineType": "unannounced",
+      "opensOn": null,
+      "applicationCycle": "2027-2028 cycle expected to open in January 2027; exact opening/closing dates and amounts require confirmation. 2026-2027 awards have been allocated.",
+      "fundingTiming": "Academic-year award after selection.",
+      "stackingPolicy": "Confirm other-aid and school packaging rules with the provider.",
+      "amountDescription": "Prior published award: $2,000; next-cycle amount unconfirmed.",
+      "nextStep": "Check the next NASW cycle and prepare examples of rural-community service or African American mental-health work. Confirm membership, program accreditation, and GPA requirements."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "undergraduate",
+      "graduate",
+      "social-work",
+      "rural",
+      "mental-health"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Lawanna-Renee-Barron-Scholarship-Endowment-Fund",
+    "source": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Lawanna-Renee-Barron-Scholarship-Endowment-Fund",
+    "last_verified_at": "2026-10-08T00:00:00Z"
+  },
+  {
+    "name": "UTA Title IV-E MSW Stipend",
+    "provider_name": "University of Texas at Arlington",
+    "description": "School-specific MSW child-welfare stipend. Published MSW stipend is $7,050 with qualifying employment obligations. This is an alternative-school opportunity; it cannot fund ACU or GCU study. Applicants must confirm placement and online-program compatibility.",
+    "amount_min": 7050,
+    "amount_max": null,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "schools": [
+        "University of Texas at Arlington"
+      ],
+      "gpa_min": 3.5,
+      "enrollment_statuses": [
+        "enrolled"
+      ],
+      "service_required": true,
+      "other_requirements": [
+        "Eligible child-welfare specialization and advanced block placement.",
+        "Apply in the semester before the eligible block placement.",
+        "Confirm online-program and practicum compatibility with the Title IV-E program."
+      ]
+    },
+    "funding": {
+      "kind": "paid_placement",
+      "amountType": "fixed",
+      "amountDescription": "Published MSW stipend $7,050, subject to program selection and contract.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "Placement-specific application timing; confirm current cohort availability.",
+      "fundingTiming": "Eligible advanced placement period.",
+      "serviceObligation": "Eight months of qualifying employment per stipend received; review the agreement and repayment consequences before accepting.",
+      "stackingPolicy": "Confirm stipend and other-aid interactions with UTA.",
+      "nextStep": "Consider this route only if UTA is a school option. Review the employment and repayment agreement, and ask the program about the application deadline before your planned practicum semester."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "child-welfare",
+      "service-obligation"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/title-iv-e-project/student-applicants",
+    "source": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/title-iv-e-project/student-applicants",
+    "last_verified_at": "2026-10-08T00:00:00Z"
+  },
+  {
+    "name": "ACU Corporate Partner Tuition Discount",
+    "provider_name": "Abilene Christian University",
+    "description": "Employees of ACU corporate partners can receive a 10% online tuition reduction and an application-fee waiver. Verify the employer agreement and program coverage. ACU alumni should compare the separate alumni discount before selecting a benefit.",
+    "amount_min": 0,
+    "amount_max": null,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "undergraduate",
+        "graduate",
+        "doctoral",
+        "certificate"
+      ],
+      "schools": [
+        "Abilene Christian University"
+      ],
+      "study_modes": [
+        "online"
+      ],
+      "other_requirements": [
+        "Current employment with an eligible ACU corporate partner and applicable program coverage must be confirmed by ACU."
+      ]
+    },
+    "funding": {
+      "kind": "tuition_discount",
+      "amountType": "percentage",
+      "percentage": 10,
+      "amountDescription": "10% reduction on eligible online tuition; application fee waived.",
+      "deadlineType": "rolling",
+      "fundingTiming": "Applied to eligible tuition charges.",
+      "stackingPolicy": "Do not add this to the alumni discount. Request written confirmation of which benefit applies and whether outside awards can combine.",
+      "nextStep": "Give ACU the employer name and intended program. Request written confirmation of the partner benefit and compare the resulting total with the alumni offer."
+    },
+    "requirements": {
+      "other": [
+        "Verification of eligible partner employment"
+      ]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "adult-learner",
+      "graduate",
+      "online",
+      "employer",
+      "social-work"
+    ],
+    "status": "active",
+    "application_url": "https://acu.edu/admissions-aid/online/financial-aid/online-scholarships/",
+    "source": "https://acu.edu/admissions-aid/online/financial-aid/online-scholarships/",
+    "last_verified_at": "2026-10-10T00:00:00Z"
+  },
+  {
+    "name": "GCU Employer and Organization Alliance Scholarships",
+    "provider_name": "Grand Canyon University",
+    "description": "GCU publishes tuition-support opportunities through employer and organization alliances for online learners. This is a route to investigate, not a guaranteed MSW award. The specific agreement determines eligibility and the discount.",
+    "amount_min": 0,
+    "amount_max": null,
+    "deadline": null,
+    "eligibility": {
+      "schools": [
+        "Grand Canyon University"
+      ],
+      "study_modes": [
+        "online",
+        "on_campus",
+        "hybrid"
+      ],
+      "other_requirements": [
+        "GCU must confirm an eligible employer or organization alliance, applicant relationship, intended program and study format, start term, and scholarship amount."
+      ]
+    },
+    "funding": {
+      "kind": "employer_assistance",
+      "amountType": "varies",
+      "amountDescription": "Agreement-specific tuition support; no MSW amount confirmed.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "Request the current alliance terms for the intended starting term.",
+      "fundingTiming": "Confirm with GCU before accepting an offer.",
+      "stackingPolicy": "Request a written estimate explaining institutional discounts, outside awards, fees, and any exclusions.",
+      "nextStep": "Ask GCU to check applicable employer and organization alliances for the online MSW. Request the exact agreement, eligible program, discount, and full net-cost estimate in writing."
+    },
+    "requirements": {
+      "other": [
+        "GCU confirmation of the applicable alliance agreement"
+      ]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "adult-learner",
+      "graduate",
+      "online",
+      "employer",
+      "social-work"
+    ],
+    "status": "active",
+    "application_url": "https://www.gcu.edu/financial-aid/scholarships-grants",
+    "source": "https://www.gcu.edu/financial-aid/scholarships-grants",
+    "last_verified_at": "2026-10-10T00:00:00Z"
+  }
+]

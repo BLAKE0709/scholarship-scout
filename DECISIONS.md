@@ -1,5 +1,20 @@
 # DECISIONS.md — Scholarship Scout
 
+
+### 2026-10-10 - Resume and deploy the graduate funding path
+
+Current user direction: "PICK UP SCOLARSHIP SCOUTS BUILD AND DEPLOYMENT" for the adult grad-school, nontraditional scholarship path. This resumes the approved WO-4 work and authorizes its release, including the necessary additive migration/catalog import and production deployment. The session's supplied build-test-commit-push instructions govern source handoff. This supersedes the earlier work-order local-only release status for this task. Scholarship Scout remains personal; no Atlas tools or external human communications.
+
+Keep the existing Next.js/Supabase/Vercel architecture. Graduate users default to nontraditional funding categories, with a three-step guide and source-based next actions. Add GCU alliance support only as a confirmation-dependent lead with no invented amount; ACU corporate support remains separate from its alumni discount. Keep unknown eligibility explicit and new education-profile ranking local. Preserve the eight source records' actual verification dates, and do not treat import as source verification.
+
+Use existing Vercel settings. Automatic review rejected downloading production secrets; verified the production project through deployment metadata and its public Supabase host instead. No secrets were pulled or changed. Snapshot the public catalog locally before import, rehearse migration in a rollback transaction, and verify every imported canonical record. The importer must disable prepared statements for the transaction pooler. Live smoke checks use exact disposable synthetic identities and clean up public and auth accounts explicitly.
+
+
+### 2026-10-08 ? Adult support design and implementation
+
+Blake approved the six-part adult/graduate expansion and directed execution. Separate completed education from target program in a versioned, optional JSON profile; keep legacy grade fields. Use deterministic eligibility before ranking; unknown/malformed/stale criteria are unresolved rather than eligible. Preserve all match/application history. Represent funding percentages and obligations explicitly and remove summed advertised savings. New education profiles rank locally, with no new AI payload egress following automatic approval review. Use the clean installed checkout on a feature branch; no dependencies, auth, billing, env or applied-migration changes. Migration 0007 is new and unapplied. Commit/push and remote rollout remain unperformed under repository instructions. See WO-4-rollout.md.
+
+
 ### 2026-08-13 - Mini-pilot launch posture (Blake ruling)
 
 **Choice:** Launch as a mini-pilot: soft launch to family + Colleyville/OU circles, iterate on real usage, scale only if traction. Caps ratified by Blake: $100/mo infrastructure, one weekend + two evenings/month of time. Family-ventures scope — never touches Atlas systems or hours.

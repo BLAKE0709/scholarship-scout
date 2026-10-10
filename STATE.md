@@ -1,5 +1,20 @@
 # STATE.md — Scholarship Scout
 
+
+## 2026-10-10 - Graduate funding release
+
+The user requested resuming build and deployment for the adult graduate-school funding path. The approved WO-4 implementation is complete, with eight researched adult/graduate funding routes, actionable next steps, searchable funding categories, and a graduate guide available before the first match. Fixed clearable education selectors and added post-onboarding GPA/target-field editing.
+
+Production database: additive migration 0007 applied after a rolled-back rehearsal; constraints and nullable education fields read back. Catalog import completed with 296 updates, zero errors, and exact read-back comparison of all canonical records. Physical table contains 298 rows because history-preserving duplicates are retained. No existing accounts or applications removed.
+
+Validation: 42 offline tests pass; TypeScript and changed-source lint pass. Final production build passes, including the first-visit graduate guide and display corrections. Authenticated production-build smoke tests passed for graduate save/match, conditional eligibility, preserved application history, JSON/text exports, legacy profile compatibility, and cross-user RLS. Real browser category filtering, 390px mobile layout, GPA/target-field edits, and clear/save were verified. All disposable test accounts were removed. Production app deployment is the remaining release step; final result belongs below this entry.
+
+
+## 2026-10-08 ? Adult and graduate support (WO-4)
+
+Implemented locally on feat/adult-graduate-support: adult/graduate education profiles and onboarding/vault editing; deterministic eligibility with explicit unknowns; six researched adult/MSW funding records; 294 normalized catalog entries; funding-aware results/dashboard/exports; safe application-history reassessment; additive migration 0007. No live rollout or database writes. Thirty-six offline tests, TypeScript and changed-source lint pass; see docs/work-orders/WO-4-progress.md for final build. Independent review findings corrected. New education profiles rank locally after automatic review declined external AI profile sharing. Migration and deployment require the approved release sequence in docs/work-orders/WO-4-rollout.md. No commit/push performed per repo AGENTS.md.
+
+
 ## Current Phase: Phase 5 — LAUNCH PREP (mini-pilot)
 
 **Date:** August 13, 2026 (evening)

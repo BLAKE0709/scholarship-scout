@@ -4,9 +4,13 @@
 import { readFileSync } from "node:fs";
 import { config } from "dotenv";
 import postgres from "postgres";
+import { require as tsRequire } from "tsx/cjs/api";
+const { normalizeEligibility, catalogKey } = tsRequire("../src/lib/scholarships/eligibility.ts", import.meta.url);
+const { FundingSchema } = tsRequire("../src/lib/scholarships/funding.ts", import.meta.url);
 
 config({ path: ".env.local" });
-const sql = postgres(process.env.DATABASE_URL, { max: 1, onnotice: () => {} });
+// Match the app: transaction-mode pooling cannot retain prepared statements.
+const sql = postgres(process.env.DATABASE_URL, { prepare: false, max: 1, onnotice: () => {} });
 
 const records = JSON.parse(
   readFileSync("data/seed/_merged.clean.json", "utf8"),
@@ -36,7 +40,8 @@ for (const s of records) {
       amount_min: s.amount_min,
       amount_max: s.amount_max ?? null,
       deadline: s.deadline ? new Date(s.deadline) : null,
-      eligibility: sql.json(s.eligibility ?? {}),
+      eligibility: sql.json(normalizeEligibility(s.eligibility)),
+      funding: s.funding ? sql.json(FundingSchema.parse(s.funding)) : null,
       requirements: sql.json(s.requirements ?? {}),
       renewable: s.renewable ?? false,
       national: s.national ?? true,
@@ -45,12 +50,15 @@ for (const s of records) {
       status: s.status ?? "active",
       application_url: s.application_url ?? null,
       source: s.source ?? null,
-      last_verified_at: s.source ? new Date() : null,
+      last_verified_at: s.last_verified_at ? new Date(s.last_verified_at) : null,
     };
-    const existing = await sql`
-      SELECT id FROM scholarships WHERE name = ${s.name} AND provider_id = ${pid} LIMIT 1`;
+    const providerAwards = await sql`SELECT id, name FROM scholarships WHERE provider_id = ${pid} ORDER BY created_at, id`;
+    const existing = providerAwards.filter((award) => catalogKey(award.name, s.provider_name) === catalogKey(s.name, s.provider_name));
     if (existing.length) {
-      await sql`UPDATE scholarships SET ${sql({ ...vals, updated_at: new Date() })} WHERE id = ${existing[0].id}`;
+      await sql.begin(async (tx) => {
+        await tx`UPDATE scholarships SET ${tx({ ...vals, name: s.name, updated_at: new Date() })} WHERE id = ${existing[0].id}`;
+        for (const duplicate of existing.slice(1)) await tx`UPDATE scholarships SET status = 'archived', updated_at = now() WHERE id = ${duplicate.id}`;
+      });
       stats.updated++;
     } else {
       await sql`INSERT INTO scholarships ${sql({ name: s.name, provider_id: pid, ...vals })}`;

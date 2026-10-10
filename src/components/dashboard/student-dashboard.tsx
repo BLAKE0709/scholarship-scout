@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { eligibilityLabels } from "@/lib/scholarships/eligibility";
 import {
   Target,
   Search,
@@ -25,14 +26,6 @@ interface StudentDashboardProps {
   data: StudentDashboardData;
 }
 
-function formatCurrency(amount: number): string {
-  if (amount >= 1000) {
-    const k = amount / 1000;
-    return `$${k % 1 === 0 ? k.toFixed(0) : k.toFixed(1)}k`;
-  }
-  return `$${amount}`;
-}
-
 function formatDeadlineShort(deadline: string | null): string | null {
   if (!deadline) return null;
   const d = new Date(deadline);
@@ -55,7 +48,7 @@ const quickActions = [
   {
     title: "Update Profile",
     icon: User,
-    href: "/settings",
+    href: "/vault",
     description: "Improve your vault score",
   },
   {
@@ -85,7 +78,7 @@ export function StudentDashboard({ data }: StudentDashboardProps) {
         <StatCard
           title="Scholarships Found"
           value={`${stats.matchCount}`}
-          subtitle={`${formatCurrency(stats.totalMatchValue)} total value`}
+          subtitle={`${stats.needsConfirmationCount} need confirmation`}
           icon={Search}
           trend="neutral"
           color="var(--accent-teal)"
@@ -173,8 +166,9 @@ export function StudentDashboard({ data }: StudentDashboardProps) {
                         <div className="mt-0.5 flex items-center gap-2 text-xs text-text-secondary">
                           <span className="flex items-center gap-0.5 font-semibold text-highlight-gold">
                             <DollarSign className="h-3 w-3" />
-                            {formatCurrency(match.amount)}
+                            {match.amountLabel}
                           </span>
+                          <span>{eligibilityLabels[match.eligibilityStatus]}</span>
                           {match.deadline && (
                             <span className="text-text-secondary">
                               Due {formatDeadlineShort(match.deadline)}

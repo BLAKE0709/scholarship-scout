@@ -1,9 +1,11 @@
+import { assessStoredEligibility } from "@/lib/scholarships/eligibility";
+import { formatFunding } from "@/lib/scholarships/funding";
 import { createClient } from "@/lib/supabase/server";
 
 export interface DashboardStats {
   matchScore: number;
   matchCount: number;
-  totalMatchValue: number;
+  needsConfirmationCount: number;
   applicationCount: {
     total: number;
     submitted: number;
@@ -20,7 +22,8 @@ export interface TopMatch {
   id: string;
   scholarshipId: string;
   scholarshipName: string;
-  amount: number;
+  amountLabel: string;
+  eligibilityStatus: "eligible" | "needs_information" | "ineligible";
   deadline: string | null;
   matchScore: number;
 }
@@ -81,7 +84,7 @@ export async function getStudentDashboardData(
   // First get the student profile ID for this user
   const { data: studentProfile } = await supabase
     .from("student_profiles")
-    .select("id, gpa, sat_score, act_score, interests")
+    .select("id, gpa, gpa_scale, sat_score, act_score, interests, education_profile, grade_level, graduation_year, state, intended_major, gender, ethnicity, financial_need, first_generation")
     .eq("user_id", userId)
     .single();
 
@@ -99,7 +102,7 @@ export async function getStudentDashboardData(
       stats: {
         matchScore: 0,
         matchCount: 0,
-        totalMatchValue: 0,
+        needsConfirmationCount: 0,
         applicationCount: {
           total: 0,
           submitted: 0,
@@ -139,7 +142,7 @@ export async function getStudentDashboardData(
     supabase
       .from("matches")
       .select(
-        "id, scholarship_id, match_score, status, created_at, scholarships(id, name, amount_min, amount_max, deadline)",
+        "id, scholarship_id, match_score, status, created_at, scholarships(id, name, amount_min, amount_max, deadline, eligibility, funding, national, states, status, source, last_verified_at)",
       )
       .eq("student_id", studentId)
       .order("match_score", { ascending: false }),
@@ -185,7 +188,7 @@ export async function getStudentDashboardData(
       .order("created_at", { ascending: false }),
   ]);
 
-  const matchesData = matchesResult.data ?? [];
+  const matchesData = (matchesResult.data ?? []).filter((match) => match.status !== "dismissed").map((match) => ({ ...match, assessment: assessStoredEligibility(studentProfile ?? {}, match.scholarships as unknown as Record<string, unknown> | null) })).filter((match) => match.assessment.status !== "ineligible").sort((a, b) => Number(b.assessment.status === "eligible") - Number(a.assessment.status === "eligible") || b.match_score - a.match_score);
   const applicationsData = applicationsResult.data ?? [];
   const fidelityData = fidelityResult.data ?? [];
   const apsData = apsResult.data ?? [];
@@ -200,17 +203,7 @@ export async function getStudentDashboardData(
       ? Math.round(matchScores.reduce((a, b) => a + b, 0) / matchScores.length)
       : 0;
 
-  const totalMatchValue = matchesData.reduce((sum, m) => {
-    const scholarship = m.scholarships as unknown as {
-      id: string;
-      name: string;
-      amount_min: number;
-      amount_max: number | null;
-      deadline: string | null;
-    } | null;
-    if (!scholarship) return sum;
-    return sum + (scholarship.amount_max ?? scholarship.amount_min);
-  }, 0);
+  const needsConfirmationCount = matchesData.filter((match) => match.assessment.status === "needs_information").length;
 
   const submittedStatuses = [
     "submitted",
@@ -236,7 +229,7 @@ export async function getStudentDashboardData(
   const stats: DashboardStats = {
     matchScore: avgMatchScore,
     matchCount: matchesData.length,
-    totalMatchValue,
+    needsConfirmationCount,
     applicationCount: {
       total: applicationsData.length,
       submitted,
@@ -254,6 +247,7 @@ export async function getStudentDashboardData(
     const scholarship = m.scholarships as unknown as {
       id: string;
       name: string;
+      funding?: unknown;
       amount_min: number;
       amount_max: number | null;
       deadline: string | null;
@@ -262,7 +256,8 @@ export async function getStudentDashboardData(
       id: m.id,
       scholarshipId: m.scholarship_id,
       scholarshipName: scholarship?.name ?? "Unknown Scholarship",
-      amount: scholarship?.amount_max ?? scholarship?.amount_min ?? 0,
+      amountLabel: formatFunding(scholarship?.amount_min ?? 0, scholarship?.amount_max ?? null, scholarship?.funding),
+      eligibilityStatus: m.assessment.status,
       deadline: scholarship?.deadline ?? null,
       matchScore: m.match_score,
     };
@@ -275,6 +270,7 @@ export async function getStudentDashboardData(
     const scholarship = m.scholarships as unknown as {
       id: string;
       name: string;
+      funding?: unknown;
       amount_min: number;
       amount_max: number | null;
       deadline: string | null;
@@ -300,6 +296,7 @@ export async function getStudentDashboardData(
   // Vault health calculation
   const hasBasicInfo = !!userRecord?.full_name;
   const hasAcademicScores = !!(
+    studentProfile?.education_profile?.highestDegree ||
     studentProfile?.gpa ||
     studentProfile?.sat_score ||
     studentProfile?.act_score
@@ -338,6 +335,7 @@ export async function getStudentDashboardData(
     const scholarship = m.scholarships as unknown as {
       id: string;
       name: string;
+      funding?: unknown;
       amount_min: number;
       amount_max: number | null;
       deadline: string | null;

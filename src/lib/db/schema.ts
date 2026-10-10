@@ -1,3 +1,5 @@
+import type { EducationProfile } from "../profiles/education";
+import type { Funding } from "../scholarships/funding";
 import {
   pgTable,
   pgEnum,
@@ -207,7 +209,8 @@ export const studentProfiles = pgTable("student_profiles", {
   gpaScale: decimal("gpa_scale").default("4.0"),
   satScore: integer("sat_score"),
   actScore: integer("act_score"),
-  graduationYear: integer("graduation_year").notNull(),
+  graduationYear: integer("graduation_year"),
+  educationProfile: jsonb("education_profile").$type<EducationProfile>(),
   state: text("state").notNull(),
   city: text("city"),
   schoolName: text("school_name"),
@@ -294,6 +297,7 @@ export const scholarships = pgTable(
     deadline: timestamp("deadline"),
     requirements: jsonb("requirements").default({}),
     eligibility: jsonb("eligibility").default({}),
+    funding: jsonb("funding").$type<Funding>(),
     applicationUrl: text("application_url"),
     status: scholarshipStatusEnum("status").default("active"),
     renewable: boolean("renewable").default(false),
@@ -326,6 +330,10 @@ export const matches = pgTable(
     affinityScore: integer("affinity_score"),
     winProbability: integer("win_probability"),
     matchReasons: text("match_reasons").array().default([]),
+    eligibilityStatus: text("eligibility_status").$type<"eligible" | "ineligible" | "needs_information">().notNull().default("needs_information"),
+    eligibilityReasons: text("eligibility_reasons").array().notNull().default([]),
+    eligibilityMissingFields: text("eligibility_missing_fields").array().notNull().default([]),
+    matchConcerns: text("match_concerns").array().notNull().default([]),
     status: matchStatusEnum("status").default("new"),
     appliedAt: timestamp("applied_at"),
     createdAt: timestamp("created_at").defaultNow(),

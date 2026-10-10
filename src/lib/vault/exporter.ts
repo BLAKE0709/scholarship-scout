@@ -1,3 +1,5 @@
+import { educationSummary, isSchoolStudent } from "../profiles/education";
+import { formatFunding } from "../scholarships/funding";
 import { db } from "@/lib/db";
 import {
   studentProfiles,
@@ -9,7 +11,6 @@ import {
   apsScores,
   applications,
   scholarships,
-  matches,
 } from "@/lib/db/schema";
 import { eq, desc } from "drizzle-orm";
 
@@ -89,6 +90,7 @@ export async function exportVaultJSON(
         scholarshipName: scholarships.name,
         amountMin: scholarships.amountMin,
         amountMax: scholarships.amountMax,
+        funding: scholarships.funding,
       })
       .from(applications)
       .innerJoin(scholarships, eq(applications.scholarshipId, scholarships.id))
@@ -109,6 +111,11 @@ export async function exportVaultJSON(
           sat_score: profile.satScore,
           act_score: profile.actScore,
           graduation_year: profile.graduationYear,
+          education_profile: profile.educationProfile,
+          ethnicity: profile.ethnicity,
+          gender: profile.gender,
+          financial_need: profile.financialNeed,
+          first_generation: profile.firstGeneration,
           state: profile.state,
           city: profile.city,
           school_name: profile.schoolName,
@@ -181,6 +188,8 @@ export async function exportVaultJSON(
       status: app.status,
       amountMin: app.amountMin,
       amountMax: app.amountMax,
+      funding: app.funding,
+      amountLabel: formatFunding(app.amountMin, app.amountMax, app.funding),
       submittedAt: app.submittedAt,
       createdAt: app.createdAt,
     })),
@@ -213,12 +222,15 @@ export async function exportVaultText(
     lines.push(`School: ${p.school_name ?? "Not set"}`);
     lines.push(`State: ${p.state ?? "Not set"}`);
     lines.push(`Grade Level: ${p.grade_level ?? "Not set"}`);
-    lines.push(`Graduation Year: ${p.graduation_year}`);
+    if (p.graduation_year) lines.push(`Graduation Year: ${p.graduation_year}`);
+    lines.push(educationSummary(p.education_profile));
     lines.push(
       `GPA: ${p.gpa ? `${p.gpa}/${p.gpa_scale ?? "4.0"}` : "Not reported"}`,
     );
-    lines.push(`SAT: ${p.sat_score ?? "Not reported"}`);
-    lines.push(`ACT: ${p.act_score ?? "Not reported"}`);
+    if (isSchoolStudent(p.education_profile, p.grade_level as string | null)) {
+      lines.push(`SAT: ${p.sat_score ?? "Not reported"}`);
+      lines.push(`ACT: ${p.act_score ?? "Not reported"}`);
+    }
     lines.push(`Intended Major: ${p.intended_major ?? "Not set"}`);
     if (Array.isArray(p.interests) && p.interests.length > 0) {
       lines.push(`Interests: ${p.interests.join(", ")}`);
@@ -326,21 +338,12 @@ export async function exportVaultText(
   if (data.applications.length === 0) {
     lines.push("No applications submitted.");
   } else {
-    const totalApplied = data.applications.reduce(
-      (sum, a) => sum + ((a.amountMin as number) ?? 0),
-      0,
-    );
-    const totalWon = data.applications
-      .filter((a) => a.status === "accepted")
-      .reduce((sum, a) => sum + ((a.amountMin as number) ?? 0), 0);
-
-    lines.push(`Total Value Applied: $${totalApplied.toLocaleString()}`);
-    lines.push(`Total Value Won: $${totalWon.toLocaleString()}`);
+    lines.push("Amounts below are advertised terms, not awarded or stackable cash totals.");
     lines.push("");
 
     for (const app of data.applications) {
       lines.push(
-        `${app.scholarshipName} | ${String(app.status).toUpperCase()} | $${(app.amountMin as number).toLocaleString()}`,
+        `${app.scholarshipName} | ${String(app.status).toUpperCase()} | ${app.amountLabel}`,
       );
     }
   }

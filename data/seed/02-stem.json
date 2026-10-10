@@ -981,22 +981,24 @@
   {
     "name": "AAUW Career Development Grants",
     "provider_name": "American Association of University Women",
-    "description": "AAUW Career Development Grants support women who hold at least an associate's degree and are pursuing coursework, professional development or credentials in fields where women are underrepresented, explicitly including STEM, engineering, technology, architecture, mathematics and the natural sciences. The award ceiling is $8,000 and actual award sizes vary. Two windows run each year: the Winter/Spring 2027 window opens August 18, 2026 and closes September 30, 2026, and the Summer/Fall 2027 window runs January 27 to March 18, 2027.",
-    "amount_min": 8000,
+    "description": "Career Development Grants support eligible non-degree training and certificate programs for women. Degree programs, including a social work master's, are not eligible. Check the current cycle and field restrictions directly with AAUW.",
+    "amount_min": 0,
     "amount_max": 8000,
-    "deadline": "2026-09-30",
+    "deadline": null,
     "eligibility": {
-      "education_level": ["current-undergrad", "graduate"],
-      "citizenship": "U.S. citizens, nationals, or permanent residents from the 50 states, D.C., Puerto Rico, Guam, U.S. Virgin Islands, American Samoa, the Northern Mariana Islands, or any other territory",
-      "majors": [
-        "STEM",
-        "Engineering",
-        "Technology",
-        "Architecture",
-        "Mathematics",
-        "Natural Sciences"
+      "education_level": [
+        "certificate"
       ],
-      "other": "Applicants must identify as a woman and must hold at least an associate's degree or higher. The proposed field must be one in which women comprise less than 50 percent of the workforce or senior leadership."
+      "target_degrees": [
+        "certificate"
+      ],
+      "genders": [
+        "woman"
+      ],
+      "other_requirements": [
+        "Non-degree training/certificate programs only; degree programs including MSW are not eligible.",
+        "Associate degree or higher and the current program field/citizenship criteria must be verified with AAUW."
+      ]
     },
     "requirements": {
       "transcript": true,
@@ -1005,10 +1007,24 @@
     "renewable": false,
     "national": true,
     "states": [],
-    "tags": ["stem", "engineering", "math", "women", "merit"],
+    "tags": [
+      "stem",
+      "engineering",
+      "math",
+      "women",
+      "merit"
+    ],
     "status": "upcoming",
-    "application_url": "https://www.aauw.org/resources/programs/fellowships-grants/current-opportunities/career-development-grants/",
-    "source": "https://www.aauw.org/resources/programs/fellowships-grants/current-opportunities/career-development-grants/"
+    "application_url": "https://www.aauw.org/resources/programs/fellowships-grants/career-development-grants/",
+    "source": "https://www.aauw.org/resources/programs/fellowships-grants/career-development-grants/",
+    "last_verified_at": "2026-10-08T00:00:00Z",
+    "funding": {
+      "kind": "grant",
+      "amountType": "range",
+      "amountDescription": "Up to $8,000; confirm the current cycle.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "Next application window must be confirmed with AAUW."
+    }
   },
   {
     "name": "A.T. Anderson Memorial Scholarship",

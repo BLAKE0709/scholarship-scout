@@ -752,36 +752,6 @@
     "source": "https://pointfoundation.org/scholarships/community-college"
   },
   {
-    "name": "P.E.O. Program for Continuing Education Grant",
-    "provider_name": "P.E.O. International",
-    "description": "A need-based grant of up to $4,000 for women in the United States and Canada whose education has been interrupted and who need to return to school to complete a degree or certification that improves their marketable skills for employment. Applicants must be recommended by a local P.E.O. chapter. Grants are awarded on a rolling basis through chapters rather than a single national deadline.",
-    "amount_min": 4000,
-    "amount_max": 4000,
-    "eligibility": {
-      "gender": "Women",
-      "residency": "United States or Canada",
-      "circumstance": "Education has been interrupted; returning to school",
-      "purpose": "Degree or certification improving marketable employment skills",
-      "sponsorship": "Must be recommended by a local P.E.O. chapter",
-      "financial_need": "Must demonstrate financial need"
-    },
-    "requirements": {
-      "application": "Application submitted through a local P.E.O. chapter",
-      "chapter_sponsorship": true,
-      "financial_documentation": true
-    },
-    "renewable": false,
-    "national": true,
-    "states": [],
-    "tags": [
-      "women",
-      "need-based"
-    ],
-    "status": "upcoming",
-    "application_url": "https://www.peointernational.org/about-peo-program-continuing-education-pce/",
-    "source": "https://www.peointernational.org/about-peo-program-continuing-education-pce/"
-  },
-  {
     "name": "P.E.O. STAR Scholarship",
     "provider_name": "P.E.O. International",
     "description": "A one-time $2,500 scholarship for exceptional women in their final year of high school, recommended by a local P.E.O. chapter. Selection recognizes excellence in leadership, academics, extracurricular activities, community service, and potential for future success. Candidates must be recommended by a P.E.O. chapter to qualify.",

@@ -1,5 +1,9 @@
 "use client";
 
+import { assessStoredEligibility } from "@/lib/scholarships/eligibility";
+import { formatFunding } from "@/lib/scholarships/funding";
+
+
 import { useEffect, useState, useCallback } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useUser } from "@/hooks/use-user";
@@ -34,7 +38,7 @@ async function fetchStudentDashboard(
 
   const { data: studentProfile } = await supabase
     .from("student_profiles")
-    .select("id, gpa, sat_score, act_score, interests")
+    .select("id, gpa, gpa_scale, sat_score, act_score, interests, education_profile, grade_level, graduation_year, state, intended_major, gender, ethnicity, financial_need, first_generation")
     .eq("user_id", userId)
     .single();
 
@@ -51,7 +55,7 @@ async function fetchStudentDashboard(
       stats: {
         matchScore: 0,
         matchCount: 0,
-        totalMatchValue: 0,
+        needsConfirmationCount: 0,
         applicationCount: {
           total: 0,
           submitted: 0,
@@ -90,7 +94,7 @@ async function fetchStudentDashboard(
     supabase
       .from("matches")
       .select(
-        "id, scholarship_id, match_score, status, created_at, scholarships(id, name, amount_min, amount_max, deadline)",
+        "id, scholarship_id, match_score, status, created_at, scholarships(id, name, amount_min, amount_max, deadline, eligibility, funding, national, states, status, source, last_verified_at)",
       )
       .eq("student_id", studentId)
       .order("match_score", { ascending: false }),
@@ -136,7 +140,7 @@ async function fetchStudentDashboard(
       .order("created_at", { ascending: false }),
   ]);
 
-  const matchesData = matchesResult.data ?? [];
+  const matchesData = (matchesResult.data ?? []).filter((match) => match.status !== "dismissed").map((match) => ({ ...match, assessment: assessStoredEligibility(studentProfile ?? {}, match.scholarships as unknown as Record<string, unknown> | null) })).filter((match) => match.assessment.status !== "ineligible").sort((a, b) => Number(b.assessment.status === "eligible") - Number(a.assessment.status === "eligible") || b.match_score - a.match_score);
   const applicationsData = applicationsResult.data ?? [];
   const fidelityData = fidelityResult.data ?? [];
   const apsData = apsResult.data ?? [];
@@ -159,19 +163,13 @@ async function fetchStudentDashboard(
   type ScholarshipJoin = {
     id: string;
     name: string;
+    funding?: unknown;
     amount_min: number;
     amount_max: number | null;
     deadline: string | null;
   } | null;
 
-  const totalMatchValue = matchesData.reduce(
-    (sum: number, m: { scholarships: unknown }) => {
-      const s = m.scholarships as ScholarshipJoin;
-      if (!s) return sum;
-      return sum + (s.amount_max ?? s.amount_min);
-    },
-    0,
-  );
+  const needsConfirmationCount = matchesData.filter((match) => match.assessment.status === "needs_information").length;
 
   const submittedStatuses = [
     "submitted",
@@ -203,13 +201,15 @@ async function fetchStudentDashboard(
         scholarship_id: string;
         match_score: number;
         scholarships: unknown;
+        assessment: { status: "eligible" | "ineligible" | "needs_information" };
       }) => {
         const s = m.scholarships as ScholarshipJoin;
         return {
           id: m.id,
           scholarshipId: m.scholarship_id,
           scholarshipName: s?.name ?? "Unknown Scholarship",
-          amount: s?.amount_max ?? s?.amount_min ?? 0,
+          amountLabel: formatFunding(s?.amount_min ?? 0, s?.amount_max ?? null, s?.funding),
+          eligibilityStatus: m.assessment.status,
           deadline: s?.deadline ?? null,
           matchScore: m.match_score,
         };
@@ -241,6 +241,7 @@ async function fetchStudentDashboard(
   // Vault health
   const hasBasicInfo = !!userRecord?.full_name;
   const hasAcademicScores = !!(
+    studentProfile?.education_profile?.highestDegree ||
     studentProfile?.gpa ||
     studentProfile?.sat_score ||
     studentProfile?.act_score
@@ -331,7 +332,7 @@ async function fetchStudentDashboard(
     stats: {
       matchScore: avgMatchScore,
       matchCount: matchesData.length,
-      totalMatchValue,
+      needsConfirmationCount,
       applicationCount: {
         total: applicationsData.length,
         submitted,

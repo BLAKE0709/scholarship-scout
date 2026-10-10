@@ -5,8 +5,12 @@ import { Calendar, DollarSign } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MatchScore } from "./match-score";
+import { formatFunding, parseFunding, fundingKindLabels } from "@/lib/scholarships/funding";
+import { eligibilityLabels, type EligibilityAssessment } from "@/lib/scholarships/eligibility";
 
-interface ScholarshipCardProps {
+export interface ScholarshipCardProps {
+  funding?: unknown;
+  assessment?: EligibilityAssessment;
   id: string;
   name: string;
   providerName?: string;
@@ -18,13 +22,6 @@ interface ScholarshipCardProps {
   status?: string;
   tags?: string[];
   variant?: "compact" | "full";
-}
-
-function formatAmount(min: number, max?: number | null): string {
-  const fmt = (n: number) =>
-    n >= 1000 ? `$${(n / 1000).toFixed(n % 1000 === 0 ? 0 : 1)}k` : `$${n}`;
-  if (max && max !== min) return `${fmt(min)} – ${fmt(max)}`;
-  return fmt(min);
 }
 
 function getDeadlineInfo(
@@ -60,6 +57,8 @@ function getDeadlineInfo(
 
 export function ScholarshipCard({
   id,
+  funding,
+  assessment,
   name,
   providerName,
   amountMin,
@@ -71,6 +70,7 @@ export function ScholarshipCard({
   tags,
   variant = "full",
 }: ScholarshipCardProps) {
+  const terms = parseFunding(funding);
   const deadlineInfo = getDeadlineInfo(deadline);
   const isCompact = variant === "compact";
 
@@ -110,7 +110,7 @@ export function ScholarshipCard({
                   style={{ color: "#D4A843" }}
                 >
                   <DollarSign className="h-3.5 w-3.5" />
-                  {formatAmount(amountMin, amountMax)}
+                  {formatFunding(amountMin, amountMax ?? null, funding)}
                 </span>
                 {deadlineInfo && (
                   <span
@@ -121,6 +121,19 @@ export function ScholarshipCard({
                   </span>
                 )}
               </div>
+
+              <div className="mt-2 space-y-1 text-xs">
+                <p className="font-medium">{terms ? fundingKindLabels[terms.kind] : "Scholarship"} / {eligibilityLabels[assessment?.status ?? "needs_information"]}</p>
+                {assessment?.status !== "eligible" && <p className="text-[var(--text-secondary)]">{assessment?.status === "ineligible" ? assessment.reasons[0] : assessment?.concerns[0] ?? "Eligibility has not been verified."}</p>}
+                {terms?.serviceObligation && <p className="text-amber-800">Service commitment required</p>}
+                <p className="text-[var(--text-secondary)]">Score estimates fit, not award likelihood.</p>
+              </div>
+
+              {!isCompact && terms?.nextStep && (
+                <p className="mt-3 border-t border-border-light pt-3 text-sm text-text-secondary">
+                  <strong className="text-text-primary">Next step:</strong> {terms.nextStep}
+                </p>
+              )}
 
               {!isCompact && reasons && reasons.length > 0 && (
                 <div className="mt-2.5 flex flex-wrap gap-1.5">

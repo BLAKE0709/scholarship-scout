@@ -1,3 +1,4 @@
+import { assessEligibility } from "@/lib/scholarships/eligibility";
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { db } from "@/lib/db";
@@ -8,7 +9,7 @@ import {
   scholarships,
   scholarshipProviders,
 } from "@/lib/db/schema";
-import { eq, desc, asc, gte, lte, and, ne, sql } from "drizzle-orm";
+import { eq, desc, asc, gte, and, ne, sql, getTableColumns } from "drizzle-orm";
 import { generateMatchesForStudent } from "@/lib/scholarships/match-scheduler";
 
 export async function POST() {
@@ -24,7 +25,7 @@ export async function POST() {
 
     // Get student profile
     const [student] = await db
-      .select({ id: studentProfiles.id })
+      .select({ ...getTableColumns(studentProfiles) })
       .from(studentProfiles)
       .innerJoin(users, eq(studentProfiles.userId, users.id))
       .where(eq(users.id, authUser.id))
@@ -77,7 +78,7 @@ export async function GET(request: NextRequest) {
 
     // Get student profile ID
     const [student] = await db
-      .select({ id: studentProfiles.id })
+      .select({ ...getTableColumns(studentProfiles) })
       .from(studentProfiles)
       .innerJoin(users, eq(studentProfiles.userId, users.id))
       .where(eq(users.id, authUser.id))
@@ -129,6 +130,10 @@ export async function GET(request: NextRequest) {
         national: scholarships.national,
         states: scholarships.states,
         eligibility: scholarships.eligibility,
+        funding: scholarships.funding,
+        status: scholarships.status,
+        source: scholarships.source,
+        lastVerifiedAt: scholarships.lastVerifiedAt,
         requirements: scholarships.requirements,
         providerName: scholarshipProviders.name,
       })
@@ -156,7 +161,7 @@ export async function GET(request: NextRequest) {
       .where(and(...conditions));
 
     return NextResponse.json({
-      data: filtered,
+      data: filtered.map((match) => ({ ...match, assessment: assessEligibility(student, match) })),
       total: countResult?.count ?? 0,
       page,
       limit,

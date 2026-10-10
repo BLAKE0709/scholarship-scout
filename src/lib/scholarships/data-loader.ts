@@ -1,15 +1,19 @@
+import { normalizeEligibility, catalogKey } from "./eligibility";
+import { FundingSchema } from "./funding";
 import { z } from "zod";
 import { db } from "@/lib/db";
 import { scholarships, scholarshipProviders } from "@/lib/db/schema";
-import { eq, and } from "drizzle-orm";
+import { eq, asc } from "drizzle-orm";
 
 const ScholarshipSeedSchema = z.object({
   name: z.string().min(1),
   provider_name: z.string().min(1),
   description: z.string().optional(),
-  amount_min: z.number().min(0),
-  amount_max: z.number().optional(),
-  deadline: z.string().optional(),
+  amount_min: z.number().int().min(0),
+  amount_max: z.number().int().nonnegative().nullable().optional(),
+  deadline: z.string().refine((value) => !Number.isNaN(new Date(value).getTime()), "Invalid deadline").nullable().optional(),
+  last_verified_at: z.string().datetime().nullable().optional(),
+  funding: FundingSchema.nullable().optional(),
   eligibility: z.record(z.string(), z.unknown()).optional(),
   requirements: z.record(z.string(), z.unknown()).optional(),
   renewable: z.boolean().optional(),
@@ -17,8 +21,11 @@ const ScholarshipSeedSchema = z.object({
   states: z.array(z.string()).optional(),
   tags: z.array(z.string()).optional(),
   status: z.enum(["active", "closed", "upcoming", "archived"]).optional(),
-  application_url: z.string().url().optional(),
-  source: z.string().url().optional(),
+  application_url: z.string().url().nullable().optional(),
+  source: z.string().url().nullable().optional(),
+}).superRefine((value, ctx) => {
+  if (value.amount_max != null && value.amount_max < value.amount_min) ctx.addIssue({ code: "custom", path: ["amount_max"], message: "Maximum amount must be at least the minimum" });
+  if (value.last_verified_at && new Date(value.last_verified_at) > new Date()) ctx.addIssue({ code: "custom", path: ["last_verified_at"], message: "Verification cannot be dated in the future" });
 });
 
 export type ScholarshipSeed = z.infer<typeof ScholarshipSeedSchema>;
@@ -61,27 +68,24 @@ export async function loadScholarshipsFromJSON(data: unknown[]): Promise<{
       const providerId = await upsertProvider(seed.provider_name);
 
       // Check for existing scholarship by name + provider
-      const existing = await db
-        .select({ id: scholarships.id })
+      const providerAwards = await db
+        .select({ id: scholarships.id, name: scholarships.name })
         .from(scholarships)
-        .where(
-          and(
-            eq(scholarships.name, seed.name),
-            eq(scholarships.providerId, providerId),
-          ),
-        )
-        .limit(1);
+        .where(eq(scholarships.providerId, providerId)).orderBy(asc(scholarships.createdAt), asc(scholarships.id));
+      const existing = providerAwards.filter((award) => catalogKey(award.name, seed.provider_name) === catalogKey(seed.name, seed.provider_name));
 
       if (existing.length > 0) {
         // Update existing
         await db
           .update(scholarships)
           .set({
+            name: seed.name,
             description: seed.description,
             amountMin: seed.amount_min,
             amountMax: seed.amount_max,
             deadline: seed.deadline ? new Date(seed.deadline) : null,
-            eligibility: seed.eligibility ?? {},
+            eligibility: normalizeEligibility(seed.eligibility),
+            funding: seed.funding ?? null,
             requirements: seed.requirements ?? {},
             renewable: seed.renewable ?? false,
             national: seed.national ?? true,
@@ -90,10 +94,11 @@ export async function loadScholarshipsFromJSON(data: unknown[]): Promise<{
             status: seed.status ?? "active",
             applicationUrl: seed.application_url,
             source: seed.source,
-            lastVerifiedAt: seed.source ? new Date() : undefined,
+            lastVerifiedAt: seed.last_verified_at ? new Date(seed.last_verified_at) : null,
             updatedAt: new Date(),
           })
           .where(eq(scholarships.id, existing[0].id));
+        for (const duplicate of existing.slice(1)) await db.update(scholarships).set({ status: "archived", updatedAt: new Date() }).where(eq(scholarships.id, duplicate.id));
         stats.updated++;
       } else {
         // Insert new
@@ -104,7 +109,8 @@ export async function loadScholarshipsFromJSON(data: unknown[]): Promise<{
           amountMin: seed.amount_min,
           amountMax: seed.amount_max,
           deadline: seed.deadline ? new Date(seed.deadline) : null,
-          eligibility: seed.eligibility ?? {},
+          eligibility: normalizeEligibility(seed.eligibility),
+          funding: seed.funding ?? null,
           requirements: seed.requirements ?? {},
           renewable: seed.renewable ?? false,
           national: seed.national ?? true,
@@ -113,7 +119,7 @@ export async function loadScholarshipsFromJSON(data: unknown[]): Promise<{
           status: seed.status ?? "active",
           applicationUrl: seed.application_url,
           source: seed.source,
-          lastVerifiedAt: seed.source ? new Date() : undefined,
+          lastVerifiedAt: seed.last_verified_at ? new Date(seed.last_verified_at) : null,
         });
         stats.added++;
       }

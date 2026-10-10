@@ -1,3 +1,7 @@
+import Link from "next/link";
+import { assessEligibility, normalizeEligibility } from "@/lib/scholarships/eligibility";
+import { formatFunding, parseFunding, fundingKindLabels } from "@/lib/scholarships/funding";
+import { EligibilityNotice } from "@/components/scholarships/eligibility-notice";
 import { db } from "@/lib/db";
 import {
   scholarships,
@@ -6,7 +10,7 @@ import {
   studentProfiles,
   users,
 } from "@/lib/db/schema";
-import { eq, and, ne, desc } from "drizzle-orm";
+import { eq, and, ne, desc, getTableColumns } from "drizzle-orm";
 import { createClient } from "@/lib/supabase/server";
 import { redirect, notFound } from "next/navigation";
 import { MatchScore } from "@/components/scholarships/match-score";
@@ -15,7 +19,6 @@ import { ScholarshipActions } from "./actions-client";
 import {
   Calendar,
   DollarSign,
-  ExternalLink,
   CheckCircle2,
   Circle,
   RefreshCw,
@@ -49,6 +52,10 @@ export default async function ScholarshipDetailPage({ params }: Props) {
       amountMax: scholarships.amountMax,
       deadline: scholarships.deadline,
       eligibility: scholarships.eligibility,
+      funding: scholarships.funding,
+      status: scholarships.status,
+      source: scholarships.source,
+      lastVerifiedAt: scholarships.lastVerifiedAt,
       requirements: scholarships.requirements,
       renewable: scholarships.renewable,
       national: scholarships.national,
@@ -69,7 +76,7 @@ export default async function ScholarshipDetailPage({ params }: Props) {
 
   // Get student profile + match
   const [student] = await db
-    .select({ id: studentProfiles.id })
+    .select({ ...getTableColumns(studentProfiles) })
     .from(studentProfiles)
     .innerJoin(users, eq(studentProfiles.userId, users.id))
     .where(eq(users.id, authUser.id))
@@ -121,6 +128,13 @@ export default async function ScholarshipDetailPage({ params }: Props) {
           amountMin: scholarships.amountMin,
           amountMax: scholarships.amountMax,
           deadline: scholarships.deadline,
+          eligibility: scholarships.eligibility,
+          funding: scholarships.funding,
+          national: scholarships.national,
+          states: scholarships.states,
+          status: scholarships.status,
+          source: scholarships.source,
+          lastVerifiedAt: scholarships.lastVerifiedAt,
           providerName: scholarshipProviders.name,
         })
         .from(matches)
@@ -140,36 +154,43 @@ export default async function ScholarshipDetailPage({ params }: Props) {
         .limit(3)
     : [];
 
-  const rawElig = (scholarship.eligibility ?? {}) as Record<string, unknown>;
+  const assessment = assessEligibility(student ?? {}, scholarship);
+  const funding = parseFunding(scholarship.funding);
+  const rules = normalizeEligibility(scholarship.eligibility);
   const rawReqs = (scholarship.requirements ?? {}) as Record<string, unknown>;
-  const elig = {
-    min_gpa: rawElig.min_gpa as number | undefined,
-    grade_levels: rawElig.grade_levels as string[] | undefined,
-    majors: rawElig.majors as string[] | undefined,
-    financial_need: rawElig.financial_need as boolean | undefined,
-    demographics: rawElig.demographics as string[] | undefined,
-    other_requirements: rawElig.other_requirements as string[] | undefined,
-  };
+  const criteria = [
+    rules.minGpa === null ? null : `Minimum GPA: ${rules.minGpa} (4.0 scale)`,
+    ...rules.gradeGroups.map((group) => `Education stage: ${group.join(", ").replace(/_/g, " ")}`),
+    ...([ ["Fields", rules.majors], ["Target degrees", rules.targetDegrees], ["Excluded prior degrees", rules.excludedDegrees], ["Schools", rules.schools], ["Alumni schools", rules.alumniSchools], ["Attendance", rules.attendance], ["Study format", rules.studyModes], ["Enrollment status", rules.enrollmentStatuses], ["Citizenship", rules.citizenship], ["Memberships", rules.memberships], ["Sponsorships", rules.sponsorships], ["Gender criteria", rules.genders], ["Ethnicity criteria", rules.ethnicities], ["Demographic criteria", rules.demographics], ["States", rules.states] ] as const).filter(([, values]) => values.length).map(([label, values]) => `${label}: ${values.join(", ").replace(/_/g, " ")}`),
+    rules.financialNeed ? "Demonstrated financial need required" : null,
+    rules.firstGeneration ? "First-generation status required" : null,
+    rules.serviceRequired ? "Service commitment required" : null,
+    rules.gapMonthsMin === null ? null : `Education gap: at least ${rules.gapMonthsMin} consecutive months`,
+    rules.completionMonthsMax === null ? null : `Within ${rules.completionMonthsMax} months of completing the program`,
+    rules.minAge === null ? null : `Minimum age: ${rules.minAge}`,
+    rules.maxAge === null ? null : `Maximum age: ${rules.maxAge}`,
+    ...rules.unresolved,
+  ].filter((value): value is string => Boolean(value));
   const reqs = {
     transcript: rawReqs.transcript as boolean | undefined,
     essays_required: rawReqs.essays_required as number | undefined,
     recommendation_letters: rawReqs.recommendation_letters as
       | number
       | undefined,
-    other: rawReqs.other as string[] | undefined,
+    other: Array.isArray(rawReqs.other) ? rawReqs.other.filter((v): v is string => typeof v === "string") : typeof rawReqs.other === "string" ? [rawReqs.other] : [],
   };
   const deadline = scholarship.deadline ? new Date(scholarship.deadline) : null;
   const daysUntil = deadline
-    ? Math.ceil((deadline.getTime() - Date.now()) / (1000 * 60 * 60 * 24))
+    ? Math.ceil((deadline.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
     : null;
 
   return (
     <div className="space-y-6">
       {/* Breadcrumb */}
       <nav className="text-sm text-[var(--text-secondary)]">
-        <a href="/scholarships" className="hover:text-[var(--accent-teal)]">
+        <Link href="/scholarships" className="hover:text-[var(--accent-teal)]">
           Scholarships
-        </a>
+        </Link>
         <span className="mx-2">›</span>
         <span className="text-[var(--text-primary)]">{scholarship.name}</span>
       </nav>
@@ -200,11 +221,7 @@ export default async function ScholarshipDetailPage({ params }: Props) {
                     }}
                   >
                     <DollarSign className="mr-1 h-3.5 w-3.5" />
-                    {scholarship.amountMin.toLocaleString()}
-                    {scholarship.amountMax &&
-                    scholarship.amountMax !== scholarship.amountMin
-                      ? ` – $${scholarship.amountMax.toLocaleString()}`
-                      : ""}
+                    {formatFunding(scholarship.amountMin, scholarship.amountMax, funding)}
                   </Badge>
                   {deadline && (
                     <Badge
@@ -240,12 +257,29 @@ export default async function ScholarshipDetailPage({ params }: Props) {
             </div>
           </div>
 
+          <EligibilityNotice assessment={assessment} />
+          {funding?.nextStep && (
+            <section className="rounded-xl border border-accent-teal/30 bg-accent-teal/5 p-5" aria-labelledby="funding-next-step">
+              <h2 id="funding-next-step" className="font-semibold text-text-primary">Your next step</h2>
+              <p className="mt-2 text-sm leading-relaxed text-text-secondary">{funding.nextStep}</p>
+            </section>
+          )}
+          {funding && <Card><CardHeader className="pb-3"><CardTitle className="text-base">{fundingKindLabels[funding.kind]} terms</CardTitle></CardHeader><CardContent className="space-y-2 text-sm">
+            {funding.amountDescription && <p>{funding.amountDescription}</p>}
+            {funding.applicationCycle && <p><strong>Application cycle:</strong> {funding.applicationCycle}</p>}
+            {funding.fundingTiming && <p><strong>When funding is available:</strong> {funding.fundingTiming}</p>}
+            {funding.serviceObligation && <p><strong>Service obligation:</strong> {funding.serviceObligation}</p>}
+            {funding.stackingPolicy && <p><strong>Combining awards:</strong> {funding.stackingPolicy}</p>}
+            {funding.eligibleExpenses?.length ? <p><strong>Eligible costs:</strong> {funding.eligibleExpenses.join(", ")}</p> : null}
+          </CardContent></Card>}
+          <p className="text-xs text-[var(--text-secondary)]">{scholarship.source && <a href={scholarship.source} target="_blank" rel="noopener noreferrer" className="underline">Check provider terms</a>} / {scholarship.lastVerifiedAt ? `Source checked ${new Date(scholarship.lastVerifiedAt).toLocaleDateString("en-US")}` : "Source verification date unknown"}</p>
+
           {/* Match Reasons */}
           {match?.matchReasons && match.matchReasons.length > 0 && (
             <Card>
               <CardHeader className="pb-3">
                 <CardTitle className="text-base">
-                  Why This Matches You
+                  Estimated Fit
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -285,36 +319,8 @@ export default async function ScholarshipDetailPage({ params }: Props) {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
-              {elig.min_gpa != null && (
-                <EligibilityItem
-                  label={`Minimum GPA: ${elig.min_gpa}`}
-                  met={true}
-                />
-              )}
-              {elig.grade_levels && elig.grade_levels.length > 0 && (
-                <EligibilityItem
-                  label={`Grade Level: ${elig.grade_levels.join(", ")}`}
-                  met={true}
-                />
-              )}
-              {elig.majors && elig.majors.length > 0 && (
-                <EligibilityItem
-                  label={`Target Majors: ${elig.majors.join(", ")}`}
-                  met={true}
-                />
-              )}
-              {elig.financial_need === true && (
-                <EligibilityItem label="Financial need required" met={true} />
-              )}
-              {elig.demographics && elig.demographics.length > 0 && (
-                <EligibilityItem
-                  label={`Demographics: ${elig.demographics.join(", ")}`}
-                  met={true}
-                />
-              )}
-              {elig.other_requirements?.map((req, i) => (
-                <EligibilityItem key={i} label={req} met={false} />
-              ))}
+              {criteria.length ? criteria.map((criterion) => <EligibilityItem key={criterion} label={criterion} met={false} />) : <p className="text-sm">Check the provider&apos;s current eligibility rules.</p>}
+
             </CardContent>
           </Card>
 
@@ -396,6 +402,8 @@ export default async function ScholarshipDetailPage({ params }: Props) {
                     id={s.scholarshipId}
                     name={s.scholarshipName}
                     providerName={s.providerName ?? undefined}
+                    funding={s.funding}
+                    assessment={assessEligibility(student ?? {}, s)}
                     amountMin={s.amountMin}
                     amountMax={s.amountMax}
                     deadline={s.deadline}

@@ -31,7 +31,27 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Progress } from "@/components/ui/progress";
+import { EducationFields } from "@/components/profile/education-fields";
+import { StepAcademics } from "@/components/onboarding/step-academics";
+import { createClient } from "@/lib/supabase/client";
+import { formatFunding } from "@/lib/scholarships/funding";
+import {
+  educationLevelOptions,
+  degreeOptions,
+  profileCompleteness,
+  type EducationProfile,
+} from "@/lib/profiles/education";
+import {
+  academicsSchema,
+  buildStudentProfileUpdate,
+  educationProfileFromLegacy,
+  educationStepSchema,
+  requireUpdatedRow,
+  usesLegacySchoolFields,
+  type AcademicsInput,
+  type BasicsInput,
+  type OnboardingData,
+} from "@/lib/validators/onboarding";
 import { useUser } from "@/hooks/use-user";
 import { toast } from "sonner";
 import { AchievementForm } from "@/components/vault/achievement-form";
@@ -49,7 +69,7 @@ import {
   PolarRadiusAxis,
 } from "recharts";
 
-// ── Types ──────────────────────────────────────────────────────────────────────
+// â”€â”€ Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface StudentProfile {
   id: string;
@@ -57,7 +77,7 @@ interface StudentProfile {
   gpa_scale: string | null;
   sat_score: number | null;
   act_score: number | null;
-  graduation_year: number;
+  graduation_year: number | null;
   state: string;
   city: string | null;
   school_name: string | null;
@@ -66,6 +86,7 @@ interface StudentProfile {
   interests: string[];
   extracurriculars: string[];
   vault_health_score: number;
+  education_profile?: EducationProfile | null;
 }
 
 interface Essay {
@@ -122,11 +143,13 @@ interface Application {
   status: string;
   amountMin: number;
   amountMax: number | null;
+  funding?: unknown;
+  amountLabel?: string;
   submittedAt: string | null;
   createdAt: string;
 }
 
-// ── Helpers ────────────────────────────────────────────────────────────────────
+// â”€â”€ Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const ACHIEVEMENT_TYPE_ICONS: Record<
   string,
@@ -198,7 +221,7 @@ function getApsLevel(score: number): string {
   return "Beginner";
 }
 
-// ── Vault Page ─────────────────────────────────────────────────────────────────
+// â”€â”€ Vault Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 export default function VaultPage() {
   const router = useRouter();
@@ -219,6 +242,12 @@ export default function VaultPage() {
     useState<Achievement | null>(null);
   const [isUploading, setIsUploading] = useState(false);
   const [exportMenuOpen, setExportMenuOpen] = useState(false);
+  const [isEditingProfile, setIsEditingProfile] = useState(false);
+  const [educationDraft, setEducationDraft] = useState<Partial<BasicsInput> | null>(null);
+  const [academicsDraft, setAcademicsDraft] = useState<Partial<AcademicsInput> | null>(null);
+  const [isSavingProfile, setIsSavingProfile] = useState(false);
+  const [profileSaveError, setProfileSaveError] = useState<string | null>(null);
+  const [matchRefreshError, setMatchRefreshError] = useState<string | null>(null);
   const exportRef = useRef<HTMLDivElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -228,19 +257,13 @@ export default function VaultPage() {
 
     setIsLoading(true);
     try {
-      const [
-        profileRes,
-        essaysRes,
-        achievementsRes,
-        documentsRes,
-        applicationsRes,
-      ] = await Promise.all([
-        fetch("/api/vault/export?format=json"),
-        fetch("/api/essays"),
-        fetch("/api/vault/achievements"),
-        fetch("/api/vault/documents"),
-        fetch("/api/applications?limit=100"),
-      ]);
+      const [profileRes, essaysRes, achievementsRes, documentsRes] =
+        await Promise.all([
+          fetch("/api/vault/export?format=json"),
+          fetch("/api/essays"),
+          fetch("/api/vault/achievements"),
+          fetch("/api/vault/documents"),
+        ]);
 
       if (profileRes.ok) {
         const profileData = await profileRes.json();
@@ -248,6 +271,7 @@ export default function VaultPage() {
         if (profileData.fidelityScores)
           setFidelityScores(profileData.fidelityScores);
         if (profileData.apsScores) setApsScores(profileData.apsScores);
+        setApplications(profileData.applications ?? []);
       }
 
       if (essaysRes.ok) {
@@ -265,10 +289,6 @@ export default function VaultPage() {
         setDocuments(docData.data ?? []);
       }
 
-      if (applicationsRes.ok) {
-        const appData = await applicationsRes.json();
-        setApplications(appData.data ?? []);
-      }
     } catch {
       toast.error("Failed to load vault data");
     } finally {
@@ -279,6 +299,107 @@ export default function VaultPage() {
   useEffect(() => {
     fetchVaultData();
   }, [fetchVaultData]);
+
+  function beginProfileEdit() {
+    if (!studentProfile) return;
+    setEducationDraft({
+      fullName: userProfile?.fullName ?? undefined,
+      state: studentProfile.state,
+      city: studentProfile.city,
+      schoolName: studentProfile.school_name,
+      graduationYear: studentProfile.graduation_year,
+      gradeLevel: studentProfile.grade_level as BasicsInput["gradeLevel"],
+      educationProfile: educationProfileFromLegacy(
+        studentProfile.education_profile,
+        studentProfile.grade_level,
+      ),
+    });
+    setAcademicsDraft({
+      gpa: studentProfile.gpa == null ? "" : Number(studentProfile.gpa),
+      gpaScale: studentProfile.gpa_scale == null ? 4 : Number(studentProfile.gpa_scale),
+      satScore: studentProfile.sat_score ?? "",
+      actScore: studentProfile.act_score ?? "",
+      intendedMajor: studentProfile.intended_major,
+    });
+    setProfileSaveError(null);
+    setMatchRefreshError(null);
+    setIsEditingProfile(true);
+  }
+
+  async function handleSaveProfile() {
+    if (!user || !studentProfile || !educationDraft || !academicsDraft) return;
+    const validation = educationStepSchema.safeParse(educationDraft);
+    if (!validation.success) {
+      setProfileSaveError(validation.error.issues[0]?.message ?? "Check your education details.");
+      return;
+    }
+
+    const academicValues = usesLegacySchoolFields(
+      validation.data.educationProfile,
+      validation.data.gradeLevel,
+    ) ? academicsDraft : { ...academicsDraft, satScore: "" as const, actScore: "" as const };
+    const academicValidation = academicsSchema.safeParse(academicValues);
+    if (!academicValidation.success) {
+      setProfileSaveError(academicValidation.error.issues[0]?.message ?? "Check your academic details.");
+      return;
+    }
+
+    setIsSavingProfile(true);
+    setProfileSaveError(null);
+    setMatchRefreshError(null);
+    try {
+      const onboardingData: OnboardingData = {
+        basics: { ...educationDraft, ...validation.data },
+        // Preserve blank optional values; numeric validation can coerce an empty GPA to zero.
+        academics: academicValues,
+        aboutYou: {},
+        goals: {},
+      };
+      const profileUpdate = buildStudentProfileUpdate(onboardingData, 3);
+      profileUpdate.vault_health_score = profileCompleteness({
+        ...studentProfile,
+        ...profileUpdate,
+      });
+      const saveResult = await createClient()
+        .from("student_profiles")
+        .update(profileUpdate)
+        .eq("user_id", user.id)
+        .select("id")
+        .single();
+      requireUpdatedRow(saveResult, "Your student profile was not found. Nothing was saved.");
+
+      setStudentProfile((current) => current ? {
+        ...current,
+        education_profile: profileUpdate.education_profile as EducationProfile,
+        school_name: profileUpdate.school_name as string | null,
+        graduation_year: profileUpdate.graduation_year as number | null,
+        grade_level: profileUpdate.grade_level as string | null,
+        gpa: profileUpdate.gpa == null ? null : String(profileUpdate.gpa),
+        gpa_scale: String(profileUpdate.gpa_scale),
+        sat_score: profileUpdate.sat_score as number | null,
+        act_score: profileUpdate.act_score as number | null,
+        intended_major: profileUpdate.intended_major as string | null,
+        vault_health_score: profileUpdate.vault_health_score as number,
+      } : current);
+      setIsEditingProfile(false);
+      toast.success("Education profile saved");
+
+      try {
+        const response = await fetch("/api/scholarships/match", { method: "POST" });
+        if (!response.ok) throw new Error("Match refresh failed");
+      } catch {
+        const message = "Your profile was saved, but scholarship matches could not be refreshed. Try again from Scholarships.";
+        setMatchRefreshError(message);
+        toast.error(message);
+      }
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "We could not save your education profile.";
+      setProfileSaveError(message);
+      toast.error(message);
+    } finally {
+      setIsSavingProfile(false);
+    }
+  }
 
   // Close export menu on outside click
   useEffect(() => {
@@ -421,14 +542,10 @@ export default function VaultPage() {
     );
   }
 
-  // Compute stats for applications tab
-  const totalApplied = applications.reduce(
-    (sum, a) => sum + (a.amountMin ?? 0),
-    0,
-  );
-  const totalWon = applications
-    .filter((a) => a.status === "accepted")
-    .reduce((sum, a) => sum + (a.amountMin ?? 0), 0);
+  // Counts avoid implying that advertised awards can be combined or guaranteed.
+  const acceptedApplicationCount = applications.filter(
+    (application) => application.status === "accepted",
+  ).length;
 
   const latestFidelity = fidelityScores.length > 0 ? fidelityScores[0] : null;
   const latestAps = apsScores.length > 0 ? apsScores[0] : null;
@@ -459,6 +576,25 @@ export default function VaultPage() {
     if (!achievementsByType[ach.type]) achievementsByType[ach.type] = [];
     achievementsByType[ach.type].push(ach);
   }
+
+  const educationProfile = studentProfile
+    ? educationProfileFromLegacy(
+        studentProfile.education_profile,
+        studentProfile.grade_level,
+      )
+    : null;
+  const legacyEducationPath = studentProfile
+    ? usesLegacySchoolFields(educationProfile, studentProfile.grade_level)
+    : false;
+  const educationLevelLabel = educationLevelOptions.find(
+    (option) => option.value === educationProfile?.educationLevel,
+  )?.label ?? "--";
+  const highestDegreeLabel = degreeOptions.find(
+    (option) => option.value === educationProfile?.highestDegree,
+  )?.label ?? "--";
+  const targetDegreeLabel = degreeOptions.find(
+    (option) => option.value === educationProfile?.targetDegree,
+  )?.label ?? "--";
 
   return (
     <div className="space-y-6">
@@ -516,7 +652,7 @@ export default function VaultPage() {
           </TabsTrigger>
           {/* Documents, Scores, and Applications are hidden for alpha.
               Documents: no storage bucket exists, so every upload 500s, and
-              the upload path builds a public URL — wrong for a minor's
+              the upload path builds a public URL â€” wrong for a minor's
               transcript. Needs a private bucket and signed URLs first.
               Scores: nothing computes fidelity or APS yet, so the tab can only
               promise numbers that never arrive.
@@ -524,131 +660,111 @@ export default function VaultPage() {
               The content blocks below are left intact for when each is real. */}
         </TabsList>
 
-        {/* ── Profile Tab ──────────────────────────────────────────────────── */}
+        {/* â”€â”€ Profile Tab â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         <TabsContent value="profile" className="mt-6">
           <Card className="rounded-xl">
             <CardHeader>
-              <CardTitle className="flex items-center justify-between">
-                <span>Student Profile</span>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => router.push("/settings")}
-                >
-                  Edit Profile
-                </Button>
+              <CardTitle className="flex items-center justify-between gap-4">
+                <span>Education Profile</span>
+                {studentProfile && !isEditingProfile && (
+                  <Button variant="outline" size="sm" onClick={beginProfileEdit}>
+                    Edit Education
+                  </Button>
+                )}
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              {studentProfile ? (
+              {matchRefreshError && (
+                <p role="alert" className="rounded-lg border border-highlight-gold/40 bg-highlight-gold/10 p-3 text-sm text-text-primary">
+                  {matchRefreshError}
+                </p>
+              )}
+              {studentProfile && isEditingProfile && educationDraft && academicsDraft ? (
+                <div className="space-y-6">
+                  <EducationFields
+                    value={educationDraft.educationProfile ?? { version: 1 }}
+                    onChange={(next) => setEducationDraft((current) => current ? { ...current, educationProfile: next } : current)}
+                    legacy={{
+                      schoolName: educationDraft.schoolName,
+                      graduationYear: educationDraft.graduationYear,
+                      gradeLevel: educationDraft.gradeLevel,
+                    }}
+                    onLegacyChange={(legacy) => setEducationDraft((current) => current ? { ...current, ...legacy } : current)}
+                  />
+                  <Separator />
+                  <StepAcademics
+                    data={academicsDraft}
+                    educationProfile={educationDraft.educationProfile}
+                    gradeLevel={educationDraft.gradeLevel}
+                    onChange={setAcademicsDraft}
+                  />
+                  {profileSaveError && (
+                    <p role="alert" className="rounded-lg border border-error/30 bg-error/5 p-3 text-sm text-error">
+                      {profileSaveError}
+                    </p>
+                  )}
+                  <div className="flex justify-end gap-3">
+                    <Button
+                      variant="outline"
+                      disabled={isSavingProfile}
+                      onClick={() => {
+                        setIsEditingProfile(false);
+                        setEducationDraft(null);
+                        setAcademicsDraft(null);
+                        setProfileSaveError(null);
+                      }}
+                    >
+                      Cancel
+                    </Button>
+                    <Button disabled={isSavingProfile} onClick={handleSaveProfile}>
+                      {isSavingProfile ? "Saving..." : "Save Education"}
+                    </Button>
+                  </div>
+                </div>
+              ) : studentProfile ? (
                 <>
                   <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    <InfoItem
-                      label="Name"
-                      value={userProfile?.fullName ?? "--"}
-                    />
-                    <InfoItem
-                      label="School"
-                      value={studentProfile.school_name ?? "--"}
-                    />
-                    <InfoItem
-                      label="Grade Level"
-                      value={
-                        studentProfile.grade_level
-                          ?.replace("_", " ")
-                          .replace(/\b\w/g, (l) => l.toUpperCase()) ?? "--"
-                      }
-                    />
-                    <InfoItem
-                      label="GPA"
-                      value={
-                        studentProfile.gpa
-                          ? `${studentProfile.gpa} / ${studentProfile.gpa_scale ?? "4.0"}`
-                          : "--"
-                      }
-                    />
-                    <InfoItem
-                      label="SAT Score"
-                      value={
-                        studentProfile.sat_score?.toString() ?? "Not reported"
-                      }
-                    />
-                    <InfoItem
-                      label="ACT Score"
-                      value={
-                        studentProfile.act_score?.toString() ?? "Not reported"
-                      }
-                    />
-                    <InfoItem
-                      label="Graduation Year"
-                      value={studentProfile.graduation_year.toString()}
-                    />
+                    <InfoItem label="Name" value={userProfile?.fullName ?? "--"} />
+                    <InfoItem label="Education path" value={educationLevelLabel} />
+                    <InfoItem label="Highest credential" value={highestDegreeLabel} />
+                    <InfoItem label="Target credential" value={targetDegreeLabel} />
+                    <InfoItem label="Target field" value={studentProfile.intended_major ?? "--"} />
+                    <InfoItem label="Enrollment status" value={educationProfile?.enrollmentStatus?.replace("_", " ") ?? "--"} />
+                    <InfoItem label="Attendance" value={educationProfile?.attendance?.replace("_", " ") ?? "--"} />
+                    <InfoItem label="Study mode" value={educationProfile?.studyMode?.replace("_", " ") ?? "--"} />
+                    <InfoItem label="GPA" value={studentProfile.gpa ? `${studentProfile.gpa} / ${studentProfile.gpa_scale ?? "4.0"}` : "--"} />
                     <InfoItem label="State" value={studentProfile.state} />
-                    <InfoItem
-                      label="Intended Major"
-                      value={studentProfile.intended_major ?? "--"}
-                    />
+                    {legacyEducationPath && (
+                      <>
+                        <InfoItem label="School" value={studentProfile.school_name ?? "--"} />
+                        <InfoItem label="Grade level" value={studentProfile.grade_level?.replace("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase()) ?? "--"} />
+                        <InfoItem label="Graduation year" value={studentProfile.graduation_year?.toString() ?? "--"} />
+                        <InfoItem label="SAT score" value={studentProfile.sat_score?.toString() ?? "Not reported"} />
+                        <InfoItem label="ACT score" value={studentProfile.act_score?.toString() ?? "Not reported"} />
+                      </>
+                    )}
                   </div>
-
-                  {studentProfile.interests.length > 0 && (
-                    <div>
-                      <p className="mb-2 text-sm font-medium text-text-secondary">
-                        Interests
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {studentProfile.interests.map((interest) => (
-                          <Badge
-                            key={interest}
-                            variant="secondary"
-                            className="bg-accent-teal/10 text-accent-teal"
-                          >
-                            {interest}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
+                  {(educationProfile?.alumniSchools?.length ?? 0) > 0 && (
+                    <ProfileTags label="Completed-degree schools" values={educationProfile?.alumniSchools ?? []} />
                   )}
-
-                  {studentProfile.extracurriculars.length > 0 && (
-                    <div>
-                      <p className="mb-2 text-sm font-medium text-text-secondary">
-                        Extracurriculars
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {studentProfile.extracurriculars.map((ec) => (
-                          <Badge
-                            key={ec}
-                            variant="secondary"
-                            className="bg-highlight-gold/10 text-highlight-gold"
-                          >
-                            {ec}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
+                  {(educationProfile?.targetSchools?.length ?? 0) > 0 && (
+                    <ProfileTags label="Schools considering" values={educationProfile?.targetSchools ?? []} />
                   )}
+                  {studentProfile.interests.length > 0 && <ProfileTags label="Interests" values={studentProfile.interests} />}
+                  {studentProfile.extracurriculars.length > 0 && <ProfileTags label="Extracurriculars" values={studentProfile.extracurriculars} gold />}
                 </>
               ) : (
                 <div className="flex flex-col items-center py-8">
                   <User className="mb-3 h-10 w-10 text-text-secondary/30" />
-                  <p className="text-sm text-text-secondary">
-                    Complete your profile to get started
-                  </p>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="mt-3"
-                    onClick={() => router.push("/settings")}
-                  >
-                    Set Up Profile
-                  </Button>
+                  <p className="text-sm text-text-secondary">Complete onboarding to create your education profile.</p>
+                  <Button variant="outline" size="sm" className="mt-3" onClick={() => router.push("/onboarding")}>Set Up Profile</Button>
                 </div>
               )}
             </CardContent>
           </Card>
         </TabsContent>
 
-        {/* ── Essays Tab ───────────────────────────────────────────────────── */}
+        {/* â”€â”€ Essays Tab â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         <TabsContent value="essays" className="mt-6 space-y-4">
           <div className="flex items-center justify-between">
             <Badge
@@ -723,7 +839,7 @@ export default function VaultPage() {
           )}
         </TabsContent>
 
-        {/* ── Achievements Tab ─────────────────────────────────────────────── */}
+        {/* â”€â”€ Achievements Tab â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         <TabsContent value="achievements" className="mt-6 space-y-4">
           <div className="flex items-center justify-between">
             <Badge
@@ -860,7 +976,7 @@ export default function VaultPage() {
           )}
         </TabsContent>
 
-        {/* ── Documents Tab ────────────────────────────────────────────────── */}
+        {/* â”€â”€ Documents Tab â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         <TabsContent value="documents" className="mt-6 space-y-4">
           <div className="flex items-center justify-between">
             <Badge
@@ -963,7 +1079,7 @@ export default function VaultPage() {
           )}
         </TabsContent>
 
-        {/* ── Scores Tab ───────────────────────────────────────────────────── */}
+        {/* â”€â”€ Scores Tab â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         <TabsContent value="scores" className="mt-6 space-y-6">
           {/* Fidelity Score */}
           <Card className="rounded-xl">
@@ -1102,22 +1218,22 @@ export default function VaultPage() {
           </Card>
         </TabsContent>
 
-        {/* ── Applications Tab ─────────────────────────────────────────────── */}
+        {/* â”€â”€ Applications Tab â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
         <TabsContent value="applications" className="mt-6 space-y-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <Card className="rounded-xl">
               <CardContent className="py-4">
-                <p className="text-sm text-text-secondary">Total Applied</p>
+                <p className="text-sm text-text-secondary">Applications tracked</p>
                 <p className="font-mono text-2xl font-bold text-primary-navy">
-                  ${totalApplied.toLocaleString()}
+                  {applications.length}
                 </p>
               </CardContent>
             </Card>
             <Card className="rounded-xl">
               <CardContent className="py-4">
-                <p className="text-sm text-text-secondary">Total Won</p>
+                <p className="text-sm text-text-secondary">Accepted</p>
                 <p className="font-mono text-2xl font-bold text-accent-teal">
-                  ${totalWon.toLocaleString()}
+                  {acceptedApplicationCount}
                 </p>
               </CardContent>
             </Card>
@@ -1145,6 +1261,9 @@ export default function VaultPage() {
             </Card>
           ) : (
             <Card className="rounded-xl overflow-hidden">
+              <p className="border-b border-border-light bg-bg-page px-4 py-3 text-xs text-text-secondary">
+                Funding shown is the advertised term for each opportunity; awards and stacking are not guaranteed.
+              </p>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
@@ -1156,7 +1275,7 @@ export default function VaultPage() {
                         Status
                       </th>
                       <th className="px-4 py-3 text-left font-medium text-text-secondary">
-                        Amount
+                        Advertised funding
                       </th>
                       <th className="px-4 py-3 text-left font-medium text-text-secondary">
                         Date
@@ -1183,10 +1302,7 @@ export default function VaultPage() {
                           </Badge>
                         </td>
                         <td className="px-4 py-3 font-mono text-text-primary">
-                          ${app.amountMin.toLocaleString()}
-                          {app.amountMax && app.amountMax > app.amountMin
-                            ? ` - $${app.amountMax.toLocaleString()}`
-                            : ""}
+                          {app.amountLabel ?? formatFunding(app.amountMin, app.amountMax, app.funding)}
                         </td>
                         <td className="px-4 py-3 text-text-secondary">
                           {formatDate(app.submittedAt ?? app.createdAt)}
@@ -1215,7 +1331,34 @@ export default function VaultPage() {
   );
 }
 
-// ── Helper Components ──────────────────────────────────────────────────────────
+// â”€â”€ Helper Components â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+function ProfileTags({
+  label,
+  values,
+  gold = false,
+}: {
+  label: string;
+  values: string[];
+  gold?: boolean;
+}) {
+  return (
+    <div>
+      <p className="mb-2 text-sm font-medium text-text-secondary">{label}</p>
+      <div className="flex flex-wrap gap-2">
+        {values.map((value) => (
+          <Badge
+            key={value}
+            variant="secondary"
+            className={gold ? "bg-highlight-gold/10 text-highlight-gold" : "bg-accent-teal/10 text-accent-teal"}
+          >
+            {value}
+          </Badge>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 function InfoItem({ label, value }: { label: string; value: string }) {
   return (

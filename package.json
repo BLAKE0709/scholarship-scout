@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "stripe:setup": "tsx scripts/setup-stripe.ts",
-    "ai:key": "node scripts/set-anthropic-key.mjs"
+    "ai:key": "node scripts/set-anthropic-key.mjs",
+    "test": "node scripts/run-tests.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.73.0",

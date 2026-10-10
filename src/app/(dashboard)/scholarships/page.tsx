@@ -1,3 +1,5 @@
+import { assessEligibility } from "@/lib/scholarships/eligibility";
+import { RefreshMatches } from "@/components/scholarships/refresh-matches";
 import { db } from "@/lib/db";
 import {
   matches,
@@ -6,10 +8,12 @@ import {
   studentProfiles,
   users,
 } from "@/lib/db/schema";
-import { eq, and, ne, desc } from "drizzle-orm";
+import { eq, and, ne, desc, getTableColumns } from "drizzle-orm";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
-import { ScholarshipCard } from "@/components/scholarships/scholarship-card";
+import { FundingExplorer } from "@/components/scholarships/funding-explorer";
+import { parseEducationProfile } from "@/lib/profiles/education";
+import Link from "next/link";
 import { Search } from "lucide-react";
 
 export default async function ScholarshipsPage() {
@@ -22,7 +26,7 @@ export default async function ScholarshipsPage() {
 
   // Get student profile
   const [student] = await db
-    .select({ id: studentProfiles.id })
+    .select({ ...getTableColumns(studentProfiles) })
     .from(studentProfiles)
     .innerJoin(users, eq(studentProfiles.userId, users.id))
     .where(eq(users.id, authUser.id))
@@ -46,7 +50,7 @@ export default async function ScholarshipsPage() {
   }
 
   // Fetch matches
-  const studentMatches = await db
+  const storedMatches = await db
     .select({
       matchId: matches.id,
       matchScore: matches.matchScore,
@@ -61,6 +65,13 @@ export default async function ScholarshipsPage() {
       deadline: scholarships.deadline,
       tags: scholarships.tags,
       renewable: scholarships.renewable,
+      funding: scholarships.funding,
+      eligibility: scholarships.eligibility,
+      national: scholarships.national,
+      states: scholarships.states,
+      status: scholarships.status,
+      source: scholarships.source,
+      lastVerifiedAt: scholarships.lastVerifiedAt,
       providerName: scholarshipProviders.name,
     })
     .from(matches)
@@ -74,95 +85,41 @@ export default async function ScholarshipsPage() {
     )
     .orderBy(desc(matches.matchScore));
 
-  if (studentMatches.length === 0) {
-    return (
-      <div className="space-y-6">
-        <div>
-          <h1 className="text-2xl font-bold text-[var(--primary-navy)]">
-            Scholarships
-          </h1>
-          <p className="mt-1 text-[var(--text-secondary)]">
-            Your personalized scholarship matches
-          </p>
-        </div>
-        <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-[var(--border-light)] py-16 text-center">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--accent-teal)]/10">
-            <Search className="h-7 w-7 text-[var(--accent-teal)]" />
-          </div>
-          <h3 className="mt-4 font-semibold text-[var(--text-primary)]">
-            No matches yet
-          </h3>
-          <p className="mt-1 max-w-sm text-sm text-[var(--text-secondary)]">
-            Matches are being generated. Refresh this page in a moment, or
-            trigger matching from the API.
-          </p>
-        </div>
-      </div>
-    );
-  }
+  const studentMatches = storedMatches.map((match) => ({ ...match, assessment: assessEligibility(student, match) }))
+    .filter((match) => match.assessment.status !== "ineligible" || match.matchStatus !== "new")
+    .sort((a, b) => Number(b.assessment.status === "eligible") - Number(a.assessment.status === "eligible") || Number(a.assessment.status === "ineligible") - Number(b.assessment.status === "ineligible") || b.matchScore - a.matchScore);
 
-  const topMatches = studentMatches.slice(0, 5);
-  const allMatches = studentMatches;
+  const education = parseEducationProfile(student.educationProfile);
+  const graduate = education?.educationLevel === "graduate" || education?.educationLevel === "doctoral" || education?.targetDegree === "master" || education?.targetDegree === "doctorate";
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-[var(--primary-navy)]">
-          Scholarships
-        </h1>
-        <p className="mt-1 text-[var(--text-secondary)]">
-          {studentMatches.length} scholarships matched to your profile
-        </p>
+        <h1 className="text-2xl font-bold text-primary-navy">{graduate ? "Graduate funding" : "Scholarships & funding"}</h1>
+        <p className="mt-1 text-text-secondary">Find support that fits your education, work, and next chapter.</p>
       </div>
-
-      {/* Top Matches */}
-      <section>
-        <h2 className="mb-4 text-lg font-semibold text-[var(--text-primary)]">
-          Your Top Matches
-        </h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {topMatches.map((m) => (
-            <ScholarshipCard
-              key={m.matchId}
-              id={m.scholarshipId}
-              name={m.scholarshipName}
-              providerName={m.providerName ?? undefined}
-              amountMin={m.amountMin}
-              amountMax={m.amountMax}
-              deadline={m.deadline}
-              matchScore={m.matchScore}
-              reasons={m.matchReasons ?? undefined}
-              status={m.matchStatus ?? undefined}
-              tags={m.tags ?? undefined}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* All Matches */}
-      <section>
-        <h2 className="mb-4 text-lg font-semibold text-[var(--text-primary)]">
-          All Matches
-        </h2>
-        <div className="space-y-3">
-          {allMatches.map((m) => (
-            <ScholarshipCard
-              key={m.matchId}
-              id={m.scholarshipId}
-              name={m.scholarshipName}
-              providerName={m.providerName ?? undefined}
-              amountMin={m.amountMin}
-              amountMax={m.amountMax}
-              deadline={m.deadline}
-              matchScore={m.matchScore}
-              reasons={m.matchReasons ?? undefined}
-              status={m.matchStatus ?? undefined}
-              tags={m.tags ?? undefined}
-              variant="compact"
-            />
-          ))}
-        </div>
-      </section>
+      <div className="flex flex-wrap items-center gap-4">
+        <RefreshMatches />
+        <Link href="/vault" className="text-sm font-medium text-accent-teal underline underline-offset-4">Edit your profile</Link>
+      </div>
+      <FundingExplorer
+        graduate={graduate}
+        matches={studentMatches.map((match) => ({
+          id: match.scholarshipId,
+          name: match.scholarshipName,
+          providerName: match.providerName ?? undefined,
+          funding: match.funding,
+          assessment: match.assessment,
+          amountMin: match.amountMin,
+          amountMax: match.amountMax,
+          deadline: match.deadline,
+          matchScore: match.matchScore,
+          reasons: match.matchReasons ?? undefined,
+          status: match.matchStatus ?? undefined,
+          tags: match.tags ?? undefined,
+        }))}
+      />
+      <p className="text-xs leading-relaxed text-text-secondary">Awards are competitive. A tuition discount, service stipend, and cash award have different terms. Confirm eligibility and whether awards can combine before including them in your budget.</p>
     </div>
   );
 }

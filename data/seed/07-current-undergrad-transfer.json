@@ -1396,51 +1396,6 @@
     "source": "https://www.soroptimist.org/our-work/live-your-dream-awards/apply-for-the-live-your-dream-awards.html"
   },
   {
-    "name": "P.E.O. Program for Continuing Education (PCE) Grant",
-    "provider_name": "P.E.O. International",
-    "description": "A one-time need-based grant of up to $4,000 for women whose education was interrupted and who are returning to finish a degree or certification that will improve their employment prospects. Applicants must have spent at least 24 consecutive months out of formal education during adulthood and be within roughly 18 months of completing their program. There is no fixed annual deadline: a local P.E.O. chapter must first sponsor you, after which you receive an online application with a 30-day window.",
-    "amount_min": 4000,
-    "amount_max": 4000,
-    "eligibility": {
-      "grade_levels": [
-        "college_freshman",
-        "college_sophomore",
-        "college_junior",
-        "college_senior"
-      ],
-      "gender": [
-        "woman"
-      ],
-      "citizenship": [
-        "us_citizen",
-        "canadian_citizen",
-        "permanent_resident"
-      ],
-      "financial_need": true,
-      "education_gap_months_min": 24,
-      "notes": "Must be within 18 consecutive months of completing the program and must not already hold a master's degree or higher. Requires sponsorship by a local P.E.O. chapter."
-    },
-    "requirements": {
-      "chapter_sponsorship": true,
-      "financial_documentation": true,
-      "transcript": true,
-      "notes": "Cannot fund living expenses, loan repayment, or prerequisite courses."
-    },
-    "renewable": false,
-    "national": true,
-    "states": [],
-    "tags": [
-      "adult-learner",
-      "need-based",
-      "current-undergrad",
-      "part-time",
-      "national"
-    ],
-    "status": "upcoming",
-    "application_url": "https://www.peointernational.org/educational-support/program-for-continuing-education/eligibility-and-application-process/",
-    "source": "https://www.peointernational.org/educational-support/program-for-continuing-education/eligibility-and-application-process/"
-  },
-  {
     "name": "Osher Reentry Scholarship",
     "provider_name": "Bernard Osher Foundation (administered by participating universities)",
     "description": "A national program for adults returning to finish a first bachelor's degree after a cumulative break of five or more years, typically aged 25 to 50. The Osher Foundation funds participating colleges and universities, and each campus sets its own amounts and deadlines: UC Berkeley, for example, awards up to $5,000 for the academic year. Students apply through their own institution, not the Foundation, so check the Foundation's list of participating schools and then contact your campus financial aid office.",
