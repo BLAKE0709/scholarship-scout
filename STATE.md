@@ -7,7 +7,11 @@ The user requested resuming build and deployment for the adult graduate-school f
 
 Production database: additive migration 0007 applied after a rolled-back rehearsal; constraints and nullable education fields read back. Catalog import completed with 296 updates, zero errors, and exact read-back comparison of all canonical records. Physical table contains 298 rows because history-preserving duplicates are retained. No existing accounts or applications removed.
 
-Validation: 42 offline tests pass; TypeScript and changed-source lint pass. Final production build passes, including the first-visit graduate guide and display corrections. Authenticated production-build smoke tests passed for graduate save/match, conditional eligibility, preserved application history, JSON/text exports, legacy profile compatibility, and cross-user RLS. Real browser category filtering, 390px mobile layout, GPA/target-field edits, and clear/save were verified. All disposable test accounts were removed. Production app deployment is the remaining release step; final result belongs below this entry.
+Validation: 42 offline tests pass; TypeScript and changed-source lint pass. Final production build passes, including the first-visit graduate guide and display corrections. Authenticated production-build smoke tests passed for graduate save/match, conditional eligibility, preserved application history, JSON/text exports, legacy profile compatibility, and cross-user RLS. Real browser category filtering, 390px mobile layout, GPA/target-field edits, and clear/save were verified. All disposable test accounts were removed.
+
+Production release: implementation commit `34bf227495d1b777d2decce659f41f78b9d79a67` pushed to `origin/main` and deployed to Vercel. Stable URL https://scholarship-scout-five.vercel.app resolves to deployment `dpl_9UxiaUVcpgLDRErVYcWt4ihzLMLw` (`scholarship-scout-dh065nrzr-fcom.vercel.app`), verified Ready. The authenticated release suite passed again against the stable live URL, including graduate matching, preserved applications, exports, legacy profiles, and cross-user privacy. Cleanup verified both public and auth identities removed for every temporary release account.
+
+Learner entry: sign in, open My Vault to add or edit education and academic facts, then Discover Scholarships and refresh funding matches. The graduate guide presents tuition discounts, employer support, grants, and paid placements with provider-specific next steps and unresolved eligibility made explicit.
 
 
 ## 2026-10-08 ? Adult and graduate support (WO-4)
