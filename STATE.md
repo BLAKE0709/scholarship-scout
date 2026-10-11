@@ -1,5 +1,10 @@
 # STATE.md — Scholarship Scout
 
+## 2026-10-10 - Rollout approval and live re-verification
+
+The user explicitly approved the prepared migration, catalog import, commit/push and deployment rollout. The current workspace already contained the completed production release, so no migration or catalog import was repeated. Fresh checks confirmed the stable production URL is Ready and returns HTTP 200; all seven adult-support columns and both constraints are present; all 296 canonical award records match production amounts, funding, eligibility, status, source and UTC verification dates. The physical catalog retains 298 rows to preserve duplicate history. Remote main matches the recorded release handoff. No accounts, applications, credentials or production data were changed during this approval verification.
+
+
 
 ## 2026-10-10 - Graduate funding release
 

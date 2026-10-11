@@ -1,5 +1,10 @@
 # DECISIONS.md — Scholarship Scout
 
+### 2026-10-10 - Explicit approval of the prepared rollout
+
+The user approved the previously presented migration, catalog import, commit/push and deployment sequence. Current production and remote-main verification showed that release was already complete. Preserve the deployed state; record verification without repeating migrations, imports or deployment. This approval does not expand adult-profile sharing with external AI.
+
+
 
 ### 2026-10-10 - Resume and deploy the graduate funding path
 
