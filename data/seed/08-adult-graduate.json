@@ -62,7 +62,7 @@
   {
     "name": "P.E.O. Program for Continuing Education Grant",
     "provider_name": "P.E.O. International",
-    "description": "One-time need-based grant of up to $4,000 for women returning to education after at least 24 consecutive months away. Applicants must already be in an eligible program, be within 18 months of completion, and receive a local chapter recommendation. An existing master's or doctorate excludes eligibility; a first master's may qualify. The program must improve employment prospects.",
+    "description": "One-time need-based grant of up to $4,000 for women returning to education after at least 24 consecutive months away. Applicants must already be in an eligible program, be within 18 months of completion, and receive a local chapter recommendation. An existing master's or doctorate excludes eligibility; a first master's may qualify. The program must improve employment prospects. Online study is explicitly allowed in the August 2026 policy.",
     "amount_min": 0,
     "amount_max": 4000,
     "deadline": null,
@@ -105,7 +105,7 @@
       "amountType": "range",
       "amountDescription": "One-time award of up to $4,000; amount depends on documented need.",
       "deadlineType": "rolling",
-      "applicationCycle": "Chapter recommendation and invitation precede an application; check timing with the chapter.",
+      "applicationCycle": "Rolling. Chapter recommendation must arrive 4-10 weeks before the term being funded; program must already have begun.",
       "fundingTiming": "For a current program within 18 months of completion.",
       "stackingPolicy": "Report other aid; award is based on remaining eligible educational need.",
       "eligibleExpenses": [
@@ -130,12 +130,14 @@
       "graduate",
       "women",
       "education-gap",
-      "need-based"
+      "need-based",
+      "msw-funding-list",
+      "funding-start"
     ],
     "status": "active",
     "application_url": "https://www.peointernational.org/educational-support/program-for-continuing-education/eligibility-and-application-process/",
-    "source": "https://www.peointernational.org/educational-support/program-for-continuing-education/eligibility-and-application-process/",
-    "last_verified_at": "2026-10-08T00:00:00Z"
+    "source": "https://www.peointernational.org/resource/pce-policies-and-procedures/",
+    "last_verified_at": "2026-10-12T01:43:00Z"
   },
   {
     "name": "Consuelo W. Gosnell Memorial Scholarship",
@@ -165,7 +167,8 @@
       ],
       "other_requirements": [
         "Applied to or accepted into a CSWE-accredited MSW program.",
-        "Demonstrated commitment to the named communities, public/voluntary nonprofit agencies, or grassroots groups."
+        "Demonstrated commitment to the named communities, public/voluntary nonprofit agencies, or grassroots groups.",
+        "Confirm eligibility of the exact online program; published rules do not explicitly address online delivery."
       ]
     },
     "funding": {
@@ -173,7 +176,7 @@
       "amountType": "range",
       "deadlineType": "unannounced",
       "opensOn": null,
-      "applicationCycle": "2027-2028 cycle expected to open in January 2027; exact opening/closing dates and amounts require confirmation. 2026-2027 awards have been allocated.",
+      "applicationCycle": "2026-2027 awards allocated. The 2027-2028 application cycle opens in January 2027; exact closing date and final amounts need confirmation.",
       "fundingTiming": "Academic-year award after selection.",
       "stackingPolicy": "Confirm other-aid and school packaging rules with the provider.",
       "amountDescription": "Published award ceiling up to $5,000; next-cycle amount unconfirmed.",
@@ -186,12 +189,14 @@
     "tags": [
       "graduate",
       "social-work",
-      "online-considered"
+      "online-considered",
+      "msw-funding-list",
+      "funding-start"
     ],
     "status": "upcoming",
     "application_url": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Consuelo-W-Gosnell-Memorial-Scholarship",
     "source": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Consuelo-W-Gosnell-Memorial-Scholarship",
-    "last_verified_at": "2026-10-08T00:00:00Z"
+    "last_verified_at": "2026-10-12T01:43:00Z"
   },
   {
     "name": "Verne LaMarr Lyons Memorial Scholarship",
@@ -221,7 +226,8 @@
       ],
       "other_requirements": [
         "CSWE-accredited MSW program.",
-        "Interest or experience in health/mental-health practice and commitment to African American communities."
+        "Interest or experience in health/mental-health practice and commitment to African American communities.",
+        "Confirm eligibility of the exact online program; published rules do not explicitly address online delivery."
       ]
     },
     "funding": {
@@ -229,7 +235,7 @@
       "amountType": "range",
       "deadlineType": "unannounced",
       "opensOn": null,
-      "applicationCycle": "2027-2028 cycle expected to open in January 2027; exact opening/closing dates and amounts require confirmation. 2026-2027 awards have been allocated.",
+      "applicationCycle": "2026-2027 awards allocated. The 2027-2028 application cycle opens in January 2027; exact closing date and final amounts need confirmation.",
       "fundingTiming": "Academic-year award after selection.",
       "stackingPolicy": "Confirm other-aid and school packaging rules with the provider.",
       "amountDescription": "Prior published award: $4,000; next-cycle amount unconfirmed.",
@@ -242,12 +248,14 @@
     "tags": [
       "graduate",
       "social-work",
-      "mental-health"
+      "mental-health",
+      "msw-funding-list",
+      "funding-start"
     ],
     "status": "upcoming",
     "application_url": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Verne-LaMarr-Lyons-Memorial-Scholarship",
     "source": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Verne-LaMarr-Lyons-Memorial-Scholarship",
-    "last_verified_at": "2026-10-08T00:00:00Z"
+    "last_verified_at": "2026-10-12T01:43:00Z"
   },
   {
     "name": "Lawanna Renee Barron Scholarship",
@@ -279,7 +287,8 @@
       ],
       "other_requirements": [
         "CSWE-accredited BSW or MSW program.",
-        "Interest in rural communities and/or mental-health needs in African American communities."
+        "Interest in rural communities and/or mental-health needs in African American communities.",
+        "Confirm eligibility of the exact online program; published rules do not explicitly address online delivery."
       ]
     },
     "funding": {
@@ -287,7 +296,7 @@
       "amountType": "range",
       "deadlineType": "unannounced",
       "opensOn": null,
-      "applicationCycle": "2027-2028 cycle expected to open in January 2027; exact opening/closing dates and amounts require confirmation. 2026-2027 awards have been allocated.",
+      "applicationCycle": "2026-2027 awards allocated. The 2027-2028 application cycle opens in January 2027; exact closing date and final amounts need confirmation.",
       "fundingTiming": "Academic-year award after selection.",
       "stackingPolicy": "Confirm other-aid and school packaging rules with the provider.",
       "amountDescription": "Prior published award: $2,000; next-cycle amount unconfirmed.",
@@ -302,12 +311,14 @@
       "graduate",
       "social-work",
       "rural",
-      "mental-health"
+      "mental-health",
+      "msw-funding-list",
+      "funding-start"
     ],
     "status": "upcoming",
     "application_url": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Lawanna-Renee-Barron-Scholarship-Endowment-Fund",
     "source": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Lawanna-Renee-Barron-Scholarship-Endowment-Fund",
-    "last_verified_at": "2026-10-08T00:00:00Z"
+    "last_verified_at": "2026-10-12T01:43:00Z"
   },
   {
     "name": "UTA Title IV-E MSW Stipend",
@@ -359,12 +370,14 @@
       "graduate",
       "social-work",
       "child-welfare",
-      "service-obligation"
+      "service-obligation",
+      "msw-funding-list",
+      "funding-alternative"
     ],
     "status": "upcoming",
     "application_url": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/title-iv-e-project/student-applicants",
     "source": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/title-iv-e-project/student-applicants",
-    "last_verified_at": "2026-10-08T00:00:00Z"
+    "last_verified_at": "2026-10-12T01:43:00Z"
   },
   {
     "name": "ACU Corporate Partner Tuition Discount",
@@ -469,5 +482,700 @@
     "application_url": "https://www.gcu.edu/financial-aid/scholarships-grants",
     "source": "https://www.gcu.edu/financial-aid/scholarships-grants",
     "last_verified_at": "2026-10-10T00:00:00Z"
+  },
+  {
+    "name": "Neysa Fanwick Memorial Scholarship",
+    "provider_name": "NASW Foundation",
+    "description": "NASW MSW scholarship with no published minimum GPA. Applicants must show social-justice and system-change commitment, health/mental-health experience, and explain financial need. The annual $5,000 award depends on fund earnings.",
+    "amount_min": 0,
+    "amount_max": 5000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "memberships": [
+        "NASW"
+      ],
+      "enrollment_statuses": [
+        "applied",
+        "accepted",
+        "enrolled"
+      ],
+      "other_requirements": [
+        "CSWE-accredited MSW program.",
+        "Social justice and system-change commitment, health/mental-health experience, and a financial-need statement.",
+        "Confirm eligibility of the exact online program; published rules do not explicitly address online delivery."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "amountDescription": "Latest published award: $5,000; next-cycle amount and availability need confirmation.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "2026-2027 awards allocated. The 2027-2028 application cycle opens in January 2027; exact closing date unannounced.",
+      "nextStep": "Prepare a financial-need statement and examples of relevant work or service. Check NASW membership, MSW accreditation and the January 2027 application announcement."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-start"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Neysa-Fanwick-Memorial-Scholarship",
+    "source": "https://www.naswfoundation.org/Our-Work/Scholarships-Awards/Scholarships/Neysa-Fanwick-Memorial-Scholarship",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "The Melanie Foundation Scholarship",
+    "provider_name": "The Melanie Foundation",
+    "description": "One-year $2,500 scholarship for an enrolled mental-health graduate student. CSWE-accredited social-work programs are among the accepted programs. Recipients may compete again in a later year.",
+    "amount_min": 0,
+    "amount_max": 2500,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "enrollment_statuses": [
+        "enrolled"
+      ],
+      "other_requirements": [
+        "Currently enrolled in a U.S. mental-health graduate program accredited by an accepted agency; CSWE is explicitly included.",
+        "Relevant extracurricular, volunteer, research or career activities.",
+        "Two references, including one mental-health professional.",
+        "Confirm eligibility of the exact online program; published rules do not explicitly address online delivery."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "amountDescription": "Latest published award: $2,500; next-cycle amount and availability need confirmation.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "Annual deadline March 5; next calendar occurrence March 5, 2027. A separate 2027 opening notice has not been posted.",
+      "nextStep": "Once enrolled, confirm the MSW program qualifies and prepare an essay and two references, including a mental-health professional."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-start"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.themelaniefoundation.com/",
+    "source": "https://www.themelaniefoundation.com/",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "AKA EAF Graduate Merit and Financial Need Scholarships",
+    "provider_name": "Alpha Kappa Alpha Educational Advancement Foundation",
+    "description": "Two application routes in one program: graduate merit (3.0 GPA) and financial need (2.5 GPA). Full-time graduate study and community service are required. Awards are open across backgrounds; only one general scholarship may be received.",
+    "amount_min": 0,
+    "amount_max": null,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate",
+        "doctoral"
+      ],
+      "target_degrees": [
+        "master",
+        "doctorate"
+      ],
+      "attendance": [
+        "full_time"
+      ],
+      "min_gpa": 2.5,
+      "enrollment_statuses": [
+        "accepted",
+        "enrolled"
+      ],
+      "other_requirements": [
+        "Merit route requires at least 3.0 GPA; need route requires at least 2.5 GPA and documented financial need.",
+        "Community service and involvement required.",
+        "Merit applicants may use a fall acceptance letter; the need route requires current enrollment.",
+        "Only one general scholarship may be received; previous general-award recipients cannot receive another.",
+        "Published graduate guidance accepts online and accelerated study; confirm next-cycle terms."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "varies",
+      "amountDescription": "Provider has not published a confirmed amount for the next cycle.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "Graduate applications are due August 15 each year; 2026 has closed. Track the 2027 cycle.",
+      "nextStep": "Choose the merit or financial-need route, check full-time enrollment and GPA, and assemble community-service evidence. Confirm the next award amount and application opening."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-start"
+    ],
+    "status": "upcoming",
+    "application_url": "https://akaeaf.org/scholarships/",
+    "source": "https://akaeaf.org/scholarships/",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "EWI Dallas ASIST Scholarship",
+    "provider_name": "Executive Women International Dallas",
+    "description": "Adult reentry scholarship explicitly accepting master's study. Local award amount varies. Only chapter winners can compete for a separate national award of $2,000-$10,000; that is not the Dallas award or a guaranteed addition.",
+    "amount_min": 0,
+    "amount_max": null,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "undergraduate",
+        "graduate",
+        "certificate"
+      ],
+      "target_degrees": [
+        "associate",
+        "bachelor",
+        "master",
+        "certificate"
+      ],
+      "min_age": 18,
+      "states": [
+        "TX"
+      ],
+      "financial_need": true,
+      "other_requirements": [
+        "Residence in Dallas, Collin, or Tarrant County, Texas.",
+        "Legal U.S. residence and qualifying financial, social or economic challenges.",
+        "Use of reentry or community resources is considered. Current employment is not required.",
+        "Confirm eligibility of the exact online program; published rules do not explicitly address online delivery."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "varies",
+      "amountDescription": "Provider has not published a confirmed amount for the next cycle.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "2026 Dallas deadline was March 31. 2027 dates have not been published; national annual application season is January-March.",
+      "nextStep": "Check county eligibility and the next Dallas chapter application. Document educational goals, need and reentry resources; ask whether the exact online MSW is eligible."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": false,
+    "states": [
+      "TX"
+    ],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-start"
+    ],
+    "status": "upcoming",
+    "application_url": "https://ewidallas.com/wp-content/uploads/2026/03/2026-ASIST-SCHOLARSHIP-INFORMATION.pdf",
+    "source": "https://ewidallas.com/wp-content/uploads/2026/03/2026-ASIST-SCHOLARSHIP-INFORMATION.pdf",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "AAUW San Antonio Graduate Scholarship",
+    "provider_name": "AAUW San Antonio",
+    "description": "Local graduate scholarship, usually $2,000, for residents of eight San Antonio-area counties. Master's study is explicitly eligible. This is separate from AAUW's national certificate-only Career Development Grants.",
+    "amount_min": 0,
+    "amount_max": 2000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "states": [
+        "TX"
+      ],
+      "min_gpa": 3,
+      "financial_need": true,
+      "enrollment_statuses": [
+        "accepted",
+        "enrolled"
+      ],
+      "other_requirements": [
+        "Two years of residence in Atascosa, Bandera, Bexar, Comal, Guadalupe, Kendall, Medina, or Wilson County.",
+        "At least six semester credit hours, unconditional acceptance or enrollment, and community service.",
+        "Confirm eligibility of the exact online program; published rules do not explicitly address online delivery."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "amountDescription": "Latest published award: $2,000; next-cycle amount and availability need confirmation.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "2026 applications closed February 1; 2027 dates are not yet published.",
+      "nextStep": "Check the two-year county residency requirement and confirm your online program and planned credit load. Prepare GPA, financial-need and community-service documentation."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": false,
+    "states": [
+      "TX"
+    ],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-start"
+    ],
+    "status": "upcoming",
+    "application_url": "https://sanantonio-tx.aauw.net/scholarships/graduate/",
+    "source": "https://sanantonio-tx.aauw.net/scholarships/graduate/",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "Davis-Putter Scholarship Fund",
+    "provider_name": "Davis-Putter Scholarship Fund",
+    "description": "Need-based grants of up to $15,000 annually for students already organizing in progressive movements. Graduate, undergraduate and eligible certificate/trade study can qualify. The 2025-2026 average was about $7,700. Organizing experience and financial need are essential.",
+    "amount_min": 0,
+    "amount_max": 15000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "undergraduate",
+        "graduate",
+        "doctoral",
+        "certificate"
+      ],
+      "financial_need": true,
+      "other_requirements": [
+        "Existing participation in progressive movement organizing is required; interest in a social-work career alone is insufficient.",
+        "Enrollment in an eligible U.S. postsecondary degree, certificate or trade/technical program.",
+        "Full-time and part-time study are eligible. Confirm the intended online program."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "amountDescription": "Latest published award: $15,000; next-cycle amount and availability need confirmation.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "Recurring application season January-April 1. The 2026 cycle is closed; a separate 2027 announcement is pending.",
+      "nextStep": "Pursue this only if you already have qualifying organizing experience. Prepare the organizing narrative, recommendations and financial documentation."
+    },
+    "requirements": {
+      "essays_required": 1,
+      "other": [
+        "Organizing history",
+        "Financial documentation",
+        "Recommendations"
+      ]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-start"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.davisputter.org/apply",
+    "source": "https://www.davisputter.org/apply",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "CSWE Master's Minority Fellowship Program",
+    "provider_name": "Council on Social Work Education",
+    "description": "Final-year MSW fellowship supporting behavioral-health training. The stipend depends on federal funding; a $10,000 award is not confirmed for the next cycle. Current published rules do not restrict applicants by race. Online learners must account for required in-person training.",
+    "amount_min": 0,
+    "amount_max": null,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "attendance": [
+        "full_time"
+      ],
+      "enrollment_statuses": [
+        "enrolled"
+      ],
+      "citizenship_statuses": [
+        "us_citizen",
+        "us_national",
+        "us_permanent_resident"
+      ],
+      "service_required": true,
+      "other_requirements": [
+        "Final-year student in a CSWE-accredited MSW program; not a first-year traditional MSW award.",
+        "Mental-health/substance-use focus and an appropriate field placement.",
+        "Training participation, including at least one in-person training under the 2026 rules.",
+        "Federal funding restrictions and current fellowship rules must be checked."
+      ]
+    },
+    "funding": {
+      "kind": "grant",
+      "amountType": "varies",
+      "amountDescription": "Provider has not published a confirmed amount for the next cycle.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "2027-2028 applications open March 2027; 2026-2027 applications closed May 11, 2026.",
+      "nextStep": "Plan for the final full-time MSW year. Confirm behavioral-health placement, citizenship, training attendance, funding restrictions and the two-year employment commitment.",
+      "serviceObligation": "Commit to seeking related mental-health/substance-use employment for at least two years after graduation; review current fellowship agreement."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-later"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.cswe.org/minority-fellowship-program",
+    "source": "https://www.cswe.org/minority-fellowship-program",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "CSWE Carl A. Scott Book Scholarship",
+    "provider_name": "Council on Social Work Education",
+    "description": "Small book scholarship. The latest cycle awarded $500 to one BSW student and one MSW student. This is a later-stage watchlist opportunity while the next cycle's full rules are pending.",
+    "amount_min": 0,
+    "amount_max": 500,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "undergraduate",
+        "graduate"
+      ],
+      "target_degrees": [
+        "bachelor",
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "other_requirements": [
+        "Commitment to racial, economic and environmental justice.",
+        "2027 full eligibility, online eligibility and application dates are not published. Earlier calls targeted students entering their final year; verify current rules."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "amountDescription": "Latest published award: $500; next-cycle amount and availability need confirmation.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "2026 recipients have been selected. 2027 dates and full eligibility have not been posted.",
+      "nextStep": "Monitor CSWE's next call and check final-year, enrollment and online-program rules before applying."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-later"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.cswe.org/cswe-announces-2026-carl-scott-memorial-lecturer-and-book-scholarship-awardees",
+    "source": "https://www.cswe.org/cswe-announces-2026-carl-scott-memorial-lecturer-and-book-scholarship-awardees",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "Ima Hogg Scholarship",
+    "provider_name": "Hogg Foundation for Mental Health",
+    "description": "School-nominated $5,000 scholarship for eligible Texas MSW students pursuing mental-health careers in Texas. ACU had a 2026 recipient, but the recipient's study mode is not specified. GCU does not satisfy the Texas-based program requirement.",
+    "amount_min": 0,
+    "amount_max": 5000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "financial_need": true,
+      "sponsorships": [
+        "School nomination"
+      ],
+      "other_requirements": [
+        "Texas-based accredited or pending-accreditation MSW program; Texas residence alone does not qualify an out-of-state program such as GCU.",
+        "Standard two-year MSW entering its second year, or entering a one-year advanced-standing program.",
+        "Commitment to a mental-health career in Texas.",
+        "ACU participates, but eligibility of its exact online cohort and program duration needs confirmation."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "amountDescription": "Latest published award: $5,000; next-cycle amount and availability need confirmation.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "2026 recipients announced June 10. 2027 nomination dates are unannounced; each school manages its internal nomination process.",
+      "nextStep": "Ask the Texas MSW program about school nomination, financial need, second-year timing and whether the specific online cohort meets the two-year program rule."
+    },
+    "requirements": {},
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-later"
+    ],
+    "status": "upcoming",
+    "application_url": "https://hogg.utexas.edu/funding-opportunities/Ima-Hogg-Scholarships",
+    "source": "https://hogg.utexas.edu/funding-opportunities/Ima-Hogg-Scholarships",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "Carolyn C. and Santos H. Hernandez Scholarship",
+    "provider_name": "University of Texas at Arlington",
+    "description": "UTA-specific MSW funding, approximately $1,000 depending on available funds. Preference includes first-generation students, single parents, students overcoming obstacles, and those whose education was interrupted. This award cannot fund ACU or GCU study.",
+    "amount_min": 0,
+    "amount_max": 1000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "schools": [
+        "University of Texas at Arlington"
+      ],
+      "enrollment_statuses": [
+        "accepted",
+        "enrolled"
+      ],
+      "other_requirements": [
+        "Award availability and eligibility for the intended online MSW cohort must be confirmed with UTA."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "amountDescription": "Latest published award: $1,000; next-cycle amount and availability need confirmation.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "School scholarship applications usually open for about 30 days around November 1 for spring and April 1 for fall. Confirm the actual upcoming window in Mav ScholarShop.",
+      "nextStep": "Consider this only if UTA is a school option. After admission, complete the Mav ScholarShop general application and Social Work application; confirm online-cohort eligibility."
+    },
+    "requirements": {
+      "other": [
+        "Preference includes first-generation students, single parents, students overcoming obstacles, and those whose education was interrupted."
+      ]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-alternative"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/scholarships",
+    "source": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/scholarships",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "Coleen Shannon Memorial Scholarship",
+    "provider_name": "University of Texas at Arlington",
+    "description": "UTA-specific MSW funding, approximately $1,000 depending on available funds. Selection considers financial need and/or academic potential. This award cannot fund ACU or GCU study.",
+    "amount_min": 0,
+    "amount_max": 1000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "schools": [
+        "University of Texas at Arlington"
+      ],
+      "enrollment_statuses": [
+        "accepted",
+        "enrolled"
+      ],
+      "other_requirements": [
+        "Award availability and eligibility for the intended online MSW cohort must be confirmed with UTA."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "amountDescription": "Latest published award: $1,000; next-cycle amount and availability need confirmation.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "School scholarship applications usually open for about 30 days around November 1 for spring and April 1 for fall. Confirm the actual upcoming window in Mav ScholarShop.",
+      "nextStep": "Consider this only if UTA is a school option. After admission, complete the Mav ScholarShop general application and Social Work application; confirm online-cohort eligibility."
+    },
+    "requirements": {
+      "other": [
+        "Selection considers financial need and/or academic potential."
+      ]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-alternative"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/scholarships",
+    "source": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/scholarships",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "Silas L. Miller Scholarship",
+    "provider_name": "University of Texas at Arlington",
+    "description": "UTA-specific MSW funding, approximately $1,000 depending on available funds. Selection considers academic accomplishment and/or financial need; a written statement is required. This award cannot fund ACU or GCU study.",
+    "amount_min": 0,
+    "amount_max": 1000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "schools": [
+        "University of Texas at Arlington"
+      ],
+      "enrollment_statuses": [
+        "accepted",
+        "enrolled"
+      ],
+      "other_requirements": [
+        "Award availability and eligibility for the intended online MSW cohort must be confirmed with UTA."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "amountDescription": "Latest published award: $1,000; next-cycle amount and availability need confirmation.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "School scholarship applications usually open for about 30 days around November 1 for spring and April 1 for fall. Confirm the actual upcoming window in Mav ScholarShop.",
+      "nextStep": "Consider this only if UTA is a school option. After admission, complete the Mav ScholarShop general application and Social Work application; confirm online-cohort eligibility."
+    },
+    "requirements": {
+      "other": [
+        "Selection considers academic accomplishment and/or financial need; a written statement is required."
+      ]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-alternative"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/scholarships",
+    "source": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/scholarships",
+    "last_verified_at": "2026-10-12T01:43:00Z"
+  },
+  {
+    "name": "Serena Simmons Connelly Graduate Fellowship",
+    "provider_name": "University of Texas at Arlington",
+    "description": "UTA-specific MSW funding, approximately $5,000 depending on available funds. Preference considers financial need, academic excellence and a strong interest in advocacy or policy work. This award cannot fund ACU or GCU study.",
+    "amount_min": 0,
+    "amount_max": 5000,
+    "deadline": null,
+    "eligibility": {
+      "education_level": [
+        "graduate"
+      ],
+      "target_degrees": [
+        "master"
+      ],
+      "majors": [
+        "Social Work"
+      ],
+      "schools": [
+        "University of Texas at Arlington"
+      ],
+      "enrollment_statuses": [
+        "accepted",
+        "enrolled"
+      ],
+      "other_requirements": [
+        "Award availability and eligibility for the intended online MSW cohort must be confirmed with UTA."
+      ]
+    },
+    "funding": {
+      "kind": "scholarship",
+      "amountType": "range",
+      "amountDescription": "Latest published award: $5,000; next-cycle amount and availability need confirmation.",
+      "deadlineType": "unannounced",
+      "applicationCycle": "School scholarship applications usually open for about 30 days around November 1 for spring and April 1 for fall. Confirm the actual upcoming window in Mav ScholarShop.",
+      "nextStep": "Consider this only if UTA is a school option. After admission, complete the Mav ScholarShop general application and Social Work application; confirm online-cohort eligibility."
+    },
+    "requirements": {
+      "other": [
+        "Preference considers financial need, academic excellence and a strong interest in advocacy or policy work."
+      ]
+    },
+    "renewable": false,
+    "national": true,
+    "states": [],
+    "tags": [
+      "graduate",
+      "social-work",
+      "msw-funding-list",
+      "funding-alternative"
+    ],
+    "status": "upcoming",
+    "application_url": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/scholarships",
+    "source": "https://www.uta.edu/academics/schools-colleges/social-work/current-students/scholarships",
+    "last_verified_at": "2026-10-12T01:43:00Z"
   }
 ]

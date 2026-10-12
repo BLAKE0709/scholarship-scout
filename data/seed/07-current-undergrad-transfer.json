@@ -936,7 +936,7 @@
         "college_junior",
         "college_senior"
       ],
-      "gpa_min": 3.0,
+      "gpa_min": 3,
       "honor_society_membership_required": true,
       "fields_of_interest": [
         "stem"
@@ -973,7 +973,7 @@
         "college_junior",
         "college_senior"
       ],
-      "gpa_min": 3.0,
+      "gpa_min": 3,
       "honor_society_membership_required": true
     },
     "requirements": {
@@ -1008,7 +1008,7 @@
         "college_junior",
         "college_senior"
       ],
-      "gpa_min": 3.0,
+      "gpa_min": 3,
       "honor_society_membership_required": true
     },
     "requirements": {
@@ -1041,7 +1041,7 @@
         "college_junior",
         "college_senior"
       ],
-      "gpa_min": 3.0,
+      "gpa_min": 3,
       "honor_society_membership_required": true,
       "notes": "Must be admitted to a Semester at Sea voyage."
     },
@@ -1110,7 +1110,7 @@
         "college_junior",
         "college_senior"
       ],
-      "gpa_min": 3.0,
+      "gpa_min": 3,
       "notes": "Rolling review until about two weeks before the voyage or until funds run out."
     },
     "requirements": {
@@ -1239,7 +1239,7 @@
         "college_junior",
         "college_senior"
       ],
-      "gpa_min": 3.0,
+      "gpa_min": 3,
       "min_age": 17,
       "citizenship": [
         "us_citizen",
@@ -1431,44 +1431,6 @@
     "status": "upcoming",
     "application_url": "https://www.osherfoundation.org/scholars.html",
     "source": "https://reentry.berkeley.edu/services/scholarship/osher"
-  },
-  {
-    "name": "Davis-Putter Scholarship Fund",
-    "provider_name": "Davis-Putter Scholarship Fund",
-    "description": "Need-based grants of up to $15,000 per year for students who are active organizers in progressive movements for liberation, self-determination, and social and economic justice. The average grant for 2025-26 was $7,700. Open to students in degree, certificate, and trade or technical programs, with preference for those without access to family wealth and applicants from under-resourced and rural areas. Applications close at midnight EST on April 1, with decisions in July.",
-    "amount_min": 15000,
-    "amount_max": 15000,
-    "deadline": "2027-04-01",
-    "eligibility": {
-      "grade_levels": [
-        "college_freshman",
-        "college_sophomore",
-        "college_junior",
-        "college_senior"
-      ],
-      "financial_need": true,
-      "activism_required": true,
-      "enrollment_status": "enrolled in a post-secondary degree, certificate, or trade/technical program"
-    },
-    "requirements": {
-      "essay": true,
-      "recommendations": true,
-      "financial_documentation": true,
-      "description_of_organizing_work": true
-    },
-    "renewable": false,
-    "national": true,
-    "states": [],
-    "tags": [
-      "current-undergrad",
-      "need-based",
-      "community-college",
-      "adult-learner",
-      "national"
-    ],
-    "status": "active",
-    "application_url": "https://www.davisputter.org/apply",
-    "source": "https://www.davisputter.org/apply"
   },
   {
     "name": "Charles B. Rangel International Affairs Summer Enrichment Program",

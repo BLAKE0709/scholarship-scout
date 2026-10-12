@@ -41,3 +41,30 @@ test("ACU employer discount needs partner verification and excludes unrelated sc
   assert.ok(assessment.missingFields.includes("providerRequirements"));
   assert.equal(assessStoredEligibility(profile, award, now).status, "ineligible");
 });
+
+test("the researched MSW list retains all 18 opportunities for planning before enrollment", () => {
+  const shortlist = catalog.filter((entry) => (entry.tags as string[]).includes("msw-funding-list"));
+  assert.equal(shortlist.length, 18);
+  for (const entry of shortlist) {
+    assert.ok(FundingSchema.parse(entry.funding).nextStep, String(entry.name));
+    assert.ok(entry.source && entry.application_url, String(entry.name));
+    assert.ok((entry.tags as string[]).some((tag) => ["funding-start", "funding-later", "funding-alternative"].includes(tag)), String(entry.name));
+    const assessment = assessStoredEligibility({ ...profile, state: "TX", education_profile: { ...profile.education_profile, educationLevel: "not_enrolled", enrollmentStatus: "planning" } }, entry, new Date("2026-10-12T02:00:00Z"));
+    assert.notEqual(assessment.status, "eligible", String(entry.name) + " must not promise eligibility with unanswered requirements");
+  }
+});
+
+test("the expanded list keeps county, organizing, enrollment and school gates visible", () => {
+  const expected = [
+    ["EWI Dallas ASIST Scholarship", "Dallas"],
+    ["AAUW San Antonio Graduate Scholarship", "Bexar"],
+    ["Davis-Putter Scholarship Fund", "organizing"],
+    ["The Melanie Foundation Scholarship", "enrolled"],
+    ["Ima Hogg Scholarship", "Texas-based"],
+  ];
+  for (const [name, condition] of expected) {
+    const entry = catalog.find((item) => item.name === name);
+    assert.ok(entry, name + " must be available for planning");
+    assert.ok(JSON.stringify(entry.eligibility).includes(condition), name + ": missing " + condition + " gate");
+  }
+});

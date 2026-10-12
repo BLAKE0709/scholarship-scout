@@ -1,5 +1,13 @@
 # STATE.md — Scholarship Scout
 
+## 2026-10-12 - Researched MSW funding list
+
+The requested 18-opportunity MSW list is implemented on the graduate Social Work funding page and remains visible before enrollment or a match refresh: 10 starting leads, 3 later-stage leads and 5 UTA alternatives. Exact provider links, latest published amounts, next-cycle uncertainty and eligibility conditions remain visible. The list is a planning view; matching gates are unchanged.
+
+Scoped live import: 12 new awards and 6 updated, zero errors, all 18 read back against amounts, terms, source dates, status and eligibility. The requested learner profile was corrected from a second bachelor's target to a social-work master's while retaining the completed bachelor's and other facts. Its matches were refreshed without external AI requests; application IDs, linked matches and statuses were preserved. Personal profile details and rollback snapshots remain outside version control.
+
+Validation: 44 offline tests, TypeScript, changed-file lint, production build and the authenticated local-production release smoke suite pass. An independent read-only review found no issues. Deployment and final live verification are pending.
+
 ## 2026-10-10 - Rollout approval and live re-verification
 
 The user explicitly approved the prepared migration, catalog import, commit/push and deployment rollout. The current workspace already contained the completed production release, so no migration or catalog import was repeated. Fresh checks confirmed the stable production URL is Ready and returns HTTP 200; all seven adult-support columns and both constraints are present; all 296 canonical award records match production amounts, funding, eligibility, status, source and UTC verification dates. The physical catalog retains 298 rows to preserve duplicate history. Remote main matches the recorded release handoff. No accounts, applications, credentials or production data were changed during this approval verification.

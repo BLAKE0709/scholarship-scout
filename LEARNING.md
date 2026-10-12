@@ -1,5 +1,15 @@
 # Scholarship Scout learning log
 
+## 2026-10-12 - Funding discovery and planning
+
+- A correct catalog does not ensure a learner sees it. A wrong target degree can exclude graduate awards, and known enrollment/school gates properly remove later options from current matches. Provide a separate planning list that retains those gates and states them clearly.
+- Reuse the existing award identity when a source record moves between seed categories. Moving Davis-Putter preserved database/application links and fixed an outdated fixed-dollar interpretation without dropping undergraduate coverage.
+- Three weak points addressed: the incorrect degree target, awards hidden before enrollment, and misleading future amounts/cycles. Verify all 18 imported records and preserved application identities after writing.
+- Six-month risk: next-cycle terms may change. Preserve provider links, source-verification timestamps and the existing 90-day freshness checks; do not treat a planning list entry as confirmed eligibility.
+- The Windows sandbox helper failed with error 1344 for reads and apply_patch; scoped elevated commands were used. The in-app browser runtime exited twice before connecting; browser-harness connected successfully as the fallback.
+- The authenticated smoke test first failed because the list was absent, then passed against the updated local production build; every temporary smoke account was removed.
+- Automatic approval review later applied the global out-of-scope line despite existing repository authorization. Work paused; the user explicitly overrode that restriction before release resumed.
+
 ## 2026-10-08 ? Adult funding implementation
 
 - Never treat absent GPA, class year, need, citizenship, or provider evidence as proof of eligibility. Retain unknown restrictions rather than silently dropping unfamiliar data types or prose.

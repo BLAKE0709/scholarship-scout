@@ -66,6 +66,13 @@ try {
   assert.equal(saved.graduation_year, null);
   console.log("PASS: owner can save a graduate profile without school grade/year.");
 
+  const planningPage = await adult.request("/scholarships");
+  assert.ok(planningPage.text.includes("Social-work funding list"), "An MSW learner must see the researched list before refreshing matches");
+  assert.ok(planningPage.text.includes("EWI Dallas ASIST Scholarship"), "County-dependent opportunities must be available for planning");
+  assert.ok(planningPage.text.includes("The Melanie Foundation Scholarship"), "Enrollment-gated awards must remain visible before enrollment");
+  assert.ok(planningPage.text.includes("UTA Title IV-E MSW Stipend"), "Alternative-school funding must remain visible before choosing UTA");
+  console.log("PASS: researched MSW list is available before matching, including enrollment-gated and alternative-school awards.");
+
   const refreshed = (await adult.request("/api/scholarships/match", { method: "POST" })).json();
   assert.ok(refreshed.matchCount > 0);
   const awards = check(await adult.client.from("scholarships").select("id,name,funding").in("name", [

@@ -1,4 +1,4 @@
-import { assessEligibility } from "@/lib/scholarships/eligibility";
+import { assessEligibility, token } from "@/lib/scholarships/eligibility";
 import { RefreshMatches } from "@/components/scholarships/refresh-matches";
 import { db } from "@/lib/db";
 import {
@@ -8,10 +8,11 @@ import {
   studentProfiles,
   users,
 } from "@/lib/db/schema";
-import { eq, and, ne, desc, getTableColumns } from "drizzle-orm";
+import { eq, and, ne, desc, asc, arrayContains, getTableColumns } from "drizzle-orm";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { FundingExplorer } from "@/components/scholarships/funding-explorer";
+import { GraduateFundingList } from "@/components/scholarships/graduate-funding-list";
 import { parseEducationProfile } from "@/lib/profiles/education";
 import Link from "next/link";
 import { Search } from "lucide-react";
@@ -91,6 +92,20 @@ export default async function ScholarshipsPage() {
 
   const education = parseEducationProfile(student.educationProfile);
   const graduate = education?.educationLevel === "graduate" || education?.educationLevel === "doctoral" || education?.targetDegree === "master" || education?.targetDegree === "doctorate";
+  const fundingList = graduate && token(student.intendedMajor ?? "") === "social_work"
+    ? await db.select({
+        id: scholarships.id, name: scholarships.name, description: scholarships.description,
+        amountMin: scholarships.amountMin, amountMax: scholarships.amountMax,
+        funding: scholarships.funding, tags: scholarships.tags, source: scholarships.source,
+        eligibility: scholarships.eligibility, status: scholarships.status, deadline: scholarships.deadline,
+        lastVerifiedAt: scholarships.lastVerifiedAt, national: scholarships.national, states: scholarships.states,
+        providerName: scholarshipProviders.name,
+      }).from(scholarships)
+        .leftJoin(scholarshipProviders, eq(scholarships.providerId, scholarshipProviders.id))
+        .where(and(arrayContains(scholarships.tags, ["msw-funding-list"]), ne(scholarships.status, "archived")))
+        .orderBy(asc(scholarships.name))
+    : [];
+
 
   return (
     <div className="space-y-6">
@@ -102,6 +117,7 @@ export default async function ScholarshipsPage() {
         <RefreshMatches />
         <Link href="/vault" className="text-sm font-medium text-accent-teal underline underline-offset-4">Edit your profile</Link>
       </div>
+      <GraduateFundingList awards={fundingList.map((award) => ({ ...award, assessment: assessEligibility(student, award) }))} />
       <FundingExplorer
         graduate={graduate}
         matches={studentMatches.map((match) => ({

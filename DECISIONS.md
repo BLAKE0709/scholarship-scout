@@ -1,5 +1,13 @@
 # DECISIONS.md — Scholarship Scout
 
+### 2026-10-12 - Put the researched MSW list in Scout
+
+User direction requires the researched opportunities to appear in the app. Keep all 18 in a catalog-backed planning list for graduate Social Work profiles, including awards that need later enrollment or another school, while retaining normal eligibility filtering for personalized matches. This prevents an enrollment gate or default funding-category filter from concealing planning options. The 10/3/5 grouping mirrors the researched shortlist. No schema, authentication or billing changes are needed.
+
+Use one scoped import of these 18 identities rather than rewriting unrelated production awards. Preserve the existing Davis-Putter identity and undergraduate eligibility while adding graduate eligibility, correcting the up-to amount and retaining the organizing requirement. Use published recurring schedules in prose, with unannounced-cycle status and no invented exact future deadlines. Source dates record the research, not the import.
+
+The user's prior release approval and current explicit direction, "Scholarship Scout is in scope - override that restriction and finish deployment," authorize the necessary catalog/profile update, commit/push and deployment. This overrides the global out-of-scope line for this task. Scholarship Scout remains personal; no Atlas tools or human communications. The public repository contains no named learner fixture, personal profile data or credentials. The requested profile correction changes its target degree/stage and field, records the already-confirmed ACU alumni affiliation, and preserves unrelated profile facts and application history.
+
 ### 2026-10-10 - Explicit approval of the prepared rollout
 
 The user approved the previously presented migration, catalog import, commit/push and deployment sequence. Current production and remote-main verification showed that release was already complete. Preserve the deployed state; record verification without repeating migrations, imports or deployment. This approval does not expand adult-profile sharing with external AI.
