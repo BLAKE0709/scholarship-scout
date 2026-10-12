@@ -10,6 +10,8 @@
 - The authenticated smoke test first failed because the list was absent, then passed against the updated local production build; every temporary smoke account was removed.
 - Automatic approval review later applied the global out-of-scope line despite existing repository authorization. Work paused; the user explicitly overrode that restriction before release resumed.
 
+- Final production verification passed on the stable live URL, including planning-list visibility, application history and privacy. Browser QA confirmed all 18 sources, expandable groups and 390px layout. Wait for Windows process exit after Stop-Process before verifying server cleanup.
+
 ## 2026-10-08 ? Adult funding implementation
 
 - Never treat absent GPA, class year, need, citizenship, or provider evidence as proof of eligibility. Retain unknown restrictions rather than silently dropping unfamiliar data types or prose.

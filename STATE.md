@@ -6,7 +6,11 @@ The requested 18-opportunity MSW list is implemented on the graduate Social Work
 
 Scoped live import: 12 new awards and 6 updated, zero errors, all 18 read back against amounts, terms, source dates, status and eligibility. The requested learner profile was corrected from a second bachelor's target to a social-work master's while retaining the completed bachelor's and other facts. Its matches were refreshed without external AI requests; application IDs, linked matches and statuses were preserved. Personal profile details and rollback snapshots remain outside version control.
 
-Validation: 44 offline tests, TypeScript, changed-file lint, production build and the authenticated local-production release smoke suite pass. An independent read-only review found no issues. Deployment and final live verification are pending.
+Validation: 44 offline tests, TypeScript, changed-file lint, production build and the authenticated local-production release smoke suite pass. An independent read-only review found no issues. Browser verification confirmed all 18 award entries, 18 official-source links, the 10/3/5 grouping, expandable later-stage/UTA sections and a 390px mobile layout without horizontal overflow.
+
+Production: implementation commit 786d4fd2b1ddfcfd6c1a717611813df67a290df8 was pushed to origin/main and deployed. The stable URL https://scholarship-scout-five.vercel.app resolves to deployment dpl_41KNJL7fUPyL91XmQxi13jNJM75m (scholarship-scout-c3f21q5v1-fcom.vercel.app), verified Ready. The authenticated live release suite passed funding-list visibility before matching, graduate matching, preserved applications, graduate exports, legacy profiles and cross-user privacy. All task-created browser/release test accounts were removed and their cleanup verified. The task-created browser tab and local production server were closed.
+
+Learner entry: sign in and open Discover Scholarships. Graduate Social Work profiles now see the Social-work funding list above personalized matches. Requirements and future-cycle uncertainty remain explicit; inclusion is not a promise of eligibility or an award.
 
 ## 2026-10-10 - Rollout approval and live re-verification
 
